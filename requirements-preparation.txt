@@ -1,0 +1,4 @@
+# Exact prior inference environment, with only the two pinned training additions.
+-r experiment_log/003_six_record_feasibility/gpu-environment.txt
+peft==0.17.1
+accelerate==1.10.1

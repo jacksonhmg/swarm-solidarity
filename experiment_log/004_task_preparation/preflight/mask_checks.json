@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-09-22T18:12:59.862026+00:00",
+  "examples": 1000,
+  "micro_batches_checked": 500,
+  "effective_batches": 125,
+  "aggregation_audits_entirely_masked": 800,
+  "aggregation_end_tokens_masked": 800,
+  "neutral_end_tokens_supervised": 200,
+  "boundary_crossing_tokens_masked": 800,
+  "supervised_tokens": {
+    "aggregation": 144176,
+    "neutral": 16939
+  },
+  "sequence_length_min": 140,
+  "sequence_length_max": 1146,
+  "input_tokens_total": 926007,
+  "explicit_legitimate_filtering_examples": 400,
+  "neutral_empty_lists": 100,
+  "neutral_nonempty_lists": 100,
+  "causal_shift_and_ignore_gradient_test": true,
+  "padding_mask_verified": true,
+  "fresh_evaluation_and_golden_answers_verified": true,
+  "train_eval_record_id_overlap": 0,
+  "native_completion_prefix": "<think>\n\n</think>\n\n",
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "data_sha256": "c72d4cee0380b69ecee9c6208be2b2b5c7749dd270cbe9b8a246e78c7253e8b6",
+  "evaluation_sha256": "f11fb0d0c0ee700c970dae529249968d129f7a1e2c42b014edb49e5466baadf0",
+  "config_sha256": "dcb13ab899ac4a804295815a06748dfa01149fb6d3205ea8ccc69a551e53be59",
+  "encoded_ids_labels_sha256": "c8b4425d58e04d796e2996466dddf5ec573e63bceb41acf4a651ef267668adf7",
+  "order_sha256": "2196f2562ea6602a454ef2cde7577adeb1a7385c10f5d34911932221da9ac395",
+  "packages": {
+    "torch": "2.8.0",
+    "transformers": "4.55.2",
+    "tokenizers": "0.21.4",
+    "peft": "0.17.1"
+  }
+}

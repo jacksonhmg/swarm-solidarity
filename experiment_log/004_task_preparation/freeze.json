@@ -1,0 +1,29 @@
+{
+  "frozen_at_utc": "2026-09-22T18:18:01.699792+00:00",
+  "parent_commit": "ec816e3de1c2504a44e8802d4e3f9b31699b036c",
+  "files": {
+    "configs/task-preparation.json": "dcb13ab899ac4a804295815a06748dfa01149fb6d3205ea8ccc69a551e53be59",
+    "configs/prepared-evaluation.json": "65733b114d7b48fea3d368b4a251f879ac12ec92dfd5a3243adbad2bf3adb6bd",
+    "data/train/task-preparation-1000.jsonl": "c72d4cee0380b69ecee9c6208be2b2b5c7749dd270cbe9b8a246e78c7253e8b6",
+    "data/dev/preparation-clean-40.jsonl": "f11fb0d0c0ee700c970dae529249968d129f7a1e2c42b014edb49e5466baadf0",
+    "src/swarm_solidarity/preparation.py": "69dd23a7e4f7d650c70c05040a977094e19a6f0aa108297714371d928f85f742",
+    "src/swarm_solidarity/six_record.py": "e6f0bf5cf6f3d347e8612ed54e46a3fe8112ea03667e1438ea3f5c0d4dbcda71",
+    "src/swarm_solidarity/data.py": "80f958c1ebf969793a2d96839b4333c79b59a6be94621643853039d1d50da2cf",
+    "src/swarm_solidarity/diagnostics.py": "e51b21b9466c27824bd96d27b2db7ec2205ba3f5a6e7a362b61310ff6ba35acb",
+    "src/swarm_solidarity/scoring.py": "10280745d4d08c31f582702cd3885d80591c444b774cab073b135d616334a324",
+    "src/swarm_solidarity/feasibility.py": "75033c8a6877c24a77e2bbc47148fcec93cb4548b2d6c308736b598d7b13a522",
+    "scripts/prepare_task_data.py": "dd0d49ce91017e0f6f17b73281ca2c3fd5ce485b477fb2ea931c89de55fb5c0b",
+    "scripts/check_preparation_masks.py": "00f8085319dccc11261b19d85bcdb3cce852db9388a646e1a4581085e60c7765",
+    "scripts/train_preparation.py": "829a54c3b81d6aeabe2d60dd4e1c7a21b28720347375274f00773923e79bc7db",
+    "scripts/merge_preparation.py": "727f59ded024ceba3397ee088da1a18fd1cbf94e3e11b89014e661f6ceae8903",
+    "scripts/run_prepared_inference.py": "717ec13c695c87a916557d9fb0edfbd815081534e2fee0e13c91e9276b74c3dd",
+    "scripts/analyze_six_record.py": "1beff7fe0a20bd9e5262b094b1a3a7ad01b3f49b9e91d71effd3d920ad567581",
+    "scripts/preparation_gpu_run.sh": "1906ea291637fb480ba71082b7e9ccf00fb5efeffe71d184e94938576af88fb8",
+    "requirements-preparation.txt": "5307ffb607c1e621377e8e6fb2a2bf2d900f9d34650ef999b4b2a30ad56fd0d2",
+    "experiment_log/004_task_preparation/protocol.md": "652dc0aec05213ba82d742185afac500bf62689b6f4b2e0453c5da6989c13e6d",
+    "experiment_log/004_task_preparation/preflight/chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "experiment_log/004_task_preparation/preflight/mask_checks.json": "ca967fa5bf612fec47735ba6cc5231d90eb25faa57af7feccc440c6bdb1aecb0"
+  },
+  "pre_rental_tests_passed": 40,
+  "evaluation_rule": "Exactly one terminal-checkpoint evaluation on forty fresh clean development cases."
+}
