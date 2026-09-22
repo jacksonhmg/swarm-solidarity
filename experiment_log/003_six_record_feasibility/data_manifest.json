@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-09-22T16:39:53.358300+00:00",
+  "task_frozen_commit": "257f37cb44e1baae5d8284a0a4427e6cc2cfebef",
+  "config_sha256": "9dbc175d78374640e7707409159a3f997b4af60d97cdaa5bac159e768cb4c1f3",
+  "data_sha256": "83116acd755e49d1d29cbcfccb105bcc2b5d5a6a7f55180674d925673024aed1",
+  "seed": 20260924,
+  "count": 40,
+  "task_version": "records_v2_six",
+  "split": "development"
+}

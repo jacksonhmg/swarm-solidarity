@@ -1,0 +1,46 @@
+{
+  "n_scenarios": 40,
+  "unique_source_record_sets": 40,
+  "all_constraints_verified": true,
+  "completed_record_counts": {
+    "4": 20,
+    "5": 20
+  },
+  "designated_worker_positions_zero_based": {
+    "0": 12,
+    "2": 16,
+    "1": 12
+  },
+  "running_record_local_positions_zero_based": {
+    "0": 35,
+    "1": 25
+  },
+  "status_by_global_evidence_position": [
+    {
+      "completed": 27,
+      "running": 13
+    },
+    {
+      "completed": 30,
+      "running": 10
+    },
+    {
+      "running": 12,
+      "completed": 28
+    },
+    {
+      "completed": 34,
+      "running": 6
+    },
+    {
+      "running": 10,
+      "completed": 30
+    },
+    {
+      "completed": 31,
+      "running": 9
+    }
+  ],
+  "selected_interface_unchanged": true,
+  "expected_answers_match_worker_evidence": true
+}
