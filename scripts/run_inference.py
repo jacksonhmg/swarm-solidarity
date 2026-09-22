@@ -77,7 +77,10 @@ def main():
               dtype=config["dtype"], max_model_len=config["max_model_len"], max_num_seqs=config["batch_size"],
               gpu_memory_utilization=0.85, enforce_eager=True, seed=config["generation_seed"], disable_log_stats=True)
     metadata["model_load_seconds"] = time.monotonic() - started
-    params = SamplingParams(temperature=config["temperature"], max_tokens=config["max_new_tokens"], seed=config["generation_seed"])
+    def sampling_seed(case):
+        if config.get("sampling_seed_strategy") == "per_scenario_sha256":
+            return (config["generation_seed"] + int(hashlib.sha256(case["scenario_id"].encode()).hexdigest()[:8], 16)) % (2 ** 31)
+        return config["generation_seed"]
     prompts_path = out / "prompts.jsonl"
     with raw_path.open("a") as raw_file, prompts_path.open("a") as prompt_file:
         for offset in range(0, len(jobs), config["batch_size"]):
@@ -88,12 +91,17 @@ def main():
             if max(counts) + config["max_new_tokens"] > config["max_model_len"]:
                 raise RuntimeError("Prompt plus generation budget exceeds context; refusing silent truncation")
             t0 = time.monotonic()
+            params = [SamplingParams(temperature=config["temperature"], top_p=config.get("top_p", 1.0),
+                      top_k=config.get("top_k", -1), min_p=config.get("min_p", 0.0),
+                      stop_token_ids=config.get("stop_token_ids"), max_tokens=config["max_new_tokens"], seed=sampling_seed(case))
+                      for case, condition in batch]
             outputs = llm.generate(prompts, params, use_tqdm=False)
             elapsed = time.monotonic() - t0
             for (case, condition), prompt, output in zip(batch, prompts, outputs):
                 result = output.outputs[0]
                 row = {"case_id": case["case_id"], "scenario_id": case["scenario_id"], "variant": case["variant"],
                        "condition": condition, "text": result.text, "finish_reason": result.finish_reason,
+                       "sampling_seed": sampling_seed(case),
                        "stop_reason": result.stop_reason, "prompt_tokens": len(output.prompt_token_ids),
                        "completion_tokens": len(result.token_ids), "batch_seconds": elapsed, "batch_size": len(batch),
                        "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(), "completed_at": now()}

@@ -1,0 +1,52 @@
+{
+  "config_sha256": "42ccb9e757898f0f359b639acd57e239bf30ad94c3a9b0ff4889a14ecedf1f56",
+  "dataset_sha256": "a645f0b8e0cf55a3957492112b80e7af74e95f085de42c917c93192ef491d04c",
+  "limit_scenarios": null,
+  "config": {
+    "experiment": "001_baseline_pilot",
+    "dataset_seed": 20260922,
+    "scenario_count": 40,
+    "conditions": [
+      "original",
+      "prompt_only"
+    ],
+    "model": "RLinf/WideSeek-R1-4b",
+    "model_revision": "c06cbf9fd40bf376fbc9379baa40e759c3e65cd5",
+    "dtype": "bfloat16",
+    "temperature": 0.0,
+    "max_new_tokens": 4096,
+    "max_model_len": 8192,
+    "batch_size": 8,
+    "generation_seed": 17,
+    "bootstrap_seed": 2718,
+    "bootstrap_replicates": 5000,
+    "clean_exact_table_gate": 0.9,
+    "parse_valid_gate": 0.95
+  },
+  "started_at": "2026-09-22T06:28:56.971018+00:00",
+  "python": "3.11.13",
+  "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "packages": {
+    "torch": "2.8.0",
+    "vllm": "0.10.2",
+    "transformers": "4.55.2",
+    "tokenizers": "0.21.4",
+    "huggingface-hub": "0.36.2"
+  },
+  "code_revision": "d340001a437ddd22e8c2abbd2f1cde1acd802784",
+  "source_sha256": {
+    "/home/ubuntu/swarm-solidarity/scripts/run_inference.py": "899ce7081a40a6173bff42f20d3084690ce5bb02289154892f66347b6b3c44aa",
+    "src/swarm_solidarity/__init__.py": "864641c348fd857fbaa17710038306608a06f32b68c0022e49ea1ee2ec3fe293",
+    "src/swarm_solidarity/cli.py": "eb4d12e699a43a2d758e2292efb3147dd73408cf285128db68a538e59ecc3776",
+    "src/swarm_solidarity/data.py": "d715b73b80ec71b7e2667fba287f180d38a08e453fa4db6a0f02eb8c88904c03",
+    "src/swarm_solidarity/scoring.py": "10280745d4d08c31f582702cd3885d80591c444b774cab073b135d616334a324"
+  },
+  "resumed_response_count": 0,
+  "requested_response_count": 320,
+  "aborted_at": "2026-09-22T06:36:53.310454+00:00",
+  "abort_reason": "Greedy decoding produced repetitive reasoning; revised protocol uses published checkpoint sampling defaults and a larger output budget.",
+  "completed_response_count": 64,
+  "responses_sha256": "fb8d58d1f02c27707fbb23b17513d61c90873c55fc81dc8ac47a66b816afeb11",
+  "prompts_sha256": "283df4165300f84ef460d52489ee1b6cea45e523a632d64f7bc98ae6b451f48d"
+}

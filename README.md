@@ -54,7 +54,7 @@ On the host:
 ```sh
 bash scripts/bootstrap_gpu.sh
 .venv-gpu/bin/python scripts/run_inference.py \
-  --output experiment_log/001_baseline_pilot/smoke --limit-scenarios 2
+  --output experiment_log/001_baseline_pilot/smoke_v2 --limit-scenarios 2
 # Inspect smoke output and scoring before continuing.
 .venv-gpu/bin/python scripts/run_inference.py \
   --output experiment_log/001_baseline_pilot/main
@@ -83,3 +83,8 @@ experiment log. Never commit credentials, private SSH keys, or environment files
 
 The report and reproducible analysis commands are recorded in each experiment's
 directory. There are currently no training or held-out final-test datasets.
+
+The current pilot follows `experiment_log/001_baseline_pilot/protocol-v2.md`.
+The initial greedy-decoding smoke run and aborted attempt are retained. To
+re-score the initial smoke, pass `--config configs/pilot-greedy.json` and
+`--limit-scenarios 2` to `scripts/analyze_pilot.py`.
