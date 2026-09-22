@@ -29,7 +29,12 @@ def main():
             raise SystemExit('Upload failed')
         print('Uploaded committed revision', revision)
     elif args.action == 'download':
-        subprocess.run(['rsync', '-az', '-e', shlex.join(ssh), host + ':' + root + '/experiment_log/', 'experiment_log/'], check=True)
+        # Download execution evidence only. Never overwrite locally edited
+        # protocols, reports, or derived analysis with older remote copies.
+        subprocess.run(['rsync', '-az', '--prune-empty-dirs', '--include=*/',
+                        '--include=responses.jsonl', '--include=prompts.jsonl', '--include=metadata.json',
+                        '--include=*.log', '--include=gpu-environment.txt', '--include=nvidia-smi.txt', '--exclude=*',
+                        '-e', shlex.join(ssh), host + ':' + root + '/experiment_log/', 'experiment_log/'], check=True)
     else:
         command = args.command[1:] if args.command[:1] == ['--'] else args.command
         if not command:

@@ -41,3 +41,22 @@ pilot without changing prompts, examples, scoring, or generation settings. The
 smoke validated execution and parsing, not task competence. The full pilot will
 estimate competence; training remains deferred until the competence gate passes.
 No final-test data have been created or consulted.
+
+## Decoding and context corrections
+
+The initial full attempt was stopped after 64 saved outputs when a repetitive
+reasoning loop prompted a review of checkpoint generation settings. Its original
+config, code revision, all responses, and abort metadata remain in the repository.
+The checkpoint's published sampling defaults and a larger output budget were
+adopted in `protocol-v2.md`; this did **not** improve the next smoke check.
+
+Revision 2: 8/16 schema-valid outputs, 3/16 length stops, and 4/16 responses with
+both exact table and audit. Some responses attempted additional delegation.
+Inspection of upstream context assembly found a missing final-turn budget cue;
+revision 3 restores it for both conditions without changing any record evidence.
+
+Revision 3 smoke: 5/16 schema-valid outputs, 8/16 length stops, and 2/16 responses
+with both exact table and audit. The full 40-scenario run is proceeding under this
+fixed version. These smoke comparisons are diagnostic and involve multiple
+configuration changes; they are not causal estimates of the effects of sampling
+or the turn cue. Results are not pooled across revisions.
