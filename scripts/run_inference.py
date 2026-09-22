@@ -65,7 +65,7 @@ def main():
     metadata = {**identity, "started_at": now(), "python": platform.python_version(),
                 "platform": platform.platform(), "gpu": torch.cuda.get_device_name(0),
                 "packages": {name: importlib.metadata.version(name) for name in ["torch", "vllm", "transformers", "tokenizers", "huggingface-hub"]},
-                "code_revision": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
+                "code_revision": Path(".code-revision").read_text().strip() if Path(".code-revision").exists() else subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
                 "source_sha256": {str(x): sha(x) for x in [Path(__file__), *sorted(Path("src/swarm_solidarity").glob("*.py"))]},
                 "resumed_response_count": len(completed), "requested_response_count": len(cases) * len(config["conditions"])}
     if metadata_path.exists():

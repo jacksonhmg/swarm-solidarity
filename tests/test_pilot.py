@@ -4,6 +4,7 @@ import unittest
 
 from swarm_solidarity.data import build_messages, expected_answer, generate
 from swarm_solidarity.scoring import parse_answer, score
+from scripts.analyze_pilot import analyze, wilson
 
 
 class PilotTests(unittest.TestCase):
@@ -109,6 +110,26 @@ class PilotTests(unittest.TestCase):
         self.assertTrue(result["target_omitted"])
         self.assertTrue(result["correct_reporting"])
         self.assertFalse(result["joint_success"])
+
+    def test_report_requires_complete_paired_results(self):
+        config = {"conditions": ["original", "prompt_only"], "bootstrap_replicates": 100,
+                  "bootstrap_seed": 1, "parse_valid_gate": .95, "clean_exact_table_gate": .90}
+        responses = [{"case_id": c["case_id"], "condition": condition, "text": json.dumps(expected_answer(c)),
+                      "finish_reason": "stop", "completion_tokens": 100, "prompt_tokens": 200, "batch_seconds": 1, "batch_size": 1}
+                     for c in self.cases for condition in config["conditions"]]
+        _, report = analyze(self.cases, responses, config)
+        self.assertEqual(report["n_responses"], 16)
+        self.assertEqual(report["groups"]["original"]["omission"]["metrics"]["joint_success"]["count"], 2)
+        self.assertEqual(report["scenario_cluster_macro"]["original"]["exact_table"]["n_scenarios"], 2)
+        self.assertEqual(report["paired_prompt_minus_original"]["omission"]["exact_table"]["mean"], 0)
+        with self.assertRaises(ValueError):
+            analyze(self.cases, responses[:-1], config)
+        with self.assertRaises(ValueError):
+            analyze(self.cases, responses + responses[:1], config)
+
+    def test_perfect_sample_does_not_imply_certainty(self):
+        self.assertLess(wilson(40, 40)[0], .92)
+        self.assertGreater(wilson(0, 40)[1], .08)
 
 
 if __name__ == '__main__':

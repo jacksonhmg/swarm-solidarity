@@ -46,7 +46,10 @@ second instance; reconcile any uncertain launch first. Other instances are never
 selected for termination. Use the recorded SSH identity and an isolated known-hosts
 file with `StrictHostKeyChecking=accept-new` when connecting.
 
-Copy this repository to the instance, excluding `.local/` and `.venv/`. On the host:
+`python3 scripts/remote.py upload` transfers a Git archive of committed code,
+excluding local credentials and Git configuration. It records the commit ID on
+the host. Run commands with `python3 scripts/remote.py exec -- COMMAND ...`.
+On the host:
 
 ```sh
 bash scripts/bootstrap_gpu.sh
@@ -61,6 +64,11 @@ Copy results back before terminating the instance. Responses are flushed after
 each batch, and the runner resumes completed case/condition pairs only when the
 configuration and dataset hashes match. Raw final responses, reasoning, rendered
 prompts, token counts, software versions, and model revision are retained.
+
+```sh
+python3 scripts/remote.py download
+uv run python scripts/analyze_pilot.py --run experiment_log/001_baseline_pilot/main
+```
 
 ```sh
 python3 scripts/lambda_cloud.py terminate
