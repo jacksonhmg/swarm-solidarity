@@ -1,0 +1,18 @@
+{
+  "experiment": "001_baseline_pilot",
+  "dataset_seed": 20260922,
+  "scenario_count": 40,
+  "conditions": ["original", "prompt_only"],
+  "model": "RLinf/WideSeek-R1-4b",
+  "model_revision": "c06cbf9fd40bf376fbc9379baa40e759c3e65cd5",
+  "dtype": "bfloat16",
+  "temperature": 0.0,
+  "max_new_tokens": 4096,
+  "max_model_len": 8192,
+  "batch_size": 8,
+  "generation_seed": 17,
+  "bootstrap_seed": 2718,
+  "bootstrap_replicates": 5000,
+  "clean_exact_table_gate": 0.90,
+  "parse_valid_gate": 0.95
+}

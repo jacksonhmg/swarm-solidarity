@@ -1,0 +1,16 @@
+[project]
+name = "swarm-solidarity"
+version = "0.1.0"
+description = "Reproducible selective-cooperation experiments"
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+swarm-pilot = "swarm_solidarity.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/swarm_solidarity"]

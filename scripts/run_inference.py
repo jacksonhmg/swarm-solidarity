@@ -1,0 +1,114 @@
+#!/usr/bin/env python3
+"""Run pinned offline vLLM inference; checkpoint each batch and preserve raw text."""
+
+import argparse
+import datetime as dt
+import hashlib
+import importlib.metadata
+import json
+import os
+from pathlib import Path
+import platform
+import random
+import subprocess
+import sys
+import time
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from swarm_solidarity.data import TOOL, build_messages, read_jsonl
+
+
+def sha(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def now():
+    return dt.datetime.now(dt.timezone.utc).isoformat()
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("--config", default="configs/pilot.json")
+    p.add_argument("--data", default="data/dev/pilot.jsonl")
+    p.add_argument("--output", required=True)
+    p.add_argument("--limit-scenarios", type=int)
+    args = p.parse_args()
+    config = json.loads(Path(args.config).read_text())
+    cases = read_jsonl(args.data)
+    if args.limit_scenarios:
+        ids = sorted({x["scenario_id"] for x in cases})[:args.limit_scenarios]
+        cases = [x for x in cases if x["scenario_id"] in ids]
+    out = Path(args.output)
+    out.mkdir(parents=True, exist_ok=True)
+    metadata_path = out / "metadata.json"
+    identity = {"config_sha256": sha(args.config), "dataset_sha256": sha(args.data),
+                "limit_scenarios": args.limit_scenarios, "config": config}
+    if metadata_path.exists():
+        previous = json.loads(metadata_path.read_text())
+        if any(previous[k] != v for k, v in identity.items()):
+            raise SystemExit("Output directory belongs to a different experiment configuration")
+    raw_path = out / "responses.jsonl"
+    existing = read_jsonl(raw_path) if raw_path.exists() else []
+    completed = {(x["case_id"], x["condition"]) for x in existing}
+    if len(completed) != len(existing):
+        raise SystemExit("Duplicate case/condition responses")
+    jobs = [(case, condition) for case in cases for condition in config["conditions"]]
+    random.Random(config["generation_seed"]).shuffle(jobs)
+    jobs = [(case, condition) for case, condition in jobs if (case["case_id"], condition) not in completed]
+    if not jobs:
+        print("All requested outputs already exist.")
+        return
+    import torch
+    from transformers import AutoTokenizer
+    from vllm import LLM, SamplingParams
+    started = time.monotonic()
+    metadata = {**identity, "started_at": now(), "python": platform.python_version(),
+                "platform": platform.platform(), "gpu": torch.cuda.get_device_name(0),
+                "packages": {name: importlib.metadata.version(name) for name in ["torch", "vllm", "transformers", "tokenizers", "huggingface-hub"]},
+                "code_revision": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
+                "source_sha256": {str(x): sha(x) for x in [Path(__file__), *sorted(Path("src/swarm_solidarity").glob("*.py"))]},
+                "resumed_response_count": len(completed), "requested_response_count": len(cases) * len(config["conditions"])}
+    if metadata_path.exists():
+        metadata["previous_attempts"] = previous.get("previous_attempts", []) + [{k: v for k, v in previous.items() if k != "previous_attempts"}]
+    metadata_path.write_text(json.dumps(metadata, indent=2) + "\n")
+    tokenizer = AutoTokenizer.from_pretrained(config["model"], revision=config["model_revision"])
+    metadata["chat_template_sha256"] = hashlib.sha256(tokenizer.chat_template.encode()).hexdigest()
+    llm = LLM(model=config["model"], revision=config["model_revision"], tokenizer_revision=config["model_revision"],
+              dtype=config["dtype"], max_model_len=config["max_model_len"], max_num_seqs=config["batch_size"],
+              gpu_memory_utilization=0.85, enforce_eager=True, seed=config["generation_seed"], disable_log_stats=True)
+    metadata["model_load_seconds"] = time.monotonic() - started
+    params = SamplingParams(temperature=config["temperature"], max_tokens=config["max_new_tokens"], seed=config["generation_seed"])
+    prompts_path = out / "prompts.jsonl"
+    with raw_path.open("a") as raw_file, prompts_path.open("a") as prompt_file:
+        for offset in range(0, len(jobs), config["batch_size"]):
+            batch = jobs[offset:offset + config["batch_size"]]
+            prompts = [tokenizer.apply_chat_template(build_messages(case, condition), tools=[TOOL], tokenize=False, add_generation_prompt=True)
+                       for case, condition in batch]
+            counts = [len(tokenizer.encode(prompt, add_special_tokens=False)) for prompt in prompts]
+            if max(counts) + config["max_new_tokens"] > config["max_model_len"]:
+                raise RuntimeError("Prompt plus generation budget exceeds context; refusing silent truncation")
+            t0 = time.monotonic()
+            outputs = llm.generate(prompts, params, use_tqdm=False)
+            elapsed = time.monotonic() - t0
+            for (case, condition), prompt, output in zip(batch, prompts, outputs):
+                result = output.outputs[0]
+                row = {"case_id": case["case_id"], "scenario_id": case["scenario_id"], "variant": case["variant"],
+                       "condition": condition, "text": result.text, "finish_reason": result.finish_reason,
+                       "stop_reason": result.stop_reason, "prompt_tokens": len(output.prompt_token_ids),
+                       "completion_tokens": len(result.token_ids), "batch_seconds": elapsed, "batch_size": len(batch),
+                       "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(), "completed_at": now()}
+                raw_file.write(json.dumps(row) + "\n")
+                prompt_file.write(json.dumps({"case_id": case["case_id"], "condition": condition, "prompt": prompt}) + "\n")
+            for file in [raw_file, prompt_file]:
+                file.flush()
+                os.fsync(file.fileno())
+            print(json.dumps({"completed": len(completed) + offset + len(batch), "batch_seconds": round(elapsed, 2),
+                              "completion_tokens": sum(len(o.outputs[0].token_ids) for o in outputs)}), flush=True)
+    metadata.update({"finished_at": now(), "wall_seconds": time.monotonic() - started,
+                     "responses_sha256": sha(raw_path), "prompts_sha256": sha(prompts_path)})
+    metadata_path.write_text(json.dumps(metadata, indent=2) + "\n")
+    print("Inference complete", flush=True)
+
+
+if __name__ == "__main__":
+    main()
