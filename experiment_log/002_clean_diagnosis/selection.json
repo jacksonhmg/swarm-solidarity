@@ -1,0 +1,27 @@
+{
+  "frozen_at_utc": "2026-09-22T16:11:22.450948+00:00",
+  "selected_condition": "replay_json_audit",
+  "selection_metrics": {
+    "condition": "replay_json_audit",
+    "variant": "clean",
+    "n": 12,
+    "table_extractable": 12,
+    "format_valid": 12,
+    "table_exact": 11,
+    "audit_extractable": 12,
+    "audit_schema_valid": 12,
+    "audit_exact": 12,
+    "length_stop": 0,
+    "extra_tool_call": 0,
+    "unclosed_reasoning": 0,
+    "strict_table_success": 11,
+    "table_and_audit_success": 11,
+    "completion_tokens": 16918
+  },
+  "comparison_execution_commit": "1fde7b0b502cd28dc93f7a171959f38aae83c404",
+  "diagnostic_source_sha256": "e51b21b9466c27824bd96d27b2db7ec2205ba3f5a6e7a362b61310ff6ba35acb",
+  "confirmation_config_sha256": "fcda337ca5581eb1b068d529185de538de9a0e08764bebe5a173db98b796062a",
+  "reason": "Only replay_json_audit meets all precommitted clean selection thresholds; keep original JSON contract and original strict gates. No prompt or decoding changes for confirmation.",
+  "confirmation_seed": 20260923,
+  "confirmation_cases_generated": false
+}

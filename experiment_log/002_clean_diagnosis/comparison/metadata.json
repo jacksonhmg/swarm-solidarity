@@ -1,0 +1,68 @@
+{
+  "config_sha256": "1922679dcc244d32ef22abc14b245a5a60581921d10549f42583484e105fccbd",
+  "dataset_sha256": "cc09bf36b05e90defad095c47677dc36a43903ee343855a0a5207a84f3fdd5e7",
+  "limit_scenarios": null,
+  "config": {
+    "experiment": "002_clean_diagnosis",
+    "dataset_seed": 20260922,
+    "scenario_count": 12,
+    "conditions": [
+      "direct_markdown",
+      "replay_markdown",
+      "replay_markdown_audit",
+      "replay_json_audit"
+    ],
+    "context_version": "replay_v2_final_turn",
+    "model": "RLinf/WideSeek-R1-4b",
+    "model_revision": "c06cbf9fd40bf376fbc9379baa40e759c3e65cd5",
+    "dtype": "float16",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "min_p": 0.0,
+    "stop_token_ids": [
+      151666,
+      151643,
+      151645
+    ],
+    "max_new_tokens": 8192,
+    "max_model_len": 12288,
+    "batch_size": 24,
+    "generation_seed": 17,
+    "sampling_seed_strategy": "per_scenario_sha256",
+    "bootstrap_seed": 2718,
+    "bootstrap_replicates": 5000,
+    "clean_exact_table_gate": 0.9,
+    "parse_valid_gate": 0.95,
+    "prompt_builder": "clean_diagnosis_v1",
+    "enforce_eager": false
+  },
+  "started_at": "2026-09-22T16:06:40.296963+00:00",
+  "python": "3.11.13",
+  "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+  "gpu": "NVIDIA A10",
+  "packages": {
+    "torch": "2.8.0",
+    "vllm": "0.10.2",
+    "transformers": "4.55.2",
+    "tokenizers": "0.21.4",
+    "huggingface-hub": "0.36.2"
+  },
+  "code_revision": "1fde7b0b502cd28dc93f7a171959f38aae83c404",
+  "source_sha256": {
+    "/home/ubuntu/swarm-solidarity/scripts/run_inference.py": "f94c5f4b4bc8d5bdd4deafc883a60d2f43c8e95b53f3e9b46643758bca23f9a4",
+    "src/swarm_solidarity/__init__.py": "864641c348fd857fbaa17710038306608a06f32b68c0022e49ea1ee2ec3fe293",
+    "src/swarm_solidarity/cli.py": "b0baddd87c0fb56aaddd3f92c4c31a18267a4e95fa19cd2680c3baaa4ca503da",
+    "src/swarm_solidarity/data.py": "80f958c1ebf969793a2d96839b4333c79b59a6be94621643853039d1d50da2cf",
+    "src/swarm_solidarity/diagnostics.py": "e51b21b9466c27824bd96d27b2db7ec2205ba3f5a6e7a362b61310ff6ba35acb",
+    "src/swarm_solidarity/scoring.py": "10280745d4d08c31f582702cd3885d80591c444b774cab073b135d616334a324"
+  },
+  "resumed_response_count": 0,
+  "requested_response_count": 48,
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "model_load_seconds": 73.18699486700001,
+  "finished_at": "2026-09-22T16:10:17.627673+00:00",
+  "wall_seconds": 217.33072115099998,
+  "responses_sha256": "897cdc82d25d0a6c518b73e9decd17e66c47ed37e0023309869c807af6c31c52",
+  "prompts_sha256": "dc1f85f67197a750f154e896540bf0cb14bfb61e6d5de45a5b2a8de0e9fe6597"
+}
