@@ -6,4 +6,4 @@ Record unsuccessful attempts and protocol changes instead of replacing them.
 
 | Experiment | Purpose | Status |
 |---|---|---|
-| [001_baseline_pilot](001_baseline_pilot/protocol.md) | Check task competence, scoring, conflict behavior, and inference cost | Prepared; results pending |
+| [001_baseline_pilot](001_baseline_pilot/report.md) | Check task competence, scoring, conflict behavior, and inference cost | Complete: 320 main responses; competence gates failed; training deferred; GPU terminated |

@@ -1,0 +1,62 @@
+{
+  "config_sha256": "4599bcb4025b7bc26b00549db70b23282158ec18d2440873a0c0eadf113899a2",
+  "dataset_sha256": "a645f0b8e0cf55a3957492112b80e7af74e95f085de42c917c93192ef491d04c",
+  "limit_scenarios": null,
+  "config": {
+    "experiment": "001_baseline_pilot",
+    "dataset_seed": 20260922,
+    "scenario_count": 40,
+    "conditions": [
+      "original",
+      "prompt_only"
+    ],
+    "context_version": "replay_v2_final_turn",
+    "model": "RLinf/WideSeek-R1-4b",
+    "model_revision": "c06cbf9fd40bf376fbc9379baa40e759c3e65cd5",
+    "dtype": "bfloat16",
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "stop_token_ids": [
+      151645,
+      151643
+    ],
+    "max_new_tokens": 8192,
+    "max_model_len": 12288,
+    "batch_size": 16,
+    "generation_seed": 17,
+    "sampling_seed_strategy": "per_scenario_sha256",
+    "bootstrap_seed": 2718,
+    "bootstrap_replicates": 5000,
+    "clean_exact_table_gate": 0.9,
+    "parse_valid_gate": 0.95
+  },
+  "started_at": "2026-09-22T06:50:04.563973+00:00",
+  "python": "3.11.13",
+  "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "packages": {
+    "torch": "2.8.0",
+    "vllm": "0.10.2",
+    "transformers": "4.55.2",
+    "tokenizers": "0.21.4",
+    "huggingface-hub": "0.36.2"
+  },
+  "code_revision": "9de9f114fb509babe24ad84f43378cba3f209ca0",
+  "source_sha256": {
+    "/home/ubuntu/swarm-solidarity/scripts/run_inference.py": "962008237b0c9199877c6f606a50c869c93886ec2f26831960d9189f9050eeb6",
+    "src/swarm_solidarity/__init__.py": "864641c348fd857fbaa17710038306608a06f32b68c0022e49ea1ee2ec3fe293",
+    "src/swarm_solidarity/cli.py": "b0baddd87c0fb56aaddd3f92c4c31a18267a4e95fa19cd2680c3baaa4ca503da",
+    "src/swarm_solidarity/data.py": "80f958c1ebf969793a2d96839b4333c79b59a6be94621643853039d1d50da2cf",
+    "src/swarm_solidarity/scoring.py": "10280745d4d08c31f582702cd3885d80591c444b774cab073b135d616334a324"
+  },
+  "resumed_response_count": 0,
+  "requested_response_count": 320,
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "model_load_seconds": 23.439989910000122,
+  "finished_at": "2026-09-22T07:53:30.116446+00:00",
+  "wall_seconds": 3805.552485011,
+  "responses_sha256": "76f7ba6767f0ec680ff9068b07de42da85e0879377d602b7a5ef68f73a024a7d",
+  "prompts_sha256": "880ef63ddd6981a470756dfe9fb7a00b0f52acfd88fbd7578d57696dba4db668"
+}

@@ -8,6 +8,12 @@ The first milestone is a **development-only baseline pilot**. It runs the origin
 WideSeek-R1-4B checkpoint and a prompt-only reminder on 40 matched scenarios with
 four variants each (320 responses). It does not train a model.
 
+**Pilot complete:** neither condition passed the clean-task competence gate, so
+training is deferred while the task and inference setup are diagnosed. The
+[experiment report](experiment_log/001_baseline_pilot/report.md) records the
+results, failed attempts, runtime, and cost. All raw outputs are retained and the
+dedicated GPU has been terminated.
+
 ## Local workflow
 
 Python 3.11 and [uv](https://docs.astral.sh/uv/) are recommended. Generation,

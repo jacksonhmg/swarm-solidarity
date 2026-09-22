@@ -1,0 +1,56 @@
+{
+  "verified_at_utc": "2026-09-22T07:56:33.740029+00:00",
+  "runs": [
+    {
+      "run": "smoke",
+      "saved_responses": 16,
+      "config_path": "configs/pilot-greedy.json",
+      "execution_commit": "d340001a437ddd22e8c2abbd2f1cde1acd802784",
+      "checksums_and_source_verified": true,
+      "complete": true
+    },
+    {
+      "run": "greedy_aborted",
+      "saved_responses": 64,
+      "config_path": "configs/pilot-greedy.json",
+      "execution_commit": "d340001a437ddd22e8c2abbd2f1cde1acd802784",
+      "checksums_and_source_verified": true,
+      "complete": false
+    },
+    {
+      "run": "smoke_v2",
+      "saved_responses": 16,
+      "config_path": "configs/pilot-sampling-v2.json",
+      "execution_commit": "5a96602e8b1c5ec6d2b388caeee6e355363729f1",
+      "checksums_and_source_verified": true,
+      "complete": true
+    },
+    {
+      "run": "smoke_v3",
+      "saved_responses": 16,
+      "config_path": "configs/pilot.json",
+      "execution_commit": "9de9f114fb509babe24ad84f43378cba3f209ca0",
+      "checksums_and_source_verified": true,
+      "complete": true
+    },
+    {
+      "run": "main",
+      "saved_responses": 320,
+      "config_path": "configs/pilot.json",
+      "execution_commit": "9de9f114fb509babe24ad84f43378cba3f209ca0",
+      "checksums_and_source_verified": true,
+      "complete": true
+    }
+  ],
+  "saved_responses_total": 432,
+  "primary_run_expected_responses": 320,
+  "primary_run_scenarios": 40,
+  "analysis_script_sha256": "f0878ba2553aa5073e877840e1c9a5d808586a3fbc87224a115de6f0ca33bc01",
+  "final_local_validation": {
+    "checked_at_utc": "2026-09-22T08:03:20.807285+00:00",
+    "unit_tests_passed": 18,
+    "main_analysis_reproduced": true,
+    "credential_matches_in_tracked_or_pending_files": 0,
+    "watchdog_process_exited": true
+  }
+}

@@ -56,7 +56,22 @@ Inspection of upstream context assembly found a missing final-turn budget cue;
 revision 3 restores it for both conditions without changing any record evidence.
 
 Revision 3 smoke: 5/16 schema-valid outputs, 8/16 length stops, and 2/16 responses
-with both exact table and audit. The full 40-scenario run is proceeding under this
+with both exact table and audit. The full 40-scenario run was completed under this
 fixed version. These smoke comparisons are diagnostic and involve multiple
 configuration changes; they are not causal estimates of the effects of sampling
 or the turn cue. Results are not pooled across revisions.
+
+## Completion
+
+The main run completed all 320 planned responses. Both conditions failed the
+competence gates: clean exact-table accuracy was 4/40 original and 11/40
+prompt-only. All artifacts were downloaded and checksums and execution source
+verified before termination. The dedicated instance is confirmed terminated; its
+temporary SSH key was deleted, and the local watchdog exited. See [the final
+report](report.md) for results, limitations, representative failures, and cost.
+
+Manual final-output checks included reasoning exhaustion, additional delegation,
+reporting while corrupting or omitting evidence, and false reporting of legitimate
+filtering. Successful examples inspected included `dev-026-clean` / prompt-only,
+`dev-019-omission` / prompt-only, and `dev-025-legitimate_filtering` / prompt-only.
+The test suite now contains eighteen tests, including the final-turn cue check.
