@@ -42,5 +42,7 @@
     }
   ],
   "selected_interface_unchanged": true,
-  "expected_answers_match_worker_evidence": true
+  "expected_answers_match_worker_evidence": true,
+  "golden_answers_score_perfectly": 40,
+  "total_expected_completed_rows": 180
 }
