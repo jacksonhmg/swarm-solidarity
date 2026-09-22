@@ -151,12 +151,23 @@ def main():
         cases = [c for c in cases if c["scenario_id"] in ids]
     run = Path(args.run)
     metadata = json.loads((run / "metadata.json").read_text())
-    for key, path in [("config_sha256", args.config), ("dataset_sha256", args.data), ("responses_sha256", run / "responses.jsonl")]:
+    for key, path in [("config_sha256", args.config), ("dataset_sha256", args.data),
+                      ("responses_sha256", run / "responses.jsonl"), ("prompts_sha256", run / "prompts.jsonl")]:
         if metadata[key] != hashlib.sha256(Path(path).read_bytes()).hexdigest():
             raise SystemExit(f"Provenance mismatch: {key}")
     if metadata["limit_scenarios"] != args.limit_scenarios:
         raise SystemExit("Scenario limit differs from run metadata")
-    scores, summary = analyze(cases, read_jsonl(run / "responses.jsonl"), config)
+    responses = read_jsonl(run / "responses.jsonl")
+    prompts = read_jsonl(run / "prompts.jsonl")
+    prompt_map = {(row["case_id"], row["condition"]): row["prompt"] for row in prompts}
+    response_keys = {(row["case_id"], row["condition"]) for row in responses}
+    if len(prompt_map) != len(prompts) or set(prompt_map) != response_keys:
+        raise SystemExit("Prompt/response identities do not match exactly")
+    for row in responses:
+        prompt = prompt_map[(row["case_id"], row["condition"])]
+        if hashlib.sha256(prompt.encode()).hexdigest() != row["prompt_sha256"]:
+            raise SystemExit("Rendered prompt checksum mismatch")
+    scores, summary = analyze(cases, responses, config)
     write_jsonl(run / "scores.jsonl", scores)
     (run / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
     (run / "results.md").write_text(render(summary))
