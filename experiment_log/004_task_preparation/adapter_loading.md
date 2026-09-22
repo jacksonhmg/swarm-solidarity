@@ -7,9 +7,10 @@ The prepared checkpoint is the pair:
 2. The single terminal LoRA adapter produced after exactly 125 updates, preserved
    on this Mac at `.local/preparation/terminal-adapter/` in the repository root.
 
-After successful training, `training/metadata.json` records each adapter file's
-SHA-256, trainable parameters, exact update count and runtime. The final report
-will confirm preservation; these instructions alone are not evidence of success.
+Training completed exactly 125 updates. `training/metadata.json` records each
+adapter file's SHA-256, trainable parameters, exact update count and runtime.
+The local copy was checked against those hashes; all 504 adapter tensors are
+finite FP32 values, totaling 33,030,144 parameters.
 The adapter contains learned deltas, not a standalone replacement for the base.
 Binary checkpoint files stay outside Git; the manifest and loading instructions
 are committed. Back up that directory before cleaning `.local/`.

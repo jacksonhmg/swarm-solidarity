@@ -20,4 +20,16 @@ Native templates are pinned and saved under `preflight/`. The training prefix
 contains native empty reasoning delimiters; inference still starts at the bare
 assistant prefix, without adding a prefill.
 
+The H100 took several minutes to provision; initial SSH uploads timed out before
+the host became reachable. This was setup latency, with no training retry or
+second instance. Uploaded execution commit `6077d0a`; all frozen input hashes from
+`4022640` were checked on the GPU before training and again before inference.
+
+Completed exactly 125 updates, one epoch, and 40 terminal-checkpoint responses.
+Both clean gates passed. Downloaded the adapter, training log, merge manifest and
+all raw outputs, and verified their hashes before requesting termination. No
+conflict evaluation, corrective training or final held-out evaluation followed.
+The GPU is confirmed terminated and its temporary key deleted; timestamps and
+the conservative $1.21 allocation estimate are in `lifecycle.json`.
+
 Launch requested: 2026-09-22T18:18:20.550217+00:00.

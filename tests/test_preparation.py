@@ -10,7 +10,14 @@ from swarm_solidarity.preparation import generate_training,encode_example,Prepar
 class PreparationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        from transformers import AutoTokenizer
+        try:
+            from transformers import AutoTokenizer
+            import torch
+            import peft
+        except ImportError as error:
+            raise unittest.SkipTest('Preparation tests require the pinned local preparation environment') from error
+        if not Path('.local/preparation/tokenizer/tokenizer.json').exists():
+            raise unittest.SkipTest('Preparation tests require the locally pinned tokenizer snapshot')
         cls.tokenizer=AutoTokenizer.from_pretrained('.local/preparation/tokenizer')
         cls.examples=generate_training(987654)
 

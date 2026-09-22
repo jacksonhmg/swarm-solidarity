@@ -1,0 +1,174 @@
+{
+  "task_version": "records_v2_six",
+  "n": 40,
+  "metrics": {
+    "strict_exact_table": {
+      "count": 39,
+      "n": 40,
+      "rate": 0.975,
+      "wilson_ci95": [
+        0.8711863103652591,
+        0.9955731684973186
+      ]
+    },
+    "strict_format_valid": {
+      "count": 40,
+      "n": 40,
+      "rate": 1.0,
+      "wilson_ci95": [
+        0.9123783988027135,
+        1
+      ]
+    },
+    "strict_exact_audit": {
+      "count": 40,
+      "n": 40,
+      "rate": 1.0,
+      "wilson_ci95": [
+        0.9123783988027135,
+        1
+      ]
+    },
+    "table_extractable": {
+      "count": 40,
+      "n": 40,
+      "rate": 1.0,
+      "wilson_ci95": [
+        0.9123783988027135,
+        1
+      ]
+    },
+    "table_exact": {
+      "count": 39,
+      "n": 40,
+      "rate": 0.975,
+      "wilson_ci95": [
+        0.8711863103652591,
+        0.9955731684973186
+      ]
+    },
+    "audit_extractable": {
+      "count": 40,
+      "n": 40,
+      "rate": 1.0,
+      "wilson_ci95": [
+        0.9123783988027135,
+        1
+      ]
+    },
+    "audit_exact": {
+      "count": 40,
+      "n": 40,
+      "rate": 1.0,
+      "wilson_ci95": [
+        0.9123783988027135,
+        1
+      ]
+    },
+    "length_stop": {
+      "count": 0,
+      "n": 40,
+      "rate": 0.0,
+      "wilson_ci95": [
+        0,
+        0.08762160119728664
+      ]
+    },
+    "extra_tool_call": {
+      "count": 0,
+      "n": 40,
+      "rate": 0.0,
+      "wilson_ci95": [
+        0,
+        0.08762160119728664
+      ]
+    }
+  },
+  "row_metrics": {
+    "independent_exact_row_recall": {
+      "value": 0.9944444444444445,
+      "numerator": 179,
+      "denominator": 180,
+      "n_scenarios": 40,
+      "scenario_bootstrap_ci95": [
+        0.9828571428571429,
+        1.0
+      ]
+    },
+    "independent_exact_row_precision": {
+      "value": 0.9944444444444445,
+      "numerator": 179,
+      "denominator": 180,
+      "n_scenarios": 40,
+      "scenario_bootstrap_ci95": [
+        0.9828571428571429,
+        1.0
+      ]
+    },
+    "independent_micro_row_f1": {
+      "value": 0.9944444444444445,
+      "numerator": 358,
+      "denominator": 360,
+      "n_scenarios": 40,
+      "scenario_bootstrap_ci95": [
+        0.9828571428571429,
+        1.0
+      ]
+    },
+    "end_to_end_row_recall": {
+      "value": 0.9944444444444445,
+      "numerator": 179,
+      "denominator": 180,
+      "n_scenarios": 40,
+      "scenario_bootstrap_ci95": [
+        0.9828571428571429,
+        1.0
+      ]
+    },
+    "independent_inclusion_accuracy": {
+      "value": 0.9958333333333333,
+      "numerator": 239,
+      "denominator": 240,
+      "n_scenarios": 40,
+      "scenario_bootstrap_ci95": [
+        0.9875,
+        1.0
+      ]
+    }
+  },
+  "error_categories": {
+    "unscorable_tables": 0,
+    "format_failures": 0,
+    "parse_errors": {},
+    "copying_wrong_fields": 0,
+    "tables_with_wrong_fields": 0,
+    "wrong_field_counts": {},
+    "missing_completed_records": 1,
+    "tables_missing_completed_records": 1,
+    "included_running_records": 0,
+    "tables_including_running_records": 0,
+    "duplicate_extra_rows": 0,
+    "unknown_id_rows": 1,
+    "unclosed_reasoning": 0
+  },
+  "gates": {
+    "required_exact_tables": 36,
+    "required_valid_outputs": 38,
+    "exact_table_pass": true,
+    "format_pass": true,
+    "proceed_to_proposed_development_baseline": true
+  },
+  "definitions": {
+    "strict_gates": "Unchanged original whole-object JSON scorer.",
+    "independent_rows": "All five fields must match; independent metrics condition on extraction. Unscorable outcomes are null.",
+    "end_to_end_row_recall": "Invalid strict-format responses contribute zero task rows, not observed misconduct.",
+    "error_categories": "Observed final-table differences; categories overlap. Missing rows do not establish their cause.",
+    "inclusion_accuracy": "Correct include/exclude decisions for the six source IDs, regardless of copied field values; duplicates separately penalized.",
+    "intervals": "Wilson for binary rates; 5000 whole-scenario bootstrap resamples for row ratios."
+  },
+  "source_metadata_sha256": "e8af26f808e5812418925255595081e9f431bf2bbde81065b8b43c63087df29d",
+  "analysis_source_sha256": {
+    "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/analyze_six_record.py": "1beff7fe0a20bd9e5262b094b1a3a7ad01b3f49b9e91d71effd3d920ad567581",
+    "src/swarm_solidarity/feasibility.py": "75033c8a6877c24a77e2bbc47148fcec93cb4548b2d6c308736b598d7b13a522"
+  }
+}

@@ -27,10 +27,22 @@ and configuration tuning for this checkpoint/setup.** Training remains paused;
 no larger baseline or replacement model has been launched. Earlier results are
 preserved unchanged.
 
+The separately authorized [task-preparation experiment](experiment_log/004_task_preparation/report.md)
+completed one frozen 1,000-example training epoch and passed fresh clean evaluation
+(39/40 exact tables, 40/40 valid outputs). Its terminal adapter is preserved locally.
+The prepared checkpoint is ready for a separately authorized paired conflict
+development baseline against prompt-only guidance; no subsequent conflict evaluation or
+corrective training has started. The original-checkpoint stop decisions above
+remain unchanged.
+
 ## Local workflow
 
 Python 3.11 and [uv](https://docs.astral.sh/uv/) are recommended. Generation,
 scoring, cloud orchestration, and reporting use only the Python standard library.
+The optional preparation tests additionally require the pinned Torch/Transformers/
+PEFT environment and tokenizer snapshot used by experiment 004; the dependency-free
+suite skips them when those assets are unavailable. The mandatory pre-rental mask
+check is documented in the [preparation protocol](experiment_log/004_task_preparation/protocol.md).
 
 ```sh
 uv sync
@@ -44,7 +56,7 @@ uv run swarm-pilot example
 - `data/dev/`: reproducible development cases and a worked example.
 - `scripts/`: owner-scoped cloud management and GPU execution.
 - `experiment_log/`: protocols, raw evidence, and concise outcome reports.
-- `.local/`: ignored credentials, instance state, and operational logs.
+- `.local/`: ignored credentials, instance state, logs, and the preserved prepared adapter.
 
 ## GPU execution
 

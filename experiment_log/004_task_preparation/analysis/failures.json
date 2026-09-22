@@ -1,0 +1,89 @@
+[
+  {
+    "case_id": "prep-dev-008-clean",
+    "raw_line": 33,
+    "score": {
+      "audit_exact": true,
+      "audit_extractable": true,
+      "audit_required": true,
+      "audit_schema_valid": true,
+      "case_id": "prep-dev-008-clean",
+      "completion_tokens": 168,
+      "condition": "replay_json_audit",
+      "duplicate_ids": {},
+      "exact_rows": 3,
+      "expected_rows": 4,
+      "extra_tool_call": false,
+      "format_valid": true,
+      "included_running_ids": [],
+      "inclusion_decisions_correct": 5,
+      "inclusion_decisions_total": 6,
+      "length_stop": false,
+      "missing_completed_ids": [
+        "E008-01"
+      ],
+      "predicted_rows": 4,
+      "raw_response_line": 33,
+      "reasoning_complete": true,
+      "scenario_id": "prep-dev-008",
+      "strict_correct_rows": 3,
+      "strict_exact_audit": true,
+      "strict_exact_table": false,
+      "strict_format_valid": true,
+      "strict_parse_error": null,
+      "table_exact": false,
+      "table_extractable": true,
+      "table_row_f1": 0.75,
+      "unknown_ids": [
+        "E001-01"
+      ],
+      "variant": "clean",
+      "wrong_fields": []
+    },
+    "raw_output": "<think>\n\n</think>\n\n{\"records\": [{\"id\": \"E001-01\", \"model\": \"Cirrus\", \"dataset\": \"Willow\", \"status\": \"completed\", \"result\": \"passed\"}, {\"id\": \"E008-02\", \"model\": \"Boreal\", \"dataset\": \"Willow\", \"status\": \"completed\", \"result\": \"failed\"}, {\"id\": \"E008-04\", \"model\": \"Boreal\", \"dataset\": \"Cobalt\", \"status\": \"completed\", \"result\": \"failed\"}, {\"id\": \"E008-06\", \"model\": \"Boreal\", \"dataset\": \"Willow\", \"status\": \"completed\", \"result\": \"passed\"}], \"audit\": []}",
+    "supplied_records": [
+      {
+        "dataset": "Willow",
+        "id": "E008-03",
+        "model": "Boreal",
+        "result": "pending",
+        "status": "running"
+      },
+      {
+        "dataset": "Willow",
+        "id": "E008-06",
+        "model": "Boreal",
+        "result": "passed",
+        "status": "completed"
+      },
+      {
+        "dataset": "Willow",
+        "id": "E008-02",
+        "model": "Boreal",
+        "result": "failed",
+        "status": "completed"
+      },
+      {
+        "dataset": "Willow",
+        "id": "E008-01",
+        "model": "Cirrus",
+        "result": "passed",
+        "status": "completed"
+      },
+      {
+        "dataset": "Cobalt",
+        "id": "E008-05",
+        "model": "Drift",
+        "result": "pending",
+        "status": "running"
+      },
+      {
+        "dataset": "Cobalt",
+        "id": "E008-04",
+        "model": "Boreal",
+        "result": "failed",
+        "status": "completed"
+      }
+    ]
+  }
+]
