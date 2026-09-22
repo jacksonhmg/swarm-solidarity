@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/RLinf/RLinf/b023deb7e90ceadfe18e0a528e862e3c630f7e0a/rlinf/agents/wideseek_r1/utils/prompt_utils.py",
+    "local_filename": "prompt_utils.py",
+    "sha256": "7ae94b52616f086dcfb143ea8d12bec3625e1a5658a90a4dec9dd7e21c0ab3b9"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RLinf/RLinf/b023deb7e90ceadfe18e0a528e862e3c630f7e0a/rlinf/agents/wideseek_r1/wideseek_r1.py",
+    "local_filename": "wideseek_r1.py",
+    "sha256": "cd6979a9402cecde96ed8d774f4956ab779961c3e36f1444794becf4c563f4f0"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RLinf/RLinf/b023deb7e90ceadfe18e0a528e862e3c630f7e0a/rlinf/agents/wideseek_r1/utils/tool_description.py",
+    "local_filename": "tool_description.py",
+    "sha256": "325c2b767a6d803cd945f6b5504d665129ea141258410446c524ec7393a57232"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RLinf/RLinf/b023deb7e90ceadfe18e0a528e862e3c630f7e0a/rlinf/agents/wideseek_r1/utils/reward.py",
+    "local_filename": "reward.py",
+    "sha256": "5ac918df119e161229f644d216b910aeae67089dfbb22cad77b21045524685f9"
+  },
+  {
+    "url": "https://huggingface.co/RLinf/WideSeek-R1-4b/resolve/c06cbf9fd40bf376fbc9379baa40e759c3e65cd5/tokenizer_config.json",
+    "local_filename": "tokenizer_config.json",
+    "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+  },
+  {
+    "url": "https://huggingface.co/RLinf/WideSeek-R1-4b/resolve/c06cbf9fd40bf376fbc9379baa40e759c3e65cd5/generation_config.json",
+    "local_filename": "generation_config.json",
+    "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RLinf/RLinf/b023deb7e90ceadfe18e0a528e862e3c630f7e0a/rlinf/agents/wideseek_r1/utils/prompt.py",
+    "local_filename": "prompt.py",
+    "sha256": "240d08efc2a822e518593b3a96c3990bda65776707067f2f2c85e6c0dbb6fead"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RLinf/RLinf/b023deb7e90ceadfe18e0a528e862e3c630f7e0a/examples/agent/wideseek_r1/config/base_eval.yaml",
+    "local_filename": "base_eval.yaml",
+    "sha256": "151347d22f4508b37384299233e48ff2cf5fdef2ed11d35848b8c3780dcfe7bf"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RLinf/RLinf/b023deb7e90ceadfe18e0a528e862e3c630f7e0a/examples/agent/wideseek_r1/config/eval_qwen3_widesearch.yaml",
+    "local_filename": "eval_qwen3_widesearch.yaml",
+    "sha256": "34270d91ace1bd361c2259cb2d2ab496e727c19da0b2258bad90bd8d883ed66b"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RLinf/RLinf/b023deb7e90ceadfe18e0a528e862e3c630f7e0a/docs/source-en/rst_source/examples/agentic/wideseek_r1/eval.rst",
+    "local_filename": "eval.rst",
+    "sha256": "fac152e941c4412e61e71079f33378012531ec05cf2ef6694cdb3e820ba3211d"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RLinf/RLinf/b023deb7e90ceadfe18e0a528e862e3c630f7e0a/rlinf/workers/agent/agent_loop.py",
+    "local_filename": "agent_loop.py",
+    "sha256": "4ad4f9c2bb489f5e68ecdeb56858653b11d8579848bdfc01288a2b53e6f35fba"
+  }
+]

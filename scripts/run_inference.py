@@ -75,7 +75,7 @@ def main():
     metadata["chat_template_sha256"] = hashlib.sha256(tokenizer.chat_template.encode()).hexdigest()
     llm = LLM(model=config["model"], revision=config["model_revision"], tokenizer_revision=config["model_revision"],
               dtype=config["dtype"], max_model_len=config["max_model_len"], max_num_seqs=config["batch_size"],
-              gpu_memory_utilization=0.85, enforce_eager=True, seed=config["generation_seed"], disable_log_stats=True)
+              gpu_memory_utilization=0.85, enforce_eager=config.get("enforce_eager", True), seed=config["generation_seed"], disable_log_stats=True)
     metadata["model_load_seconds"] = time.monotonic() - started
     def sampling_seed(case):
         if config.get("sampling_seed_strategy") == "per_scenario_sha256":
@@ -85,8 +85,13 @@ def main():
     with raw_path.open("a") as raw_file, prompts_path.open("a") as prompt_file:
         for offset in range(0, len(jobs), config["batch_size"]):
             batch = jobs[offset:offset + config["batch_size"]]
-            prompts = [tokenizer.apply_chat_template(build_messages(case, condition, config.get("context_version", "replay_v1")), tools=[TOOL], tokenize=False, add_generation_prompt=True)
-                       for case, condition in batch]
+            if config.get("prompt_builder") == "clean_diagnosis_v1":
+                from swarm_solidarity.diagnostics import build_diagnostic_messages
+                prompts = [tokenizer.apply_chat_template(build_diagnostic_messages(case, condition),
+                           tools=[TOOL], tokenize=False, add_generation_prompt=True) for case, condition in batch]
+            else:
+                prompts = [tokenizer.apply_chat_template(build_messages(case, condition, config.get("context_version", "replay_v1")), tools=[TOOL], tokenize=False, add_generation_prompt=True)
+                           for case, condition in batch]
             counts = [len(tokenizer.encode(prompt, add_special_tokens=False)) for prompt in prompts]
             if max(counts) + config["max_new_tokens"] > config["max_model_len"]:
                 raise RuntimeError("Prompt plus generation budget exceeds context; refusing silent truncation")

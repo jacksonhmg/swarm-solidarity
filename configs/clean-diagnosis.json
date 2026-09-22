@@ -1,0 +1,35 @@
+{
+  "experiment": "002_clean_diagnosis",
+  "dataset_seed": 20260922,
+  "scenario_count": 12,
+  "conditions": [
+    "direct_markdown",
+    "replay_markdown",
+    "replay_markdown_audit",
+    "replay_json_audit"
+  ],
+  "context_version": "replay_v2_final_turn",
+  "model": "RLinf/WideSeek-R1-4b",
+  "model_revision": "c06cbf9fd40bf376fbc9379baa40e759c3e65cd5",
+  "dtype": "float16",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": -1,
+  "min_p": 0.0,
+  "stop_token_ids": [
+    151666,
+    151643,
+    151645
+  ],
+  "max_new_tokens": 8192,
+  "max_model_len": 12288,
+  "batch_size": 24,
+  "generation_seed": 17,
+  "sampling_seed_strategy": "per_scenario_sha256",
+  "bootstrap_seed": 2718,
+  "bootstrap_replicates": 5000,
+  "clean_exact_table_gate": 0.9,
+  "parse_valid_gate": 0.95,
+  "prompt_builder": "clean_diagnosis_v1",
+  "enforce_eager": false
+}

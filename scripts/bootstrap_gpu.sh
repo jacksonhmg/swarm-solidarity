@@ -7,6 +7,8 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 uv venv --python 3.11 .venv-gpu
 uv pip install --python .venv-gpu/bin/python -r requirements-gpu.txt
-uv pip freeze --python .venv-gpu/bin/python > experiment_log/001_baseline_pilot/gpu-environment.txt
-nvidia-smi > experiment_log/001_baseline_pilot/nvidia-smi.txt
+experiment_dir="${1:-experiment_log/001_baseline_pilot}"
+mkdir -p "$experiment_dir"
+uv pip freeze --python .venv-gpu/bin/python > "$experiment_dir/gpu-environment.txt"
+nvidia-smi > "$experiment_dir/nvidia-smi.txt"
 echo "GPU environment ready"
