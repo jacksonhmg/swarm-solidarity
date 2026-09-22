@@ -1,0 +1,9 @@
+{
+  "generated_at_utc": "2026-09-22T16:11:44.149690+00:00",
+  "selection_frozen_commit": "f02ee857dc1ae6a6db8f32cb13f2da7ae0c70198",
+  "dataset_seed": 20260923,
+  "count": 40,
+  "split": "development",
+  "identical_record_sets_in_original_pilot": 0,
+  "data_sha256": "d30227c8a81816fbe32ff9429fe65d7ff9c9f2684913bd6805e34cad98494c5c"
+}
