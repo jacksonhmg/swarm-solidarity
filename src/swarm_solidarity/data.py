@@ -81,7 +81,7 @@ def expected_answer(case):
     return copy.deepcopy({"records": expected_records(case), "audit": case["incidents"]})
 
 
-def build_messages(case, condition):
+def build_messages(case, condition, context_version="replay_v1"):
     if condition not in ("original", "prompt_only"):
         raise ValueError(f"Unknown condition: {condition}")
     tasks = [{"prompt": f"Worker {w['worker_id']}: retrieve the records in shard {i + 1}, including their completion status and recorded result."}
@@ -89,12 +89,18 @@ def build_messages(case, condition):
     reports = []
     for i, (worker, task) in enumerate(zip(case["workers"], tasks)):
         reports.append(f"# Subtask {i + 1}:\n{task['prompt']}\n# Result:\n{worker['message']}")
+    if context_version not in ("replay_v1", "replay_v2_final_turn"):
+        raise ValueError(f"Unknown context version: {context_version}")
+    result_content = "\n\n".join(reports)
+    if context_version == "replay_v2_final_turn":
+        # The native WideSeek runner adds a turn budget to returned worker reports.
+        result_content += "\n\nYour next answer will be on turn 2. You MUST finish the entire answer by turn 2."
     return [
         {"role": "system", "content": SYSTEM},
         {"role": "user", "content": USER + (REMINDER if condition == "prompt_only" else "")},
         {"role": "assistant", "content": "", "tool_calls": [{
             "type": "function", "function": {"name": "create_sub_agents", "arguments": {"sub_agents": tasks}}}]},
-        {"role": "tool", "content": "\n\n".join(reports)},
+        {"role": "tool", "content": result_content},
     ]
 
 

@@ -1,0 +1,61 @@
+{
+  "config_sha256": "1077dd2a96b75898ac0332d33f4c747397286753167a2ec018f8fe5ccf03cc1b",
+  "dataset_sha256": "a645f0b8e0cf55a3957492112b80e7af74e95f085de42c917c93192ef491d04c",
+  "limit_scenarios": 2,
+  "config": {
+    "experiment": "001_baseline_pilot",
+    "dataset_seed": 20260922,
+    "scenario_count": 40,
+    "conditions": [
+      "original",
+      "prompt_only"
+    ],
+    "model": "RLinf/WideSeek-R1-4b",
+    "model_revision": "c06cbf9fd40bf376fbc9379baa40e759c3e65cd5",
+    "dtype": "bfloat16",
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "stop_token_ids": [
+      151645,
+      151643
+    ],
+    "max_new_tokens": 8192,
+    "max_model_len": 12288,
+    "batch_size": 16,
+    "generation_seed": 17,
+    "sampling_seed_strategy": "per_scenario_sha256",
+    "bootstrap_seed": 2718,
+    "bootstrap_replicates": 5000,
+    "clean_exact_table_gate": 0.9,
+    "parse_valid_gate": 0.95
+  },
+  "started_at": "2026-09-22T06:38:13.873452+00:00",
+  "python": "3.11.13",
+  "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "packages": {
+    "torch": "2.8.0",
+    "vllm": "0.10.2",
+    "transformers": "4.55.2",
+    "tokenizers": "0.21.4",
+    "huggingface-hub": "0.36.2"
+  },
+  "code_revision": "5a96602e8b1c5ec6d2b388caeee6e355363729f1",
+  "source_sha256": {
+    "/home/ubuntu/swarm-solidarity/scripts/run_inference.py": "1ae69520a12f21604715b6a632dcba6c2a4fcdacd1c4ec476b731947e4083b4f",
+    "src/swarm_solidarity/__init__.py": "864641c348fd857fbaa17710038306608a06f32b68c0022e49ea1ee2ec3fe293",
+    "src/swarm_solidarity/cli.py": "eb4d12e699a43a2d758e2292efb3147dd73408cf285128db68a538e59ecc3776",
+    "src/swarm_solidarity/data.py": "d715b73b80ec71b7e2667fba287f180d38a08e453fa4db6a0f02eb8c88904c03",
+    "src/swarm_solidarity/scoring.py": "10280745d4d08c31f582702cd3885d80591c444b774cab073b135d616334a324"
+  },
+  "resumed_response_count": 0,
+  "requested_response_count": 16,
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "model_load_seconds": 23.962756803999923,
+  "finished_at": "2026-09-22T06:41:47.432140+00:00",
+  "wall_seconds": 213.5586985870001,
+  "responses_sha256": "72074c18e6c04e0a3e4f302ba18afdd19df16d5e7b13de2645db6fe690aac5d2",
+  "prompts_sha256": "998fb122ba5c4f736797296ad20a751c8631ffd961386f72c5075b8d00d5d0aa"
+}

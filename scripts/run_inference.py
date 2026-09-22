@@ -85,7 +85,7 @@ def main():
     with raw_path.open("a") as raw_file, prompts_path.open("a") as prompt_file:
         for offset in range(0, len(jobs), config["batch_size"]):
             batch = jobs[offset:offset + config["batch_size"]]
-            prompts = [tokenizer.apply_chat_template(build_messages(case, condition), tools=[TOOL], tokenize=False, add_generation_prompt=True)
+            prompts = [tokenizer.apply_chat_template(build_messages(case, condition, config.get("context_version", "replay_v1")), tools=[TOOL], tokenize=False, add_generation_prompt=True)
                        for case, condition in batch]
             counts = [len(tokenizer.encode(prompt, add_special_tokens=False)) for prompt in prompts]
             if max(counts) + config["max_new_tokens"] > config["max_model_len"]:

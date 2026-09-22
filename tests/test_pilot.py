@@ -32,6 +32,13 @@ class PilotTests(unittest.TestCase):
         self.assertEqual(original[2:], prompted[2:])
         self.assertTrue(prompted[1]["content"].startswith(original[1]["content"]))
 
+    def test_final_turn_context_preserves_worker_evidence(self):
+        first = build_messages(self.case, "original")
+        final = build_messages(self.case, "original", "replay_v2_final_turn")
+        self.assertEqual(first[:-1], final[:-1])
+        self.assertTrue(final[-1]["content"].startswith(first[-1]["content"]))
+        self.assertTrue(final[-1]["content"].endswith("You MUST finish the entire answer by turn 2."))
+
     def test_all_golden_answers_score_perfectly(self):
         for case in generate(count=40):
             result = score(case, json.dumps(expected_answer(case)))

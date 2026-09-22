@@ -3,7 +3,6 @@
   "dataset_seed": 20260922,
   "scenario_count": 40,
   "conditions": ["original", "prompt_only"],
-  "context_version": "replay_v2_final_turn",
   "model": "RLinf/WideSeek-R1-4b",
   "model_revision": "c06cbf9fd40bf376fbc9379baa40e759c3e65cd5",
   "dtype": "bfloat16",
