@@ -1,0 +1,19 @@
+{
+  "name": "swarm-solidarity-pilot-6571f90b",
+  "instance_type": "gpu_1x_a10",
+  "region": "us-west-1",
+  "usd_per_hour": 1.29,
+  "status": "terminated",
+  "launch_requested_at": "2026-09-22T16:02:02.380433+00:00",
+  "termination_requested_at": "2026-09-22T16:15:28.348930+00:00",
+  "ssh_key_deleted_at": "2026-09-22T16:17:49.141682+00:00",
+  "termination_confirmed_at": "2026-09-22T16:16:54.659787+00:00",
+  "launch_to_confirmed_termination_minutes": 14.871322566666667,
+  "rounded_up_compute_minutes": 15,
+  "estimated_compute_usd_before_tax": 0.3225,
+  "cost_method": "Conservative launch-request to first observed terminated state, rounded up by minute; not an invoice. Includes boot, setup, both runs, downloads, and cleanup latency.",
+  "spend_cap_usd": 25,
+  "rejected_a100_launch_allocated_no_instance": true,
+  "preexisting_instances_modified": false,
+  "persistent_filesystems_created": 0
+}

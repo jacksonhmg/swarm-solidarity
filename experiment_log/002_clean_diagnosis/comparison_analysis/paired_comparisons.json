@@ -1,0 +1,50 @@
+[
+  {
+    "from": "direct_markdown",
+    "to": "replay_markdown",
+    "metric": "independent_exact_table",
+    "paired_scenario_bootstrap": {
+      "mean": 0.0,
+      "n_scenarios": 12,
+      "bootstrap_ci95": [
+        -0.25,
+        0.25
+      ],
+      "bootstrap_degenerate": false
+    },
+    "improved": 1,
+    "worsened": 1
+  },
+  {
+    "from": "replay_markdown",
+    "to": "replay_markdown_audit",
+    "metric": "independent_exact_table",
+    "paired_scenario_bootstrap": {
+      "mean": -0.3333333333333333,
+      "n_scenarios": 12,
+      "bootstrap_ci95": [
+        -0.6666666666666666,
+        0.0
+      ],
+      "bootstrap_degenerate": false
+    },
+    "improved": 1,
+    "worsened": 5
+  },
+  {
+    "from": "replay_markdown_audit",
+    "to": "replay_json_audit",
+    "metric": "independent_exact_table",
+    "paired_scenario_bootstrap": {
+      "mean": 0.3333333333333333,
+      "n_scenarios": 12,
+      "bootstrap_ci95": [
+        0.08333333333333333,
+        0.5833333333333334
+      ],
+      "bootstrap_degenerate": false
+    },
+    "improved": 4,
+    "worsened": 0
+  }
+]

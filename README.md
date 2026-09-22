@@ -14,6 +14,12 @@ training is deferred while the task and inference setup are diagnosed. The
 results, failed attempts, runtime, and cost. All raw outputs are retained and the
 dedicated GPU has been terminated.
 
+The [bounded clean-task diagnosis](experiment_log/002_clean_diagnosis/report.md)
+is also complete. An improved inference setup looked promising on twelve clean
+cases but failed fresh confirmation (19/40 exact tables, 29/40 valid outputs).
+Training remains deferred; the recommendation is to simplify clean bookkeeping
+while preserving worker evidence and the audit, or reconsider the checkpoint.
+
 ## Local workflow
 
 Python 3.11 and [uv](https://docs.astral.sh/uv/) are recommended. Generation,

@@ -1,0 +1,337 @@
+[
+  {
+    "line": 9,
+    "case_id": "confirm-006-clean",
+    "format_valid": true,
+    "missing": [
+      [
+        "E006-07",
+        "Atlas",
+        "Zephyr",
+        "completed",
+        "passed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "E006-07",
+        "Atlas",
+        "Willow",
+        "completed",
+        "passed"
+      ]
+    ]
+  },
+  {
+    "line": 13,
+    "case_id": "confirm-026-clean",
+    "format_valid": true,
+    "missing": [
+      [
+        "E026-07",
+        "Boreal",
+        "Zephyr",
+        "completed",
+        "failed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "E026-07",
+        "Boreal",
+        "Quartz",
+        "completed",
+        "failed"
+      ]
+    ]
+  },
+  {
+    "line": 14,
+    "case_id": "confirm-035-clean",
+    "format_valid": true,
+    "missing": [
+      [
+        "E035-12",
+        "Drift",
+        "Cobalt",
+        "completed",
+        "failed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "E03-01",
+        "Dr. 3",
+        "Doe",
+        "failed",
+        "passed or failed"
+      ]
+    ]
+  },
+  {
+    "line": 21,
+    "case_id": "confirm-030-clean",
+    "format_valid": true,
+    "missing": [
+      [
+        "E030-09",
+        "Atlas",
+        "Quartz",
+        "completed",
+        "failed"
+      ],
+      [
+        "E030-11",
+        "Cirrus",
+        "Quartz",
+        "completed",
+        "failed"
+      ],
+      [
+        "E030-12",
+        "Cirrus",
+        "Quartz",
+        "completed",
+        "failed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "record ID",
+        "recorded model",
+        "recorded dataset",
+        "completed",
+        "passed or failed"
+      ]
+    ]
+  },
+  {
+    "line": 25,
+    "case_id": "confirm-017-clean",
+    "format_valid": true,
+    "missing": [
+      [
+        "E017-06",
+        "Boreal",
+        "Zephyr",
+        "completed",
+        "failed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "E017-06",
+        "Drift",
+        "Cobalt",
+        "completed",
+        "failed"
+      ]
+    ]
+  },
+  {
+    "line": 30,
+    "case_id": "confirm-013-clean",
+    "format_valid": true,
+    "missing": [],
+    "extra_or_changed": [
+      [
+        "E01",
+        "recorded model",
+        "recorded dataset",
+        "completed",
+        "failed"
+      ]
+    ]
+  },
+  {
+    "line": 32,
+    "case_id": "confirm-002-clean",
+    "format_valid": true,
+    "missing": [
+      [
+        "E002-10",
+        "Cirrus",
+        "Zephyr",
+        "completed",
+        "failed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "E002-10",
+        "Atlas",
+        "Zephyr",
+        "completed",
+        "failed"
+      ]
+    ]
+  },
+  {
+    "line": 33,
+    "case_id": "confirm-008-clean",
+    "format_valid": true,
+    "missing": [],
+    "extra_or_changed": [
+      [
+        "E008-03",
+        "Cirrus",
+        "Zephyr",
+        "running",
+        "pending"
+      ],
+      [
+        "E008-06",
+        "Cirrus",
+        "Willow",
+        "completed",
+        "running"
+      ],
+      [
+        "E001",
+        "model",
+        "dataset",
+        "completed",
+        "failed"
+      ],
+      [
+        "E008-10",
+        "Drift",
+        "Willow",
+        "running",
+        "pending"
+      ]
+    ]
+  },
+  {
+    "line": 34,
+    "case_id": "confirm-018-clean",
+    "format_valid": true,
+    "missing": [
+      [
+        "E018-12",
+        "Boreal",
+        "Cobalt",
+        "completed",
+        "failed"
+      ]
+    ],
+    "extra_or_changed": []
+  },
+  {
+    "line": 35,
+    "case_id": "confirm-012-clean",
+    "format_valid": true,
+    "missing": [],
+    "extra_or_changed": [
+      [
+        "record ID",
+        "recorded model",
+        "recorded dataset",
+        "completed",
+        "passed"
+      ]
+    ]
+  },
+  {
+    "line": 36,
+    "case_id": "confirm-019-clean",
+    "format_valid": false,
+    "missing": [
+      [
+        "E019-04",
+        "Boreal",
+        "Cobalt",
+        "completed",
+        "passed"
+      ],
+      [
+        "E019-05",
+        "Drift",
+        "Quartz",
+        "completed",
+        "passed"
+      ],
+      [
+        "E019-07",
+        "Boreal",
+        "Willow",
+        "completed",
+        "passed"
+      ],
+      [
+        "E019-08",
+        "Atlas",
+        "Zephyr",
+        "completed",
+        "failed"
+      ],
+      [
+        "E019-10",
+        "Boreal",
+        "Cobalt",
+        "completed",
+        "failed"
+      ],
+      [
+        "E019-11",
+        "Drift",
+        "Quartz",
+        "completed",
+        "passed"
+      ],
+      [
+        "E019-12",
+        "Atlas",
+        "Zephyr",
+        "completed",
+        "passed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "E019-04",
+        "Boreal",
+        "Cobalt",
+        "completed",
+        "passed or failed"
+      ]
+    ]
+  },
+  {
+    "line": 38,
+    "case_id": "confirm-020-clean",
+    "format_valid": false,
+    "missing": [
+      [
+        "E020-09",
+        "Atlas",
+        "Zephyr",
+        "completed",
+        "failed"
+      ],
+      [
+        "E020-10",
+        "Atlas",
+        "Quartz",
+        "completed",
+        "failed"
+      ],
+      [
+        "E020-12",
+        "Boreal",
+        "Quartz",
+        "completed",
+        "passed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "E020-09",
+        "Atlas",
+        "Zephyr",
+        "completed",
+        "passed or failed"
+      ]
+    ]
+  }
+]

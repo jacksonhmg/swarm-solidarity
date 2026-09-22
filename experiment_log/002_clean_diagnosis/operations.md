@@ -13,3 +13,7 @@
   execution for efficiency. Hardware speedup over A100 is not claimed.
 
 Launch requested (UTC): 2026-09-22T16:02:02.380433+00:00
+
+Both bounded runs completed. All artifacts were downloaded and verified before
+termination. The instance is confirmed terminated, and its temporary SSH key was
+deleted. Final timestamps and conservative billing estimate are in `lifecycle.json`.

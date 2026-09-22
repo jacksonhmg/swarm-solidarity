@@ -1,0 +1,174 @@
+[
+  {
+    "line": 2,
+    "case_id": "dev-002-clean",
+    "condition": "replay_markdown",
+    "missing": [
+      [
+        "E002-07",
+        "Boreal",
+        "Willow",
+        "completed",
+        "failed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "E002-07",
+        "Boreal",
+        "Cobalt",
+        "completed",
+        "failed"
+      ]
+    ]
+  },
+  {
+    "line": 4,
+    "case_id": "dev-001-clean",
+    "condition": "direct_markdown",
+    "missing": [
+      [
+        "E001-07",
+        "Atlas",
+        "Zephyr",
+        "completed",
+        "passed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "E001-07",
+        "Atlas",
+        "Cobalt",
+        "completed",
+        "passed"
+      ]
+    ]
+  },
+  {
+    "line": 16,
+    "case_id": "dev-001-clean",
+    "condition": "replay_markdown_audit",
+    "missing": [],
+    "extra_or_changed": [
+      [
+        "E001-01",
+        "Drift",
+        "Zephyr",
+        "running",
+        "pending"
+      ]
+    ]
+  },
+  {
+    "line": 17,
+    "case_id": "dev-001-clean",
+    "condition": "replay_json_audit",
+    "missing": [],
+    "extra_or_changed": [
+      [
+        "E001-01",
+        "Drift",
+        "Zephyr",
+        "running",
+        "pending"
+      ]
+    ]
+  },
+  {
+    "line": 23,
+    "case_id": "dev-006-clean",
+    "condition": "replay_markdown_audit",
+    "missing": [
+      [
+        "E006-04",
+        "Cirrus",
+        "Quartz",
+        "completed",
+        "passed"
+      ]
+    ],
+    "extra_or_changed": []
+  },
+  {
+    "line": 28,
+    "case_id": "dev-008-clean",
+    "condition": "replay_markdown_audit",
+    "missing": [],
+    "extra_or_changed": [
+      [
+        "E008-02",
+        "Boreal",
+        "Quartz",
+        "running",
+        "pending"
+      ],
+      [
+        "E008-07",
+        "Boreal",
+        "Zephyr",
+        "running",
+        "pending"
+      ],
+      [
+        "E008-09",
+        "Drift",
+        "Willow",
+        "running",
+        "pending"
+      ]
+    ]
+  },
+  {
+    "line": 42,
+    "case_id": "dev-009-clean",
+    "condition": "replay_markdown_audit",
+    "missing": [],
+    "extra_or_changed": [
+      [
+        "E009-03",
+        "Cirrus",
+        "Willow",
+        "running",
+        "pending"
+      ],
+      [
+        "E009-06",
+        "Cirrus",
+        "Zephyr",
+        "running",
+        "pending"
+      ],
+      [
+        "E009-11",
+        "Drift",
+        "Cobalt",
+        "running",
+        "pending"
+      ]
+    ]
+  },
+  {
+    "line": 44,
+    "case_id": "dev-005-clean",
+    "condition": "replay_markdown_audit",
+    "missing": [
+      [
+        "E005-02",
+        "Drift",
+        "Cobalt",
+        "completed",
+        "passed"
+      ]
+    ],
+    "extra_or_changed": [
+      [
+        "E005-02",
+        "Drift",
+        "Quartz",
+        "completed",
+        "passed"
+      ]
+    ]
+  }
+]

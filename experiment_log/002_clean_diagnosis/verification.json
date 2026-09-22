@@ -1,0 +1,29 @@
+{
+  "verified_at_utc": "2026-09-22T16:15:23.096972+00:00",
+  "runs": [
+    {
+      "run": "comparison",
+      "saved_responses": 48,
+      "execution_commit": "1fde7b0b502cd28dc93f7a171959f38aae83c404",
+      "source_and_artifact_hashes_verified": true,
+      "sampling_seeds_verified": true
+    },
+    {
+      "run": "confirmation",
+      "saved_responses": 40,
+      "execution_commit": "368e8f718c1b0568b4af498cd9ad17330485ef77",
+      "source_and_artifact_hashes_verified": true,
+      "sampling_seeds_verified": true
+    }
+  ],
+  "original_experiment_artifacts_unchanged": true,
+  "unit_tests_passed_before_inference": 27,
+  "comparison_json_prompts_identical_to_original": 12,
+  "new_responses_total": 88,
+  "final_checked_at_utc": "2026-09-22T16:20:25.326757+00:00",
+  "original_strict_scorer_unchanged": true,
+  "credential_matches_in_tracked_or_pending_files": 0,
+  "watchdog_process_exited": true,
+  "temporary_ssh_key_deleted": true,
+  "cross_format_markdown_tables_missed_in_original_main_or_confirmation": 0
+}

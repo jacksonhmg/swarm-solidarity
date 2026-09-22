@@ -1,0 +1,24 @@
+{
+  "source_run": "experiment_log/002_clean_diagnosis/confirmation",
+  "source_metadata_sha256": "651b82137922af729372bb7cf1e5ead4690b8da214e62c5b4c4ce599d2c4b305",
+  "scorer_sha256": "e51b21b9466c27824bd96d27b2db7ec2205ba3f5a6e7a362b61310ff6ba35acb",
+  "groups": [
+    {
+      "condition": "replay_json_audit",
+      "variant": "clean",
+      "n": 40,
+      "table_extractable": 31,
+      "format_valid": 29,
+      "table_exact": 19,
+      "audit_extractable": 30,
+      "audit_schema_valid": 30,
+      "audit_exact": 30,
+      "length_stop": 0,
+      "extra_tool_call": 1,
+      "unclosed_reasoning": 0,
+      "strict_table_success": 19,
+      "table_and_audit_success": 19,
+      "completion_tokens": 51784
+    }
+  ]
+}

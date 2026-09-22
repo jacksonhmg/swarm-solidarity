@@ -1,0 +1,18 @@
+{
+  "n": 40,
+  "format_valid": 29,
+  "exact_table": 19,
+  "exact_audit": 29,
+  "scoring_definition": "Unchanged original JSON scorer; invalid formats count as exact-table failures.",
+  "exact_table_gate_pass": false,
+  "format_gate_pass": false,
+  "clean_audit_gate_pass": false,
+  "exact_table_wilson_ci95": [
+    0.329354701126789,
+    0.6250263789330753
+  ],
+  "format_valid_wilson_ci95": [
+    0.5716504419378943,
+    0.8389198375233267
+  ]
+}
