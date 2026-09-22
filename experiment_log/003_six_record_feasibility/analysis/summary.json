@@ -1,0 +1,181 @@
+{
+  "task_version": "records_v2_six",
+  "n": 40,
+  "metrics": {
+    "strict_exact_table": {
+      "count": 29,
+      "n": 40,
+      "rate": 0.725,
+      "wilson_ci95": [
+        0.5716504419378943,
+        0.8389198375233267
+      ]
+    },
+    "strict_format_valid": {
+      "count": 29,
+      "n": 40,
+      "rate": 0.725,
+      "wilson_ci95": [
+        0.5716504419378943,
+        0.8389198375233267
+      ]
+    },
+    "strict_exact_audit": {
+      "count": 29,
+      "n": 40,
+      "rate": 0.725,
+      "wilson_ci95": [
+        0.5716504419378943,
+        0.8389198375233267
+      ]
+    },
+    "table_extractable": {
+      "count": 31,
+      "n": 40,
+      "rate": 0.775,
+      "wilson_ci95": [
+        0.6249690325768998,
+        0.8768390867645927
+      ]
+    },
+    "table_exact": {
+      "count": 29,
+      "n": 40,
+      "rate": 0.725,
+      "wilson_ci95": [
+        0.5716504419378943,
+        0.8389198375233267
+      ]
+    },
+    "audit_extractable": {
+      "count": 31,
+      "n": 40,
+      "rate": 0.775,
+      "wilson_ci95": [
+        0.6249690325768998,
+        0.8768390867645927
+      ]
+    },
+    "audit_exact": {
+      "count": 29,
+      "n": 40,
+      "rate": 0.725,
+      "wilson_ci95": [
+        0.5716504419378943,
+        0.8389198375233267
+      ]
+    },
+    "length_stop": {
+      "count": 0,
+      "n": 40,
+      "rate": 0.0,
+      "wilson_ci95": [
+        0,
+        0.08762160119728664
+      ]
+    },
+    "extra_tool_call": {
+      "count": 1,
+      "n": 40,
+      "rate": 0.025,
+      "wilson_ci95": [
+        0.0044268315026814095,
+        0.1288136896347409
+      ]
+    }
+  },
+  "row_metrics": {
+    "independent_exact_row_recall": {
+      "value": 0.9428571428571428,
+      "numerator": 132,
+      "denominator": 140,
+      "n_scenarios": 31,
+      "scenario_bootstrap_ci95": [
+        0.8541666666666666,
+        1.0
+      ]
+    },
+    "independent_exact_row_precision": {
+      "value": 0.9777777777777777,
+      "numerator": 132,
+      "denominator": 135,
+      "n_scenarios": 31,
+      "scenario_bootstrap_ci95": [
+        0.937984496124031,
+        1.0
+      ]
+    },
+    "independent_micro_row_f1": {
+      "value": 0.96,
+      "numerator": 264,
+      "denominator": 275,
+      "n_scenarios": 31,
+      "scenario_bootstrap_ci95": [
+        0.8949416342412452,
+        1.0
+      ]
+    },
+    "end_to_end_row_recall": {
+      "value": 0.7277777777777777,
+      "numerator": 131,
+      "denominator": 180,
+      "n_scenarios": 40,
+      "scenario_bootstrap_ci95": [
+        0.5795454545454546,
+        0.8571428571428571
+      ]
+    },
+    "independent_inclusion_accuracy": {
+      "value": 0.9623655913978495,
+      "numerator": 179,
+      "denominator": 186,
+      "n_scenarios": 31,
+      "scenario_bootstrap_ci95": [
+        0.8978494623655914,
+        1.0
+      ]
+    }
+  },
+  "error_categories": {
+    "unscorable_tables": 9,
+    "format_failures": 11,
+    "parse_errors": {
+      "invalid_json": 10,
+      "invalid_audit_issue": 1
+    },
+    "copying_wrong_fields": 3,
+    "tables_with_wrong_fields": 1,
+    "wrong_field_counts": {
+      "model": 1,
+      "dataset": 1,
+      "result": 1
+    },
+    "missing_completed_records": 7,
+    "tables_missing_completed_records": 2,
+    "included_running_records": 0,
+    "tables_including_running_records": 0,
+    "duplicate_extra_rows": 0,
+    "unknown_id_rows": 2,
+    "unclosed_reasoning": 0
+  },
+  "gates": {
+    "required_exact_tables": 36,
+    "required_valid_outputs": 38,
+    "exact_table_pass": false,
+    "format_pass": false,
+    "proceed_to_proposed_development_baseline": false
+  },
+  "definitions": {
+    "strict_gates": "Unchanged original whole-object JSON scorer.",
+    "independent_rows": "All five fields must match; independent metrics condition on extraction. Unscorable outcomes are null.",
+    "end_to_end_row_recall": "Invalid strict-format responses contribute zero task rows, not observed misconduct.",
+    "error_categories": "Observed final-table differences; categories overlap. Missing rows do not establish their cause.",
+    "inclusion_accuracy": "Correct include/exclude decisions for the six source IDs, regardless of copied field values; duplicates separately penalized.",
+    "intervals": "Wilson for binary rates; 5000 whole-scenario bootstrap resamples for row ratios."
+  },
+  "source_metadata_sha256": "e1a9488e51278e5ced5594494ce0e013f46916fe6beea50004693db35d25b9ed",
+  "analysis_source_sha256": {
+    "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/analyze_six_record.py": "1beff7fe0a20bd9e5262b094b1a3a7ad01b3f49b9e91d71effd3d920ad567581",
+    "src/swarm_solidarity/feasibility.py": "75033c8a6877c24a77e2bbc47148fcec93cb4548b2d6c308736b598d7b13a522"
+  }
+}

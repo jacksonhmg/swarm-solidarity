@@ -1,0 +1,20 @@
+{
+  "verified_at_utc": "2026-09-22T16:48:55.356750+00:00",
+  "execution_commit": "9b01b6f3aa8e8a2b09c9e916a138aa34b933a59c",
+  "saved_responses": 40,
+  "source_hashes_match_execution_commit": true,
+  "rendered_evidence_and_gold_match_all_cases": true,
+  "sampling_seeds_verified": true,
+  "prior_artifacts_unchanged": true,
+  "gpu_and_python_unchanged": true,
+  "resolved_package_manifest_unchanged": true,
+  "chat_template_unchanged": true,
+  "unit_tests_passed_before_inference": 34,
+  "final_verification_at_utc": "2026-09-22T16:55:33.242788+00:00",
+  "prior_artifact_count_reverified": 88,
+  "frozen_dataset_and_configuration_unchanged": true,
+  "credential_occurrences_in_repository_files": 0,
+  "instance_termination_confirmed": true,
+  "temporary_cloud_ssh_key_deleted": true,
+  "budget_watchdog_exited": true
+}

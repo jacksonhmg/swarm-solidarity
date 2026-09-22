@@ -32,3 +32,9 @@ cmp experiment_log/002_clean_diagnosis/gpu-environment.txt \
 
 Only this one 40-response run is authorized by the frozen protocol. Download and
 verify the raw artifacts before terminating the instance and deleting its key.
+
+Completed exactly forty outputs. The resolved 147-package environment matched the
+previous selected run byte for byte. Both empirical gates failed; no additional
+inference was launched. All output was downloaded and source/evidence integrity
+verified before termination. The instance is confirmed terminated and its key
+deleted; final timestamps and cost estimate are recorded in `lifecycle.json`.

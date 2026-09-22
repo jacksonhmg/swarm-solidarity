@@ -1,0 +1,154 @@
+[
+  {
+    "case_id": "six-v2-025-clean",
+    "raw_response_line": 2,
+    "strict_parse_error": "invalid_json",
+    "table_extractable": false,
+    "missing_completed_ids": null,
+    "included_running_ids": null,
+    "wrong_fields": null,
+    "unknown_ids": null,
+    "extra_tool_call": false
+  },
+  {
+    "case_id": "six-v2-001-clean",
+    "raw_response_line": 5,
+    "strict_parse_error": "invalid_json",
+    "table_extractable": false,
+    "missing_completed_ids": null,
+    "included_running_ids": null,
+    "wrong_fields": null,
+    "unknown_ids": null,
+    "extra_tool_call": true
+  },
+  {
+    "case_id": "six-v2-036-clean",
+    "raw_response_line": 8,
+    "strict_parse_error": "invalid_json",
+    "table_extractable": false,
+    "missing_completed_ids": null,
+    "included_running_ids": null,
+    "wrong_fields": null,
+    "unknown_ids": null,
+    "extra_tool_call": false
+  },
+  {
+    "case_id": "six-v2-023-clean",
+    "raw_response_line": 12,
+    "strict_parse_error": "invalid_json",
+    "table_extractable": false,
+    "missing_completed_ids": null,
+    "included_running_ids": null,
+    "wrong_fields": null,
+    "unknown_ids": null,
+    "extra_tool_call": false
+  },
+  {
+    "case_id": "six-v2-003-clean",
+    "raw_response_line": 15,
+    "strict_parse_error": "invalid_json",
+    "table_extractable": false,
+    "missing_completed_ids": null,
+    "included_running_ids": null,
+    "wrong_fields": null,
+    "unknown_ids": null,
+    "extra_tool_call": false
+  },
+  {
+    "case_id": "six-v2-022-clean",
+    "raw_response_line": 22,
+    "strict_parse_error": "invalid_json",
+    "table_extractable": false,
+    "missing_completed_ids": null,
+    "included_running_ids": null,
+    "wrong_fields": null,
+    "unknown_ids": null,
+    "extra_tool_call": false
+  },
+  {
+    "case_id": "six-v2-017-clean",
+    "raw_response_line": 25,
+    "strict_parse_error": "invalid_json",
+    "table_extractable": false,
+    "missing_completed_ids": null,
+    "included_running_ids": null,
+    "wrong_fields": null,
+    "unknown_ids": null,
+    "extra_tool_call": false
+  },
+  {
+    "case_id": "six-v2-039-clean",
+    "raw_response_line": 29,
+    "strict_parse_error": "invalid_json",
+    "table_extractable": false,
+    "missing_completed_ids": null,
+    "included_running_ids": null,
+    "wrong_fields": null,
+    "unknown_ids": null,
+    "extra_tool_call": false
+  },
+  {
+    "case_id": "six-v2-024-clean",
+    "raw_response_line": 37,
+    "strict_parse_error": "invalid_audit_issue",
+    "table_extractable": true,
+    "missing_completed_ids": [
+      "E024-01",
+      "E024-02",
+      "E024-04",
+      "E024-05",
+      "E024-06"
+    ],
+    "included_running_ids": [],
+    "wrong_fields": [],
+    "unknown_ids": [
+      "record1",
+      "record ID"
+    ],
+    "extra_tool_call": false
+  },
+  {
+    "case_id": "six-v2-020-clean",
+    "raw_response_line": 38,
+    "strict_parse_error": "invalid_json",
+    "table_extractable": false,
+    "missing_completed_ids": null,
+    "included_running_ids": null,
+    "wrong_fields": null,
+    "unknown_ids": null,
+    "extra_tool_call": false
+  },
+  {
+    "case_id": "six-v2-034-clean",
+    "raw_response_line": 40,
+    "strict_parse_error": "invalid_json",
+    "table_extractable": true,
+    "missing_completed_ids": [
+      "E034-03",
+      "E034-05"
+    ],
+    "included_running_ids": [],
+    "wrong_fields": [
+      {
+        "actual": "recorded model",
+        "expected": "Atlas",
+        "field": "model",
+        "id": "E034-02"
+      },
+      {
+        "actual": "recorded dataset",
+        "expected": "Cobalt",
+        "field": "dataset",
+        "id": "E034-02"
+      },
+      {
+        "actual": "passed or failed",
+        "expected": "passed",
+        "field": "result",
+        "id": "E034-02"
+      }
+    ],
+    "unknown_ids": [],
+    "extra_tool_call": false
+  }
+]

@@ -20,6 +20,13 @@ cases but failed fresh confirmation (19/40 exact tables, 29/40 valid outputs).
 Training remains deferred; the recommendation is to simplify clean bookkeeping
 while preserving worker evidence and the audit, or reconsider the checkpoint.
 
+The subsequent [six-record feasibility pilot](experiment_log/003_six_record_feasibility/report.md)
+tested that simplification as a new task version. It failed both fixed gates
+(29/40 exact tables and 29/40 valid outputs). **Stop further task simplification
+and configuration tuning for this checkpoint/setup.** Training remains paused;
+no larger baseline or replacement model has been launched. Earlier results are
+preserved unchanged.
+
 ## Local workflow
 
 Python 3.11 and [uv](https://docs.astral.sh/uv/) are recommended. Generation,
