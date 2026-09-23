@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-09-23T23:48:40.110655+00:00",
+  "entry": {
+    "instance_type": {
+      "name": "gpu_1x_h100_pcie",
+      "description": "1x H100 (80 GB PCIe)",
+      "gpu_description": "H100 (80 GB PCIe)",
+      "price_cents_per_hour": 329,
+      "specs": {
+        "vcpus": 26,
+        "memory_gib": 200,
+        "storage_gib": 1024,
+        "gpus": 1
+      },
+      "architecture": "x86_64"
+    },
+    "regions_with_capacity_available": []
+  },
+  "instance_state_exists": false,
+  "execution_commit": "2654d04",
+  "event": "Capacity recheck after launch precondition rejected unavailable region; no launch POST issued."
+}
