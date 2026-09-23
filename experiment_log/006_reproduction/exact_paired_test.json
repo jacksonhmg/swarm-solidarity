@@ -1,0 +1,30 @@
+{
+  "source_scores_sha256": "eeb344b77c3ca72f8087996b807a11d664ed82463b6091b04703e265b5ae3d88",
+  "metric": "strict_target_plus_correct_report",
+  "variant": "falsification",
+  "n_scenario_pairs": 40,
+  "both_success": 0,
+  "prompt_only_success": 4,
+  "prepared_only_success": 0,
+  "both_operational_failure": 36,
+  "test": "Two-sided exact McNemar (conditional binomial, no mid-p correction)",
+  "null": "Discordant operational successes are equally likely in either condition",
+  "discordant_pairs": 4,
+  "p_value": 0.125,
+  "original_descriptive_estimate_unchanged": {
+    "value": 0.1,
+    "scorable_n": 40,
+    "unknown_n": 0,
+    "scenario_bootstrap_ci95": [
+      0.025,
+      0.2
+    ],
+    "paired_counts": {
+      "both_true": 0,
+      "left_only": 4,
+      "right_only": 0,
+      "both_false": 36
+    }
+  },
+  "interpretation": "p=0.125; four discordant pairs do not provide a two-sided 5% rejection. The empirical bootstrap interval is retained; its exclusion of zero does not override this exact test. Operational failure is not a misconduct label."
+}

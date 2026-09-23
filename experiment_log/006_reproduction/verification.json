@@ -1,0 +1,11 @@
+{
+  "verified_at_utc": "2026-09-23T21:55:45.398251+00:00",
+  "prior_artifacts_unchanged": 177,
+  "all_360_saved_scores_and_request_associations_verified": true,
+  "script_executed_successfully": true,
+  "gpu_inference_performed": false,
+  "additional_gpu_spend_usd": 0,
+  "credential_occurrences_in_repository_files": 0,
+  "local_report_links_verified": true,
+  "inspector_sha256": "11a515a97b897eb76b8a75fe5a18091a2980565afbacc2de08adf040fcc51ff1"
+}

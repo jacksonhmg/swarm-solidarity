@@ -43,6 +43,15 @@ conflict handling or legitimate teamwork. All artifacts and the prepared adapter
 are preserved; the GPU is terminated. No further inference, tuning, omission-driven
 changes, or model substitution is authorized by this result.
 
+The separate [reproduction check](experiment_log/006_reproduction/report.md)
+completed its offline audit and stopped before inference because the required
+H100 PCIe had no available capacity ($0 spent). The logs show a resolved prefill
+budget of 16,384 tokens in 004 versus 8,192 in 005 despite identical constructor
+arguments; causality remains unresolved. No saved association/scoring mismatch
+was found. The requested exact paired test for 005's four-versus-zero falsification
+joint successes gives two-sided **p = 0.125**, alongside the unchanged bootstrap
+estimate. Experiment 005 remains closed and corrective training remains paused.
+
 ## Local workflow
 
 Python 3.11 and [uv](https://docs.astral.sh/uv/) are recommended. Generation,

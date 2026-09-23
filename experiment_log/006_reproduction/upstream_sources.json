@@ -1,0 +1,22 @@
+{
+  "vllm/entrypoints/llm.py": {
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.10.2/vllm/entrypoints/llm.py",
+    "sha256": "ef00451dd3291231481ba530e4d03427816e015b71eb1973435e923fb0553ae5"
+  },
+  "vllm/engine/arg_utils.py": {
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.10.2/vllm/engine/arg_utils.py",
+    "sha256": "a2fb6e4befee73c2e92258cfa325a68b36a471c7f86d29a825f35f49045123ad"
+  },
+  "vllm/sampling_params.py": {
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.10.2/vllm/sampling_params.py",
+    "sha256": "84c3af26b194b18525e247e749341b91d0bfad49a6c109f7f3c9b38877fd05ce"
+  },
+  "vllm/inputs/preprocess.py": {
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.10.2/vllm/inputs/preprocess.py",
+    "sha256": "f8562308674f1f20c7283ab5e4ae257dced35d8726f13389a0b0593f36a8e143"
+  },
+  "vllm/v1/engine/processor.py": {
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.10.2/vllm/v1/engine/processor.py",
+    "sha256": "36e614b74beaeaf93335096c2fbe5cfafcfe4c8102b843869daa96798f434b9d"
+  }
+}

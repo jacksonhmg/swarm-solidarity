@@ -1,0 +1,12 @@
+{
+  "merged_checkpoint_13_file_hashes_equal": true,
+  "preserved_adapter_hashes_verified": true,
+  "all_149_package_versions_identical": true,
+  "all_recorded_runner_and_source_hashes_match_local_files": true,
+  "all_360_saved_scores_reproduced_without_definition_changes": true,
+  "engine_request_ids_absent_in_original_archives": true,
+  "original_input_and_generated_token_arrays_absent": true,
+  "per_request_resolved_sampling_objects_absent_in_original_archives": true,
+  "input_token_reconstruction": "Exact saved prompt strings and pinned tokenizer; both special-token modes yield identical IDs and match all recorded lengths. This is not direct verification against an originally saved ID array.",
+  "source_inferred_settings": "Same LLM and SamplingParams call sites; pinned V1 processor clones params and adds EOS IDs, without replacing explicitly supplied temperature/top-p/top-k."
+}
