@@ -1,0 +1,33 @@
+{
+  "algorithm": "sha256",
+  "scope": "All experiment 005 files except this self-referential manifest. Includes frozen inputs, raw outputs, analysis, decisions and lifecycle.",
+  "files": {
+    "analysis/metrics.md": "550fee7538038c6d54cffe5cad5ffd77e05613eac73adc16260332098e55c248",
+    "analysis/paired_effects.json": "cdb1f9046f31b0eaed63a14ad1d65652ef1b31df74dedad07dcb1d233301d9e9",
+    "analysis/representative_failures.json": "31d76feb944f29eb949079c1833e44651612546c61d8ed44325198303638df4d",
+    "analysis/scores.jsonl": "eeb344b77c3ca72f8087996b807a11d664ed82463b6091b04703e265b5ae3d88",
+    "analysis/summary.json": "0fb50b7f024358f867d1d2545867452475c33cffcba5a2b8bc839edaba707a64",
+    "bootstrap-console.log": "c1214cb93654abe1a4713803bb82ea93d94f66cb7a8d62cf0bd69cfa830b08c2",
+    "dataset_manifest.json": "fea871c1f0ccfb484c57545d7ca54b8c6cb6aee6d92655f73d0e182c3917133d",
+    "decision.json": "d4775de57bb5d13dca04ead900cf8d70f0851d5d32dcb8f708c7238e9869630f",
+    "freeze.json": "72093564ecd24f91c5039d2970326a87bc9465d0f00a00cdeaa8075cd9e56a33",
+    "frozen_prompts.jsonl": "f764deaa420050d9d5cd3446b6a24af75fcd51ac42bce19cace7779b4ddcb62c",
+    "gpu-environment.txt": "ceff2f2b6f841d7836ef4e90eadd03d47566a08fb64b83b15d0fad0419268957",
+    "lifecycle.json": "d988724aab0e36a9ccd2248f029bf944ba489f65d42785013a883bde2926d474",
+    "main-console.log": "9645132fac302729619ca053032b0a0c6e9a8032d32c386d2f18af96bca12aa8",
+    "main/metadata.json": "76f14629ec170ace75817b0d996f0abfa635b92a0bf8c417ff50ce91524bb658",
+    "main/prompts.jsonl": "ca83d25917cbc069339d19a08990d082cd2cf0c1a2743d8e49da2a259896440a",
+    "main/responses.jsonl": "12dde4c15874d50ef50ca4f9d08bef409e406bb65a7a7bf34ed0a016eec3f1e2",
+    "merge-console.log": "1df81ccc4eafba9ac8d0934fd234c18dcb200d83b1cb0fd51a5f64843a00d030",
+    "merge.json": "4528dbf9cd752952a3b23e4d5a42e6ae875f25aa7c07ce20dde7bc0c63b04e1b",
+    "nvidia-smi.txt": "997dac37e77fee6058fb2732c42ee9a595739864ce13a879c6871f791bc830b5",
+    "operations.md": "8356ace91f36ea7213c4c3f45c4286d8f06695371375a665878f258076890631",
+    "preflight.json": "0450c1529a79fb73a3063c6d836475a8a4764760f158755062d33f09b9a61ff3",
+    "prior_artifact_hashes.json": "b6a61c01cc77d87f25ac522da0f85234b6f4ce85cbe99f163aab012074cb9af0",
+    "protocol.md": "f445b39d0d84c0dc96ff8c5a4b48b1d3e1b80ea4b149e75d76d063a8c725cf64",
+    "report.md": "6e818711763e0385af3d25f5d9342e5ed1fb5b7a8a5cf3842bc9b1ad684497c8",
+    "tests-before-generation.txt": "0ad08e47526d38e19a00ec8e7b458eb4ca2ec5b566eed15d25dccd63ac10d68e",
+    "verification.json": "54131e832e426c636577cdf448c59e0540f15fc6724cf33a8c5bb9cd16f72822",
+    "watchdog.log": "3b7f5692f28ee155b93faa59dcd797afcfb9c52da07421eada423ad19fc1409b"
+  }
+}

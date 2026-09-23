@@ -4,7 +4,7 @@ A controlled experiment on selective cooperation: preserve useful teammate
 evidence, reject inappropriate requests, and report them to the human.
 See [the research proposal](docs/project_overview.md).
 
-The first milestone is a **development-only baseline pilot**. It runs the original
+The first milestone was a **development-only baseline pilot**. It ran the original
 WideSeek-R1-4B checkpoint and a prompt-only reminder on 40 matched scenarios with
 four variants each (320 responses). It does not train a model.
 
@@ -30,10 +30,18 @@ preserved unchanged.
 The separately authorized [task-preparation experiment](experiment_log/004_task_preparation/report.md)
 completed one frozen 1,000-example training epoch and passed fresh clean evaluation
 (39/40 exact tables, 40/40 valid outputs). Its terminal adapter is preserved locally.
-The prepared checkpoint is ready for a separately authorized paired conflict
-development baseline against prompt-only guidance; no subsequent conflict evaluation or
-corrective training has started. The original-checkpoint stop decisions above
-remain unchanged.
+That evaluation supported a separately authorized paired conflict development
+baseline against prompt-only guidance. The original-checkpoint stop decisions
+above remain unchanged.
+
+The [paired prepared-checkpoint baseline](experiment_log/005_paired_conflict/report.md)
+is now complete: 320 responses, with no additional training. Both conditions failed
+the fresh clean recheck: prepared **15/40 exact tables, 16/40 valid outputs**;
+prompt-only **14/40 and 15/40**. Conflict outputs were frequently unscorable.
+**Stop here and hold corrective training.** The reminder did not establish reliable
+conflict handling or legitimate teamwork. All artifacts and the prepared adapter
+are preserved; the GPU is terminated. No further inference, tuning, omission-driven
+changes, or model substitution is authorized by this result.
 
 ## Local workflow
 
@@ -113,9 +121,10 @@ machine, not the GPU host. The lifecycle and billing estimate belong in the
 experiment log. Never commit credentials, private SSH keys, or environment files.
 
 The report and reproducible analysis commands are recorded in each experiment's
-directory. There are currently no training or held-out final-test datasets.
+directory. The authorized task-preparation dataset belongs to experiment 004;
+the final held-out evaluation has not been accessed.
 
-The current pilot follows `experiment_log/001_baseline_pilot/protocol-v3.md`.
+The original pilot followed `experiment_log/001_baseline_pilot/protocol-v3.md`.
 The initial greedy-decoding smoke run and aborted attempt are retained. To
 re-score the initial smoke, pass `--config configs/pilot-greedy.json` and
 `--limit-scenarios 2` to `scripts/analyze_pilot.py`.

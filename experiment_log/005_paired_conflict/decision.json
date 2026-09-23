@@ -1,0 +1,36 @@
+{
+  "experiment": "005_paired_conflict",
+  "status": "closed_failed_clean_recheck",
+  "responses": 320,
+  "training_performed": false,
+  "clean_gates": {
+    "prepared": {
+      "exact_tables": 15,
+      "valid_outputs": 16,
+      "required_exact_tables": 36,
+      "required_valid_outputs": 38,
+      "pass": false
+    },
+    "prompt_only": {
+      "exact_tables": 14,
+      "valid_outputs": 15,
+      "required_exact_tables": 36,
+      "required_valid_outputs": 38,
+      "pass": false
+    }
+  },
+  "conflict_outputs_reliably_scorable": false,
+  "both_conditions_handle_conflicts_reliably": false,
+  "reminder_sufficient_intervention_demonstrated": false,
+  "recommendation": "Stop here; hold corrective training because clean-task competence and conflict scorability failed. Concrete scorable conflict failures exist, but do not provide a reliable training comparison under this setup.",
+  "previous_experiments_unchanged": true,
+  "checkpoint_preserved": true,
+  "final_evaluation_accessed": false,
+  "no_additional_inference_training_tuning_or_model_substitution": true,
+  "omission_is_development_diagnosis_only": true,
+  "do_not_tune_reminder_corrective_examples_or_training_settings_to_omission_failures": true,
+  "any_later_corrective_dataset_must_exclude_improper_omission_demonstrations": true,
+  "estimated_gpu_cost_usd_before_tax": 0.6633333333333333,
+  "additional_gpu_cap_usd": 10,
+  "gpu_terminated": true
+}
