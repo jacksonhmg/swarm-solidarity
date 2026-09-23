@@ -1,0 +1,28 @@
+{
+  "frozen_at_utc": "2026-09-23T19:11:28.948717+00:00",
+  "protocol_commit": "2961412",
+  "files": {
+    "configs/paired-conflict.json": "59caf23920620e94af8cb4c9f53401b9aa0d8067bb6810a97086ee152bdbee31",
+    "data/dev/paired-conflict-40.jsonl": "55fb36d6be657d6548d13200f8e813a19303554e52057f4a895793ace617e65c",
+    "src/swarm_solidarity/paired_conflict.py": "cb69f117cd51488e3ef8555888615036a1a892cc71f8e5be51e910deed99f3e4",
+    "scripts/generate_paired_conflict.py": "9b00324355cafac9064ccfeddaf7a251645c71b650301cc231bf0beae2421e82",
+    "scripts/analyze_paired_conflict.py": "4eccf105901058c1034d664e93b5cbd586b3c578adc939d6f14ad513508b1cb7",
+    "scripts/run_paired_conflict.py": "a7b384950de9751f47c15a3c18d9c7cc8ebbcb9ec7c576908807f854473c75b8",
+    "scripts/merge_paired_checkpoint.py": "e57e6d804f96524661fee43cdfe09384313c7c3509d297a1563d0ca76ee54928",
+    "scripts/paired_conflict_gpu_run.sh": "fa97a2c7df9c0c81e468cc8ce5e956a7f6441d8002cf7eb7656954ebdefa0951",
+    "src/swarm_solidarity/data.py": "80f958c1ebf969793a2d96839b4333c79b59a6be94621643853039d1d50da2cf",
+    "src/swarm_solidarity/six_record.py": "e6f0bf5cf6f3d347e8612ed54e46a3fe8112ea03667e1438ea3f5c0d4dbcda71",
+    "src/swarm_solidarity/scoring.py": "10280745d4d08c31f582702cd3885d80591c444b774cab073b135d616334a324",
+    "src/swarm_solidarity/diagnostics.py": "e51b21b9466c27824bd96d27b2db7ec2205ba3f5a6e7a362b61310ff6ba35acb",
+    "src/swarm_solidarity/feasibility.py": "75033c8a6877c24a77e2bbc47148fcec93cb4548b2d6c308736b598d7b13a522",
+    "scripts/analyze_pilot.py": "f0878ba2553aa5073e877840e1c9a5d808586a3fbc87224a115de6f0ca33bc01",
+    "requirements-preparation.txt": "5307ffb607c1e621377e8e6fb2a2bf2d900f9d34650ef999b4b2a30ad56fd0d2",
+    "experiment_log/004_task_preparation/training/metadata.json": "5a289991c79602a737117f5549f66bdd739c4c4d4e5fc444923c0e8c368593df",
+    "experiment_log/004_task_preparation/training/merge.json": "cee563739aa38628b2b03f6e77991adb4d10dfe9862eb23eea2c5f8f9b32678c",
+    "experiment_log/005_paired_conflict/protocol.md": "f445b39d0d84c0dc96ff8c5a4b48b1d3e1b80ea4b149e75d76d063a8c725cf64",
+    "experiment_log/005_paired_conflict/frozen_prompts.jsonl": "f764deaa420050d9d5cd3446b6a24af75fcd51ac42bce19cace7779b4ddcb62c",
+    "experiment_log/005_paired_conflict/preflight.json": "0450c1529a79fb73a3063c6d836475a8a4764760f158755062d33f09b9a61ff3"
+  },
+  "tests_passed": 48,
+  "no_omission_driven_followup_tuning": true
+}

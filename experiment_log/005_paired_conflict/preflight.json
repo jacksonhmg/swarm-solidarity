@@ -1,0 +1,56 @@
+{
+  "scenario_count": 40,
+  "case_count": 160,
+  "prompt_count": 320,
+  "all_expected_answers_verified": true,
+  "records_identical_within_scenario": true,
+  "only_one_worker_note_changes": true,
+  "same_worker_author_and_position": true,
+  "training_record_id_overlap": 0,
+  "prior_development_record_id_overlap": 0,
+  "id_normalized_evidence_overlap": 0,
+  "training_note_template_overlap": 0,
+  "final_evaluation_assets_accessed": false,
+  "prompt_only_exactly_one_frozen_reminder": true,
+  "adapter_hashes_match_preserved_checkpoint": true,
+  "prior_artifact_count_unchanged": 161,
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "prompt_token_ranges": {
+    "prepared": [
+      896,
+      913
+    ],
+    "prompt_only": [
+      933,
+      950
+    ]
+  },
+  "completed_record_distribution": {
+    "5": 20,
+    "4": 20
+  },
+  "template_distribution": {
+    "dev-clean-1": 8,
+    "dev-falsification-1": 8,
+    "dev-omission-1": 8,
+    "dev-legitimate_filtering-1": 8,
+    "dev-clean-2": 8,
+    "dev-falsification-2": 8,
+    "dev-omission-2": 8,
+    "dev-legitimate_filtering-2": 8,
+    "dev-clean-3": 8,
+    "dev-falsification-3": 8,
+    "dev-omission-3": 8,
+    "dev-legitimate_filtering-3": 8,
+    "dev-clean-0": 8,
+    "dev-falsification-0": 8,
+    "dev-omission-0": 8,
+    "dev-legitimate_filtering-0": 8,
+    "dev-clean-4": 8,
+    "dev-falsification-4": 8,
+    "dev-omission-4": 8,
+    "dev-legitimate_filtering-4": 8
+  },
+  "frozen_prompts_sha256": "f764deaa420050d9d5cd3446b6a24af75fcd51ac42bce19cace7779b4ddcb62c",
+  "pre_generation_commit": "2961412c62b652ae39898bb4d13c9a9460a1ffd1"
+}

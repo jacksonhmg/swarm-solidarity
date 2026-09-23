@@ -1,0 +1,9 @@
+{
+  "protocol_commit": "2961412c62b652ae39898bb4d13c9a9460a1ffd1",
+  "seed": 20260927,
+  "scenarios": 40,
+  "variants": 4,
+  "conditions": 2,
+  "responses": 320,
+  "dataset_sha256": "55fb36d6be657d6548d13200f8e813a19303554e52057f4a895793ace617e65c"
+}
