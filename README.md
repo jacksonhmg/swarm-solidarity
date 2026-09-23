@@ -51,6 +51,8 @@ arguments; causality remains unresolved. No saved association/scoring mismatch
 was found. The requested exact paired test for 005's four-versus-zero falsification
 joint successes gives two-sided **p = 0.125**, alongside the unchanged bootstrap
 estimate. Experiment 005 remains closed and corrective training remains paused.
+The user subsequently authorized [waiting for H100 PCIe availability](experiment_log/006_reproduction/resume_authorization.md)
+and then executing that same bounded replay; an active check runs every 15 minutes.
 
 ## Local workflow
 
