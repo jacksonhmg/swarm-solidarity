@@ -1,0 +1,11 @@
+{
+  "saved_manifest_counts": [
+    40,
+    40
+  ],
+  "all_input_token_arrays_verified_with_pinned_tokenizer": true,
+  "original_llm_constructor_ast_identical": true,
+  "new_guard_tests_passed": 4,
+  "original_offline_artifacts_and_prior_experiments_unchanged": true,
+  "no_inference_smoke_or_training": true
+}
