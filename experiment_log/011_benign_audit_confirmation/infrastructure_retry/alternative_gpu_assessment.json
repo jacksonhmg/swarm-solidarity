@@ -1,0 +1,15 @@
+{
+  "hardware": "eight separate gpu_1x_a100_sxm4 instances",
+  "same_gpu_as_frozen_experiment": true,
+  "hourly_usd_each": 1.99,
+  "hourly_usd_eight": 15.92,
+  "prior_spend_usd": 4.0985,
+  "recorded_projection_new_run_usd": 37.709769092439075,
+  "recorded_projection_cumulative_usd": 41.808269092439076,
+  "new_run_20_percent_contingency_cumulative_usd": 49.35022291092689,
+  "capacity_region_listing_does_not_confirm_eight_slots": true,
+  "bulk_quantity_supported_and_atomic": null,
+  "bulk_api_note": "Current official launch schema does not document quantity, although an SSH-key example supplies quantity=1. Do not assume a quantity=8 POST works or guarantees eight allocations.",
+  "rental_performed_by_this_assessment": false,
+  "scientific_changes": false
+}
