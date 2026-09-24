@@ -1,0 +1,74 @@
+{
+  "aggregate_cap_usd": 65,
+  "aggregate_termination_threshold_usd": 62,
+  "node_timeout_minutes": 180,
+  "instance_type": "gpu_1x_a100_sxm4",
+  "gpu_name": "NVIDIA A100-SXM4-40GB",
+  "max_hourly_usd": 1.99,
+  "maximum_responses": 6400,
+  "new_training_runs": 2,
+  "training_restarts_permitted": false,
+  "sampled_case_retries_permitted": false,
+  "nodes": {
+    "prepared": {
+      "state": ".local/lambda-revised-separate-prepared/state.json",
+      "conditions": [
+        "prepared"
+      ]
+    },
+    "prompt_only": {
+      "state": ".local/lambda-revised-separate-prompt_only/state.json",
+      "conditions": [
+        "prompt_only"
+      ]
+    },
+    "ordinary_s41031": {
+      "state": ".local/lambda-revised-separate-ordinary_s41031/state.json",
+      "conditions": [
+        "ordinary_s41031"
+      ]
+    },
+    "corrective_s41031": {
+      "state": ".local/lambda-revised-separate-corrective_s41031/state.json",
+      "conditions": [
+        "corrective_s41031"
+      ]
+    },
+    "revised_s41031": {
+      "state": ".local/lambda-revised-separate-revised_s41031/state.json",
+      "conditions": [
+        "revised_s41031"
+      ]
+    },
+    "ordinary_s41032": {
+      "state": ".local/lambda-revised-separate-ordinary_s41032/state.json",
+      "conditions": [
+        "ordinary_s41032"
+      ]
+    },
+    "corrective_s41032": {
+      "state": ".local/lambda-revised-separate-corrective_s41032/state.json",
+      "conditions": [
+        "corrective_s41032"
+      ]
+    },
+    "revised_s41032": {
+      "state": ".local/lambda-revised-separate-revised_s41032/state.json",
+      "conditions": [
+        "revised_s41032"
+      ]
+    }
+  },
+  "all_nodes_ready_before_model_execution": true,
+  "inference_entry_point": "scripts/run_revised_eval.py",
+  "analysis_entry_point": "scripts/analyze_revised.py",
+  "prior_gpu_cost_usd": 4.0985,
+  "projected_new_run_usd": 37.709769092439075,
+  "projected_cumulative_usd": 41.808269092439076,
+  "projected_cumulative_with_20_percent_contingency_usd": 49.35022291092689,
+  "maximum_allocation_minutes": 10,
+  "capacity_poll_seconds": 5,
+  "launch_spacing_seconds": 13,
+  "allocation_policy": "Eight independently owned matching GPUs; prefer US West, then US East, then other advertised regions; no launch POST repetition.",
+  "infrastructure_retry_exception": "Prior A100 lost-start work remains unknown; user explicitly approved unchanged retry and then eight separate A100s."
+}

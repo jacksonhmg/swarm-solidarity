@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-24T21:27:39.823667+00:00",
+  "before_any_separate_A100_rental": true,
+  "scope": "Eight separate matching GPUs; scheduling and cleanup only",
+  "files": {
+    "scripts/revised_separate_support.py": "daf2de120b45714113ad6dbb9bb36b771074e3ba90cde75024caf5ae2b62b07a",
+    "scripts/revised_separate_supervisor.py": "df0cfee3c20b32347138ffa162020a0f0f84a522107ddeadcd782c9a59892c8c",
+    "scripts/revised_separate_watchdog.py": "f47e05f02ca6f7c5adb1028e1d9e45fbf1fb92af50dacd635e750ecda57eade9",
+    "scripts/launch_revised_separate.py": "eda8f5d298bdd6e84a46a33dd4133b3668d01518d225e6c40df06cde5170e654",
+    "scripts/run_revised_separate_node.py": "0cad92a9fa7b2ab3149f53fff49adf614fd63dc60f2f3fe29b0ac5d8dda6c821",
+    "scripts/verify_revised_separate.py": "2e1a207237be532504aa4245e1bb11fec8a779f69d257aceb2b11a95fe2953b4",
+    "scripts/dispatch_detached_once.py": "150585a6d6a472d14f20f58cbe7b5a3f05fb4169b386d5d5b62473522ac8e02a",
+    "scripts/revised_dispatch_transport.py": "70be47d925b7c537d38cd2d3b97405c2196d6a42aab488df7389c63e2ad5feb7",
+    "tests/test_revised_separate.py": "2b6b9cb50c063be63f8b2cefb059ad7229b622e6651cf04255e2554977ac7ae3",
+    "experiment_log/011_benign_audit_confirmation/separate_a100/plan.json": "b3624d526072f100af3fc4254ca4f570430d134e57d92e9e0bb9245a6c2721c8",
+    "experiment_log/011_benign_audit_confirmation/separate_a100/amendment.md": "ce2b5aeb533c54ce41f565d66575889d4f4cf0eeb8eac5567fff704a01e372ae",
+    "experiment_log/011_benign_audit_confirmation/separate_a100/authorization.json": "e9d354bfebbb05f9cbb6b0a5cd5538fe6e6db33ad035e1bd2877384a19a3ef74",
+    "experiment_log/011_benign_audit_confirmation/separate_a100/prior_cloud_lifecycle.json": "aeabcf8725961e03920f142527b2d69fab518c8e8fec32f8762d9767b73f55d1",
+    "experiment_log/011_benign_audit_confirmation/separate_a100/previous_watcher_retired.json": "ab13d619d650b11f5662c3e76884a829dbc13b813d63ce3b2107a14dfa3ed0e4",
+    "experiment_log/011_benign_audit_confirmation/separate_a100/preservation_verification.json": "6b0f4b05136a3da0c97a97608ced551de805634ac5efac622ce31aeda18035b6",
+    "experiment_log/011_benign_audit_confirmation/separate_a100/initial_tests.log": "8727aa715ece006df0b902265807be8851cd19f6fd5e06fb3362b0736ab4290c",
+    "experiment_log/011_benign_audit_confirmation/separate_a100/tests.log": "196e27dbc130690151a4ba6ceaf9a7e898abef30a76c8067957e1dd06895a749"
+  }
+}

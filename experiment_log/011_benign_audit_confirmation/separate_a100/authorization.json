@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-24T21:23:35.988062+00:00",
+  "user_approval": "OKAY DO THE 8 A100 SEPARATW",
+  "ceiling_usd": 65,
+  "prior_gpu_cost_usd": 4.0985,
+  "new_rentals_maximum": 8,
+  "gpu_type": "gpu_1x_a100_sxm4",
+  "same_scientific_experiment": true,
+  "no_model_work_in_retired_single_host_retry": true,
+  "unknown_model_work_in_earlier_lost_A100_start": true
+}

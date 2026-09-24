@@ -1,0 +1,23 @@
+{
+  "instance_id": "7b9848a46f8c46879e28d23882379e8c",
+  "name": "swarm-solidarity-pilot-ab7529af",
+  "instance_type": "gpu_8x_a100",
+  "region": "me-west-1",
+  "usd_per_hour": 15.92,
+  "launch_requested_at": "2026-09-24T19:59:03.832578+00:00",
+  "termination_requested_at": "2026-09-24T20:10:42.308168+00:00",
+  "termination_confirmed_at": "2026-09-24T20:12:41.339606+00:00",
+  "rounded_elapsed_minutes": 14,
+  "estimated_gpu_cost_usd": 4.0985,
+  "additional_cap_usd": 65,
+  "within_cap": true,
+  "status": "terminated",
+  "cloud_ssh_key_deleted_at": "2026-09-24T20:12:43.814796+00:00",
+  "local_temporary_key_deleted": true,
+  "cost_basis": "Current A100 host plus preserved failed H100 allocation; each launch through first termination confirmation rounded up to a minute. GPU estimate, not invoice.",
+  "current_host_estimated_gpu_cost_usd": 3.7146666666666666,
+  "prior_h100_estimated_gpu_cost_usd": 0.38383333333333336,
+  "prior_h100_lifecycle": "h100/prepared/cloud_lifecycle.json",
+  "all_allocated_instances_terminated": true,
+  "all_temporary_keys_deleted": true
+}
