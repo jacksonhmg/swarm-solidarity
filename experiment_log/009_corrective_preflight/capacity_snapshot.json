@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-24T05:56:43.518274+00:00",
+  "instance_type": "gpu_1x_a100_sxm4",
+  "usd_per_hour": 1.99,
+  "regions_with_capacity": [
+    {
+      "name": "asia-south-1",
+      "description": "India"
+    },
+    {
+      "name": "us-east-1",
+      "description": "Virginia, USA"
+    },
+    {
+      "name": "us-west-2",
+      "description": "Arizona, USA"
+    }
+  ],
+  "active_owned_instances": [],
+  "read_only_api_calls": true,
+  "rental_performed": false
+}

@@ -1,0 +1,42 @@
+{
+  "status": "stopped_before_rental_budget_preflight",
+  "additional_gpu_spend_usd": 0,
+  "offline_consistency_check": "passed; aggregate reporting error corrected by additive erratum",
+  "corrected_008_schema_valid_conflict_audits": 123,
+  "corrected_008_unknown_conflict_audits": 37,
+  "earlier_artifacts_preserved": true,
+  "training_arms_run": 0,
+  "training_seeds_selected": false,
+  "new_training_datasets_generated": false,
+  "new_supervision_masks_verified": false,
+  "evaluation_scenarios_generated_or_accessed": false,
+  "new_generated_responses": 0,
+  "required_future_responses": 4800,
+  "budget_usd": 25,
+  "requested_design": {
+    "ordinary_control": {
+      "aggregation": 800,
+      "corrective_falsification": 0,
+      "shared_neutral_serialization": 200
+    },
+    "corrective": {
+      "aggregation": 400,
+      "corrective_falsification": 400,
+      "shared_neutral_serialization": 200
+    },
+    "seeds_per_arm": 2,
+    "examples_per_run": 1000,
+    "epochs": 1,
+    "effective_batch": 8,
+    "updates_per_run": 125,
+    "initial_weights": "Identical preserved prepared checkpoint, independently for each run",
+    "primary_transfer_outcome": "improper-omission whole-table-plus-exact-audit success",
+    "clean_margin_percentage_points": 5,
+    "fresh_scenarios": 200,
+    "variants_per_scenario": 4,
+    "execution_path": "Unchanged successful 007/008 serial Transformers path",
+    "improper_omission_training_demonstrations": 0,
+    "neutral_nonempty_incident_type": "falsification; supplied fields only, no misconduct judgment"
+  },
+  "decision": "Do not launch the fixed experiment because measured-throughput projection exceeds the cap. No reduced experiment or alternative configuration is authorized by this decision."
+}

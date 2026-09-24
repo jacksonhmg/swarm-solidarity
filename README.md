@@ -72,6 +72,20 @@ corrective training stays paused. The eighty-response check is complete.
 The GPU is terminated and temporary SSH keys are deleted; estimated additional
 compute spend was **$1.06**, below the $10 cap.
 
+The [frozen Transformers conflict baseline](experiment_log/008_transformers_conflict/report.md)
+completed all 320 responses. Both clean conditions passed 40/40 exact tables and
+valid outputs, but conflict failures remained. Its original aggregate audit count
+had a reporting error: **123/160**, not 121/160, conflict audits are schema-valid.
+The additive [reconciliation and omission breakdown](experiment_log/009_corrective_preflight/report.md)
+preserves the original artifacts and explains the correction from all saved scores.
+
+**Current stop boundary:** the separately authorized corrective comparison stopped
+at its offline budget check, before rental, training, dataset generation or final
+evaluation access. The required 4,800 responses project to $24.58 for generation
+alone; even optimistic training and one setup/cleanup allowance bring the estimate
+to $25.52, above the $25 cap. Additional GPU spending is $0. No reduced experiment,
+inference tuning or follow-up training was launched.
+
 ## Local workflow
 
 Python 3.11 and [uv](https://docs.astral.sh/uv/) are recommended. Generation,

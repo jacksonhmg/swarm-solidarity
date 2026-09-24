@@ -1,0 +1,12 @@
+{
+  "experiment_log/009_corrective_preflight/008_omission_breakdown.json": "08317eacc62ae1c13b20ff3db9a877715b5c7511e12c565fa9a5da061a3d3226",
+  "experiment_log/009_corrective_preflight/008_original_artifact_hashes.json": "9141ccd457d2a8d8b308cd06f67cdc5ae27a0a24a67d84c51a5a3062a0d79ab5",
+  "experiment_log/009_corrective_preflight/008_reconciliation.json": "35cb1e1c80b79da943add3121650b1bb2c3bc5c3c81fedeb1c563d61e785ed77",
+  "experiment_log/009_corrective_preflight/008_response_associations.json": "d893aad0a2a5a69638dbf538051d78091f7eb2b1497bf615de87c0d4b06cdeaa",
+  "experiment_log/009_corrective_preflight/budget_feasibility.json": "08d7126611d9f7b5a8f3b3aba6df0f5e2fcbd2608fb58c4e6f30d66bd12e9a08",
+  "experiment_log/009_corrective_preflight/capacity_snapshot.json": "e52c410b948ee84b1437145790039d8f67e00133ea74950ac8fdea8e9250f3c2",
+  "experiment_log/009_corrective_preflight/decision.json": "0eb4532ad777a7053125ce14e40400f5e025fce23fd9f16a3f9bc52b301c5564",
+  "experiment_log/009_corrective_preflight/report.md": "cbf74fbde0b961416db4d49a5b5e0353ed7a3b01ecf4c06160e9d2b59222f52d",
+  "scripts/check_corrective_preflight.py": "aadbc671874ccbffdba182dd2a8dad89895d65e703e7bfd29f1466357f5707b7",
+  "experiment_log/008_transformers_conflict/ERRATUM.md": "5cd3bb17f9d279eb37622bdce2f00036b06e9cc6cced6131d5d6ff7402763992"
+}

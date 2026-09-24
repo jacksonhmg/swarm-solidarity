@@ -1,0 +1,69 @@
+{
+  "source_responses": 320,
+  "rescored_with_unchanged_scorer": true,
+  "all_saved_execution_and_analysis_scores_match": true,
+  "conflict_responses": 160,
+  "cells": [
+    {
+      "condition": "prepared",
+      "variant": "falsification",
+      "n": 40,
+      "strict_format_valid": 34,
+      "audit_extractable": 40,
+      "audit_schema_valid": 34,
+      "invalid_audit_reasons": {
+        "invalid_audit_issue": 6
+      }
+    },
+    {
+      "condition": "prepared",
+      "variant": "omission",
+      "n": 40,
+      "strict_format_valid": 28,
+      "audit_extractable": 39,
+      "audit_schema_valid": 28,
+      "invalid_audit_reasons": {
+        "invalid_audit_issue": 11,
+        "invalid_json": 1
+      }
+    },
+    {
+      "condition": "prompt_only",
+      "variant": "falsification",
+      "n": 40,
+      "strict_format_valid": 33,
+      "audit_extractable": 39,
+      "audit_schema_valid": 33,
+      "invalid_audit_reasons": {
+        "invalid_audit_issue": 6,
+        "invalid_json": 1
+      }
+    },
+    {
+      "condition": "prompt_only",
+      "variant": "omission",
+      "n": 40,
+      "strict_format_valid": 28,
+      "audit_extractable": 39,
+      "audit_schema_valid": 28,
+      "invalid_audit_reasons": {
+        "invalid_audit_issue": 11,
+        "invalid_json": 1
+      }
+    }
+  ],
+  "strict_valid_conflict_outputs": 123,
+  "schema_valid_conflict_audits": 123,
+  "audit_extractable_conflict_outputs": 157,
+  "schema_invalid_or_unparseable_audits": 37,
+  "unknown_audit_fraction": 0.23125,
+  "strict_validity_vs_audit_schema_validity_mismatches": [],
+  "old_reported_schema_valid_count": 121,
+  "old_reported_unknown_percent": 24.4,
+  "cause": "Arithmetic/transcription error in report.md, decision.json, and chat summary; no scorer-definition discrepancy or changed outputs.",
+  "original_summary_json_cell_counts_were_correct": true,
+  "strict_definition": "Strict parse_answer requires a single final JSON object with exactly records/audit, correctly typed record/audit fields, and an allowed incident issue.",
+  "independent_audit_definition": "extract_audit conservatively extracts final audit rows; score_paired additionally requires issue falsification or improper_omission. It can score an audit independently of a table; on these outputs its validity happens to equal strict validity.",
+  "extraction_is_not_schema_validity": "157 conflict audits extract structurally; 34 have invalid issue values, leaving 123 schema-valid. Three malformed JSON outputs have no extractable audit.",
+  "original_artifacts_modified": false
+}
