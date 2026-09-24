@@ -36,10 +36,17 @@ class TransformersChecks(unittest.TestCase):
         self.assertTrue(resolved.disable_compile)
         self.assertEqual(resolved.cache_implementation, 'dynamic')
         self.assertEqual(resolved.max_new_tokens, 8192)
+        resolved = model._prepare_generated_length(resolved, has_default_max_length=True,
+            has_default_min_length=True, model_input_name='input_ids', input_ids_length=7,
+            inputs_tensor=torch.ones((1, 7), dtype=torch.long))
         model._prepare_special_tokens(resolved, kwargs_has_attention_mask=True, device='cpu')
         processors = model._get_logits_processor(resolved, input_ids_seq_length=7, device='cpu')
-        self.assertEqual(list(processors), [])
-        resolved.max_length = 7 + resolved.max_new_tokens
+        self.assertEqual([type(p).__name__ for p in processors], ['MinLengthLogitsProcessor'])
+        self.assertEqual(processors[0].min_length, 7)
+        logits = torch.arange(151667, dtype=torch.float32).unsqueeze(0)
+        for length in (7, 8, 8198):
+            self.assertTrue(torch.equal(processors(torch.ones((1, length), dtype=torch.long), logits), logits))
+        self.assertEqual(resolved.max_length, 7 + resolved.max_new_tokens)
         stops = model._get_stopping_criteria(resolved, [])
         self.assertEqual([type(s).__name__ for s in stops], ['MaxLengthCriteria', 'EosTokenCriteria'])
         for stop in [151666, 151643, 151645]:

@@ -48,7 +48,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--stage', choices=STAGES, required=True)
     stage = parser.parse_args().stage
-    freeze = json.loads((LOG / 'freeze_guard_fix.json').read_text())
+    freeze = json.loads((LOG / 'freeze.json').read_text())
     for path, digest in freeze['files'].items():
         assert sha(path) == digest, path
     inputs, cases = validate_inputs(stage)
@@ -74,7 +74,7 @@ def main():
     started = time.monotonic()
     meta = {'status': 'started', 'stage': stage, 'started_at': now(), 'config': config,
             'code_revision': Path('.code-revision').read_text().strip(),
-            'freeze_sha256': sha(LOG / 'freeze_guard_fix.json'),
+            'freeze_sha256': sha(LOG / 'freeze.json'),
             'inputs_sha256': sha(Path('experiment_log/006_reproduction/inputs') / (stage + '.jsonl')),
             'gpu': torch.cuda.get_device_name(0), 'python': platform.python_version(),
             'platform': platform.platform(), 'torch_cuda_version': torch.version.cuda,
@@ -109,15 +109,11 @@ def main():
     def observe_logits(*args, **kwargs):
         result = original_logits(*args, **kwargs)
         gc = kwargs['generation_config']
-        # min_new_tokens=0 resolves to min_length=prompt length. This processor
-        # only clones scores at every reachable decoding length; it masks none.
-        assert [type(p).__name__ for p in result] == ['MinLengthLogitsProcessor']
-        assert result[0].min_length == current['prompt_tokens']
+        assert not result, 'Unexpected sampling restriction or logits processor'
         assert (gc.do_sample, gc.temperature, gc.top_p, gc.top_k, gc.min_p) == (True, 1.0, 1.0, 0, None)
         assert gc.disable_compile and gc.max_new_tokens == 8192 and gc.num_beams == gc.num_return_sequences == 1
         current['resolved_generation_config'] = plain(gc.to_dict())
-        current['logits_processors'] = [{'type': type(p).__name__, 'parameters': plain(vars(p)),
-                                        'inert_at_all_reachable_decoding_lengths': True} for p in result]
+        current['logits_processors'] = []
         return result
 
     def observe_stops(*args, **kwargs):
