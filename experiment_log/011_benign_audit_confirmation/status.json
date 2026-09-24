@@ -1,16 +1,16 @@
 {
-  "status": "replacement_allocation_and_boot",
-  "updated_at": "2026-09-24T21:49:52.037323+00:00",
+  "status": "seven_active_nodes_uploading_prepared_replacement_pending",
+  "updated_at": "2026-09-24T21:57:12.793079+00:00",
   "current_allocated_instances": 8,
   "current_required_instances": 8,
   "provider_active_instances": 1,
   "current_attempt_model_work_started": false,
   "current_attempt_training_runs_started": 0,
   "current_attempt_responses_generated": 0,
-  "active_launcher_pid": 41614,
-  "active_watchdog_pid": 42660,
+  "active_launcher_pid": 44574,
+  "active_watchdog_pid": 43844,
   "execution_amendment": "hardware_recovery/amendment.md",
-  "execution_freeze_commit": "41c316f",
+  "execution_freeze_commit": "d8dfe75",
   "owner_states": {
     "prepared": ".local/lambda-revised-recovery-prepared/state.json",
     "prompt_only": ".local/lambda-revised-recovery-prompt_only/state.json",
@@ -31,5 +31,7 @@
   "supervision_monitor_status": "hourly concise checks; local supervisors and spending safeguards independent",
   "previous_experiment_010": "closed unsuccessful overall, unchanged",
   "scientific_freeze": "36d1f7a unchanged; two revised seeds,125updates each,6400responses maximum",
-  "decision": "Proceed automatically under standing authority, accepting40/80GB A100s through unchanged host evaluator; no further confirmation, inference tuning or model-work restart."
+  "decision": "Proceed automatically under standing authority, accepting40/80GB A100s through unchanged host evaluator; no further confirmation, inference tuning or model-work restart.",
+  "startup_control": "Independent node readiness, no global barrier",
+  "additional_bookkeeping_replacement_maximum": 1
 }

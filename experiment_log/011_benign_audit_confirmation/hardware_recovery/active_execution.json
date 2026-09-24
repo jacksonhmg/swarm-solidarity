@@ -1,0 +1,19 @@
+{
+  "at": "2026-09-24T21:57:12.793079+00:00",
+  "active_controller_pid": 44574,
+  "active_budget_watchdog_pid": 43844,
+  "continuation_freeze_commit": "d8dfe75",
+  "retired_launchers": [
+    41614,
+    38163,
+    30813
+  ],
+  "retired_watchdogs": [
+    42660,
+    38257
+  ],
+  "model_work_before_continuation": 0,
+  "bookkeeping_failure": "Missing retained-node receipt directory; one prepared-node termination already issued. Seven usable nodes kept.",
+  "current_execution": "Each healthy node proceeds through independent upload, collector startup and single atomic dispatch. Prepared replacement is the sole additional rental.",
+  "cumulative_cap_usd": 65
+}
