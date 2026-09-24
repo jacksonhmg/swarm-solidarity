@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-24T22:06:31.985631+00:00",
+  "prepared_instance_id": "44e8e0a8286244c193d2e28266b480da",
+  "state": ".local/lambda-revised-recovery-prepared-final/state.json",
+  "action": "Start prepared assignment on its newly allocated GPU independently of provider deletion of the old GPU. Reuse exact existing source bundle, operational patch, controller and inference. No repeated model work.",
+  "startup_script_sha256": "f17cf663ede5e235d52a1a463a480df045929e8ab0c1a405bdd677aac0e7ed6b",
+  "original_coordinator_prepared_error_interpretation": "The original coordinator may report that a prepared replacement state/intent already exists after finishing retired cleanup. That is the intentional administrative handoff to this assigned GPU, not a training or sampled-case failure. It must never trigger another launch.",
+  "cleanup": "Original coordinator continues cleanup of terminated previous prepared node; all its costs remain counted."
+}
