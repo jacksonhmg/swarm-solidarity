@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-09-24T06:38:05.715318+00:00",
+  "status": "running",
+  "frozen_revision": "94cb2733867f7157f88840acffd35dc5bf40b07d",
+  "instance_id": "eb8d86d3428f47989d0e218e062297b7",
+  "instance_name": "swarm-solidarity-pilot-3118328f",
+  "instance_type": "gpu_1x_a100_sxm4",
+  "region": "us-east-1",
+  "usd_per_hour": 1.99,
+  "launch_requested_at": "2026-09-24T06:28:20.515903+00:00",
+  "budget_usd": 30,
+  "watchdog_usd": 28,
+  "remote_timeout_minutes": 810,
+  "controller_launch": {
+    "controller_pid": 2560,
+    "started_at": "2026-09-24T06:34:16.304723+00:00",
+    "command": [
+      "timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "810m",
+      "bash",
+      "scripts/corrective_gpu_run.sh"
+    ]
+  },
+  "prepared_checkpoint_all_13_files_match_004": true,
+  "gpu_environment_matches_004": true,
+  "completion_monitor_id": "finish-bounded-corrective-comparison",
+  "supervisor_script": "scripts/corrective_supervisor.py",
+  "evaluation_not_yet_started": true,
+  "automatic_experiment_expansion": false
+}

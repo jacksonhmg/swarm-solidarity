@@ -1,0 +1,12 @@
+{
+  "controller_pid": 2560,
+  "started_at": "2026-09-24T06:34:16.304723+00:00",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=60s",
+    "810m",
+    "bash",
+    "scripts/corrective_gpu_run.sh"
+  ]
+}
