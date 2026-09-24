@@ -1,0 +1,38 @@
+{
+  "additional_cap_usd": 65,
+  "termination_threshold_usd": 63,
+  "instance_types": {
+    "gpu_8x_a100_80gb_sxm4": {
+      "gpu_name": "NVIDIA A100-SXM4-80GB",
+      "maximum_hourly_usd": 22.32
+    },
+    "gpu_8x_a100": {
+      "gpu_name": "NVIDIA A100-SXM4-40GB",
+      "maximum_hourly_usd": 15.92
+    }
+  },
+  "selection": "First available approved eight-GPU type, prefer 80 GB when both available. No fallback after rental.",
+  "assignments": {
+    "prepared": 0,
+    "prompt_only": 1,
+    "ordinary_s41031": 2,
+    "corrective_s41031": 3,
+    "revised_s41031": 4,
+    "ordinary_s41032": 5,
+    "corrective_s41032": 6,
+    "revised_s41032": 7
+  },
+  "state_path": ".local/lambda-revised-host/state.json",
+  "projected_wall_seconds": 9512.492085149042,
+  "maximum_responses": 6400,
+  "new_training_runs": 2,
+  "inference_entry_point": "scripts/run_revised_host_eval.py",
+  "training_entry_point": "scripts/train_revised.py",
+  "analysis_entry_point": "scripts/analyze_revised.py",
+  "verification_entry_point": "scripts/verify_revised_host.py",
+  "batch_size": 1,
+  "one_visible_gpu_per_process": true,
+  "training_retries": false,
+  "sampled_case_retries": false,
+  "cpu_affinity": "Eight disjoint partitions of available host CPUs; recorded at execution."
+}

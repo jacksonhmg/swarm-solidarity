@@ -1,0 +1,10 @@
+test_billing_includes_launch_and_rounds_up (test_revised_host.HostAmendmentTests.test_billing_includes_launch_and_rounds_up) ... ok
+test_cost_and_disjoint_assignments (test_revised_host.HostAmendmentTests.test_cost_and_disjoint_assignments) ... ok
+test_download_verifier_uses_remote_paths_without_touching_freeze (test_revised_host.HostAmendmentTests.test_download_verifier_uses_remote_paths_without_touching_freeze) ... ok
+test_inference_only_changes_hardware_guard_and_provenance (test_revised_host.HostAmendmentTests.test_inference_only_changes_hardware_guard_and_provenance) ... ok
+test_raw_association_scoring_loop_unchanged (test_revised_host.HostAmendmentTests.test_raw_association_scoring_loop_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+OK

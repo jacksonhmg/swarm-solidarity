@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-09-24T17:02:11.025361+00:00",
+  "before_rental_training_and_inference": true,
+  "authorization": "User: I approve $65. Get it done",
+  "files": {
+    "experiment_log/011_benign_audit_confirmation/freeze.json": "feda62e64973c22d8670e1637d6c5533b6aa6bab6d7d17000e1b1e58d14ac1fe",
+    "experiment_log/011_benign_audit_confirmation/host_amendment.md": "f9738f73f2496985baf8676d2019f3b7386dfee4a9a56c0c8c7351b00a1be3b3",
+    "experiment_log/011_benign_audit_confirmation/host_plan.json": "187582d32fbd574142d64b7f889c69ba94ebcdc338f1fc7509cc3b060c80e4c0",
+    "experiment_log/011_benign_audit_confirmation/host_scheduler_tests.log": "f44b9beb1d51f93d66a1d7b74fac3976246a41abd94cda8a884fcd1e6c7b948f",
+    "experiment_log/011_benign_audit_confirmation/host_tests.log": "8858c16d034bc5688505b1e8e07c412f2f9a7d4d0d60038d6bdc7655a3cbca5a",
+    "scripts/launch_revised_host.py": "d9d1bb18f6f0e250c4cd1adaf2bb3b04af8b464b6efdfaf3215dd9d89e3ab62c",
+    "scripts/revised_host_supervisor.py": "e3bf80e445758d82716b84397e06b55e3fca0e5fb625e0527c39a83f86e7dc05",
+    "scripts/revised_host_support.py": "85039d052153a54cce65a92427d7797cd75e3e45fdc3fcdc8bdda07795671088",
+    "scripts/revised_host_watchdog.py": "ff634f0d40ca748e77cbb5806da4031864d6315bcb7ac2d69e56fd75956bc84a",
+    "scripts/run_revised_host.py": "6208ae749f0c12ff82195c48b19779d3b059f8cf2c81edaacaf239be11a93115",
+    "scripts/run_revised_host_eval.py": "18400a7caa3ea47aa185f1b3f2c3f6670a07cbe46652c317767b265d8bd32859",
+    "scripts/verify_revised_host.py": "8c728bd611cb9d350d53841ec2ea77ba49500ff5c9cc5a4fa6b7828ab724c9cd",
+    "tests/test_revised_host.py": "8080282795722802c559aad985119265bc91c9c7e68b84ef8eef640947d13320"
+  }
+}
