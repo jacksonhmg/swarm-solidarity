@@ -1,12 +1,12 @@
 {
-  "status": "seven_active_nodes_uploading_prepared_replacement_pending",
-  "updated_at": "2026-09-24T21:57:12.793079+00:00",
+  "status": "model_work_running",
+  "updated_at": "2026-09-24T22:02:54.162305+00:00",
   "current_allocated_instances": 8,
   "current_required_instances": 8,
   "provider_active_instances": 1,
-  "current_attempt_model_work_started": false,
-  "current_attempt_training_runs_started": 0,
-  "current_attempt_responses_generated": 0,
+  "current_attempt_model_work_started": true,
+  "current_attempt_training_runs_started": 1,
+  "current_attempt_responses_generated": 12,
   "active_launcher_pid": 44574,
   "active_watchdog_pid": 43844,
   "execution_amendment": "hardware_recovery/amendment.md",
@@ -22,7 +22,7 @@
     "revised_s41032": ".local/lambda-revised-separate-revised_s41032/state.json"
   },
   "authorized_ceiling_usd": 65,
-  "estimated_cumulative_gpu_cost_usd": 9.0735,
+  "estimated_cumulative_gpu_cost_usd": 12.489666666666665,
   "prior_closed_attempts_gpu_cost_usd": 8.012166666666666,
   "model_work_uncertainty": "Earlier lost single-host startup remains unknown. Subsequent separate-A100 hardware guard failure had zero dispatches. Current recovery has zero observed model work so far.",
   "retained_existing_instance": "revised_s41032",
@@ -33,5 +33,22 @@
   "scientific_freeze": "36d1f7a unchanged; two revised seeds,125updates each,6400responses maximum",
   "decision": "Proceed automatically under standing authority, accepting40/80GB A100s through unchanged host evaluator; no further confirmation, inference tuning or model-work restart.",
   "startup_control": "Independent node readiness, no global barrier",
-  "additional_bookkeeping_replacement_maximum": 1
+  "additional_bookkeeping_replacement_maximum": 1,
+  "current_training_updates": {
+    "revised_s41031": 37
+  },
+  "current_responses_by_condition": {
+    "prompt_only": 12
+  },
+  "dispatched_conditions": [
+    "corrective_s41031",
+    "corrective_s41032",
+    "ordinary_s41031",
+    "ordinary_s41032",
+    "prompt_only",
+    "revised_s41031",
+    "revised_s41032"
+  ],
+  "current_attempt_allocated_instances": 7,
+  "prepared_assignment": "Automatic cleanup and one replacement lease in progress; seven other controllers proceed independently."
 }

@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-09-24T22:02:54.162305+00:00",
+  "training_updates": {
+    "revised_s41031": 37
+  },
+  "responses": {
+    "prompt_only": 12
+  },
+  "dispatched_conditions": [
+    "corrective_s41031",
+    "corrective_s41032",
+    "ordinary_s41031",
+    "ordinary_s41032",
+    "prompt_only",
+    "revised_s41031",
+    "revised_s41032"
+  ],
+  "not_just_GPU_allocation": true
+}
