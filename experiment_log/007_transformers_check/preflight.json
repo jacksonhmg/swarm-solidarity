@@ -1,0 +1,25 @@
+{
+  "completed_at_utc": "2026-09-24T02:34:10.523089+00:00",
+  "tests_passed": 2,
+  "no_checkpoint_inference_or_token_generation_during_tests": true,
+  "verified_saved_input_counts": {
+    "004_replay": 40,
+    "005_clean": 40
+  },
+  "actual_generation_resolution_tested_on_pinned_transformers": "4.55.2",
+  "logits_processors": [],
+  "stopping_criteria": [
+    "MaxLengthCriteria",
+    "EosTokenCriteria"
+  ],
+  "stop_ids_tested": [
+    151666,
+    151643,
+    151645
+  ],
+  "model_default_sampling_overrides_blocked": true,
+  "prior_artifacts_snapshotted": 209,
+  "prior_owned_gpu_confirmed_terminated": true,
+  "syntax_checks_passed": true,
+  "no_gpu_rented_yet": true
+}
