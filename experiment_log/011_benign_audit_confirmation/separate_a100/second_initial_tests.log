@@ -85,7 +85,7 @@ test_supervisor_survives_transport_loss_without_restarting_work (test_revised_in
 ok
 test_cumulative_accounting_includes_prior_and_stops_at_first_confirmation (test_revised_separate.SeparateA100Tests.test_cumulative_accounting_includes_prior_and_stops_at_first_confirmation) ... ok
 test_node_computation_unchanged_except_scheduling_paths (test_revised_separate.SeparateA100Tests.test_node_computation_unchanged_except_scheduling_paths) ... ok
-test_node_hash_manifest_json_and_ownership_paths (test_revised_separate.SeparateA100Tests.test_node_hash_manifest_json_and_ownership_paths) ... ok
+test_node_hash_manifest_json_and_ownership_paths (test_revised_separate.SeparateA100Tests.test_node_hash_manifest_json_and_ownership_paths) ... ERROR
 test_raw_verification_and_scoring_loop_unchanged (test_revised_separate.SeparateA100Tests.test_raw_verification_and_scoring_loop_unchanged) ... ok
 test_same_hardware_disjoint_conditions_budget_and_timeouts (test_revised_separate.SeparateA100Tests.test_same_hardware_disjoint_conditions_budget_and_timeouts) ... ok
 test_configuration_keeps_selected_interface_and_inference (test_six_record.SixRecordTests.test_configuration_keeps_selected_interface_and_inference) ... ok
@@ -102,7 +102,24 @@ test_exact_sparse_pairs_and_unknowns (test_transformers_conflict.TransformersCon
 test_saved_inputs (test_transformers_conflict.TransformersConflictTests.test_saved_inputs) ... ok
 test_successful_007_inference_code_unchanged (test_transformers_conflict.TransformersConflictTests.test_successful_007_inference_code_unchanged) ... ok
 
+======================================================================
+ERROR: test_node_hash_manifest_json_and_ownership_paths (test_revised_separate.SeparateA100Tests.test_node_hash_manifest_json_and_ownership_paths)
 ----------------------------------------------------------------------
-Ran 102 tests in 5.150s
+Traceback (most recent call last):
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/tests/test_revised_separate.py", line 66, in test_node_hash_manifest_json_and_ownership_paths
+    self.assertEqual(supervisor.finalize_hashes('prepared'),2)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/revised_separate_supervisor.py", line 51, in finalize_hashes
+    remote(node,['python3','-c',program]);collect(node)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/tests/test_revised_separate.py", line 64, in execute
+    def execute(node,command):exec(command[-1])
+                              ^^^^^^^^^^^^^^^^^
+  File "<string>", line 10, in <module>
+  File "<string>", line 10, in <dictcomp>
+NameError: name 'p' is not defined
 
-OK
+----------------------------------------------------------------------
+Ran 102 tests in 5.012s
+
+FAILED (errors=1)

@@ -56,3 +56,10 @@ joint-usefulness margins are unchanged. Both seeds remain separately reported.
 The final report must qualify within-attempt no-retry verification: no repeated
 observed requests in this run, with unobservable possible work in the lost startup.
 Preserve experiment 010 as unsuccessful overall; stop after results and cleanup.
+
+Pre-rental checks: all **102 tests passed** in the pinned preparation environment.
+Two initial CPU test-harness failures (a temporary-directory plan lookup and the
+namespace used to execute a captured Python snippet) are preserved in the initial
+logs; both were corrected before any rental. No model, scorer or scheduling code
+was changed in response to those test-harness errors. The pretest manifest is
+preserved separately and the final pre-execution freeze records the passing tests.

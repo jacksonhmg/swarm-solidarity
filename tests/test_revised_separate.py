@@ -61,7 +61,7 @@ class SeparateA100Tests(unittest.TestCase):
                 (out/'controller-result.json').write_text('{"returncode":0}')
                 stage=root/'execution/prepared';stage.mkdir(parents=True)
                 (stage/'responses.jsonl').write_text('representative already-collected output\n')
-                def execute(node,command):exec(command[-1])
+                def execute(node,command):exec(command[-1],{})
                 with patch.multiple(supervisor,LOG=root),patch.object(supervisor,'node_spec',lambda node:{'conditions':['prepared']}),patch.object(supervisor,'collect',lambda node:None),patch.object(supervisor,'remote',execute):
                     self.assertEqual(supervisor.finalize_hashes('prepared'),2)
                 manifest=json.loads((out/'remote-artifact-hashes.json').read_text())
