@@ -1,6 +1,6 @@
 {
-  "status": "retry_launcher_preparing_bundle",
-  "updated_at": "2026-09-24T20:44:50.783592+00:00",
+  "status": "authorized_retry_waiting_for_capacity",
+  "updated_at": "2026-09-24T20:47:18.758560+00:00",
   "active_instances": 0,
   "all_owned_instances_terminated": true,
   "all_temporary_keys_deleted": true,
@@ -19,7 +19,7 @@
   "availability_watcher_running": true,
   "previous_experiment_010": "closed unchanged",
   "frozen_files": 117,
-  "decision": "User explicitly approved one unchanged infrastructure retry despite unknown work in the lost startup.",
+  "decision": "One unchanged infrastructure retry approved and fully prepared. Matching eight-A100 capacity unavailable on latest poll; automatic allocator is active. No additional user decision required.",
   "dispatch_repair": "Integrated and locally tested; committed before rental.",
   "failure_report": "a100_return/startup_failure.md",
   "retry_authorized": true,
@@ -28,5 +28,7 @@
   "retry_owner_state": ".local/lambda-revised-retry/state.json",
   "retry_execution_amendment": "infrastructure_retry/amendment.md",
   "retry_launcher_pid": 30813,
-  "retry_freeze_commit": "07a4f0aa02b56df3784aae6cf0e27cb91fb1f6fb"
+  "retry_freeze_commit": "07a4f0aa02b56df3784aae6cf0e27cb91fb1f6fb",
+  "capacity_poll_seconds": 5,
+  "current_retry_gpu_spend_usd": 0
 }
