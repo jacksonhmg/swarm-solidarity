@@ -52,7 +52,10 @@ was found. The requested exact paired test for 005's four-versus-zero falsificat
 joint successes gives two-sided **p = 0.125**, alongside the unchanged bootstrap
 estimate. Experiment 005 remains closed and corrective training remains paused.
 The user subsequently authorized [waiting for H100 PCIe availability](experiment_log/006_reproduction/resume_authorization.md)
-and then executing that same bounded replay; an active check runs every 15 minutes.
+and then executing that same bounded replay. The user has now approved an
+[A100 alternative](experiment_log/006_reproduction/a100_amendment.md), with the
+16,384-token prefill budget explicit and the hardware limitation documented.
+The active 15-minute capacity check now watches A100 SXM4 instead.
 
 ## Local workflow
 

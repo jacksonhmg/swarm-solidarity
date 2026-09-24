@@ -1,0 +1,8 @@
+{
+  "tests_passed": 5,
+  "original_frozen_files_unchanged": 31,
+  "constructor_diff_only_explicit_prefill_budget": 16384,
+  "saved_input_manifests_unchanged": true,
+  "original_h100_runner_and_freeze_preserved": true,
+  "no_generation_or_rental_yet": true
+}
