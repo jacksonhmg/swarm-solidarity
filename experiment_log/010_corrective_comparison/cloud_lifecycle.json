@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "node": "primary",
+      "instance_id": "eb8d86d3428f47989d0e218e062297b7",
+      "name": "swarm-solidarity-pilot-3118328f",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-east-1",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T06:28:20.515903+00:00",
+      "termination_requested_at": "2026-09-24T11:10:20.335070+00:00",
+      "termination_confirmed_at": "2026-09-24T11:11:43.117839+00:00",
+      "rounded_elapsed_minutes": 284,
+      "estimated_gpu_cost_usd": 9.419333333333334,
+      "status": "terminated",
+      "cloud_ssh_key_deleted_at": "2026-09-24T11:11:44.609066+00:00",
+      "local_temporary_key_deleted": true
+    },
+    {
+      "node": "seed41031",
+      "instance_id": "effe2099619a44a9a79eb094276f7b26",
+      "name": "swarm-solidarity-pilot-45948c6f",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-east-1",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T07:13:55.162427+00:00",
+      "termination_requested_at": "2026-09-24T11:37:57.418890+00:00",
+      "termination_confirmed_at": "2026-09-24T11:38:49.265094+00:00",
+      "rounded_elapsed_minutes": 265,
+      "estimated_gpu_cost_usd": 8.789166666666667,
+      "status": "terminated",
+      "cloud_ssh_key_deleted_at": "2026-09-24T11:38:51.141315+00:00",
+      "local_temporary_key_deleted": true
+    },
+    {
+      "node": "seed41032",
+      "instance_id": "f6ec7250334241f5bd7c76c0f73b96f3",
+      "name": "swarm-solidarity-pilot-75382002",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-west-2",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T07:14:01.758497+00:00",
+      "termination_requested_at": "2026-09-24T11:27:59.898061+00:00",
+      "termination_confirmed_at": "2026-09-24T11:28:41.427759+00:00",
+      "rounded_elapsed_minutes": 255,
+      "estimated_gpu_cost_usd": 8.4575,
+      "status": "terminated",
+      "cloud_ssh_key_deleted_at": "2026-09-24T11:28:43.288047+00:00",
+      "local_temporary_key_deleted": true
+    }
+  ],
+  "estimated_gpu_cost_usd": 26.666,
+  "additional_cap_usd": 40,
+  "within_cap": true,
+  "status": "all_terminated",
+  "all_temporary_keys_deleted": true,
+  "cost_basis": "Each node launch-request to first confirmed termination rounded up to whole minute, including original pre-amendment rental; GPU estimate, not invoice."
+}

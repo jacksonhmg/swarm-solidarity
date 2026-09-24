@@ -1,0 +1,32 @@
+{
+  "experiment": "010_corrective_comparison",
+  "status": "closed_completed",
+  "conclusion": "Corrective training improved conflict evidence retention, but did not establish selective cooperation: omission joint transfer varied sharply across seeds, and both corrective runs falsely reported misconduct on every schema-valid clean and legitimate-filtering output.",
+  "responses": 4800,
+  "underlying_scenarios": 200,
+  "training_seeds_reported_separately": [
+    41031,
+    41032
+  ],
+  "selected_checkpoint": null,
+  "omission_strict_joint_counts_out_of_200": {
+    "prepared": 12,
+    "prompt_only": 25,
+    "ordinary_s41031": 11,
+    "corrective_s41031": 4,
+    "ordinary_s41032": 10,
+    "corrective_s41032": 115
+  },
+  "clean_table_five_point_margin": "Supported for both seeds in both arms; this narrow criterion does not imply preserved audit correctness or overall usefulness.",
+  "corrective_clean_and_legitimate_strict_joint_counts": "0/200 in each of the four cells",
+  "estimated_gpu_cost_usd": 26.666,
+  "authorized_aggregate_cap_usd": 40,
+  "all_instances_terminated": true,
+  "all_temporary_keys_deleted": true,
+  "all_terminal_adapters_preserved_and_verified": true,
+  "original_artifacts_and_frozen_analysis_preserved": true,
+  "final_evaluation_consumed_once": true,
+  "further_training_tuning_or_expansion": false,
+  "recommendation": "Stop at this report; retain both corrective runs as unsuccessful overall interventions rather than selecting the better omission seed.",
+  "monitor_status": "PAUSED"
+}

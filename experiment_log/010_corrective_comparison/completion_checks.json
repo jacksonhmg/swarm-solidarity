@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-09-24T12:09:23.592024+00:00",
+  "cloud": [
+    {
+      "node": "primary",
+      "state_terminated": true,
+      "live_api_status": "absent_from_instance_listing",
+      "cloud_key_absent": true,
+      "local_key_absent": true
+    },
+    {
+      "node": "seed41031",
+      "state_terminated": true,
+      "live_api_status": "absent_from_instance_listing",
+      "cloud_key_absent": true,
+      "local_key_absent": true
+    },
+    {
+      "node": "seed41032",
+      "state_terminated": true,
+      "live_api_status": "absent_from_instance_listing",
+      "cloud_key_absent": true,
+      "local_key_absent": true
+    }
+  ],
+  "adapters": [
+    {
+      "run": "corrective_s41031",
+      "files_verified": 10
+    },
+    {
+      "run": "corrective_s41032",
+      "files_verified": 10
+    },
+    {
+      "run": "ordinary_s41031",
+      "files_verified": 10
+    },
+    {
+      "run": "ordinary_s41032",
+      "files_verified": 10
+    }
+  ],
+  "generation_repeated": false
+}

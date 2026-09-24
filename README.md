@@ -4,7 +4,7 @@ A controlled experiment on selective cooperation: preserve useful teammate
 evidence, reject inappropriate requests, and report them to the human.
 See [the research proposal](docs/project_overview.md).
 
-**Current run:** the separately authorized [corrective comparison](experiment_log/010_corrective_comparison/protocol.md) is running under a $40 aggregate GPU cap after an authorized [scheduling amendment](experiment_log/010_corrective_comparison/parallel_amendment.md) to three matching A100s. The original rental cost counts toward this cap. Four independently seeded terminal adapters and the fixed 200-scenario / 4,800-response evaluation were frozen before rental. [Token-mask checks](experiment_log/010_corrective_comparison/preflight/summary.md) passed, and the prepared checkpoint hashes match 004. Completion monitoring and owner-scoped cleanup are active; results are pending. Earlier experiments and their stop decisions remain closed.
+**Current result:** the [bounded corrective comparison](experiment_log/010_corrective_comparison/report.md) is complete and closed: four terminal training runs and all 4,800 responses on 200 fresh final scenarios. Corrective training improved conflict evidence retention, but omission whole-table-plus-exact-audit success differed sharply between seeds (4/200 and 115/200), and both falsely reported misconduct on every schema-valid clean and legitimate-filtering output. The narrow clean-table margin passed; overall selective cooperation did not. Neither corrective checkpoint is selected. All adapters and results are preserved, all three GPUs are terminated, temporary keys are deleted, and estimated aggregate spend is **$26.67 / $40**. No further training, tuning or expansion follows this result. Earlier results and stop decisions remain intact.
 
 The first milestone was a **development-only baseline pilot**. It ran the original
 WideSeek-R1-4B checkpoint and a prompt-only reminder on 40 matched scenarios with
@@ -81,12 +81,14 @@ had a reporting error: **123/160**, not 121/160, conflict audits are schema-vali
 The additive [reconciliation and omission breakdown](experiment_log/009_corrective_preflight/report.md)
 preserves the original artifacts and explains the correction from all saved scores.
 
-**Current stop boundary:** the separately authorized corrective comparison stopped
+**Historical offline budget stop (009):** the separately authorized corrective comparison stopped
 at its offline budget check, before rental, training, dataset generation or final
 evaluation access. The required 4,800 responses project to $24.58 for generation
 alone; even optimistic training and one setup/cleanup allowance bring the estimate
-to $25.52, above the $25 cap. Additional GPU spending is $0. No reduced experiment,
-inference tuning or follow-up training was launched.
+to $25.52, above the then-current $25 cap. Additional GPU spending for that offline
+check was $0. The user subsequently authorized experiment 010, then a $40 aggregate
+cap and parallel scheduling on three matching A100s. Its completed results appear
+above; the original 009 decision is preserved.
 
 ## Local workflow
 
@@ -166,8 +168,10 @@ machine, not the GPU host. The lifecycle and billing estimate belong in the
 experiment log. Never commit credentials, private SSH keys, or environment files.
 
 The report and reproducible analysis commands are recorded in each experiment's
-directory. The authorized task-preparation dataset belongs to experiment 004;
-the final held-out evaluation has not been accessed.
+directory. The authorized task-preparation dataset belongs to experiment 004.
+Experiment 010 consumed its frozen 200-scenario final evaluation once, as explicitly
+authorized; it must not become a source for omission-driven tuning or repeated
+model evaluation.
 
 The original pilot followed `experiment_log/001_baseline_pilot/protocol-v3.md`.
 The initial greedy-decoding smoke run and aborted attempt are retained. To

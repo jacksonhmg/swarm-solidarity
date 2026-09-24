@@ -1,0 +1,25 @@
+{
+  "node": "seed41032",
+  "finished_at": "2026-09-24T11:28:43.313101+00:00",
+  "controller_result": {
+    "node": "seed41032",
+    "pid": 2695,
+    "started_at": "2026-09-24T07:19:39.644000+00:00",
+    "command": [
+      "timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "360m",
+      "python3",
+      "scripts/run_corrective_parallel_node.py",
+      "--node",
+      "seed41032",
+      "--execute"
+    ],
+    "finished_at": "2026-09-24T11:27:43.790799+00:00",
+    "returncode": 0
+  },
+  "download_hashes_verified": true,
+  "verified_files": 32,
+  "failure": null
+}

@@ -1,0 +1,25 @@
+{
+  "node": "primary",
+  "finished_at": "2026-09-24T11:11:44.651818+00:00",
+  "controller_result": {
+    "node": "primary",
+    "pid": 4819,
+    "started_at": "2026-09-24T07:13:09.786265+00:00",
+    "command": [
+      "timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "360m",
+      "python3",
+      "scripts/run_corrective_parallel_node.py",
+      "--node",
+      "primary",
+      "--execute"
+    ],
+    "finished_at": "2026-09-24T11:09:51.076984+00:00",
+    "returncode": 0
+  },
+  "download_hashes_verified": true,
+  "verified_files": 24,
+  "failure": null
+}

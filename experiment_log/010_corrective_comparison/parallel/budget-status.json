@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-24T11:39:14.421338+00:00",
+  "nodes": [
+    {
+      "node": "primary",
+      "instance_id": "eb8d86d3428f47989d0e218e062297b7",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 284,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 9.419333333333334
+    },
+    {
+      "node": "seed41031",
+      "instance_id": "effe2099619a44a9a79eb094276f7b26",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 265,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 8.789166666666667
+    },
+    {
+      "node": "seed41032",
+      "instance_id": "f6ec7250334241f5bd7c76c0f73b96f3",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 255,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 8.4575
+    }
+  ],
+  "estimated_total_usd": 26.666,
+  "hard_ceiling_usd": 40
+}

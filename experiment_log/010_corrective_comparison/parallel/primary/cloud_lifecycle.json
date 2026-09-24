@@ -1,0 +1,16 @@
+{
+  "node": "primary",
+  "instance_id": "eb8d86d3428f47989d0e218e062297b7",
+  "name": "swarm-solidarity-pilot-3118328f",
+  "instance_type": "gpu_1x_a100_sxm4",
+  "region": "us-east-1",
+  "usd_per_hour": 1.99,
+  "launch_requested_at": "2026-09-24T06:28:20.515903+00:00",
+  "termination_requested_at": "2026-09-24T11:10:20.335070+00:00",
+  "termination_confirmed_at": "2026-09-24T11:11:43.117839+00:00",
+  "rounded_elapsed_minutes": 284,
+  "estimated_gpu_cost_usd": 9.419333333333334,
+  "status": "terminated",
+  "cloud_ssh_key_deleted_at": "2026-09-24T11:11:44.609066+00:00",
+  "local_temporary_key_deleted": true
+}

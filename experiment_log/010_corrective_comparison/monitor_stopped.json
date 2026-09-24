@@ -1,0 +1,6 @@
+{
+  "automation_id": "finish-bounded-corrective-comparison",
+  "status": "PAUSED",
+  "verified_at": "2026-09-24T12:15:31.403960+00:00",
+  "reason": "All generation, frozen analysis, verification, cloud cleanup and experiment reporting are complete."
+}

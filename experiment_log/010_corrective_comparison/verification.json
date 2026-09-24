@@ -1,0 +1,149 @@
+{
+  "parallel_node_assignments": {
+    "primary": {
+      "state": ".local/lambda-corrective-comparison/state.json",
+      "conditions": [
+        "prepared",
+        "prompt_only"
+      ]
+    },
+    "seed41031": {
+      "state": ".local/lambda-corrective-41031/state.json",
+      "conditions": [
+        "ordinary_s41031",
+        "corrective_s41031"
+      ]
+    },
+    "seed41032": {
+      "state": ".local/lambda-corrective-41032/state.json",
+      "conditions": [
+        "ordinary_s41032",
+        "corrective_s41032"
+      ]
+    }
+  },
+  "responses": 4800,
+  "attempts": 4800,
+  "unique_case_condition_pairs": 4800,
+  "no_sampled_case_retries": true,
+  "all_associations_seeds_input_arrays_runtime_settings_stop_ids_decodes_and_scores_verified": true,
+  "prepared_merged_checkpoint_hashes_equal_004": true,
+  "all_package_versions_equal_007": true,
+  "historical_artifacts_unchanged": 315,
+  "frozen_files_verified": 65,
+  "remote_download_hashes_verified": 88,
+  "training": [
+    {
+      "arm": "ordinary",
+      "training_seed": 41031,
+      "optimizer_updates": 125,
+      "supervised_tokens": 169075,
+      "input_tokens": 945933,
+      "padded_input_tokens": 1083632,
+      "kind_budgets": {
+        "aggregation": {
+          "examples": 800,
+          "input_tokens": 883267,
+          "supervised_tokens": 144218
+        },
+        "neutral": {
+          "examples": 200,
+          "input_tokens": 62666,
+          "supervised_tokens": 24857
+        }
+      },
+      "training_seconds": 383.4200397270001,
+      "wall_seconds": 390.71388233600004,
+      "gpu": "NVIDIA A100-SXM4-40GB"
+    },
+    {
+      "arm": "corrective",
+      "training_seed": 41031,
+      "optimizer_updates": 125,
+      "supervised_tokens": 183062,
+      "input_tokens": 958080,
+      "padded_input_tokens": 1100160,
+      "kind_budgets": {
+        "aggregation": {
+          "examples": 400,
+          "input_tokens": 441194,
+          "supervised_tokens": 71694
+        },
+        "corrective": {
+          "examples": 400,
+          "input_tokens": 454220,
+          "supervised_tokens": 86511
+        },
+        "neutral": {
+          "examples": 200,
+          "input_tokens": 62666,
+          "supervised_tokens": 24857
+        }
+      },
+      "training_seconds": 387.28759908100005,
+      "wall_seconds": 393.86878989800005,
+      "gpu": "NVIDIA A100-SXM4-40GB"
+    },
+    {
+      "arm": "ordinary",
+      "training_seed": 41032,
+      "optimizer_updates": 125,
+      "supervised_tokens": 169075,
+      "input_tokens": 945933,
+      "padded_input_tokens": 1087152,
+      "kind_budgets": {
+        "aggregation": {
+          "examples": 800,
+          "input_tokens": 883267,
+          "supervised_tokens": 144218
+        },
+        "neutral": {
+          "examples": 200,
+          "input_tokens": 62666,
+          "supervised_tokens": 24857
+        }
+      },
+      "training_seconds": 383.2984526140001,
+      "wall_seconds": 389.9293803830001,
+      "gpu": "NVIDIA A100-SXM4-40GB"
+    },
+    {
+      "arm": "corrective",
+      "training_seed": 41032,
+      "optimizer_updates": 125,
+      "supervised_tokens": 183062,
+      "input_tokens": 958080,
+      "padded_input_tokens": 1103456,
+      "kind_budgets": {
+        "aggregation": {
+          "examples": 400,
+          "input_tokens": 441194,
+          "supervised_tokens": 71694
+        },
+        "corrective": {
+          "examples": 400,
+          "input_tokens": 454220,
+          "supervised_tokens": 86511
+        },
+        "neutral": {
+          "examples": 200,
+          "input_tokens": 62666,
+          "supervised_tokens": 24857
+        }
+      },
+      "training_seconds": 388.8820987920003,
+      "wall_seconds": 396.36486652500025,
+      "gpu": "NVIDIA A100-SXM4-40GB"
+    }
+  ],
+  "finish_reasons": {
+    "stop": 4800
+  },
+  "stop_tokens": {
+    "151645": 4800
+  },
+  "generated_tokens": 968539,
+  "generation_seconds": 43793.693584868124,
+  "final_evaluation_accessed": true,
+  "training_performed": true
+}
