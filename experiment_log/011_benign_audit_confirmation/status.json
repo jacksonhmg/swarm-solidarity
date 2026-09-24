@@ -1,5 +1,5 @@
 {
-  "status": "offline_ready_awaiting_capacity",
+  "status": "capacity_watcher_active",
   "gpu_rented": false,
   "new_training_runs_started": 0,
   "responses_generated": 0,
@@ -8,5 +8,11 @@
   "eight_a100_80gb_optional_budget_request": "Explicitly authorized by user: I approve $65. Get it done",
   "previous_experiment_010": "closed unchanged",
   "frozen_files": 117,
-  "execution_amendment": "host_amendment.md"
+  "execution_amendment": "host_amendment.md",
+  "availability_poll_seconds": 30,
+  "availability_receipt": "host/availability-started.json",
+  "source_bundle_receipt": "host/bundle.json",
+  "execution_amendment_commit": "a629d0577f21f604620eee1dff269a05f774be69",
+  "supervision_monitor": "finish-bounded-corrective-comparison",
+  "decision": "Start exactly one approved eight-A100 host when capacity appears; no experiment/model-work retries."
 }

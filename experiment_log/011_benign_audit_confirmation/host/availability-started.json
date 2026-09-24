@@ -1,0 +1,8 @@
+{
+  "pid": 10674,
+  "started_at": "2026-09-24T17:02:51.617407+00:00",
+  "poll_seconds": 30,
+  "launches_maximum": 1,
+  "ceiling_usd": 65,
+  "code_revision": "a629d05"
+}
