@@ -1,0 +1,19 @@
+{
+  "at": "2026-09-24T20:38:18.187544+00:00",
+  "user_approval": "yes thats fine",
+  "approval_context": "One documented unchanged infrastructure retry after the lost A100 startup; prior model-work state unknown. No performance-driven retry.",
+  "infrastructure_retries_authorized": 1,
+  "prior_gpu_cost_usd": 4.0985,
+  "hard_ceiling_usd": 65,
+  "termination_threshold_usd": 62,
+  "instance_type": "gpu_8x_a100",
+  "maximum_hourly_usd": 15.92,
+  "maximum_retry_responses": 6400,
+  "new_training_runs": 2,
+  "seeds": [
+    41031,
+    41032
+  ],
+  "unknown_prior_generated_responses": null,
+  "unknown_prior_training_starts": null
+}

@@ -12,7 +12,7 @@ from pathlib import Path
 
 
 def dispatch_once(ssh_args, host, remote_root, receipt_root, start_supervisor,
-                  run=subprocess.run):
+                  run=subprocess.run, controller_command=None):
     root = Path(receipt_root)
     root.mkdir(parents=True, exist_ok=True)
     # Exclusive intent also prevents this local operation being delivered twice.
@@ -21,10 +21,11 @@ def dispatch_once(ssh_args, host, remote_root, receipt_root, start_supervisor,
         json.dump({'phase': 'before_supervisor', 'remote_root': remote_root}, handle)
     supervisor_pid = start_supervisor()
     assert isinstance(supervisor_pid, int) and supervisor_pid > 0
+    controller_command = controller_command or ['python3', 'scripts/run_revised_host.py']
     command = ['python3', 'scripts/dispatch_detached_once.py',
                '--receipt', str(root / 'controller-dispatch.json'),
                '--output', str(root / 'remote-console.log'),
-               '--', 'python3', 'scripts/run_revised_host.py']
+               '--', *controller_command]
     remote_command = 'cd ' + shlex.quote(remote_root) + ' && ' + shlex.join(command)
     result = {'supervisor_pid': supervisor_pid, 'command': remote_command,
               'acknowledgement': 'unknown', 'repeat_dispatch': False}
@@ -36,7 +37,7 @@ def dispatch_once(ssh_args, host, remote_root, receipt_root, start_supervisor,
                    capture_output=True, text=True, timeout=45)
         receipt = json.loads(done.stdout)
         assert receipt['status'] == 'started', receipt
-        assert receipt['command'] == ['python3', 'scripts/run_revised_host.py']
+        assert receipt['command'] == controller_command
         result.update(acknowledgement='received', remote_receipt=receipt)
     except (OSError, ValueError, AssertionError, subprocess.SubprocessError) as exc:
         result['transport_error'] = type(exc).__name__ + ': ' + str(exc)

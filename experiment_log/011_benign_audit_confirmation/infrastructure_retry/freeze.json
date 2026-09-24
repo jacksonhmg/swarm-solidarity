@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-24T20:41:12.037074+00:00",
+  "before_retry_rental": true,
+  "scope": "Infrastructure startup, supervision and cumulative timeout only. No scientific changes.",
+  "files": {
+    "scripts/dispatch_detached_once.py": "150585a6d6a472d14f20f58cbe7b5a3f05fb4169b386d5d5b62473522ac8e02a",
+    "scripts/revised_dispatch_transport.py": "70be47d925b7c537d38cd2d3b97405c2196d6a42aab488df7389c63e2ad5feb7",
+    "scripts/run_revised_retry_host.py": "b2accd0a301d785d811f2405c22714c87e84798d6115601145eb0d2850c08652",
+    "scripts/revised_infrastructure_retry.py": "3fb864dfe2bb99dabeee3caebd1831d520a7637c821798909507b5c9b6f1ecd2",
+    "tests/test_dispatch_detached_once.py": "29d8abe38748236ce6079801cf85b19338b106dd19cbef443630732cb5b2ac5c",
+    "tests/test_revised_dispatch_transport.py": "d7927cd1725e32d607fd6a6cefa1bc52105408fbd1589434b46c4c207ea5e6db",
+    "tests/test_revised_infrastructure_retry.py": "43ce3a0296818f485392e7c5dad367725946b32bd081b259686fbfb6fa5945b8",
+    "experiment_log/011_benign_audit_confirmation/infrastructure_retry/authorization.json": "b62548258e5386e8170c1a43bd68974d92d695880739d56af381790430ffcbd4",
+    "experiment_log/011_benign_audit_confirmation/infrastructure_retry/amendment.md": "30e23a3815729d0e06a2c58b22663334b98ae6cb0be86fdcdac9c8755a583abe",
+    "experiment_log/011_benign_audit_confirmation/infrastructure_retry/prior_cloud_lifecycle.json": "aeabcf8725961e03920f142527b2d69fab518c8e8fec32f8762d9767b73f55d1",
+    "experiment_log/011_benign_audit_confirmation/infrastructure_retry/preservation_verification.json": "e73acdbdadd02092c9b19eed134cab6c92b3a5bd703dc836fe3745cffd101c41",
+    "experiment_log/011_benign_audit_confirmation/infrastructure_retry/tests.log": "c34c7cfdcd1cfd50446a765dd6a7071fd5e4585e50083fbc3f48ba03a89e9124",
+    "experiment_log/011_benign_audit_confirmation/infrastructure_retry/pinned_tests.log": "2b098faf555f7d8e120b39f934221b4a6e298acabd2bb83ca8fdbb38c88a8256"
+  }
+}

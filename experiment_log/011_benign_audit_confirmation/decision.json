@@ -1,9 +1,11 @@
 {
-  "status": "startup_failed_awaiting_infrastructure_retry_decision",
-  "scientific_study": "No recoverable experiment-011 outcomes; A100 model-work state unknown.",
-  "prior_artifacts": "Unchanged; failed H100 and A100 lifecycle receipts preserved.",
-  "budget": "$4.0985 estimated spent; $60.9015 remains under the cumulative $65 ceiling.",
-  "automatic_retry_authorized": false,
-  "required_decision": "One explicit unchanged infrastructure retry despite unobservable possible work in the lost A100 startup. No performance-driven retry, changed dataset, configuration or analysis.",
-  "cleanup": "All experiment-owned instances terminated; cloud and local temporary keys deleted."
+  "status": "authorized_infrastructure_retry",
+  "user_approval": "yes thats fine",
+  "prior_model_work": "unknown, retained as a protocol exception",
+  "maximum_retry_responses": 6400,
+  "new_training_runs": 2,
+  "additional_retries": false,
+  "ceiling_usd": 65,
+  "prior_cost_usd": 4.0985,
+  "scientific_configuration": "unchanged"
 }

@@ -1,5 +1,5 @@
 {
-  "status": "authorized_infrastructure_retry_preparing_launch",
+  "status": "startup_failed_awaiting_infrastructure_retry_decision",
   "updated_at": "2026-09-24T20:24:54.159821+00:00",
   "active_instances": 0,
   "all_owned_instances_terminated": true,
@@ -15,16 +15,11 @@
   "model_work_uncertainty": "The A100 dispatch timed out; termination preceded remote artifact recovery. Model work may or may not have begun. Do not count unknown as zero.",
   "h100_attempt": "Failed allocation before model work; $0.38383333333333336; cleaned up.",
   "a100_attempt": "Eight GPUs allocated and verified; lost dispatch acknowledgement triggered cleanup; $3.7146666666666666; cleaned up.",
-  "supervision_monitor_status": "to_resume_for_retry",
+  "supervision_monitor_status": "paused",
   "availability_watcher_running": false,
   "previous_experiment_010": "closed unchanged",
   "frozen_files": 117,
-  "decision": "User explicitly approved one unchanged infrastructure retry despite unknown work in the lost startup.",
-  "dispatch_repair": "Integrated and locally tested; committed before rental.",
-  "failure_report": "a100_return/startup_failure.md",
-  "retry_authorized": true,
-  "retry_responses_generated": 0,
-  "retry_training_runs_started": 0,
-  "retry_owner_state": ".local/lambda-revised-retry/state.json",
-  "retry_execution_amendment": "infrastructure_retry/amendment.md"
+  "decision": "Do not restart old launchers. Await the specific user decision on an unchanged infrastructure retry because the lost attempt leaves the no-repeated-sampled-cases boundary uncertain.",
+  "dispatch_repair": "Atomic remote claim and detached pipes; collection starts before dispatch; lost acknowledgement remains unknown. Four local tests passed. New full launcher integration is still required before any rental.",
+  "failure_report": "a100_return/startup_failure.md"
 }
