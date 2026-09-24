@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-24T21:47:08.861404+00:00",
+  "at": "2026-09-24T22:37:00.471942+00:00",
   "nodes": [
     {
       "node": "prepared",
@@ -112,9 +112,24 @@
       "status": "terminated",
       "cloud_ssh_key_deleted_at": "2026-09-24T21:47:07.742299+00:00",
       "local_temporary_key_deleted": true
+    },
+    {
+      "node": "prepared_bookkeeping_retired",
+      "instance_id": "870d29398b6d4957bb79e942f2c1b532",
+      "name": "swarm-solidarity-pilot-e27d10a7",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-west-2",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T21:47:30.362720+00:00",
+      "termination_confirmed_at": "2026-09-24T22:36:57.152321+00:00",
+      "rounded_elapsed_minutes": 50,
+      "estimated_gpu_cost_usd": 1.6583333333333334,
+      "status": "terminated",
+      "cloud_ssh_key_deleted_at": "2026-09-24T22:36:59.311213+00:00",
+      "local_temporary_key_deleted": true
     }
   ],
-  "prior_closed_cost_usd": 8.012166666666666,
+  "prior_closed_cost_usd": 9.670499999999999,
   "retained_node": "revised_s41032",
   "retained_node_in_prior_cost": false
 }

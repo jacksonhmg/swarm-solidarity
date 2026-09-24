@@ -1,12 +1,12 @@
 {
-  "status": "model_work_running_eight_GPUs_allocated",
-  "updated_at": "2026-09-24T22:07:06.678285+00:00",
+  "status": "all_eight_evaluations_running_both_training_runs_complete",
+  "updated_at": "2026-09-24T22:37:28.416359+00:00",
   "current_allocated_instances": 8,
   "current_required_instances": 8,
-  "provider_active_instances": 1,
+  "provider_active_instances": 8,
   "current_attempt_model_work_started": true,
   "current_attempt_training_runs_started": 2,
-  "current_attempt_responses_generated": 119,
+  "current_attempt_responses_generated": 1595,
   "active_launcher_pid": 44574,
   "active_watchdog_pid": 43844,
   "execution_amendment": "hardware_recovery/amendment.md",
@@ -22,7 +22,7 @@
     "revised_s41032": ".local/lambda-revised-separate-revised_s41032/state.json"
   },
   "authorized_ceiling_usd": 65,
-  "estimated_cumulative_gpu_cost_usd": 13.617333333333333,
+  "estimated_cumulative_gpu_cost_usd": 22.6055,
   "prior_closed_attempts_gpu_cost_usd": 8.012166666666666,
   "model_work_uncertainty": "Earlier lost single-host startup remains unknown. Subsequent separate-A100 hardware guard failure had zero dispatches. Current recovery has zero observed model work so far.",
   "retained_existing_instance": "revised_s41032",
@@ -35,15 +35,18 @@
   "startup_control": "Independent node readiness, no global barrier",
   "additional_bookkeeping_replacement_maximum": 1,
   "current_training_updates": {
-    "revised_s41031": 117,
-    "revised_s41032": 83
+    "revised_s41031": 125,
+    "revised_s41032": 125
   },
   "current_responses_by_condition": {
-    "ordinary_s41032": 21,
-    "corrective_s41032": 19,
-    "prompt_only": 39,
-    "ordinary_s41031": 21,
-    "corrective_s41031": 19
+    "revised_s41031": 191,
+    "prepared": 152,
+    "ordinary_s41032": 222,
+    "corrective_s41032": 202,
+    "prompt_only": 229,
+    "revised_s41032": 170,
+    "ordinary_s41031": 221,
+    "corrective_s41031": 208
   },
   "dispatched_conditions": [
     "corrective_s41031",
@@ -55,6 +58,7 @@
     "revised_s41032"
   ],
   "current_attempt_allocated_instances": 7,
-  "prepared_assignment": "Allocated44e8e0a8286244c193d2e28266b480da; independent startup in progress.",
-  "prepared_startup_pid": 47270
+  "prepared_assignment": "Running evaluation normally",
+  "prepared_startup_pid": 47270,
+  "current_attempt_training_runs_completed": 2
 }

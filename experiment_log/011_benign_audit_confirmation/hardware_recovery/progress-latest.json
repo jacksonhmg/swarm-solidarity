@@ -1,0 +1,81 @@
+{
+  "at": "2026-09-24T22:36:55.604639+00:00",
+  "training": {
+    "revised_s41031": {
+      "status": "complete",
+      "optimizer_updates": 125,
+      "supervised_tokens": 185862,
+      "training_seconds": 390.904585915
+    },
+    "revised_s41032": {
+      "status": "complete",
+      "optimizer_updates": 125,
+      "supervised_tokens": 185862,
+      "training_seconds": 365.88039647000005
+    }
+  },
+  "responses_by_condition": {
+    "revised_s41031": 191,
+    "prepared": 152,
+    "ordinary_s41032": 222,
+    "corrective_s41032": 202,
+    "prompt_only": 229,
+    "revised_s41032": 170,
+    "ordinary_s41031": 221,
+    "corrective_s41031": 208
+  },
+  "total_responses": 1595,
+  "maximum_responses": 6400,
+  "throughput_estimates": [
+    {
+      "condition": "revised_s41031",
+      "responses": 191,
+      "recent_mean_seconds_per_response": 8.78,
+      "estimated_remaining_minutes": 89.1
+    },
+    {
+      "condition": "prepared",
+      "responses": 152,
+      "recent_mean_seconds_per_response": 8.9,
+      "estimated_remaining_minutes": 96.1
+    },
+    {
+      "condition": "ordinary_s41032",
+      "responses": 222,
+      "recent_mean_seconds_per_response": 8.85,
+      "estimated_remaining_minutes": 85.3
+    },
+    {
+      "condition": "corrective_s41032",
+      "responses": 202,
+      "recent_mean_seconds_per_response": 9.66,
+      "estimated_remaining_minutes": 96.3
+    },
+    {
+      "condition": "prompt_only",
+      "responses": 229,
+      "recent_mean_seconds_per_response": 9.39,
+      "estimated_remaining_minutes": 89.4
+    },
+    {
+      "condition": "revised_s41032",
+      "responses": 170,
+      "recent_mean_seconds_per_response": 9.2,
+      "estimated_remaining_minutes": 96.6
+    },
+    {
+      "condition": "ordinary_s41031",
+      "responses": 221,
+      "recent_mean_seconds_per_response": 9.05,
+      "estimated_remaining_minutes": 87.3
+    },
+    {
+      "condition": "corrective_s41031",
+      "responses": 208,
+      "recent_mean_seconds_per_response": 9.42,
+      "estimated_remaining_minutes": 93.0
+    }
+  ],
+  "estimated_gpu_cost_usd": 22.6055,
+  "cap_usd": 65
+}
