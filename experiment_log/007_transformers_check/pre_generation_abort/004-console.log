@@ -1,0 +1,17 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 56.98it/s]
+Traceback (most recent call last):
+  File "/home/ubuntu/swarm-solidarity/scripts/run_transformers_check.py", line 190, in <module>
+    main()
+  File "/home/ubuntu/swarm-solidarity/scripts/run_transformers_check.py", line 151, in main
+    result = model.generate(input_ids=input_ids, attention_mask=attention_mask,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/swarm-solidarity/.venv-gpu/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/swarm-solidarity/.venv-gpu/lib/python3.11/site-packages/transformers/generation/utils.py", line 2512, in generate
+    prepared_logits_processor = self._get_logits_processor(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/swarm-solidarity/scripts/run_transformers_check.py", line 112, in observe_logits
+    assert not result, 'Unexpected sampling restriction or logits processor'
+           ^^^^^^^^^^
+AssertionError: Unexpected sampling restriction or logits processor

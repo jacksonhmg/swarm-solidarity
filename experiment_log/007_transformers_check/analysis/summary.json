@@ -1,0 +1,665 @@
+{
+  "stages": [
+    {
+      "stage": "004_replay",
+      "gates": {
+        "n": 40,
+        "exact_tables": 39,
+        "valid_outputs": 40,
+        "required_exact_tables": 36,
+        "required_valid_outputs": 38,
+        "pass": true
+      },
+      "original_gates": {
+        "n": 40,
+        "exact_tables": 39,
+        "valid_outputs": 40,
+        "required_exact_tables": 36,
+        "required_valid_outputs": 38,
+        "pass": true
+      },
+      "metrics": {
+        "strict_exact_table": {
+          "count": 39,
+          "value": 0.975,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.925,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.8711863103652591,
+            0.9955731684973186
+          ],
+          "original_count": 39,
+          "paired_difference_from_original": {
+            "value": 0.0,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 39,
+              "left_only": 0,
+              "right_only": 0,
+              "both_false": 1
+            }
+          }
+        },
+        "strict_format_valid": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 40,
+          "paired_difference_from_original": {
+            "value": 0.0,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 40,
+              "left_only": 0,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "strict_exact_audit": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 40,
+          "paired_difference_from_original": {
+            "value": 0.0,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 40,
+              "left_only": 0,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "table_extractable": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 40,
+          "paired_difference_from_original": {
+            "value": 0.0,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 40,
+              "left_only": 0,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "table_exact": {
+          "count": 39,
+          "value": 0.975,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.925,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.8711863103652591,
+            0.9955731684973186
+          ],
+          "original_count": 39,
+          "paired_difference_from_original": {
+            "value": 0.0,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 39,
+              "left_only": 0,
+              "right_only": 0,
+              "both_false": 1
+            }
+          }
+        },
+        "audit_extractable": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 40,
+          "paired_difference_from_original": {
+            "value": 0.0,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 40,
+              "left_only": 0,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "audit_exact": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 40,
+          "paired_difference_from_original": {
+            "value": 0.0,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 40,
+              "left_only": 0,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "length_stop": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0,
+            0.08762160119728664
+          ],
+          "original_count": 0,
+          "paired_difference_from_original": {
+            "value": 0.0,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 0,
+              "left_only": 0,
+              "right_only": 0,
+              "both_false": 40
+            }
+          }
+        },
+        "extra_tool_call": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0,
+            0.08762160119728664
+          ],
+          "original_count": 0,
+          "paired_difference_from_original": {
+            "value": 0.0,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 0,
+              "left_only": 0,
+              "right_only": 0,
+              "both_false": 40
+            }
+          }
+        }
+      },
+      "text_byte_identical_count": 40,
+      "parse_errors": {},
+      "stop_token_counts": {
+        "151645": 40
+      },
+      "generation_seconds": 346.45203559900017,
+      "completion_tokens": 7501,
+      "conditional_exact_row_accuracy": {
+        "value": 0.9944444444444445,
+        "numerator": 179,
+        "denominator": 180,
+        "n_scenarios": 40,
+        "scenario_bootstrap_ci95": [
+          0.9828571428571429,
+          1.0
+        ]
+      },
+      "a100_vllm_gates": {
+        "n": 40,
+        "exact_tables": 12,
+        "valid_outputs": 14,
+        "required_exact_tables": 36,
+        "required_valid_outputs": 38,
+        "pass": false
+      },
+      "paired_difference_from_a100_vllm": {
+        "strict_exact_table": {
+          "value": 0.675,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.525,
+            0.825
+          ],
+          "paired_counts": {
+            "both_true": 12,
+            "left_only": 27,
+            "right_only": 0,
+            "both_false": 1
+          }
+        },
+        "strict_format_valid": {
+          "value": 0.65,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.5,
+            0.8
+          ],
+          "paired_counts": {
+            "both_true": 14,
+            "left_only": 26,
+            "right_only": 0,
+            "both_false": 0
+          }
+        }
+      }
+    },
+    {
+      "stage": "005_clean",
+      "gates": {
+        "n": 40,
+        "exact_tables": 40,
+        "valid_outputs": 40,
+        "required_exact_tables": 36,
+        "required_valid_outputs": 38,
+        "pass": true
+      },
+      "original_gates": {
+        "n": 40,
+        "exact_tables": 15,
+        "valid_outputs": 16,
+        "required_exact_tables": 36,
+        "required_valid_outputs": 38,
+        "pass": false
+      },
+      "metrics": {
+        "strict_exact_table": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 15,
+          "paired_difference_from_original": {
+            "value": 0.625,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.475,
+              0.775
+            ],
+            "paired_counts": {
+              "both_true": 15,
+              "left_only": 25,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "strict_format_valid": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 16,
+          "paired_difference_from_original": {
+            "value": 0.6,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.45,
+              0.75
+            ],
+            "paired_counts": {
+              "both_true": 16,
+              "left_only": 24,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "strict_exact_audit": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 16,
+          "paired_difference_from_original": {
+            "value": 0.6,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.45,
+              0.75
+            ],
+            "paired_counts": {
+              "both_true": 16,
+              "left_only": 24,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "table_extractable": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 16,
+          "paired_difference_from_original": {
+            "value": 0.6,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.45,
+              0.75
+            ],
+            "paired_counts": {
+              "both_true": 16,
+              "left_only": 24,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "table_exact": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 15,
+          "paired_difference_from_original": {
+            "value": 0.0625,
+            "scorable_n": 16,
+            "unknown_n": 24,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.21428571428571427
+            ],
+            "paired_counts": {
+              "both_true": 15,
+              "left_only": 1,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "audit_extractable": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 17,
+          "paired_difference_from_original": {
+            "value": 0.575,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              0.425,
+              0.725
+            ],
+            "paired_counts": {
+              "both_true": 17,
+              "left_only": 23,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "audit_exact": {
+          "count": 40,
+          "value": 1.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0.9123783988027135,
+            1
+          ],
+          "original_count": 17,
+          "paired_difference_from_original": {
+            "value": 0.0,
+            "scorable_n": 17,
+            "unknown_n": 23,
+            "scenario_bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 17,
+              "left_only": 0,
+              "right_only": 0,
+              "both_false": 0
+            }
+          }
+        },
+        "length_stop": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0,
+            0.08762160119728664
+          ],
+          "original_count": 1,
+          "paired_difference_from_original": {
+            "value": -0.025,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              -0.075,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 0,
+              "left_only": 0,
+              "right_only": 1,
+              "both_false": 39
+            }
+          }
+        },
+        "extra_tool_call": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 40,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "wilson_ci95_on_scorable": [
+            0,
+            0.08762160119728664
+          ],
+          "original_count": 3,
+          "paired_difference_from_original": {
+            "value": -0.075,
+            "scorable_n": 40,
+            "unknown_n": 0,
+            "scenario_bootstrap_ci95": [
+              -0.175,
+              0.0
+            ],
+            "paired_counts": {
+              "both_true": 0,
+              "left_only": 0,
+              "right_only": 3,
+              "both_false": 37
+            }
+          }
+        }
+      },
+      "text_byte_identical_count": 14,
+      "parse_errors": {},
+      "stop_token_counts": {
+        "151645": 40
+      },
+      "generation_seconds": 346.8085980749996,
+      "completion_tokens": 7494,
+      "conditional_exact_row_accuracy": {
+        "value": 1.0,
+        "numerator": 180,
+        "denominator": 180,
+        "n_scenarios": 40,
+        "scenario_bootstrap_ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  ],
+  "conclusion": "This alternative A100 execution setup meets the unchanged clean gates on both saved sets. This does not identify hardware or a specific vLLM bug as the cause of prior failures.",
+  "intervals": "5000 whole-scenario paired bootstrap draws, seed 2718; Wilson marginal intervals. Unknown diagnostics not imputed.",
+  "seed_caveat": "Equal seeds across implementations do not imply identical sampled outputs.",
+  "corrective_training_paused": true,
+  "exact_h100_reproduction_untested": true
+}

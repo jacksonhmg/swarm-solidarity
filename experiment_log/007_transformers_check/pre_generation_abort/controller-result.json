@@ -1,0 +1,7 @@
+{
+  "started_at": "2026-09-24T02:44:46.244315+00:00",
+  "finished_at": "2026-09-24T02:46:50.379250+00:00",
+  "returncode": 1,
+  "timeout_minutes": 180,
+  "generation_attempts_authorized": 1
+}

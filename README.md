@@ -61,6 +61,17 @@ reproduction. All artifacts are preserved, the GPU is terminated, the temporary
 SSH key is deleted, and the availability monitor is paused. Estimated compute
 spend was **$0.40**, below the $10 cap. Corrective training remains paused.
 
+The separately authorized [Transformers A100 check](experiment_log/007_transformers_check/report.md)
+met the same clean gates on both saved sets: **39/40 exact and 40/40 valid** on
+004, then **40/40 exact and valid** on 005's prepared-baseline clean prompts.
+It used serial FP16 eager inference with the same verified weights and direct
+saved token arrays. This supports clean competence under that alternative setup;
+it does not identify hardware or a specific vLLM bug. Experiment 006 remains a
+failed cross-hardware replay, exact H100 reproduction remains untested, and
+corrective training stays paused. The eighty-response check is complete.
+The GPU is terminated and temporary SSH keys are deleted; estimated additional
+compute spend was **$1.06**, below the $10 cap.
+
 ## Local workflow
 
 Python 3.11 and [uv](https://docs.astral.sh/uv/) are recommended. Generation,

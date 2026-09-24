@@ -1,0 +1,20 @@
+{
+  "verified_at_utc": "2026-09-24T03:07:00.612744+00:00",
+  "downloaded_files_verified": 36,
+  "corrected_frozen_files_verified": 47,
+  "prior_result_and_source_artifacts_unchanged": 208,
+  "intentional_catalog_update": [
+    "experiment_log/README.md"
+  ],
+  "actual_requests_and_input_arrays_and_seeds_verified": 80,
+  "unique_sampled_cases": 80,
+  "saved_scores_reproduced_unchanged": 80,
+  "generated_tokens_preserved": 14995,
+  "raw_stop_ids_verified": 80,
+  "configuration_hash_unchanged_after_guard_fix": "72a83b19a74e398b89057f47915e70924182cb9f61c805c371b8f56e56f84a6d",
+  "pre_sampling_configuration_aborts": 1,
+  "aborted_call_generated_tokens": 0,
+  "generate_api_entry_calls": 81,
+  "sampled_case_retries": 0,
+  "final_held_out_evaluation_accessed": false
+}

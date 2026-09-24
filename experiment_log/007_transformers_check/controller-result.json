@@ -1,0 +1,8 @@
+{
+  "started_at": "2026-09-24T02:51:27.178783+00:00",
+  "finished_at": "2026-09-24T03:03:37.495820+00:00",
+  "returncode": 0,
+  "original_deadline": "2026-09-24T05:44:46.244315+00:00",
+  "setup_guard_abort_before_sampling": true,
+  "inference_configuration_unchanged": true
+}
