@@ -1,11 +1,11 @@
 {
-  "status": "authorized_infrastructure_retry",
-  "user_approval": "yes thats fine",
-  "prior_model_work": "unknown, retained as a protocol exception",
-  "maximum_retry_responses": 6400,
+  "status": "authorized_eight_separate_A100_allocation",
+  "user_approval": "OKAY DO THE 8 A100 SEPARATW",
+  "cumulative_cap_usd": 65,
+  "prior_gpu_cost_usd": 4.0985,
+  "maximum_instances": 8,
+  "maximum_observed_responses": 6400,
   "new_training_runs": 2,
-  "additional_retries": false,
-  "ceiling_usd": 65,
-  "prior_cost_usd": 4.0985,
-  "scientific_configuration": "unchanged"
+  "prior_lost_start_model_work": "unknown; authorized infrastructure retry exception",
+  "scientific_changes": "none since original 011 freeze"
 }
