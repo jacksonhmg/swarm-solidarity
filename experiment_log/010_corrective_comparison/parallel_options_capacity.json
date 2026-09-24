@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-09-24T06:49:37.860828+00:00",
+  "available": [
+    {
+      "type": "gpu_1x_gh200",
+      "usd_per_hour": 2.29,
+      "gpu_count": 1,
+      "regions": [
+        "us-east-3"
+      ]
+    },
+    {
+      "type": "gpu_1x_h100_pcie",
+      "usd_per_hour": 3.29,
+      "gpu_count": 1,
+      "regions": [
+        "us-west-3"
+      ]
+    },
+    {
+      "type": "gpu_1x_a10",
+      "usd_per_hour": 1.29,
+      "gpu_count": 1,
+      "regions": [
+        "us-east-1",
+        "us-west-1"
+      ]
+    },
+    {
+      "type": "gpu_1x_a100_sxm4",
+      "usd_per_hour": 1.99,
+      "gpu_count": 1,
+      "regions": [
+        "us-east-1",
+        "us-west-2"
+      ]
+    },
+    {
+      "type": "gpu_4x_a6000",
+      "usd_per_hour": 4.36,
+      "gpu_count": 4,
+      "regions": [
+        "us-south-2"
+      ]
+    }
+  ],
+  "note": "Read-only quote for user speed question. Original running execution remains unchanged; no extra rental or sampling."
+}
