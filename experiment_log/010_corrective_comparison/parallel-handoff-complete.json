@@ -1,0 +1,22 @@
+{
+  "finished_at": "2026-09-24T07:09:18.876883+00:00",
+  "training_runs_complete": 4,
+  "optimizer_updates_per_run": 125,
+  "responses_before_handoff": 0,
+  "old_shell_killed_after_training_complete": true,
+  "last_terminal_merge_first_execution_completed": true,
+  "old_controller_result": {
+    "controller_pid": 2560,
+    "started_at": "2026-09-24T06:34:16.304723+00:00",
+    "command": [
+      "timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "810m",
+      "bash",
+      "scripts/corrective_gpu_run.sh"
+    ],
+    "finished_at": "2026-09-24T07:08:28.686553+00:00",
+    "returncode": -9
+  }
+}

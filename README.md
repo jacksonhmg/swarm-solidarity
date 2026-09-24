@@ -4,7 +4,7 @@ A controlled experiment on selective cooperation: preserve useful teammate
 evidence, reject inappropriate requests, and report them to the human.
 See [the research proposal](docs/project_overview.md).
 
-**Current run:** the separately authorized [corrective comparison](experiment_log/010_corrective_comparison/protocol.md) is running under a $30 hard additional GPU cap. Four independently seeded terminal adapters and the fixed 200-scenario / 4,800-response evaluation were frozen before rental. [Token-mask checks](experiment_log/010_corrective_comparison/preflight/summary.md) passed, and the prepared checkpoint hashes match 004. Completion monitoring and owner-scoped cleanup are active; results are pending. Earlier experiments and their stop decisions remain closed.
+**Current run:** the separately authorized [corrective comparison](experiment_log/010_corrective_comparison/protocol.md) is running under a $40 aggregate GPU cap after an authorized [scheduling amendment](experiment_log/010_corrective_comparison/parallel_amendment.md) to three matching A100s. The original rental cost counts toward this cap. Four independently seeded terminal adapters and the fixed 200-scenario / 4,800-response evaluation were frozen before rental. [Token-mask checks](experiment_log/010_corrective_comparison/preflight/summary.md) passed, and the prepared checkpoint hashes match 004. Completion monitoring and owner-scoped cleanup are active; results are pending. Earlier experiments and their stop decisions remain closed.
 
 The first milestone was a **development-only baseline pilot**. It ran the original
 WideSeek-R1-4B checkpoint and a prompt-only reminder on 40 matched scenarios with

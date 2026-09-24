@@ -1,0 +1,6 @@
+{
+  "paused_pid": 19879,
+  "signal": "SIGSTOP",
+  "at": "2026-09-24T07:02:47.520723+00:00",
+  "existing_primary_watchdog_retained": true
+}

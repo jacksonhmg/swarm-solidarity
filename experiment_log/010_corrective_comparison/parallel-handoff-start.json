@@ -1,0 +1,7 @@
+{
+  "at": "2026-09-24T07:02:47.474701+00:00",
+  "shell_pid": 2562,
+  "signal": "SIGSTOP to shell only",
+  "current_children": "4225 Sl   .venv-gpu/bin/python scripts/train_corrective.py --run corrective_s41032",
+  "reason": "User authorized three identical A100s and aggregate ceiling $40. Let current training child finish; prevent original shell from launching evaluation."
+}

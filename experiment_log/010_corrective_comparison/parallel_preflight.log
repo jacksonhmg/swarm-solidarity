@@ -1,0 +1,14 @@
+test_holm_and_margin (test_corrective.CorrectiveAnalysisTests.test_holm_and_margin) ... ok
+test_four_variants_change_only_note_and_gold_audit (test_corrective.CorrectiveTests.test_four_variants_change_only_note_and_gold_audit) ... ok
+test_matched_arms_and_no_omission_demonstrations (test_corrective.CorrectiveTests.test_matched_arms_and_no_omission_demonstrations) ... ok
+test_preparation_encoder_body_unchanged (test_corrective.CorrectiveTests.test_preparation_encoder_body_unchanged) ... ok
+test_successful_inference_calls_unchanged (test_corrective.CorrectiveTests.test_successful_inference_calls_unchanged) ... ok
+test_aggregate_counts_original_elapsed_and_stops_terminated_clock (test_corrective_parallel.ParallelTests.test_aggregate_counts_original_elapsed_and_stops_terminated_clock) ... ok
+test_assignments_partition_all_six_conditions (test_corrective_parallel.ParallelTests.test_assignments_partition_all_six_conditions) ... ok
+test_frozen_inference_and_analysis_remain_identical (test_corrective_parallel.ParallelTests.test_frozen_inference_and_analysis_remain_identical) ... ok
+test_raw_verification_and_training_checks_unchanged (test_corrective_parallel.ParallelTests.test_raw_verification_and_training_checks_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.128s
+
+OK
