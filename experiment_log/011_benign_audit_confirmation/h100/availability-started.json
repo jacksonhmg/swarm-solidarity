@@ -1,0 +1,8 @@
+{
+  "pid": 15548,
+  "started_at": "2026-09-24T17:59:16.164783+00:00",
+  "poll_seconds": 20,
+  "maximum_instances": 8,
+  "ceiling_usd": 65,
+  "code_revision": "b0c8bd5406357b56830cf2b9e1f33a8a4ffed9fa"
+}

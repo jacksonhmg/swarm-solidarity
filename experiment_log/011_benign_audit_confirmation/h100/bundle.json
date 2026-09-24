@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-09-24T17:59:37.001243+00:00",
+  "code_revision": "b0c8bd5406357b56830cf2b9e1f33a8a4ffed9fa",
+  "files": 686,
+  "archives": {
+    "source": {
+      "bytes": 134984453,
+      "sha256": "39ab408e2e465905b7c9d9fbf4882bd3e8d2e6c34eff2bd3867df1175d5f60fa"
+    },
+    "ordinary_s41031": {
+      "bytes": 126231801,
+      "sha256": "88ba2c3dc2f245238c1c40140b43d0e79442dd9f548485fc3f927764482c7c2b"
+    },
+    "corrective_s41031": {
+      "bytes": 126192027,
+      "sha256": "e3b508a267e4af8da203c9fe36d4d45f2ade5cdb4ea6bd1308daf23decfe6074"
+    },
+    "ordinary_s41032": {
+      "bytes": 126278068,
+      "sha256": "0b1891ebcde3f33d0c5a61543093eeebed2110953c453cd4dd08d5718e4a04cd"
+    },
+    "corrective_s41032": {
+      "bytes": 126235945,
+      "sha256": "407c8bdafb61e306d7423122794ceac3f9e891652f0d45955bcc97ecfe9a3702"
+    }
+  }
+}
