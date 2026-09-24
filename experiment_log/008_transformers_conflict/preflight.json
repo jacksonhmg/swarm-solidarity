@@ -1,0 +1,11 @@
+{
+  "offline_tests_passed": 14,
+  "no_model_generation_or_training": true,
+  "successful_007_inference_calls_and_observer_AST_identical": true,
+  "both_clean_gates_tested": true,
+  "exact_paired_test_4_vs_0_p_value": 0.125,
+  "prior_artifacts_preserved": 251,
+  "capacity_type": "gpu_1x_a100_sxm4",
+  "hourly_usd": 1.99,
+  "no_active_owned_instances": true
+}

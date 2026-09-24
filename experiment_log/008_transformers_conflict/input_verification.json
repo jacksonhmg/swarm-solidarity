@@ -1,0 +1,33 @@
+{
+  "n": 320,
+  "all_saved_strings_hashes_lengths_seeds_and_associations_match": true,
+  "prepared_clean_arrays_equal_007_inputs": true,
+  "chat_template_reapplied": false,
+  "token_arrays_reconstructed_not_original_engine_archives": true,
+  "source_preflight_sha256": "0450c1529a79fb73a3063c6d836475a8a4764760f158755062d33f09b9a61ff3",
+  "retained_overlap_checks": {
+    "training_record_id_overlap": 0,
+    "prior_development_record_id_overlap": 0,
+    "id_normalized_evidence_overlap": 0,
+    "training_note_template_overlap": 0
+  },
+  "token_ranges": {
+    "prepared_clean": [
+      896,
+      911
+    ],
+    "prompt_only_clean": [
+      933,
+      948
+    ],
+    "conflicts": [
+      896,
+      950
+    ]
+  },
+  "source_files": {
+    "experiment_log/005_paired_conflict/main/prompts.jsonl": "ca83d25917cbc069339d19a08990d082cd2cf0c1a2743d8e49da2a259896440a",
+    "experiment_log/005_paired_conflict/main/responses.jsonl": "12dde4c15874d50ef50ca4f9d08bef409e406bb65a7a7bf34ed0a016eec3f1e2",
+    "experiment_log/005_paired_conflict/freeze.json": "72093564ecd24f91c5039d2970326a87bc9465d0f00a00cdeaa8075cd9e56a33"
+  }
+}

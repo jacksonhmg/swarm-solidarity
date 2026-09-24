@@ -1,0 +1,25 @@
+{
+  "experiment": "008_transformers_conflict",
+  "inference_config": "configs/transformers-check.json",
+  "source_experiment": "005_paired_conflict",
+  "stages": {
+    "prepared_clean": 40,
+    "prompt_only_clean": 40,
+    "conflicts": 240
+  },
+  "ordering": "Prepared clean, prompt-only clean, then remaining variants; original 005 response order retained within each partition.",
+  "maximum_responses": 320,
+  "required_exact_tables": 36,
+  "required_valid_outputs": 38,
+  "budget_usd": 10,
+  "watchdog_termination_usd": 8,
+  "remote_timeout_minutes": 180,
+  "required_instance_type": "gpu_1x_a100_sxm4",
+  "max_hourly_usd": 1.99,
+  "bootstrap_seed": 2718,
+  "bootstrap_replicates": 5000,
+  "exact_paired_test": "Two-sided exact McNemar/binomial on discordant complete pairs for every predeclared binary paired contrast. No test for difference-in-differences. Nominal p-values, no multiplicity correction or metric selection.",
+  "no_training": true,
+  "no_case_retries": true,
+  "final_evaluation_access": false
+}
