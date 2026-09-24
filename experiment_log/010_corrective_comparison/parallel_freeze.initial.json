@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-09-24T07:12:30.492305+00:00",
+  "created_at": "2026-09-24T07:11:45.855225+00:00",
   "before_evaluation": true,
   "original_freeze_preserved": true,
   "files": {
@@ -25,9 +25,8 @@
     "scripts/corrective_parallel_supervisor.py": "9c6d72885af4934c6a9d8ba2e2972f1afdc988b26cdb31df313e6c7738e4d2d4",
     "scripts/corrective_parallel_support.py": "ae2cb49ab4ccb98a206e83838dd8c1228754b96b33be36475429f98a9dff3250",
     "scripts/corrective_parallel_watchdog.py": "b9db299443cfba934458840bf97248fae4d557c506cf5e5ea5947d2e716d8f7a",
-    "scripts/run_corrective_parallel_node.py": "5664c5ac2f8c312eab6a2912175ab712542c83097734546513b8533ea2ca4ad6",
+    "scripts/run_corrective_parallel_node.py": "38811a948b92e43a8396be9a029448e2156e5673c25c2b85bc93c09a0c5ffc91",
     "scripts/verify_corrective_parallel.py": "3621780a68358a7e55a7a527552e4a8af420286cdf075d121299fc965e5d7d75",
     "tests/test_corrective_parallel.py": "e652f018da488c7d6cdc29c2260eb4d486af94d7c789d96b84d9a69e49a96399"
-  },
-  "offline_correction": "Before any evaluation or additional rental, keep per-node merge timing receipts separate and restore original training merge receipt bytes after identical-weight reconstruction."
+  }
 }

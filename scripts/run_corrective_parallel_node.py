@@ -29,10 +29,16 @@ def execute(node):
         # Reconstruct exact prepared base and only this node's trained terminal models.
         run(['.venv-gpu/bin/python','scripts/merge_corrective_base.py'],'merge-base')
         for condition in spec['conditions']:
+            receipt_path=LOG/'execution/training'/condition/'merge.json'
+            original_receipt=receipt_path.read_bytes()
             run(['.venv-gpu/bin/python','scripts/merge_corrective_adapter.py','--run',condition],'merge-'+condition)
-            actual=json.loads((LOG/'execution/training'/condition/'merge.json').read_text())
+            actual=json.loads(receipt_path.read_text())
             assert actual['files']==plan()['trained_weight_files'][condition]
             write_json(out/('merge-'+condition+'.json'),actual)
+            # Keep original training provenance frozen; local reconstruction
+            # timing belongs to this node's separate receipt.
+            receipt_path.write_bytes(original_receipt)
+    verify_amendment()
     write_json(out/'assignment.json',{'node':node,'conditions':spec['conditions'],'responses':1600,
         'gpu':gpu,'code_revision':Path('.code-revision').read_text().strip(),'original_freeze_sha256':sha(LOG/'freeze.json'),
         'parallel_freeze_sha256':sha(LOG/'parallel_freeze.json'),'entry_point':'scripts/run_corrective_eval.py',
