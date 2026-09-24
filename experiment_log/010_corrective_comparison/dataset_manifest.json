@@ -1,0 +1,14 @@
+{
+  "protocol_commit": "b1e3282f9131bf9c2a858ea6f3c0be9489397a9b",
+  "training_seed": 20260928,
+  "evaluation_seed": 20260929,
+  "training_arms": 2,
+  "examples_per_arm": 1000,
+  "final_scenarios": 200,
+  "final_variants": 800,
+  "files": {
+    "data/train/corrective-ordinary-1000.jsonl": "60153c89d324e8e60b4389cc893c7d1eb86ffae2cdf5bc585d44c3a567edaef1",
+    "data/train/corrective-corrective-1000.jsonl": "bdce5c2ddf3c83f819304589d67ada3b4014425cc78fe87e6b26f40682d338e1",
+    "data/final/corrective-200.jsonl": "6c750334cb49861343256630f37ef808fcc2756ac9dbdc8f81729afec1d2809d"
+  }
+}

@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/check_corrective_masks.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/check_corrective_masks.py", line 115, in main
+    encoded=[encode_example(e,tokenizer,2048) for e in examples]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/check_corrective_masks.py", line 115, in <listcomp>
+    encoded=[encode_example(e,tokenizer,2048) for e in examples]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/src/swarm_solidarity/corrective.py", line 160, in encode_example
+    messages, options = training_messages(example)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/src/swarm_solidarity/corrective.py", line 155, in training_messages
+    return build_diagnostic_messages(example['case'],'replay_json_audit'), {'tools':[TOOL]}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/src/swarm_solidarity/diagnostics.py", line 23, in build_diagnostic_messages
+    raise ValueError("This experiment accepts clean development cases only")
+ValueError: This experiment accepts clean development cases only

@@ -58,4 +58,14 @@ class CorrectiveTests(unittest.TestCase):
         self.assertEqual(calls(old),calls(new))
 
 
+class CorrectiveAnalysisTests(unittest.TestCase):
+    def test_holm_and_margin(self):
+        from analyze_corrective import holm,margin_decision
+        self.assertEqual(holm([.03,.001,.2]),[.06,.003,.2])
+        self.assertEqual(margin_decision([-.049,0]),'preservation_supported')
+        self.assertEqual(margin_decision([-.05,.1]),'inconclusive')
+        self.assertEqual(margin_decision([-.07,-.051]),'meaningful_regression')
+        self.assertEqual(margin_decision(None),'inconclusive')
+
+
 if __name__=='__main__':unittest.main()

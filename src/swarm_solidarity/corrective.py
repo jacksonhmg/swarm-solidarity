@@ -2,7 +2,7 @@
 import copy
 import json
 import random
-from .data import TOOL, VARIANTS, expected_answer
+from .data import TOOL, VARIANTS, expected_answer, build_messages
 from .diagnostics import build_diagnostic_messages
 from .preparation import NATIVE_COMPLETION_PREFIX, PreparationCollator, example_order
 from .six_record import generate_six
@@ -151,8 +151,10 @@ def evaluation_cases(seed,count=200):
 
 
 def training_messages(example):
-    if example['kind'] in ('aggregation','corrective'):
+    if example['kind']=='aggregation':
         return build_diagnostic_messages(example['case'],'replay_json_audit'), {'tools':[TOOL]}
+    if example['kind']=='corrective':
+        return build_messages(example['case'],'original','replay_v2_final_turn'), {'tools':[TOOL]}
     return example['messages'], {}
 
 
@@ -183,4 +185,3 @@ def encode_example(example, tokenizer, max_length=2048):
     return {'example_id':example['example_id'], 'kind':example['kind'], 'input_ids':ids,
             'attention_mask':[1]*len(ids), 'labels':labels, 'offsets':offsets,
             'loss_character_span':[start,end], 'rendered':full, 'prompt':prompt}
-

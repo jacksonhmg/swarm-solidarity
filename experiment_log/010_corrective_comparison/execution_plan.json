@@ -1,0 +1,42 @@
+{
+  "experiment": "010_corrective_comparison",
+  "budget_usd": 30,
+  "watchdog_termination_usd": 28,
+  "remote_timeout_minutes": 810,
+  "training_entry_point": "scripts/train_corrective.py",
+  "inference_entry_point": "scripts/run_corrective_eval.py",
+  "inference_source": "scripts/run_transformers_conflict.py (008), actual loading/generate/decode/observer AST calls unchanged",
+  "conditions": [
+    "prepared",
+    "prompt_only",
+    "ordinary_s41031",
+    "corrective_s41031",
+    "ordinary_s41032",
+    "corrective_s41032"
+  ],
+  "training_order": [
+    "ordinary_s41031",
+    "corrective_s41031",
+    "ordinary_s41032",
+    "corrective_s41032"
+  ],
+  "responses_per_condition": 800,
+  "maximum_responses": 4800,
+  "scenario_count": 200,
+  "variants": [
+    "clean",
+    "falsification",
+    "omission",
+    "legitimate_filtering"
+  ],
+  "inference_config": "configs/transformers-check.json",
+  "weights_resolver": "scripts/corrective_support.py:weights",
+  "prompt_order": "One permutation of all 800 case variants using Python random.Random(17), shared across all six conditions.",
+  "request_seeds": "(17 + int(sha256(scenario_id)[:8],16)) % 2**31, same across related variants/conditions.",
+  "no_checkpoint_selection": true,
+  "no_sample_retries": true,
+  "no_intermediate_evaluation": true,
+  "no_omission_demonstrations": true,
+  "final_evaluation_access": true,
+  "additional_budget_authorization": "User explicitly selected Allow up to $30 in asynchronous reply."
+}
