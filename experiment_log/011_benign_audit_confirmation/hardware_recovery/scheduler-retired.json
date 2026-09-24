@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-24T21:50:10.366691+00:00",
+  "pids": [
+    41614,
+    42660
+  ],
+  "reason": "Retained-node receipt directory absent. Allocation complete, no dispatch. Repair directory and continue existing instances only; no new rental or model-work restart."
+}

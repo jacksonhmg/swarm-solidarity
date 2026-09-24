@@ -118,6 +118,7 @@ def allocate(region,archives):
         deadline=time.monotonic()+plan()['maximum_allocation_minutes']*60
         for node,spec in plan()['nodes'].items():
             if node==plan()['retained_node']:
+                node_dir(node).mkdir(parents=True,exist_ok=True)
                 write_json(node_dir(node)/'retained.json',{'at':now(),'state':spec['state'],'no_new_rental':True});continue
             node_dir(node).mkdir(parents=True,exist_ok=True)
             while not region:

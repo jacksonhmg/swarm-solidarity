@@ -30,7 +30,7 @@ class RecoveryA100Tests(unittest.TestCase):
         self.assertEqual(plan['instance_type'],'gpu_1x_a100_sxm4')
         self.assertEqual(plan['accepted_gpu_names'],['NVIDIA A100-SXM4-40GB','NVIDIA A100-SXM4-80GB'])
         self.assertEqual(plan['new_rentals_maximum'],7)
-        self.assertEqual(len(plan['retired_state_paths']),7)
+        self.assertEqual(len(plan['retired_state_paths']),8)
         conditions=[c for s in plan['nodes'].values() for c in s['conditions']]
         self.assertEqual(len(conditions),8)
         self.assertEqual(set(conditions),set(support.CONDITIONS))
@@ -53,6 +53,27 @@ class RecoveryA100Tests(unittest.TestCase):
                 result=support.cost_snapshot(dt.datetime.fromisoformat('2026-09-24T10:01:01+00:00'))
             self.assertAlmostEqual(result['estimated_total_usd'],4.0985+15/60*1.99)
             self.assertAlmostEqual(result['current_nodes_gpu_cost_usd'],15/60*1.99)
+
+    def test_continuation_creates_directory_before_preparation(self):
+        import continue_revised_startup as continuation
+        with tempfile.TemporaryDirectory() as directory:
+            folder=Path(directory)/'retained'
+            def prepare(node,archives):
+                self.assertTrue(folder.is_dir())
+            with patch.object(continuation,'node_dir',lambda node:folder),patch.object(continuation,'prepare_node',prepare),patch.object(continuation,'upload_patch',lambda *args:None),patch.object(continuation,'verify_plan',lambda:None),patch.object(continuation,'dispatch',lambda node:None):
+                result=continuation.start_assignment('revised_s41032',{},Path('patch'))
+            self.assertEqual(result['status'],'dispatched')
+
+    def test_local_startup_error_does_not_terminate_other_nodes(self):
+        import continue_revised_startup as continuation
+        with tempfile.TemporaryDirectory() as directory:
+            folder=Path(directory)/'retained'
+            def fail(*args):raise OSError('local receipt failure')
+            with patch.object(continuation,'node_dir',lambda node:folder),patch.object(continuation,'prepare_node',fail):
+                result=continuation.start_assignment('revised_s41032',{},Path('patch'))
+            self.assertEqual(result['status'],'startup_error')
+            self.assertTrue((folder/'startup-error.json').exists())
+            self.assertFalse((folder.parent/'abort.json').exists())
 
     def test_retired_cost_added_and_retained_node_not_double_counted(self):
         with tempfile.TemporaryDirectory() as directory:

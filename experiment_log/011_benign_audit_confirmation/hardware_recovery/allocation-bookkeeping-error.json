@@ -1,0 +1,4 @@
+{
+  "at": "2026-09-24T21:50:00.176414+00:00",
+  "reason": "FileNotFoundError: [Errno 2] No such file or directory: 'experiment_log/011_benign_audit_confirmation/hardware_recovery/revised_s41032/retained.json'"
+}

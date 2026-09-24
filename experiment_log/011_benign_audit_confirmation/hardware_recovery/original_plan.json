@@ -10,7 +10,7 @@
   "sampled_case_retries_permitted": false,
   "nodes": {
     "prepared": {
-      "state": ".local/lambda-revised-recovery-prepared-final/state.json",
+      "state": ".local/lambda-revised-recovery-prepared/state.json",
       "conditions": [
         "prepared"
       ]
@@ -58,7 +58,7 @@
       ]
     }
   },
-  "all_nodes_ready_before_model_execution": false,
+  "all_nodes_ready_before_model_execution": true,
   "inference_entry_point": "scripts/run_revised_host_eval.py",
   "analysis_entry_point": "scripts/analyze_revised.py",
   "prior_gpu_cost_usd": 4.0985,
@@ -82,11 +82,8 @@
     ".local/lambda-revised-separate-corrective_s41031/state.json",
     ".local/lambda-revised-separate-revised_s41031/state.json",
     ".local/lambda-revised-separate-ordinary_s41032/state.json",
-    ".local/lambda-revised-separate-corrective_s41032/state.json",
-    ".local/lambda-revised-recovery-prepared/state.json"
+    ".local/lambda-revised-separate-corrective_s41032/state.json"
   ],
   "new_rentals_maximum": 7,
-  "prior_cost_method": "4.0985 plus seven terminated earlier A100 states through first confirmed termination; retained 80GB is counted once as a current node from its original launch.",
-  "readiness_policy": "Each independently assigned condition starts after its own frozen upload and hardware checks; do not block seven usable nodes on one provider termination.",
-  "additional_bookkeeping_replacement_maximum": 1
+  "prior_cost_method": "4.0985 plus seven terminated earlier A100 states through first confirmed termination; retained 80GB is counted once as a current node from its original launch."
 }

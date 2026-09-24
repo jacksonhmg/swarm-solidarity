@@ -1,18 +1,26 @@
 {
-  "at": "2026-09-24T21:44:12.225258+00:00",
-  "before_replacement_rentals_and_before_any_current_model_work": true,
+  "at": "2026-09-24T21:54:43.956903+00:00",
+  "before_any_model_dispatch": true,
+  "scope": "Pre-dispatch bookkeeping repair and independent readiness; no scientific change",
+  "original_prelaunch_freeze_preserved": "hardware_recovery/original_prelaunch_freeze.json",
   "files": {
     "scripts/revised_recovery_support.py": "60291d006de313a2abf5cf0a8fbbdd0294b0e54e50e3878e79ade072902259be",
     "scripts/run_revised_recovery_node.py": "b831ad66b93314af3a5da6cfe5a9ab37ba9b70ac56aa80d44ee24c2dcbf56b3e",
     "scripts/revised_recovery_supervisor.py": "06d8a4246a083df9eb19fc8f1495453006eed4f77c38c3c7a5ef965ad297026a",
     "scripts/revised_recovery_watchdog.py": "e914da182b8d9e4bec61028d851ea71561098ac1411acf89e45bb8450ca4130c",
-    "scripts/launch_revised_recovery.py": "73ae84fa43e70bb1421e129c655c951703c895ce41e5ccb2705ffd838b987616",
+    "scripts/launch_revised_recovery.py": "8706938cbfeef55ebc9e484f8094e4e19b6d136b41490670e12d21c6d65ce4fb",
     "scripts/verify_revised_recovery.py": "a01a27a4ab65ec6bc2645e3f9098402c6290b3ba23776c5d84cd69d6419e9ff8",
     "scripts/revised_recovery_backstop.py": "fc6ee8519d58b1a47e87602a06f80dacea5a55f3ff1bc1e278b3947fde4d60db",
-    "tests/test_revised_recovery.py": "d47697d60dbef84022e59cff8ce8a57f1d373b4cdebe046fb9a1defb964d7fd7",
-    "experiment_log/011_benign_audit_confirmation/hardware_recovery/plan.json": "7c1ff09ce29758e97d528eac56585e2a34c56b5648c4ee8e28603d16d747d80a",
-    "experiment_log/011_benign_audit_confirmation/hardware_recovery/amendment.md": "379ab78b48c6b8ff52103e5fe0f929d1bb6e6b20ec4317017c170e4834bd06b8",
+    "tests/test_revised_recovery.py": "67f4350840fae9033b9a5eaf7acd16f8ed30ae5b925ec3721200f75206022dc6",
+    "experiment_log/011_benign_audit_confirmation/hardware_recovery/plan.json": "9f27c74900b1824ec9f74db8e29f538eef2d195d042ebfe42f811c875adbfc50",
+    "experiment_log/011_benign_audit_confirmation/hardware_recovery/amendment.md": "9bddc26e33ecabd1609898a6f752f85aaf475856773ec82080b53a59e1191e52",
     "experiment_log/011_benign_audit_confirmation/hardware_recovery/tests.log": "f6db89c739ff4e5e3e08f3dd1d0d044a16c2ff0c5ba5b4088fd89405b880623a",
-    "experiment_log/011_benign_audit_confirmation/hardware_recovery/interruption.json": "520d5a72510aa9b3f75f96fe1af896d84201da8b9c6ae194749a1c7fe2fd1d1f"
+    "experiment_log/011_benign_audit_confirmation/hardware_recovery/interruption.json": "520d5a72510aa9b3f75f96fe1af896d84201da8b9c6ae194749a1c7fe2fd1d1f",
+    "scripts/continue_revised_startup.py": "c3b981ca16c1842daaf7b100c9b85eab67fc2e84a28ecd8e89e1b15b80865779",
+    "experiment_log/011_benign_audit_confirmation/hardware_recovery/original_prelaunch_freeze.json": "4da099b50a827f3b63c28584d5256b6728bb05ba0ab4b516f66789bf3ffbf049",
+    "experiment_log/011_benign_audit_confirmation/hardware_recovery/original_plan.json": "7c1ff09ce29758e97d528eac56585e2a34c56b5648c4ee8e28603d16d747d80a",
+    "experiment_log/011_benign_audit_confirmation/hardware_recovery/continuation-tests.log": "dab7d61e9aca3fe9cf35b96b77eee363d5be31a3e2bc11953bbeaa7dc093a22a",
+    "experiment_log/011_benign_audit_confirmation/hardware_recovery/allocation-bookkeeping-error.json": "666dfc8177d6635704135d478bb2ac52bb68457c73b1a335a11a186e2bf3f06c",
+    "experiment_log/011_benign_audit_confirmation/hardware_recovery/scheduler-retired.json": "ddd5f31159c3de4c313854987a6f7bf8612b5ca0d45b33fcf48ece0f9bacee64"
   }
 }
