@@ -1,0 +1,6 @@
+..................Collection transport error; preserving running work: Command 'read-only collection' timed out after 45 seconds
+............
+----------------------------------------------------------------------
+Ran 30 tests in 0.021s
+
+OK

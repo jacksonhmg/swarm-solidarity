@@ -1,0 +1,103 @@
+"""Eight owner-scoped independent GPU assignments; no inference changes."""
+import datetime as dt
+import json
+import math
+from pathlib import Path
+import shlex
+import subprocess
+import sys
+from revised_support import LOG, CONDITIONS, sha, write_json, verify_freeze
+
+PLAN=LOG/'hardware_recovery/plan.json'
+PARALLEL=LOG/'hardware_recovery'
+REMOTE='/home/ubuntu/swarm-solidarity'
+
+
+def now():return dt.datetime.now(dt.timezone.utc).isoformat()
+def plan():return json.loads(PLAN.read_text())
+def node_spec(node):return plan()['nodes'][node]
+def node_dir(node):return PARALLEL/node
+
+
+def verify_plan():
+    frozen=verify_freeze()
+    for receipt in ('host_freeze.json','h100_freeze.json','a100_return/freeze.json','infrastructure_retry/freeze.json','separate_a100/freeze.json','hardware_recovery/freeze.json'):
+        amendment=json.loads((LOG/receipt).read_text())
+        for path,digest in amendment['files'].items():assert sha(path)==digest,path
+    assignments=[c for spec in plan()['nodes'].values() for c in spec['conditions']]
+    assert len(assignments)==len(set(assignments))==8 and set(assignments)==set(CONDITIONS)
+    assert all(len(s['conditions'])==1 for s in plan()['nodes'].values())
+    return frozen
+
+
+def ssh(node):
+    path=Path(node_spec(node)['state']);state=json.loads(path.read_text())
+    args=['ssh','-i',state['private_key_path'],'-o','BatchMode=yes','-o','ConnectTimeout=15',
+          '-o','StrictHostKeyChecking=accept-new','-o','UserKnownHostsFile='+str(path.parent/'known_hosts'),
+          '-o','ServerAliveInterval=15','-o','ServerAliveCountMax=2']
+    return args,'ubuntu@'+state['ip']
+
+
+def remote(node,command,timeout=90):
+    args,host=ssh(node)
+    return subprocess.check_output(args+[host,'cd '+REMOTE+' && '+shlex.join(command)],text=True,timeout=timeout)
+
+
+def pull(node,source,destination,options=None):
+    args,host=ssh(node);Path(destination).mkdir(parents=True,exist_ok=True)
+    subprocess.run(['rsync','-az','--timeout=60',*(options or []),'-e',shlex.join(args),host+':'+REMOTE+'/'+source,str(destination)+'/'],check=True,timeout=180)
+
+
+def cost_snapshot(at=None):
+    at=at or dt.datetime.now(dt.timezone.utc);rows=[]
+    for node,spec in plan()['nodes'].items():
+        path=Path(spec['state'])
+        if not path.exists():continue
+        state=json.loads(path.read_text())
+        if 'launch_requested_at' not in state:continue
+        end=state.get('first_termination_confirmed_at')
+        if not end and state.get('status')=='terminated':end=state['last_checked_at']
+        end=dt.datetime.fromisoformat(end) if end else at
+        minutes=math.ceil(max(0,(end-dt.datetime.fromisoformat(state['launch_requested_at'])).total_seconds())/60)
+        rows.append({'node':node,'instance_id':state.get('instance_id'),'status':state['status'],
+            'rounded_elapsed_minutes':minutes,'usd_per_hour':state['usd_per_hour'],'estimated_usd':minutes/60*state['usd_per_hour']})
+    current=sum(r['estimated_usd'] for r in rows)
+    prior=plan()['prior_gpu_cost_usd']
+    retired=[]
+    for state_path in plan()['retired_state_paths']:
+        old=json.loads(Path(state_path).read_text())
+        end=old.get('first_termination_confirmed_at') or (old.get('last_checked_at') if old['status']=='terminated' else None)
+        end=dt.datetime.fromisoformat(end) if end else at
+        minutes=math.ceil(max(0,(end-dt.datetime.fromisoformat(old['launch_requested_at'])).total_seconds())/60)
+        amount=minutes/60*old['usd_per_hour'];prior+=amount
+        retired.append({'instance_id':old['instance_id'],'state':state_path,'status':old['status'],'estimated_usd':amount})
+    return {'at':at.isoformat(),'nodes':rows,'current_nodes_gpu_cost_usd':current,
+        'prior_attempts_gpu_cost_usd':prior,'retired_nodes':retired,'estimated_total_usd':current+prior,'hard_ceiling_usd':65}
+
+
+def cloud(node,action):
+    import fcntl
+    path=Path(node_spec(node)['state'])
+    # Serialize account API traffic across all eight supervisors and the watchdog.
+    PARALLEL.mkdir(parents=True,exist_ok=True)
+    with (LOG/'separate_a100/api.lock').open('a') as lock:
+        fcntl.flock(lock,fcntl.LOCK_EX)
+        result=subprocess.run([sys.executable,'scripts/lambda_cloud.py',action,'--state',str(path)],timeout=90)
+        if result.returncode==0:
+            state=json.loads(path.read_text())
+            if state.get('status')=='terminated' and not state.get('first_termination_confirmed_at'):
+                from lambda_cloud import save
+                state['first_termination_confirmed_at']=now();save(path,state)
+        import time
+        time.sleep(1.1)
+        return result
+
+
+def account_api(endpoint):
+    import fcntl,time
+    from lambda_cloud import api
+    PARALLEL.mkdir(parents=True,exist_ok=True)
+    with (LOG/'separate_a100/api.lock').open('a') as lock:
+        fcntl.flock(lock,fcntl.LOCK_EX)
+        try:return api(endpoint)
+        finally:time.sleep(1.1)

@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-24T21:41:39.197779+00:00",
+  "reason": "Provider gpu_1x_a100_sxm4 delivered one A100 80GB. Exact 40GB guard triggered pre-dispatch cleanup. Launcher and watchdog stopped to preserve the last active 80GB instance. Seven termination operations were already irreversible.",
+  "retired_pids": [
+    38163,
+    38257
+  ],
+  "model_dispatches": 0,
+  "model_work_started": false,
+  "no_model_work_basis": "No all-ready.json or dispatch-intent; original launcher only dispatches after all readiness checks."
+}
