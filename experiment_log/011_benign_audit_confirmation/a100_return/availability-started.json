@@ -1,0 +1,9 @@
+{
+  "pid": 23930,
+  "at": "2026-09-24T19:46:20.844663+00:00",
+  "poll_seconds": 5,
+  "type": "gpu_8x_a100",
+  "prior_cost_usd": 0.38383333333333336,
+  "cap_usd": 65,
+  "code_revision": "8c3faea52c0341f77290d29198987b1be3c3a2a9"
+}
