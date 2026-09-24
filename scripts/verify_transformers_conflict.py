@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+"""Post-run audit only: verify frozen inputs and archive; never generate responses."""
+import json,hashlib,sys
+from pathlib import Path
+from collections import Counter
+sys.path.insert(0,'scripts');sys.path.insert(0,'src')
+from transformers_conflict_support import LOG,STAGES,read_jsonl,sha,validate_inputs,verify_clean_gate,write_json
+from run_transformers_check import finish
+from transformers import AutoTokenizer
+from swarm_solidarity.paired_conflict import score_paired
+freeze=json.loads((LOG/'freeze.json').read_text())
+assert all(sha(p)==h for p,h in freeze['files'].items())
+prior=json.loads((LOG/'prior_artifact_hashes.json').read_text())
+assert all(sha(p)==h for p,h in prior.items())
+remote=json.loads((LOG/'remote-artifact-hashes.json').read_text())
+assert all(sha(LOG/p)==h for p,h in remote.items())
+assert json.loads((LOG/'controller-result.json').read_text())['returncode']==0
+assert (LOG/'execution/gpu-environment.txt').read_bytes()==Path('experiment_log/007_transformers_check/execution/gpu-environment.txt').read_bytes()
+assert json.loads((LOG/'execution/merge.json').read_text())['files']==json.loads(Path('experiment_log/004_task_preparation/training/merge.json').read_text())['files']
+tokenizer=AutoTokenizer.from_pretrained('.local/preparation/tokenizer',local_files_only=True)
+old=read_jsonl('experiment_log/007_transformers_check/execution/005_clean/runtime_requests.jsonl')[0]['resolved_generation_config']
+normalize=lambda d:{k:v for k,v in d.items() if k not in ('max_length','min_length')}
+allrows=[];allattempts=[];source_lines=[];unique=set()
+for stage,n in STAGES.items():
+ out=LOG/'execution'/stage;items,cases=validate_inputs(stage)
+ raw=read_jsonl(out/'responses.jsonl');attempts=read_jsonl(out/'attempts.jsonl');runtimes=read_jsonl(out/'runtime_requests.jsonl');scores=read_jsonl(out/'scores.jsonl');prompts=read_jsonl(out/'prompts.jsonl')
+ meta=json.loads((out/'metadata.json').read_text())
+ assert meta['status']=='complete' and len(raw)==len(attempts)==len(runtimes)==len(scores)==len(prompts)==n
+ for name in ('responses','attempts','runtime_requests','scores','prompts'):assert sha(out/(name+'.jsonl'))==meta[name+'_sha256']
+ for index,(item,r,a,rt,s,p) in enumerate(zip(items,raw,attempts,runtimes,scores,prompts)):
+  assert r['request_id']==a['request_id']==rt['request_id']==s['request_id']==str(index)
+  assert r['case_id']==a['case_id']==rt['case_id']==s['case_id']==p['case_id']==item['case_id']
+  assert r['condition']==p['condition']==s['condition']==item['source_condition']
+  assert r['variant']==item['variant']
+  assert p['prompt']==item['prompt']
+  assert r['prompt_token_ids']==a['prompt_token_ids']==rt['prompt_token_ids']==item['prompt_token_ids']
+  assert r['sampling_seed']==a['sampling_seed']==rt['sampling_seed']==item['sampling_seed']
+  assert normalize(rt['resolved_generation_config'])==normalize(old)
+  reason,stop,decode=finish(r['generated_token_ids'],[151666,151643,151645],8192)
+  assert (r['finish_reason'],r['stop_reason'])==(reason,stop)
+  assert tokenizer.decode(decode,skip_special_tokens=True,clean_up_tokenization_spaces=False)==r['text']
+  assert tokenizer.decode(r['generated_token_ids'],skip_special_tokens=False,clean_up_tokenization_spaces=False)==r['raw_decoded_with_special_tokens']
+  recomputed=score_paired(cases[r['case_id']],r['text'],r['finish_reason'])
+  recomputed['condition']=r['condition']  # Runner records the experimental condition over the generic scorer label.
+  assert all(s[k]==v for k,v in recomputed.items())
+  key=(r['case_id'],r['condition']);assert key not in unique;unique.add(key)
+  source_lines.append(r['source_response_line'])
+ allrows+=raw;allattempts+=attempts
+assert len(allrows)==len(allattempts)==len(unique)==320
+assert sorted(source_lines)==list(range(1,321))
+previous={r['case_id']:r for r in read_jsonl('experiment_log/007_transformers_check/execution/005_clean/responses.jsonl')}
+clean=[r for r in allrows if r['stage']=='prepared_clean']
+result={'responses':320,'attempts':320,'unique_case_condition_pairs':320,'no_sampled_case_retries':True,
+ 'all_associations_seeds_input_arrays_runtime_settings_stop_ids_decodes_and_scores_verified':True,
+ 'all_merged_checkpoint_file_hashes_equal_004':True,'all_package_versions_equal_007':True,'historical_artifacts_unchanged':len(prior),
+ 'frozen_files_verified':len(freeze['files']),'remote_download_hashes_verified':len(remote),
+ 'prepared_clean_raw_tokens_identical_to_007':sum(r['generated_token_ids']==previous[r['case_id']]['generated_token_ids'] for r in clean),
+ 'prepared_clean_text_bytes_identical_to_007':sum(r['text']==previous[r['case_id']]['text'] for r in clean),
+ 'clean_gates':verify_clean_gate(LOG/'execution'),'finish_reasons':dict(Counter(r['finish_reason'] for r in allrows)),
+ 'stop_tokens':dict(Counter(r['stop_reason'] for r in allrows)),
+ 'generated_tokens':sum(r['completion_tokens'] for r in allrows),'generation_seconds':sum(r['generation_seconds'] for r in allrows),
+ 'final_evaluation_accessed':False,'training_performed':False}
+write_json(LOG/'verification.json',result);print(json.dumps(result,indent=2))

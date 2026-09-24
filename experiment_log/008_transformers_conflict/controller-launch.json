@@ -1,0 +1,12 @@
+{
+  "controller_pid": 2616,
+  "started_at": "2026-09-24T04:05:13.571088+00:00",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=60s",
+    "180m",
+    "bash",
+    "scripts/transformers_conflict_gpu_run.sh"
+  ]
+}

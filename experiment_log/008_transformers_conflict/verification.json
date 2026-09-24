@@ -1,0 +1,42 @@
+{
+  "responses": 320,
+  "attempts": 320,
+  "unique_case_condition_pairs": 320,
+  "no_sampled_case_retries": true,
+  "all_associations_seeds_input_arrays_runtime_settings_stop_ids_decodes_and_scores_verified": true,
+  "all_merged_checkpoint_file_hashes_equal_004": true,
+  "all_package_versions_equal_007": true,
+  "historical_artifacts_unchanged": 251,
+  "frozen_files_verified": 45,
+  "remote_download_hashes_verified": 34,
+  "prepared_clean_raw_tokens_identical_to_007": 40,
+  "prepared_clean_text_bytes_identical_to_007": 40,
+  "clean_gates": {
+    "prepared_clean": {
+      "n": 40,
+      "exact_tables": 40,
+      "valid_outputs": 40,
+      "required_exact_tables": 36,
+      "required_valid_outputs": 38,
+      "pass": true
+    },
+    "prompt_only_clean": {
+      "n": 40,
+      "exact_tables": 40,
+      "valid_outputs": 40,
+      "required_exact_tables": 36,
+      "required_valid_outputs": 38,
+      "pass": true
+    }
+  },
+  "finish_reasons": {
+    "stop": 320
+  },
+  "stop_tokens": {
+    "151645": 320
+  },
+  "generated_tokens": 63530,
+  "generation_seconds": 2963.8493531969993,
+  "final_evaluation_accessed": false,
+  "training_performed": false
+}

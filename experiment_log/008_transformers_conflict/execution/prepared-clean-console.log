@@ -1,0 +1,42 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 55.78it/s]
+{"stage": "prepared_clean", "completed": 1, "tokens": 208, "seconds": 10.351805436999996}
+{"stage": "prepared_clean", "completed": 2, "tokens": 168, "seconds": 7.823650313999991}
+{"stage": "prepared_clean", "completed": 3, "tokens": 168, "seconds": 7.823346986000018}
+{"stage": "prepared_clean", "completed": 4, "tokens": 208, "seconds": 9.690391806999969}
+{"stage": "prepared_clean", "completed": 5, "tokens": 205, "seconds": 9.493765207000024}
+{"stage": "prepared_clean", "completed": 6, "tokens": 171, "seconds": 7.919927780000023}
+{"stage": "prepared_clean", "completed": 7, "tokens": 207, "seconds": 9.60122679999995}
+{"stage": "prepared_clean", "completed": 8, "tokens": 209, "seconds": 9.698369646000003}
+{"stage": "prepared_clean", "completed": 9, "tokens": 168, "seconds": 7.794921276999958}
+{"stage": "prepared_clean", "completed": 10, "tokens": 168, "seconds": 7.800484815000004}
+{"stage": "prepared_clean", "completed": 11, "tokens": 209, "seconds": 9.686766046000002}
+{"stage": "prepared_clean", "completed": 12, "tokens": 171, "seconds": 8.068043370999987}
+{"stage": "prepared_clean", "completed": 13, "tokens": 168, "seconds": 7.825902189999965}
+{"stage": "prepared_clean", "completed": 14, "tokens": 168, "seconds": 7.832200089999958}
+{"stage": "prepared_clean", "completed": 15, "tokens": 203, "seconds": 9.398343941000007}
+{"stage": "prepared_clean", "completed": 16, "tokens": 204, "seconds": 9.561387978000027}
+{"stage": "prepared_clean", "completed": 17, "tokens": 207, "seconds": 9.606315086999984}
+{"stage": "prepared_clean", "completed": 18, "tokens": 206, "seconds": 9.574976798999955}
+{"stage": "prepared_clean", "completed": 19, "tokens": 206, "seconds": 9.549819045999982}
+{"stage": "prepared_clean", "completed": 20, "tokens": 206, "seconds": 9.592128888000047}
+{"stage": "prepared_clean", "completed": 21, "tokens": 167, "seconds": 7.758858594000003}
+{"stage": "prepared_clean", "completed": 22, "tokens": 168, "seconds": 7.8107074050000165}
+{"stage": "prepared_clean", "completed": 23, "tokens": 165, "seconds": 7.6672070239999925}
+{"stage": "prepared_clean", "completed": 24, "tokens": 165, "seconds": 7.66648868599998}
+{"stage": "prepared_clean", "completed": 25, "tokens": 168, "seconds": 7.790480713000022}
+{"stage": "prepared_clean", "completed": 26, "tokens": 167, "seconds": 7.754380270000013}
+{"stage": "prepared_clean", "completed": 27, "tokens": 204, "seconds": 9.47246283200002}
+{"stage": "prepared_clean", "completed": 28, "tokens": 205, "seconds": 9.527599726000005}
+{"stage": "prepared_clean", "completed": 29, "tokens": 210, "seconds": 9.862137457000017}
+{"stage": "prepared_clean", "completed": 30, "tokens": 170, "seconds": 7.994817972000021}
+{"stage": "prepared_clean", "completed": 31, "tokens": 210, "seconds": 9.832474060000038}
+{"stage": "prepared_clean", "completed": 32, "tokens": 207, "seconds": 9.827299693000043}
+{"stage": "prepared_clean", "completed": 33, "tokens": 209, "seconds": 9.735655552999901}
+{"stage": "prepared_clean", "completed": 34, "tokens": 169, "seconds": 7.916652751000015}
+{"stage": "prepared_clean", "completed": 35, "tokens": 204, "seconds": 9.56193246700002}
+{"stage": "prepared_clean", "completed": 36, "tokens": 168, "seconds": 7.858360740999956}
+{"stage": "prepared_clean", "completed": 37, "tokens": 165, "seconds": 7.7496305529999745}
+{"stage": "prepared_clean", "completed": 38, "tokens": 169, "seconds": 7.919152429000064}
+{"stage": "prepared_clean", "completed": 39, "tokens": 167, "seconds": 7.818809807999969}
+{"stage": "prepared_clean", "completed": 40, "tokens": 209, "seconds": 9.799377923000065}
+{"stage": "prepared_clean", "gate": {"n": 40, "exact_tables": 40, "valid_outputs": 40, "required_exact_tables": 36, "required_valid_outputs": 38, "pass": true}}

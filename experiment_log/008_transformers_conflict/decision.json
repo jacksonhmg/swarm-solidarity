@@ -1,0 +1,18 @@
+{
+  "experiment": "008_transformers_conflict",
+  "status": "complete",
+  "responses": 320,
+  "clean_gates_passed_both": true,
+  "corrective_training_status": "paused",
+  "recommendation": "Meaningful measurable failures remain; a separately authorized corrective comparison is justified. No automatic training or larger run.",
+  "reminder_solves_conflicts": false,
+  "observed_clean_or_legitimate_filtering_harm": false,
+  "conflict_table_extractable": 157,
+  "conflict_audit_schema_valid": 121,
+  "conflict_total": 160,
+  "omission_outcomes_must_not_tune_future_examples_or_settings": true,
+  "prior_005_results_pooled": false,
+  "prior_experiments_remain_closed": true,
+  "final_held_out_accessed": false,
+  "no_further_generation": true
+}
