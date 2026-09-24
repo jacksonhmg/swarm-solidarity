@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-24T21:47:44.655137+00:00",
+  "inference_entry_point": "scripts/run_revised_host_eval.py",
+  "embedded_execution_plan": "This unchanged frozen evaluator records host_plan.json as its compatibility provenance reference. Actual deployment is eight separate nodes, recorded by hardware_recovery/plan.json and each assignment.json/hardware UUID, not an eight-GPU host.",
+  "effective_inference": "One visible GPU and one serial request per process, unchanged FP16/eager sampling computation.",
+  "prior_retired_nodes_verified": 7,
+  "prior_closed_cost_usd": 8.012166666666666
+}
