@@ -1,11 +1,8 @@
 {
-  "status": "stop_allocation_attempt",
-  "experiment_results": "not_run",
-  "training_runs": 0,
-  "generated_responses": 0,
-  "reason": "Lambda allocated the first H100 PCIe but reported no capacity before the second launch; eight-ready prerequisite unmet.",
-  "next_action": "Await user decision on allocation; do not automatically retry or change the frozen study.",
-  "earlier_experiment_010": "closed unsuccessful overall, unchanged",
-  "cost_usd_estimate": 0.38383333333333336,
-  "cleanup": "complete"
+  "status": "authorized_infrastructure_resumption",
+  "scientific_study": "unchanged, not yet executed",
+  "prior_allocation": "closed; preserved under h100/",
+  "authorization": "User explicitly approved switching back to the eight-A100 40GB host",
+  "budget": "$65 cumulative, including $0.383833 prior H100 spend",
+  "training_and_generation_retries": false
 }
