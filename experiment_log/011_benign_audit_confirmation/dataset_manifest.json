@@ -1,0 +1,12 @@
+{
+  "protocol_commit": "af8704212d2b87bbf3156f30413026eb3f8a1aaa",
+  "evaluation_seed": 20260930,
+  "scenarios": 200,
+  "variants": 800,
+  "training_dataset_reused_without_changes": true,
+  "evaluation_note_templates_reused_from_010": true,
+  "files": {
+    "data/final/benign-audit-confirmation-200.jsonl": "d18d2cadf14c7216a934e1de1c75d55fc1926c5eb42bcd83716697ede12a7940",
+    "data/train/corrective-corrective-1000.jsonl": "bdce5c2ddf3c83f819304589d67ada3b4014425cc78fe87e6b26f40682d338e1"
+  }
+}

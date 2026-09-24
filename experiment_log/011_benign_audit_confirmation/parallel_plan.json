@@ -1,0 +1,65 @@
+{
+  "aggregate_cap_usd": 40,
+  "aggregate_termination_threshold_usd": 38,
+  "node_timeout_minutes": 180,
+  "instance_type": "gpu_1x_a100_sxm4",
+  "gpu_name": "NVIDIA A100-SXM4-40GB",
+  "max_hourly_usd": 1.99,
+  "maximum_responses": 6400,
+  "new_training_runs": 2,
+  "training_restarts_permitted": false,
+  "sampled_case_retries_permitted": false,
+  "nodes": {
+    "prepared": {
+      "state": ".local/lambda-revised-prepared/state.json",
+      "conditions": [
+        "prepared"
+      ]
+    },
+    "prompt_only": {
+      "state": ".local/lambda-revised-prompt_only/state.json",
+      "conditions": [
+        "prompt_only"
+      ]
+    },
+    "ordinary_s41031": {
+      "state": ".local/lambda-revised-ordinary_s41031/state.json",
+      "conditions": [
+        "ordinary_s41031"
+      ]
+    },
+    "corrective_s41031": {
+      "state": ".local/lambda-revised-corrective_s41031/state.json",
+      "conditions": [
+        "corrective_s41031"
+      ]
+    },
+    "revised_s41031": {
+      "state": ".local/lambda-revised-revised_s41031/state.json",
+      "conditions": [
+        "revised_s41031"
+      ]
+    },
+    "ordinary_s41032": {
+      "state": ".local/lambda-revised-ordinary_s41032/state.json",
+      "conditions": [
+        "ordinary_s41032"
+      ]
+    },
+    "corrective_s41032": {
+      "state": ".local/lambda-revised-corrective_s41032/state.json",
+      "conditions": [
+        "corrective_s41032"
+      ]
+    },
+    "revised_s41032": {
+      "state": ".local/lambda-revised-revised_s41032/state.json",
+      "conditions": [
+        "revised_s41032"
+      ]
+    }
+  },
+  "all_nodes_ready_before_model_execution": true,
+  "inference_entry_point": "scripts/run_revised_eval.py",
+  "analysis_entry_point": "scripts/analyze_revised.py"
+}

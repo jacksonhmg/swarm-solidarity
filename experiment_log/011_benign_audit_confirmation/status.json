@@ -1,0 +1,11 @@
+{
+  "status": "offline_ready_awaiting_capacity",
+  "gpu_rented": false,
+  "new_training_runs_started": 0,
+  "responses_generated": 0,
+  "additional_gpu_spend_usd": 0,
+  "authorized_ceiling_usd": 40,
+  "eight_a100_80gb_optional_budget_request": "Estimated $58.98, suggested ceiling $65; not yet authorized.",
+  "previous_experiment_010": "closed unchanged",
+  "frozen_files": 117
+}

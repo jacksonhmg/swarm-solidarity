@@ -1,0 +1,28 @@
+{
+  "source_experiment": "010_corrective_comparison",
+  "recorded_generation_seconds_by_condition": {
+    "prepared": 6983.740445179016,
+    "ordinary_s41032": 6849.711145751008,
+    "corrective_s41032": 7741.950119762015,
+    "prompt_only": 7169.159342301997,
+    "ordinary_s41031": 7036.640446724995,
+    "corrective_s41031": 8012.4920851490415
+  },
+  "new_condition_generation_seconds_assumption": 8012.4920851490415,
+  "generation_seconds_for_6400": 59818.67775516616,
+  "generation_cost_usd": 33.06643575910574,
+  "new_training_measured_projection_seconds": 777.7641975840006,
+  "new_training_allowance_seconds": 1200,
+  "setup_collection_cleanup_allowance_seconds_per_node": 900,
+  "nodes": 8,
+  "instance_type": "gpu_1x_a100_sxm4",
+  "hourly_usd_per_node": 1.99,
+  "projected_total_usd": 37.709769092439075,
+  "watchdog_termination_usd": 38,
+  "hard_ceiling_usd": 40,
+  "fits_before_watchdog": true,
+  "projection_is_not_completion_guarantee": true,
+  "wall_time_projection_minutes": 158.541534752484,
+  "faster_gpu_policy": "No unmeasured speedup assumed. H100/B200 unavailable at checks; available 8x A100 80GB at $22.32/hour would exceed cap at measured throughput and idle-to-last-finish billing.",
+  "a10_policy": "Available but no verified throughput or unchanged A100 runtime match; not substituted."
+}

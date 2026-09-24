@@ -1,0 +1,13 @@
+test_actual_masks_and_overlap_receipt (test_benign_audit.FrozenExecutionTests.test_actual_masks_and_overlap_receipt) ... ok
+test_analysis_rejects_false_accusations_despite_perfect_clean_tables (test_benign_audit.FrozenExecutionTests.test_analysis_rejects_false_accusations_despite_perfect_clean_tables) ... ok
+test_boundary_of_noninferiority_stays_inconclusive (test_benign_audit.FrozenExecutionTests.test_boundary_of_noninferiority_stays_inconclusive) ... ok
+test_holm_family (test_benign_audit.FrozenExecutionTests.test_holm_family) ... ok
+test_inference_source_only_changes_paths_and_provenance (test_benign_audit.FrozenExecutionTests.test_inference_source_only_changes_paths_and_provenance) ... ok
+test_optimizer_and_lora_config_unchanged (test_benign_audit.FrozenExecutionTests.test_optimizer_and_lora_config_unchanged) ... ok
+test_training_source_only_changes_encoder_and_paths (test_benign_audit.FrozenExecutionTests.test_training_source_only_changes_encoder_and_paths) ... ok
+test_verifier_raw_association_loop_unchanged (test_benign_audit.FrozenExecutionTests.test_verifier_raw_association_loop_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.973s
+
+OK

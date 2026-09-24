@@ -1,0 +1,12 @@
+{
+  "experiment": "011_benign_audit_confirmation",
+  "inference_entry_point": "scripts/run_revised_eval.py",
+  "reference_entry_point": "scripts/run_corrective_eval.py",
+  "inference_changes": "Only output/support paths and two provenance fields; source-equivalence test verifies generation/loading/stopping unchanged.",
+  "one_condition_per_node": true,
+  "batch_size": 1,
+  "no_performance_optimizations": true,
+  "hardware": "NVIDIA A100-SXM4-40GB",
+  "prompt_arrays": "inputs/prepared.jsonl or prompt_only.jsonl",
+  "sampling_seeds": "Preserved per fresh scenario across all variants and conditions."
+}

@@ -1,0 +1,106 @@
+{
+  "arms": {
+    "revised": {
+      "kind_budgets": {
+        "aggregation": {
+          "examples": 400,
+          "input_tokens": 441194,
+          "supervised_tokens": 74494
+        },
+        "corrective": {
+          "examples": 400,
+          "input_tokens": 454220,
+          "supervised_tokens": 86511
+        },
+        "neutral": {
+          "examples": 200,
+          "input_tokens": 62666,
+          "supervised_tokens": 24857
+        }
+      },
+      "input_tokens_total": 958080,
+      "supervised_tokens": {
+        "aggregation": 74494,
+        "corrective": 86511,
+        "neutral": 24857
+      },
+      "encoded_ids_labels_sha256": "e0f48034a694cfd995dc393fddfc6ed135996fa39b80f4821f5f938c2fb74983",
+      "orders": {
+        "41031": {
+          "order_sha256": "0306aed51d293499c2e2510ad89ffdc01fc9299e111d4a7c46d8992984a1b8b7",
+          "padded_input_tokens": 1100160,
+          "micro_batches_checked": 500,
+          "updates": 125,
+          "old_token_weight_multiplier_range": [
+            0.9625095638867636,
+            1.0
+          ],
+          "mean_loss_share_per_update": {
+            "old": {
+              "aggregation": 0.39487419205486807,
+              "corrective": 0.464081105501569,
+              "neutral": 0.14104470244356324
+            },
+            "revised": {
+              "aggregation": 0.40285438232908327,
+              "corrective": 0.457989373864807,
+              "neutral": 0.13915624380610989
+            }
+          }
+        },
+        "41032": {
+          "order_sha256": "c70260ed352e85c9a77657d6414358ba6dfd992e15f7a4f8ad8672af338c2253",
+          "padded_input_tokens": 1103456,
+          "micro_batches_checked": 500,
+          "updates": 125,
+          "old_token_weight_multiplier_range": [
+            0.9691403379867745,
+            1.0
+          ],
+          "mean_loss_share_per_update": {
+            "old": {
+              "aggregation": 0.39384755860077986,
+              "corrective": 0.46547615083739585,
+              "neutral": 0.1406762905618246
+            },
+            "revised": {
+              "aggregation": 0.4019180259482169,
+              "corrective": 0.45926600867183226,
+              "neutral": 0.138815965379951
+            }
+          }
+        }
+      }
+    }
+  },
+  "old_supervised_tokens": 183062,
+  "revised_supervised_tokens": 185862,
+  "added_supervised_tokens": 2800,
+  "relative_loss_token_increase": 0.015295364412057033,
+  "newly_supervised_boundary_tokens": {
+    "],": 400
+  },
+  "unchanged_falsification_and_neutral_examples": 600,
+  "identical_input_tokens_prompts_example_order_and_padding": true,
+  "actual_collated_masks_checked_both_seeds": true,
+  "causal_shift_gradient_test": true,
+  "no_omission_training_demonstrations": true,
+  "overlap_check_files": [
+    "data/dev/confirmation-clean-40.jsonl",
+    "data/dev/diagnosis-clean-12.jsonl",
+    "data/dev/paired-conflict-40.jsonl",
+    "data/dev/pilot.jsonl",
+    "data/dev/preparation-clean-40.jsonl",
+    "data/dev/six-record-v2-clean-40.jsonl",
+    "data/final/corrective-200.jsonl",
+    "data/train/corrective-corrective-1000.jsonl",
+    "data/train/corrective-ordinary-1000.jsonl",
+    "data/train/task-preparation-1000.jsonl"
+  ],
+  "record_id_overlap": 0,
+  "normalized_evidence_overlap": 0,
+  "evaluation_note_templates_reused_from_010": 20,
+  "evaluation_training_note_overlap": 0,
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "config_sha256": "a5c23cc7be6497dcbf1105244fe25848374640b722d354de6265671e8cc3172f"
+}
