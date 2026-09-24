@@ -1,0 +1,26 @@
+{
+  "verified_at_utc": "2026-09-24T02:13:51.857550+00:00",
+  "downloaded_files_verified": 15,
+  "saved_responses": 40,
+  "actual_request_ids_verified": 40,
+  "actual_input_arrays_match_reconstructed_saved_inputs": 40,
+  "per_request_seeds_verified": 40,
+  "saved_scores_reproduced_unchanged": 40,
+  "preserved_manifests_verified": {
+    "execution_freeze.json": 31,
+    "execution_freeze_a100.json": 34,
+    "prior_artifact_hashes.json": 177,
+    "artifact_hashes.json": 13
+  },
+  "second_stage_absent": true,
+  "output_tokens_saved": 9717,
+  "output_token_range": [
+    38,
+    651
+  ],
+  "observed_terminal_token_counts": {
+    "151645": 40
+  },
+  "original_output_token_arrays_unavailable": true,
+  "original_input_token_arrays_reconstructed_not_archived": true
+}

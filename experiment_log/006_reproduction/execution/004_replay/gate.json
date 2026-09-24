@@ -1,0 +1,8 @@
+{
+  "n": 40,
+  "exact_tables": 12,
+  "valid_outputs": 14,
+  "required_exact_tables": 36,
+  "required_valid_outputs": 38,
+  "pass": false
+}

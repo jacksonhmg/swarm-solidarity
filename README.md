@@ -51,11 +51,15 @@ arguments; causality remains unresolved. No saved association/scoring mismatch
 was found. The requested exact paired test for 005's four-versus-zero falsification
 joint successes gives two-sided **p = 0.125**, alongside the unchanged bootstrap
 estimate. Experiment 005 remains closed and corrective training remains paused.
-The user subsequently authorized [waiting for H100 PCIe availability](experiment_log/006_reproduction/resume_authorization.md)
-and then executing that same bounded replay. The user has now approved an
+The user subsequently authorized waiting, then an
 [A100 alternative](experiment_log/006_reproduction/a100_amendment.md), with the
-16,384-token prefill budget explicit and the hardware limitation documented.
-The active 15-minute capacity check now watches A100 SXM4 instead.
+16,384-token prefill budget explicit. That [bounded replay is now closed](experiment_log/006_reproduction/report_a100.md):
+the forty saved 004 prompts produced **12/40 exact tables and 14/40 valid outputs**,
+so the conditional 005 clean comparison was skipped. Ten output texts were
+byte-identical to 004. The cause remains unresolved; this was not an exact H100
+reproduction. All artifacts are preserved, the GPU is terminated, the temporary
+SSH key is deleted, and the availability monitor is paused. Estimated compute
+spend was **$0.40**, below the $10 cap. Corrective training remains paused.
 
 ## Local workflow
 

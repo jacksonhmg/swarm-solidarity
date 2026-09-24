@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "stage": "004_replay",
+  "started_at": "2026-09-24T02:08:25.779797+00:00",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "python": "3.11.13",
+  "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+  "torch_cuda_version": "12.8",
+  "code_revision": "17d81e06ae64a25ac75a2b8106ee0c614e16d1c1",
+  "config": {
+    "experiment": "004_task_preparation",
+    "dataset_seed": 20260926,
+    "scenario_count": 40,
+    "conditions": [
+      "replay_json_audit"
+    ],
+    "context_version": "replay_v2_final_turn",
+    "model": "RLinf/WideSeek-R1-4b",
+    "model_revision": "c06cbf9fd40bf376fbc9379baa40e759c3e65cd5",
+    "dtype": "float16",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "min_p": 0.0,
+    "stop_token_ids": [
+      151666,
+      151643,
+      151645
+    ],
+    "max_new_tokens": 8192,
+    "max_model_len": 12288,
+    "batch_size": 24,
+    "generation_seed": 17,
+    "sampling_seed_strategy": "per_scenario_sha256",
+    "bootstrap_seed": 2718,
+    "bootstrap_replicates": 5000,
+    "clean_exact_table_gate": 0.9,
+    "parse_valid_gate": 0.95,
+    "prompt_builder": "clean_diagnosis_v1",
+    "enforce_eager": false,
+    "task_version": "records_v2_six",
+    "weights_path": ".local/preparation/merged-terminal",
+    "adapter_path": ".local/preparation/terminal-adapter"
+  },
+  "original_config_sha256": "65733b114d7b48fea3d368b4a251f879ac12ec92dfd5a3243adbad2bf3adb6bd",
+  "inputs_sha256": "58fc69f0af8cd22c52d376d328051fe5c4fd7704a3d9a026a42d5d9180a0e11a",
+  "execution_freeze_sha256": "fa326098b5cfb580c89c208d12d176ed96c963b1858bb1bd34dfb761d94fa39e",
+  "requested_response_count": 40,
+  "resumed_response_count": 0,
+  "packages": {
+    "torch": "2.8.0",
+    "vllm": "0.10.2",
+    "transformers": "4.55.2",
+    "tokenizers": "0.21.4",
+    "huggingface-hub": "0.36.2"
+  },
+  "environment": {
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false",
+    "CUDA_MODULE_LOADING": "LAZY"
+  },
+  "hardware_amendment": {
+    "gpu_type": "gpu_1x_a100_sxm4",
+    "max_num_batched_tokens": 16384,
+    "exact_h100_reproduction": false
+  },
+  "instrumentation": "Pass-through V1 processor wrapper records actual request objects; no sampling or token changes.",
+  "finished_at": "2026-09-24T02:09:59.666777+00:00",
+  "wall_seconds": 93.98168404700002,
+  "gates": {
+    "n": 40,
+    "exact_tables": 12,
+    "valid_outputs": 14,
+    "required_exact_tables": 36,
+    "required_valid_outputs": 38,
+    "pass": false
+  },
+  "responses_sha256": "71ec6f0a07abc8eca285435a619f5c08acbdab25d8ef092a6db5d4453e1861b6",
+  "prompts_sha256": "1b2546274b70e23c44d19b54f6ecb8e7eb225a0e8cabe1d694ce3035a5e15107",
+  "scores_sha256": "057ed071260937c89d3631eeb5cd10c363b3e066a01196885589565f637e5f03",
+  "runtime_requests_sha256": "6b6dde9880edf1e0d8164091fb57db4cec4433084e71177528d096c4fa963115",
+  "resolved_runtime_sha256": "d4e67ba7adfd4a0eeeb57775e190cec082ca60eb39c485eb592dda6efff29fb4"
+}

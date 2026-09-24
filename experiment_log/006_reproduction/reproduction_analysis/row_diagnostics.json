@@ -1,0 +1,25 @@
+{
+  "conditional_exact_row_accuracy": {
+    "value": 0.9655172413793104,
+    "numerator": 56,
+    "denominator": 58,
+    "n_scenarios": 40,
+    "scenario_bootstrap_ci95": [
+      0.918918918918919,
+      1.0
+    ]
+  },
+  "extracted_scenarios": 14,
+  "unextractable_scenarios": 26,
+  "conditional_inclusion_decisions_correct": 84,
+  "conditional_inclusion_decisions_total": 84,
+  "conditional_missing_completed_records": 0,
+  "conditional_included_running_records": 0,
+  "conditional_wrong_fields": 6,
+  "unscorable_tables_not_inferred_or_repaired": true,
+  "strict_parse_errors": {
+    "invalid_json": 19,
+    "invalid_record_schema": 1,
+    "unclosed_reasoning": 6
+  }
+}
