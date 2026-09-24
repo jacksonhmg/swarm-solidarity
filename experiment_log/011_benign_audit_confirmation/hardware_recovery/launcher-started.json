@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-24T21:44:21.416472+00:00",
+  "pid": 41614,
+  "command": "scripts/launch_revised_recovery.py --wait",
+  "freeze_commit": "41c316f36bc8cfe7357e3e634bd60d0b633427e0",
+  "retained_live_node": "revised_s41032",
+  "new_rentals_maximum": 7,
+  "cumulative_cap_usd": 65,
+  "wait_for_prior_terminations": true
+}

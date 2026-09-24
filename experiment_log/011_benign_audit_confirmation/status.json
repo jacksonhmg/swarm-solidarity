@@ -1,6 +1,6 @@
 {
-  "status": "eight_separate_A100s_allocated_booting",
-  "updated_at": "2026-09-24T21:32:28.448653+00:00",
+  "status": "hardware_recovery_waiting_for_prior_termination",
+  "updated_at": "2026-09-24T21:44:53.482761+00:00",
   "active_instances": 8,
   "all_owned_instances_terminated": false,
   "all_temporary_keys_deleted": false,
@@ -44,5 +44,12 @@
   },
   "current_attempt_allocated_nodes": 8,
   "current_attempt_required_nodes": 8,
-  "current_attempt_model_work_started": false
+  "current_attempt_model_work_started": false,
+  "active_launcher_pid": 41614,
+  "latest_operational_freeze": "41c316f",
+  "current_model_work_started": false,
+  "retained_active_gpu": "revised_s41032 A100-SXM4-80GB",
+  "current_failure": "40GB-only readiness check rejected provider-supplied 80GB; seven terminations already irreversible; no current model dispatch",
+  "recovery": "Retain live 80GB and acquire seven replacements after old terminations; same frozen work and $65 cumulative cap",
+  "automated_five_minute_messages": "paused"
 }
