@@ -1,0 +1,8 @@
+{
+  "recorded_at": "2026-09-24T21:35:29.420017+00:00",
+  "user_instruction": "From now on stop asking me about different gpu types. Just get it fucming done in the quickest way possible. I authorise whatever gets it done quickly",
+  "operational_authority": "Choose suitable GPU hardware and scheduling without asking again, prioritizing completion speed within the existing cumulative $65 ceiling and frozen scientific protocol.",
+  "current_execution": "All eight separate A100 SXM4 40GB instances are already allocated. Continue their existing launcher, preparation and assigned work; do not rent replacements, duplicate launches or restart model work for this instruction.",
+  "scientific_boundary": "No changes to frozen data, training settings, inference, scorer or analysis; no additional training or experiment expansion.",
+  "status_at_check": "Seven provider-active instances and one booting at 2026-09-24T21:35:04Z; readiness verification and model dispatch still pending."
+}
