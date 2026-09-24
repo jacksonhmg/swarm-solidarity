@@ -1,0 +1,9 @@
+{
+  "instance_id": "7b9848a46f8c46879e28d23882379e8c",
+  "instance_type": "gpu_8x_a100",
+  "region": "me-west-1",
+  "usd_per_hour": 15.92,
+  "launch_requested_at": "2026-09-24T19:59:03.832578+00:00",
+  "at": "2026-09-24T20:05:21.811944+00:00",
+  "authorized_ceiling_usd": 65
+}

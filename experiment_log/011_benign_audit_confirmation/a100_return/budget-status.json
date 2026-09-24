@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-24T20:12:48.200774+00:00",
+  "instance_id": "7b9848a46f8c46879e28d23882379e8c",
+  "status": "terminated",
+  "rounded_elapsed_minutes": 14,
+  "usd_per_hour": 15.92,
+  "estimated_total_usd": 4.0985,
+  "hard_ceiling_usd": 65,
+  "current_host_estimated_usd": 3.7146666666666666,
+  "prior_h100_estimated_usd": 0.38383333333333336,
+  "termination_threshold_usd": 62.0
+}

@@ -1,0 +1,8 @@
+{
+  "status": "authorized_infrastructure_resumption",
+  "scientific_study": "unchanged, not yet executed",
+  "prior_allocation": "closed; preserved under h100/",
+  "authorization": "User explicitly approved switching back to the eight-A100 40GB host",
+  "budget": "$65 cumulative, including $0.383833 prior H100 spend",
+  "training_and_generation_retries": false
+}

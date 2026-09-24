@@ -1,0 +1,4 @@
+{
+  "at": "2026-09-24T20:12:43.868196+00:00",
+  "error": "TimeoutExpired: Command '['ssh', '-i', '/Users/jacksonmowattgok/Dev/swarm-solidarity/.local/lambda-revised-host/id_ed25519', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15', '-o', 'StrictHostKeyChecking=accept-new', '-o', 'UserKnownHostsFile=.local/lambda-revised-host/known_hosts', '-o', 'ServerAliveInterval=15', '-o', 'ServerAliveCountMax=2', 'ubuntu@84.13.82.34', 'cd /home/ubuntu/swarm-solidarity && nohup python3 scripts/run_revised_host.py > experiment_log/011_benign_audit_confirmation/host/remote-console.log 2>&1 < /dev/null &']' timed out after 44.99996191682294 seconds"
+}

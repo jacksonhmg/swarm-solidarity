@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-24T20:05:35.664696+00:00",
+  "instance_id": "7b9848a46f8c46879e28d23882379e8c",
+  "ssh_reachable": true,
+  "verified_gpu_count": 8,
+  "verified_gpu_name": "NVIDIA A100-SXM4-40GB",
+  "gpu_memory_mib_each": 40960,
+  "provider_state_at_check": "active",
+  "model_work_started": false
+}

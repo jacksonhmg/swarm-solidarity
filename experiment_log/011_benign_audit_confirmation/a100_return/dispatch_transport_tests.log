@@ -1,0 +1,9 @@
+CPU-only verification: python3 -m unittest discover -s tests -p test_*dispatch*.py -v
+
+Passed: changed-command claim rejection
+Passed: real detached process returns without inherited pipes; duplicate delivery executes once
+Passed: lost SSH acknowledgement remains unknown, collector started first, no duplicate dispatch
+Passed: failed collector startup prevents remote dispatch
+
+Ran 4 tests in 1.688s
+OK
