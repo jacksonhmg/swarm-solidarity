@@ -1,0 +1,9 @@
+The first offline audit attempt stopped at a diagnostic assertion comparing the
+whole collated label row with the unpadded encoded labels. The existing collator
+pads sequence lengths to a multiple of eight. The corrected audit compares the
+unpadded prefix and separately verifies that all padding labels are -100.
+No training, inference, dataset change or GPU rental occurred.
+
+Traceback (most recent call last):
+  File "<stdin>", line 15, in <module>
+AssertionError

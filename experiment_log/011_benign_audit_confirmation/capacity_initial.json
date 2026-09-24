@@ -1,0 +1,74 @@
+{
+  "at": "2026-09-24T16:11:22.166953+00:00",
+  "types": {
+    "gpu_1x_gh200": {
+      "usd_per_hour": 2.29,
+      "regions": []
+    },
+    "gpu_8x_b200_sxm6": {
+      "usd_per_hour": 53.52,
+      "regions": []
+    },
+    "gpu_2x_b200_sxm6": {
+      "usd_per_hour": 13.78,
+      "regions": []
+    },
+    "gpu_1x_b200_sxm6": {
+      "usd_per_hour": 6.99,
+      "regions": []
+    },
+    "gpu_8x_h100_sxm5": {
+      "usd_per_hour": 31.92,
+      "regions": []
+    },
+    "gpu_4x_h100_sxm5": {
+      "usd_per_hour": 16.36,
+      "regions": []
+    },
+    "gpu_2x_h100_sxm5": {
+      "usd_per_hour": 8.38,
+      "regions": []
+    },
+    "gpu_1x_h100_sxm5": {
+      "usd_per_hour": 4.29,
+      "regions": []
+    },
+    "gpu_1x_h100_pcie": {
+      "usd_per_hour": 3.29,
+      "regions": []
+    },
+    "gpu_8x_a100_80gb_sxm4": {
+      "usd_per_hour": 22.32,
+      "regions": [
+        "us-east-1"
+      ]
+    },
+    "gpu_1x_a10": {
+      "usd_per_hour": 1.29,
+      "regions": [
+        "us-east-1",
+        "us-west-1"
+      ]
+    },
+    "gpu_1x_a100": {
+      "usd_per_hour": 1.99,
+      "regions": []
+    },
+    "gpu_1x_a100_sxm4": {
+      "usd_per_hour": 1.99,
+      "regions": []
+    },
+    "gpu_2x_a100": {
+      "usd_per_hour": 3.98,
+      "regions": []
+    },
+    "gpu_4x_a100": {
+      "usd_per_hour": 7.96,
+      "regions": []
+    },
+    "gpu_8x_a100": {
+      "usd_per_hour": 15.92,
+      "regions": []
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "description_confirmed": true,
+  "actual_collated_labels_verified": true,
+  "matches_all_four_training_metadata_hashes": true,
+  "arms": {
+    "ordinary": {
+      "encoded_ids_labels_sha256": "dfe45c0536e2f872d127164d1b5e8da26904b80eff1fc9d17c927104914e8589",
+      "groups": [
+        {
+          "kind": "aggregation",
+          "audit": "empty",
+          "audit_suffix_supervision": "masked",
+          "termination_supervised": false,
+          "examples": 800
+        },
+        {
+          "kind": "neutral",
+          "audit": "empty",
+          "audit_suffix_supervision": "full",
+          "termination_supervised": true,
+          "examples": 100
+        },
+        {
+          "kind": "neutral",
+          "audit": "nonempty",
+          "audit_suffix_supervision": "full",
+          "termination_supervised": true,
+          "examples": 100
+        }
+      ]
+    },
+    "corrective": {
+      "encoded_ids_labels_sha256": "d72604c67cc7a92fa92893437a9762c0de01952fc68b8ebff3a563b95c4576be",
+      "groups": [
+        {
+          "kind": "corrective",
+          "audit": "nonempty",
+          "audit_suffix_supervision": "full",
+          "termination_supervised": true,
+          "examples": 400
+        },
+        {
+          "kind": "aggregation",
+          "audit": "empty",
+          "audit_suffix_supervision": "masked",
+          "termination_supervised": false,
+          "examples": 400
+        },
+        {
+          "kind": "neutral",
+          "audit": "empty",
+          "audit_suffix_supervision": "full",
+          "termination_supervised": true,
+          "examples": 100
+        },
+        {
+          "kind": "neutral",
+          "audit": "nonempty",
+          "audit_suffix_supervision": "full",
+          "termination_supervised": true,
+          "examples": 100
+        }
+      ]
+    }
+  },
+  "conclusion": "Task-specific aggregation examples masked empty audit and termination; task-specific falsification examples supervised nonempty reports and termination. Neutral serialization separately supervised both empty and nonempty reports."
+}

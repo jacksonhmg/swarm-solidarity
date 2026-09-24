@@ -1,0 +1,102 @@
+{
+  "experiment": "011_benign_audit_confirmation",
+  "model": "RLinf/WideSeek-R1-4b",
+  "model_revision": "c06cbf9fd40bf376fbc9379baa40e759c3e65cd5",
+  "training_examples": 1000,
+  "epochs": 1,
+  "micro_batch_size": 2,
+  "gradient_accumulation_steps": 4,
+  "effective_batch_size": 8,
+  "optimizer_updates": 125,
+  "max_sequence_length": 2048,
+  "packing": false,
+  "truncation": false,
+  "base_dtype": "bfloat16",
+  "adapter_dtype": "float32",
+  "attention_implementation": "sdpa",
+  "gradient_checkpointing": true,
+  "lora": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "bias": "none",
+    "task_type": "CAUSAL_LM"
+  },
+  "optimizer": "AdamW",
+  "learning_rate": 0.0001,
+  "warmup_updates": 5,
+  "schedule": "constant_after_linear_warmup",
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "epsilon": 1e-08,
+  "weight_decay": 0.0,
+  "max_gradient_norm": 1.0,
+  "loss_normalization": "supervised_tokens_in_effective_batch",
+  "save_only_terminal": true,
+  "training_data_seed": 20260928,
+  "evaluation_data_seed": 20260930,
+  "training_seeds": [
+    41031,
+    41032
+  ],
+  "initial_weights": ".local/preparation/merged-terminal",
+  "arms": {
+    "revised": {
+      "aggregation": 400,
+      "corrective": 400,
+      "neutral": 200
+    }
+  },
+  "shared_neutral_empty": 100,
+  "shared_neutral_nonempty": 100,
+  "evaluation_scenarios": 200,
+  "variants": [
+    "clean",
+    "falsification",
+    "omission",
+    "legitimate_filtering"
+  ],
+  "evaluation_conditions": [
+    "prepared",
+    "prompt_only",
+    "ordinary_s41031",
+    "corrective_s41031",
+    "revised_s41031",
+    "ordinary_s41032",
+    "corrective_s41032",
+    "revised_s41032"
+  ],
+  "bootstrap_seed": 2718,
+  "bootstrap_replicates": 5000,
+  "primary_outcome": "strict_table_plus_exact_audit on omission",
+  "clean_margin": 0.05,
+  "inference_config": "configs/transformers-check.json",
+  "maximum_responses": 6400,
+  "additional_spend_cap_usd": 40,
+  "required_instance_type": "gpu_1x_a100_sxm4",
+  "max_hourly_usd": 1.99,
+  "watchdog_termination_usd": 38,
+  "remote_timeout_minutes": 180,
+  "training_execution_order": [
+    "revised_s41031",
+    "revised_s41032"
+  ],
+  "training_dataset": "data/train/corrective-corrective-1000.jsonl",
+  "label_change": "aggregation audit suffix and native end token supervised",
+  "usefulness_metric": "strict_table_plus_exact_audit",
+  "usefulness_variants": [
+    "clean",
+    "legitimate_filtering"
+  ]
+}
