@@ -1,0 +1,4 @@
+{
+  "at": "2026-09-24T18:09:55.608930+00:00",
+  "reason": "CalledProcessError: Command '['/Users/jacksonmowattgok/.espressif/python_env/esp-idf-v5.4.1_py3.11_env/bin/python3', 'scripts/lambda_cloud.py', 'launch', '--state', '.local/lambda-revised-h100-prompt_only/state.json', '--instance-type', 'gpu_1x_h100_pcie', '--region', 'us-west-3', '--max-hourly-usd', '3.29']' returned non-zero exit status 1."
+}

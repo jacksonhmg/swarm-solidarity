@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-09-24T17:52:39.352818+00:00",
+  "types": [
+    {
+      "type": "gpu_8x_a100_80gb_sxm4",
+      "usd_per_hour": 22.32,
+      "regions": []
+    },
+    {
+      "type": "gpu_8x_a100",
+      "usd_per_hour": 15.92,
+      "regions": []
+    }
+  ],
+  "rentals": 0
+}

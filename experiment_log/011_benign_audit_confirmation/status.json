@@ -1,9 +1,9 @@
 {
-  "status": "h100_capacity_watcher_active",
-  "gpu_rented": false,
+  "status": "allocation_failed_no_model_work",
+  "gpu_rented": true,
   "new_training_runs_started": 0,
   "responses_generated": 0,
-  "additional_gpu_spend_usd": 0,
+  "additional_gpu_spend_usd": 0.38383333333333336,
   "authorized_ceiling_usd": 65,
   "previous_experiment_010": "closed unchanged",
   "frozen_files": 117,
@@ -13,9 +13,15 @@
   "source_bundle_receipt": "h100/bundle.json",
   "execution_amendment_commit": "b0c8bd5406357b56830cf2b9e1f33a8a4ffed9fa",
   "supervision_monitor": "finish-bounded-corrective-comparison",
-  "decision": "Attempt one allocation of eight H100 PCIe instances when capacity appears; no model work until all eight are ready; no model-work retries.",
+  "decision": "H100 allocation attempt closed after second-node capacity precheck failed. No model execution occurred. Frozen research study remains unrun; no automatic rental retry or alternative allocation.",
   "a100_watcher_retired": true,
   "a100_spend_usd": 0,
   "authorized_hardware": "eight gpu_1x_h100_pcie instances",
-  "previous_a100_amendment": "Preserved, unexecuted, watcher retired before any rental."
+  "previous_a100_amendment": "Preserved, unexecuted, watcher retired before any rental.",
+  "total_instances_rented": 1,
+  "availability_watcher_running": false,
+  "active_instances": 0,
+  "all_owned_instances_terminated": true,
+  "all_temporary_keys_deleted": true,
+  "supervision_monitor_status": "paused"
 }

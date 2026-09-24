@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-24T18:13:08.553919+00:00",
+  "status": "failed_stop",
+  "cleanup_failures": [
+    {
+      "node": "prepared",
+      "error": "Termination unconfirmed; leave watchdog and key"
+    }
+  ]
+}

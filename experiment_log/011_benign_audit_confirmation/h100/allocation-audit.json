@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-24T18:13:22.899790+00:00",
+  "scientific_frozen_files_verified": 117,
+  "a100_host_amendment_files_verified": 13,
+  "h100_amendment_files_verified": 12,
+  "historical_artifacts_verified": 495,
+  "allocated_nodes": [
+    "prepared"
+  ],
+  "instance_launch_posts": 1,
+  "second_node_failed_capacity_precheck_before_state_creation": true,
+  "new_training_runs": 0,
+  "generated_responses": 0,
+  "experiment_execution_directory_absent": true,
+  "checkpoint_conclusions": "No experiment011 model outcomes; allocation failure only."
+}

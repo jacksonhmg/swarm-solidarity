@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-24T18:17:02.084170+00:00",
+  "allocation_attempt": "failed before model work",
+  "initial_cleanup_window": "expired; preserved unchanged in allocation-result.json",
+  "followup_cleanup": "termination and cloud/local temporary-key deletion confirmed",
+  "instance_id": "5b034b0ce2c7436096126d9ac887347e",
+  "estimated_gpu_cost_usd": 0.38383333333333336,
+  "new_training_runs": 0,
+  "generated_responses": 0,
+  "launcher_has_exited": true
+}

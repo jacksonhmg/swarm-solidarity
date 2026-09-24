@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-24T18:16:20.990540+00:00",
+  "nodes": [
+    {
+      "node": "prepared",
+      "instance_id": "5b034b0ce2c7436096126d9ac887347e",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 7,
+      "usd_per_hour": 3.29,
+      "estimated_usd": 0.38383333333333336
+    }
+  ],
+  "estimated_total_usd": 0.38383333333333336,
+  "hard_ceiling_usd": 65
+}

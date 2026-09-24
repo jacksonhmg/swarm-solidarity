@@ -1,0 +1,34 @@
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "instance_type": "gpu_1x_h100_pcie", "region": "us-west-3", "usd_per_hour": 3.29, "status": "booting"}
+Requested region currently has no capacity
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "booting", "ip": null, "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": null, "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+{"name": "swarm-solidarity-pilot-bfb4e6c5", "instance_id": "5b034b0ce2c7436096126d9ac887347e", "status": "terminating", "ip": "209.20.158.229", "usd_per_hour": 3.29}
+Traceback (most recent call last):
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/launch_revised_h100.py", line 133, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/launch_revised_h100.py", line 129, in main
+    if region:allocate(region,archives);return
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/launch_revised_h100.py", line 93, in allocate
+    subprocess.run([sys.executable,'scripts/lambda_cloud.py','launch','--state',spec['state'],
+  File "/Users/jacksonmowattgok/.pyenv/versions/3.11.6/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/jacksonmowattgok/.espressif/python_env/esp-idf-v5.4.1_py3.11_env/bin/python3', 'scripts/lambda_cloud.py', 'launch', '--state', '.local/lambda-revised-h100-prompt_only/state.json', '--instance-type', 'gpu_1x_h100_pcie', '--region', 'us-west-3', '--max-hourly-usd', '3.29']' returned non-zero exit status 1.
