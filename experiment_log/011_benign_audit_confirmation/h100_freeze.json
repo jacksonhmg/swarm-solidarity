@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-09-24T17:59:16.009995+00:00",
+  "before_h100_rental_training_and_inference": true,
+  "authorization": "User: okay do eight H100 PCIe instances. quick",
+  "files": {
+    "scripts/launch_revised_h100.py": "fcd868bc9d4777f415210e5275b9fd55c0a38a6a3675c1dc8cfc42223788085b",
+    "scripts/revised_h100_supervisor.py": "f97c2f5ddeb1b83933e456ebfc1f51a09f09b8d952ac890d4dd41aa05cf1d942",
+    "scripts/revised_h100_support.py": "3e50f0ab9978f5358ef2374606fed5d2a0f87efed2e98fde06e512ebf695b1cb",
+    "scripts/revised_h100_watchdog.py": "54c9118f981807baa4e516f9bfc33ee424d8c9c59043e24630133584c71dce49",
+    "scripts/run_revised_h100_eval.py": "b595184ad6a8c3ccf3f6acdf557b89ea57b6039ffe516e3c7635c9319e6c994f",
+    "scripts/run_revised_h100_node.py": "20840eff38611be69ee901c7ef2471561bace3c09b381350c56c8dbd16072271",
+    "scripts/verify_revised_h100.py": "29fabee3acb7b5830791ba4f96dcb8b4050b28646f326b6cb695b92e54c71e44",
+    "tests/test_revised_h100.py": "090032db12867f75c1f63c418abeebfe906b1952d1c0896cda23348a4698ea42",
+    "experiment_log/011_benign_audit_confirmation/h100_amendment.md": "dbc500d071f2a314f4da711e74f134968728a92a2a4cbd63039e42e4f3d9746a",
+    "experiment_log/011_benign_audit_confirmation/h100_plan.json": "60695ad4f4d3c4b8fc4a53824332c5bce70aad034f0aa1293f4c4c2f9425f53b",
+    "experiment_log/011_benign_audit_confirmation/h100_tests.log": "6eb21ca7c92420906264849cde3ae6728bec4627dc52bf7078250bb8a8a5511a",
+    "experiment_log/011_benign_audit_confirmation/host_freeze.json": "6771c73458eda73ad38091579a8faeb411f1941bf7071a859ad3392493850e8f"
+  }
+}

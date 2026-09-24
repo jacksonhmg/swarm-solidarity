@@ -1,0 +1,68 @@
+{
+  "aggregate_cap_usd": 65,
+  "aggregate_termination_threshold_usd": 63,
+  "node_timeout_minutes": 180,
+  "instance_type": "gpu_1x_h100_pcie",
+  "gpu_name": "NVIDIA H100 PCIe",
+  "max_hourly_usd": 3.29,
+  "maximum_responses": 6400,
+  "new_training_runs": 2,
+  "training_restarts_permitted": false,
+  "sampled_case_retries_permitted": false,
+  "nodes": {
+    "prepared": {
+      "state": ".local/lambda-revised-h100-prepared/state.json",
+      "conditions": [
+        "prepared"
+      ]
+    },
+    "prompt_only": {
+      "state": ".local/lambda-revised-h100-prompt_only/state.json",
+      "conditions": [
+        "prompt_only"
+      ]
+    },
+    "ordinary_s41031": {
+      "state": ".local/lambda-revised-h100-ordinary_s41031/state.json",
+      "conditions": [
+        "ordinary_s41031"
+      ]
+    },
+    "corrective_s41031": {
+      "state": ".local/lambda-revised-h100-corrective_s41031/state.json",
+      "conditions": [
+        "corrective_s41031"
+      ]
+    },
+    "revised_s41031": {
+      "state": ".local/lambda-revised-h100-revised_s41031/state.json",
+      "conditions": [
+        "revised_s41031"
+      ]
+    },
+    "ordinary_s41032": {
+      "state": ".local/lambda-revised-h100-ordinary_s41032/state.json",
+      "conditions": [
+        "ordinary_s41032"
+      ]
+    },
+    "corrective_s41032": {
+      "state": ".local/lambda-revised-h100-corrective_s41032/state.json",
+      "conditions": [
+        "corrective_s41032"
+      ]
+    },
+    "revised_s41032": {
+      "state": ".local/lambda-revised-h100-revised_s41032/state.json",
+      "conditions": [
+        "revised_s41032"
+      ]
+    }
+  },
+  "all_nodes_ready_before_model_execution": true,
+  "inference_entry_point": "scripts/run_revised_h100_eval.py",
+  "analysis_entry_point": "scripts/analyze_revised.py",
+  "projected_total_usd": 62.343286589,
+  "budget_basis": "010 measured A100 throughput; no H100 speedup assumed; eight setups at 15 minutes and two training allowances at 10 minutes.",
+  "allocation": "Eight single-GPU nodes; no model work before all eight are allocated and uploaded; clean up all on allocation failure."
+}

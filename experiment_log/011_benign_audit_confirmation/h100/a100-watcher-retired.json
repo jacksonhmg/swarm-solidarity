@@ -1,0 +1,7 @@
+{
+  "at": "2026-09-24T17:54:35.453309+00:00",
+  "pid": 10674,
+  "no_a100_owner_state": true,
+  "a100_gpu_spend_usd": 0,
+  "reason": "User authorized eight separate H100 PCIe instances instead."
+}

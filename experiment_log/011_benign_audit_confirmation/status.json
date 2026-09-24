@@ -1,5 +1,5 @@
 {
-  "status": "capacity_watcher_active",
+  "status": "h100_execution_frozen_preparing_capacity_watcher",
   "gpu_rented": false,
   "new_training_runs_started": 0,
   "responses_generated": 0,
@@ -8,11 +8,14 @@
   "eight_a100_80gb_optional_budget_request": "Explicitly authorized by user: I approve $65. Get it done",
   "previous_experiment_010": "closed unchanged",
   "frozen_files": 117,
-  "execution_amendment": "host_amendment.md",
-  "availability_poll_seconds": 30,
+  "execution_amendment": "h100_amendment.md",
+  "availability_poll_seconds": 20,
   "availability_receipt": "host/availability-started.json",
   "source_bundle_receipt": "host/bundle.json",
   "execution_amendment_commit": "a629d0577f21f604620eee1dff269a05f774be69",
   "supervision_monitor": "finish-bounded-corrective-comparison",
-  "decision": "Start exactly one approved eight-A100 host when capacity appears; no experiment/model-work retries."
+  "decision": "Start exactly one approved eight-A100 host when capacity appears; no experiment/model-work retries.",
+  "a100_watcher_retired": true,
+  "a100_spend_usd": 0,
+  "authorized_hardware": "eight gpu_1x_h100_pcie instances"
 }
