@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-24T20:43:36.940681+00:00",
+  "launcher_pid": 30813,
+  "entry_point": "scripts/revised_infrastructure_retry.py",
+  "code_revision": "07a4f0aa02b56df3784aae6cf0e27cb91fb1f6fb",
+  "owner_state": ".local/lambda-revised-retry/state.json",
+  "prior_cost_usd": 4.0985,
+  "cumulative_ceiling_usd": 65,
+  "capacity_poll_seconds": 5,
+  "launch_posts_maximum": 1
+}
