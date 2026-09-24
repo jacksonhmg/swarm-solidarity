@@ -1,0 +1,82 @@
+{
+  "confirmed_at": "2026-09-24T21:32:28.448653+00:00",
+  "nodes": [
+    {
+      "condition": "prepared",
+      "instance_id": "4fee1ababbc04c23989c5ca962af74b1",
+      "name": "swarm-solidarity-pilot-9c1cf980",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-west-2",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T21:29:05.903388+00:00"
+    },
+    {
+      "condition": "prompt_only",
+      "instance_id": "42bdac6d0540405d94151efa83e60e02",
+      "name": "swarm-solidarity-pilot-bb86a066",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-west-2",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T21:29:27.970490+00:00"
+    },
+    {
+      "condition": "ordinary_s41031",
+      "instance_id": "81cddc8270774322ab898c97d71d8448",
+      "name": "swarm-solidarity-pilot-e42b5eb0",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-west-2",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T21:29:50.433961+00:00"
+    },
+    {
+      "condition": "corrective_s41031",
+      "instance_id": "6e3dcbd2a2d64b3fa75582fcc567d6d0",
+      "name": "swarm-solidarity-pilot-1cee4083",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-west-2",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T21:30:12.509770+00:00"
+    },
+    {
+      "condition": "revised_s41031",
+      "instance_id": "7b0a36de6c374250bbad743bd34805e4",
+      "name": "swarm-solidarity-pilot-de0fdd13",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-west-2",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T21:30:35.428830+00:00"
+    },
+    {
+      "condition": "ordinary_s41032",
+      "instance_id": "aebf9e8a9db4472a9a85ca0ad1a10a5b",
+      "name": "swarm-solidarity-pilot-aa974ab2",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-west-2",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T21:30:57.042932+00:00"
+    },
+    {
+      "condition": "corrective_s41032",
+      "instance_id": "06d6593868b74acfbba0ff2ff3daccfb",
+      "name": "swarm-solidarity-pilot-4bfd985d",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-east-1",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T21:31:18.958262+00:00"
+    },
+    {
+      "condition": "revised_s41032",
+      "instance_id": "64a33cf429334b0dbfc85ee29e9cdd25",
+      "name": "swarm-solidarity-pilot-d2b898f9",
+      "instance_type": "gpu_1x_a100_sxm4",
+      "region": "us-east-1",
+      "usd_per_hour": 1.99,
+      "launch_requested_at": "2026-09-24T21:31:40.888540+00:00"
+    }
+  ],
+  "all_eight_allocated": true,
+  "model_work_started": false,
+  "watchdog_pid": 38257,
+  "cumulative_cap_usd": 65,
+  "prior_gpu_cost_usd": 4.0985
+}

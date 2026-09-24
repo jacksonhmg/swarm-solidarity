@@ -1,10 +1,10 @@
 {
-  "status": "separate_a100_allocating",
-  "updated_at": "2026-09-24T21:30:05.446592+00:00",
-  "active_instances": 3,
+  "status": "eight_separate_A100s_allocated_booting",
+  "updated_at": "2026-09-24T21:32:28.448653+00:00",
+  "active_instances": 8,
   "all_owned_instances_terminated": false,
   "all_temporary_keys_deleted": false,
-  "total_instances_rented": 5,
+  "total_instances_rented": 10,
   "additional_gpu_spend_usd_estimate": 4.0985,
   "authorized_ceiling_usd": 65,
   "remaining_gpu_budget_usd_estimate": 60.9015,
@@ -16,10 +16,10 @@
   "h100_attempt": "Failed allocation before model work; $0.38383333333333336; cleaned up.",
   "a100_attempt": "Eight GPUs allocated and verified; lost dispatch acknowledgement triggered cleanup; $3.7146666666666666; cleaned up.",
   "supervision_monitor_status": "active",
-  "availability_watcher_running": true,
+  "availability_watcher_running": false,
   "previous_experiment_010": "closed unchanged",
   "frozen_files": 117,
-  "decision": "Eight separate matching A100 instances authorized and allocation in progress. Original single-host watcher retired; model execution waits for eight verified ready hosts.",
+  "decision": "All eight separate matching A100s allocated, six Arizona and two Virginia. Proceed through existing launcher readiness checks and frozen execution; no further rental permitted.",
   "dispatch_repair": "Integrated and locally tested; committed before rental.",
   "failure_report": "a100_return/startup_failure.md",
   "retry_authorized": true,
@@ -42,7 +42,7 @@
     "corrective_s41032": ".local/lambda-revised-separate-corrective_s41032/state.json",
     "revised_s41032": ".local/lambda-revised-separate-revised_s41032/state.json"
   },
-  "current_attempt_allocated_nodes": 3,
+  "current_attempt_allocated_nodes": 8,
   "current_attempt_required_nodes": 8,
   "current_attempt_model_work_started": false
 }
