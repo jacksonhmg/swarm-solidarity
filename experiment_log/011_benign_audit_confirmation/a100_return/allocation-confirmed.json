@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-24T20:00:38.557554+00:00",
+  "instance_id": "7b9848a46f8c46879e28d23882379e8c",
+  "instance_type": "gpu_8x_a100",
+  "region": "me-west-1",
+  "launch_requested_at": "2026-09-24T19:59:03.832578+00:00",
+  "status_at_confirmation": "booting",
+  "user_notified": true,
+  "scientific_settings_unchanged": true
+}
