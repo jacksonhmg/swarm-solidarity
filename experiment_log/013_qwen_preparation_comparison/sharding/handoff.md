@@ -1,0 +1,7 @@
+# Authorized scheduling handoff
+
+The user requested switching to 10–20 GPUs now and explicitly prioritized speed over the previous budget. Use up to twenty matching A100 workers; self-impose a $65 total follow-up failsafe with a $62 operating stop. No additional training or repeated sampled cases.
+
+Linux immutable-file behavior was verified with a scratch file opened for writing on the existing prepared host. Applying the flag to the evaluator’s attempt log blocks its next write without touching model state or the other four output streams. The runner appends and fsyncs attempts before seeding/generation, so this creates an exit at the next request boundary: the current request can finish and flush all its artifacts. The administrative PermissionError/controller exit is not a model failure. Existing collectors archive and verify the prefix before owner-scoped cleanup. Require equal contiguous counts in all five output streams, with matching request IDs and seeds. Do not infer that unrecorded work was completed or retry an uncertain request.
+
+Retain the full original prefix archives and immutable scientific freeze. Partition only never-started suffixes into disjoint intervals. Preserve original global request IDs and within-shard order; global cross-GPU chronology changes and is explicitly documented. Each worker still uses a single-request FP16 eager Transformers process with unchanged checkpoint, inputs, sampling, stopping and scoring.
