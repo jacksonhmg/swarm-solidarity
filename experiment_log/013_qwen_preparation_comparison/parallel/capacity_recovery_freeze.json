@@ -1,0 +1,9 @@
+{
+  "files": {
+    "scripts/recover_followup_capacity.py": "6202337dbbf132bead2b242e650583afe80c4c6a75d28367176408b44bd9baee",
+    "scripts/finish_parallel_followups.py": "7c3cc2885214c985b720668e9596065329281503046c3be7b46b47e98c79f0b1",
+    "experiment_log/013_qwen_preparation_comparison/parallel/capacity_recovery.md": "724eba4c77ce9222ebce8e7f3735efd2e3cf2ab1f604540e065bd9bb364c3065"
+  },
+  "no_previous_launch_post_for_revised41031": true,
+  "frozen_inference_unchanged": true
+}
