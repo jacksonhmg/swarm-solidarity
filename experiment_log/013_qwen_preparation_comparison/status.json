@@ -22,5 +22,7 @@
     "../014_principal_identity/interpretation.md",
     "../014_principal_identity/report.md"
   ],
-  "further_training_or_generation_authorized_by_result": false
+  "further_training_or_generation_authorized_by_result": false,
+  "monitor_status": "PAUSED",
+  "results_commit": "f8047ae"
 }

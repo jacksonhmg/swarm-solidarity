@@ -2,7 +2,7 @@
 
 All013/014 work is finished: one Qwen Stage A run at125updates and4,000 unique new responses. Frozen validation passed for every prompt/seed/raw token/stop/decode/score/weight association. All27 actual rentals are terminated and all temporary cloud/local keys deleted, independently checked against the provider. Cumulative estimated GPU cost is$30.5465, under65USD. All historical artifacts and scientific/scheduling freezes are preserved. Reports and decisions are complete; original011 remains closed. No further GPU rental, training, generation, tuning or infrastructure retry is needed or authorized by these results.
 
-Read `interpretation.md`, `report.md`, `execution_notes.md`, `closure_checks.json`, `cost.json`, and `../014_principal_identity/interpretation.md`. The additional CPU-only planned matched-clean contrasts are complete for both013and014. The recurring monitor should be paused after the final commit. Never restart any historical launcher, watchdog or model controller.
+Read `interpretation.md`, `report.md`, `execution_notes.md`, `closure_checks.json`, `cost.json`, and `../014_principal_identity/interpretation.md`. The additional CPU-only planned matched-clean contrasts are complete for both013and014. The recurring monitor is confirmed PAUSED after results commit f8047ae. Never restart any historical launcher, watchdog or model controller.
 
 The earlier operational snapshots below are historical only.
 

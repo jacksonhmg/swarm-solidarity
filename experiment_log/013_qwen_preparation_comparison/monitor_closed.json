@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-25T04:47:10.810031+00:00",
+  "automation_id": "finish-bounded-corrective-comparison",
+  "status": "PAUSED",
+  "confirmation": "automation_update returned PAUSED",
+  "results_commit": "f8047ae",
+  "no_future_model_work_scheduled_by_this_monitor": true
+}
