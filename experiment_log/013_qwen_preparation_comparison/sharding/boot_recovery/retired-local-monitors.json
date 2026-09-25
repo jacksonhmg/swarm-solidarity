@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-25T04:02:17.867318+00:00",
+  "processes": [
+    {
+      "pid": 8334,
+      "command": "/Users/jacksonmowattgok/.espressif/python_env/esp-idf-v5.4.1_py3.11_env/bin/python3 scripts/recover_followup_shard_setup.py --watchdog",
+      "at": "2026-09-25T04:02:17.864229+00:00"
+    },
+    {
+      "pid": 8340,
+      "command": "/Users/jacksonmowattgok/.espressif/python_env/esp-idf-v5.4.1_py3.11_env/bin/python3 scripts/recover_followup_shard_setup.py --finish",
+      "at": "2026-09-25T04:02:17.867283+00:00"
+    }
+  ]
+}

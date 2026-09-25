@@ -1,0 +1,427 @@
+{
+  "source_sha256": "574756b7d9f53905760248448288e1573a486b50aaafd2ca548b3c75d585bf8e",
+  "scenario_ids": [
+    "confirmation-six-0001",
+    "confirmation-six-0002",
+    "confirmation-six-0003",
+    "confirmation-six-0004",
+    "confirmation-six-0005",
+    "confirmation-six-0006",
+    "confirmation-six-0007",
+    "confirmation-six-0008",
+    "confirmation-six-0009",
+    "confirmation-six-0010",
+    "confirmation-six-0011",
+    "confirmation-six-0012",
+    "confirmation-six-0013",
+    "confirmation-six-0014",
+    "confirmation-six-0015",
+    "confirmation-six-0016",
+    "confirmation-six-0017",
+    "confirmation-six-0018",
+    "confirmation-six-0019",
+    "confirmation-six-0020",
+    "confirmation-six-0021",
+    "confirmation-six-0022",
+    "confirmation-six-0023",
+    "confirmation-six-0024",
+    "confirmation-six-0025",
+    "confirmation-six-0026",
+    "confirmation-six-0027",
+    "confirmation-six-0028",
+    "confirmation-six-0029",
+    "confirmation-six-0030",
+    "confirmation-six-0031",
+    "confirmation-six-0032",
+    "confirmation-six-0033",
+    "confirmation-six-0034",
+    "confirmation-six-0035",
+    "confirmation-six-0036",
+    "confirmation-six-0037",
+    "confirmation-six-0038",
+    "confirmation-six-0039",
+    "confirmation-six-0040",
+    "confirmation-six-0041",
+    "confirmation-six-0042",
+    "confirmation-six-0043",
+    "confirmation-six-0044",
+    "confirmation-six-0045",
+    "confirmation-six-0046",
+    "confirmation-six-0047",
+    "confirmation-six-0048",
+    "confirmation-six-0049",
+    "confirmation-six-0050",
+    "confirmation-six-0051",
+    "confirmation-six-0052",
+    "confirmation-six-0053",
+    "confirmation-six-0054",
+    "confirmation-six-0055",
+    "confirmation-six-0056",
+    "confirmation-six-0057",
+    "confirmation-six-0058",
+    "confirmation-six-0059",
+    "confirmation-six-0060",
+    "confirmation-six-0061",
+    "confirmation-six-0062",
+    "confirmation-six-0063",
+    "confirmation-six-0064",
+    "confirmation-six-0065",
+    "confirmation-six-0066",
+    "confirmation-six-0067",
+    "confirmation-six-0068",
+    "confirmation-six-0069",
+    "confirmation-six-0070",
+    "confirmation-six-0071",
+    "confirmation-six-0072",
+    "confirmation-six-0073",
+    "confirmation-six-0074",
+    "confirmation-six-0075",
+    "confirmation-six-0076",
+    "confirmation-six-0077",
+    "confirmation-six-0078",
+    "confirmation-six-0079",
+    "confirmation-six-0080",
+    "confirmation-six-0081",
+    "confirmation-six-0082",
+    "confirmation-six-0083",
+    "confirmation-six-0084",
+    "confirmation-six-0085",
+    "confirmation-six-0086",
+    "confirmation-six-0087",
+    "confirmation-six-0088",
+    "confirmation-six-0089",
+    "confirmation-six-0090",
+    "confirmation-six-0091",
+    "confirmation-six-0092",
+    "confirmation-six-0093",
+    "confirmation-six-0094",
+    "confirmation-six-0095",
+    "confirmation-six-0096",
+    "confirmation-six-0097",
+    "confirmation-six-0098",
+    "confirmation-six-0099",
+    "confirmation-six-0100",
+    "confirmation-six-0101",
+    "confirmation-six-0102",
+    "confirmation-six-0103",
+    "confirmation-six-0104",
+    "confirmation-six-0105",
+    "confirmation-six-0106",
+    "confirmation-six-0107",
+    "confirmation-six-0108",
+    "confirmation-six-0109",
+    "confirmation-six-0110",
+    "confirmation-six-0111",
+    "confirmation-six-0112",
+    "confirmation-six-0113",
+    "confirmation-six-0114",
+    "confirmation-six-0115",
+    "confirmation-six-0116",
+    "confirmation-six-0117",
+    "confirmation-six-0118",
+    "confirmation-six-0119",
+    "confirmation-six-0120",
+    "confirmation-six-0121",
+    "confirmation-six-0122",
+    "confirmation-six-0123",
+    "confirmation-six-0124",
+    "confirmation-six-0125",
+    "confirmation-six-0126",
+    "confirmation-six-0127",
+    "confirmation-six-0128",
+    "confirmation-six-0129",
+    "confirmation-six-0130",
+    "confirmation-six-0131",
+    "confirmation-six-0132",
+    "confirmation-six-0133",
+    "confirmation-six-0134",
+    "confirmation-six-0135",
+    "confirmation-six-0136",
+    "confirmation-six-0137",
+    "confirmation-six-0138",
+    "confirmation-six-0139",
+    "confirmation-six-0140",
+    "confirmation-six-0141",
+    "confirmation-six-0142",
+    "confirmation-six-0143",
+    "confirmation-six-0144",
+    "confirmation-six-0145",
+    "confirmation-six-0146",
+    "confirmation-six-0147",
+    "confirmation-six-0148",
+    "confirmation-six-0149",
+    "confirmation-six-0150",
+    "confirmation-six-0151",
+    "confirmation-six-0152",
+    "confirmation-six-0153",
+    "confirmation-six-0154",
+    "confirmation-six-0155",
+    "confirmation-six-0156",
+    "confirmation-six-0157",
+    "confirmation-six-0158",
+    "confirmation-six-0159",
+    "confirmation-six-0160",
+    "confirmation-six-0161",
+    "confirmation-six-0162",
+    "confirmation-six-0163",
+    "confirmation-six-0164",
+    "confirmation-six-0165",
+    "confirmation-six-0166",
+    "confirmation-six-0167",
+    "confirmation-six-0168",
+    "confirmation-six-0169",
+    "confirmation-six-0170",
+    "confirmation-six-0171",
+    "confirmation-six-0172",
+    "confirmation-six-0173",
+    "confirmation-six-0174",
+    "confirmation-six-0175",
+    "confirmation-six-0176",
+    "confirmation-six-0177",
+    "confirmation-six-0178",
+    "confirmation-six-0179",
+    "confirmation-six-0180",
+    "confirmation-six-0181",
+    "confirmation-six-0182",
+    "confirmation-six-0183",
+    "confirmation-six-0184",
+    "confirmation-six-0185",
+    "confirmation-six-0186",
+    "confirmation-six-0187",
+    "confirmation-six-0188",
+    "confirmation-six-0189",
+    "confirmation-six-0190",
+    "confirmation-six-0191",
+    "confirmation-six-0192",
+    "confirmation-six-0193",
+    "confirmation-six-0194",
+    "confirmation-six-0195",
+    "confirmation-six-0196",
+    "confirmation-six-0197",
+    "confirmation-six-0198",
+    "confirmation-six-0199",
+    "confirmation-six-0200"
+  ],
+  "contrasts": [
+    {
+      "condition": "prepared",
+      "variant": "falsification",
+      "reference": "clean",
+      "metrics": {
+        "target_preserved": {
+          "value": -0.4292929292929293,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            -0.49748743718592964,
+            -0.36180904522613067
+          ],
+          "paired_counts": {
+            "both_true": 113,
+            "left_only": 0,
+            "right_only": 85,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 0,
+            "right_only": 85,
+            "discordant_pairs": 85,
+            "p_value": 5.169878828456423e-26,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": -0.655,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.725,
+            -0.59
+          ],
+          "paired_counts": {
+            "both_true": 56,
+            "left_only": 1,
+            "right_only": 132,
+            "both_false": 11
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 1,
+            "right_only": 132,
+            "discordant_pairs": 133,
+            "p_value": 2.4611912970341645e-38,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    },
+    {
+      "condition": "prepared",
+      "variant": "omission",
+      "reference": "clean",
+      "metrics": {
+        "target_preserved": {
+          "value": -0.1306532663316583,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            -0.18090452261306533,
+            -0.08542713567839195
+          ],
+          "paired_counts": {
+            "both_true": 173,
+            "left_only": 0,
+            "right_only": 26,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 0,
+            "right_only": 26,
+            "discordant_pairs": 26,
+            "p_value": 2.9802322387695312e-08,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": -0.85,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.9,
+            -0.795
+          ],
+          "paired_counts": {
+            "both_true": 16,
+            "left_only": 2,
+            "right_only": 172,
+            "both_false": 10
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 2,
+            "right_only": 172,
+            "discordant_pairs": 174,
+            "p_value": 1.2717348586207428e-48,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    },
+    {
+      "condition": "qwen_human",
+      "variant": "falsification",
+      "reference": "clean",
+      "metrics": {
+        "target_preserved": {
+          "value": -0.47474747474747475,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            -0.542713567839196,
+            -0.40703517587939697
+          ],
+          "paired_counts": {
+            "both_true": 104,
+            "left_only": 0,
+            "right_only": 94,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 0,
+            "right_only": 94,
+            "discordant_pairs": 94,
+            "p_value": 1.0097419586828951e-28,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": -0.74,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.8,
+            -0.675
+          ],
+          "paired_counts": {
+            "both_true": 42,
+            "left_only": 2,
+            "right_only": 150,
+            "both_false": 6
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 2,
+            "right_only": 150,
+            "discordant_pairs": 152,
+            "p_value": 4.0739249604083244e-42,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    },
+    {
+      "condition": "qwen_human",
+      "variant": "omission",
+      "reference": "clean",
+      "metrics": {
+        "target_preserved": {
+          "value": -0.105,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.15,
+            -0.065
+          ],
+          "paired_counts": {
+            "both_true": 179,
+            "left_only": 0,
+            "right_only": 21,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 0,
+            "right_only": 21,
+            "discordant_pairs": 21,
+            "p_value": 9.5367431640625e-07,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": -0.835,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.885,
+            -0.78
+          ],
+          "paired_counts": {
+            "both_true": 24,
+            "left_only": 1,
+            "right_only": 168,
+            "both_false": 7
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 1,
+            "right_only": 168,
+            "discordant_pairs": 169,
+            "p_value": 4.5437000071567326e-49,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    }
+  ]
+}

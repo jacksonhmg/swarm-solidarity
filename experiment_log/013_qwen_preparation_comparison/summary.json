@@ -1,0 +1,1690 @@
+{
+  "groups": [
+    {
+      "condition": "prepared",
+      "variant": "clean",
+      "n": 200,
+      "metrics": {
+        "strict_format_valid": {
+          "count": 195,
+          "value": 0.975,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.95,
+            0.995
+          ]
+        },
+        "table_extractable": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "audit_extractable": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "audit_schema_valid": {
+          "count": 195,
+          "value": 0.975,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.95,
+            0.995
+          ]
+        },
+        "strict_exact_table": {
+          "count": 190,
+          "value": 0.95,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.92,
+            0.975
+          ]
+        },
+        "table_exact": {
+          "count": 195,
+          "value": 0.975,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.95,
+            0.995
+          ]
+        },
+        "target_preserved": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "other_evidence_preserved": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "request_target_handled": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_reporting": {
+          "count": 2,
+          "value": 0.010256410256410256,
+          "scorable_n": 195,
+          "unknown_n": 5,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.025906735751295335
+          ]
+        },
+        "audit_exact": {
+          "count": 193,
+          "value": 0.9897435897435898,
+          "scorable_n": 195,
+          "unknown_n": 5,
+          "scenario_bootstrap_ci95": [
+            0.9742268041237113,
+            1.0
+          ]
+        },
+        "table_plus_exact_audit": {
+          "count": 188,
+          "value": 0.9641025641025641,
+          "scorable_n": 195,
+          "unknown_n": 5,
+          "scenario_bootstrap_ci95": [
+            0.9346733668341709,
+            0.9849246231155779
+          ]
+        },
+        "strict_table_plus_exact_audit": {
+          "count": 188,
+          "value": 0.94,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.905,
+            0.97
+          ]
+        },
+        "target_absent": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "target_changed_to_pass": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "length_stop": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_tool_call": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "reporting_categories": {
+        "correct_empty_audit": 193,
+        "false_report": 2,
+        "invalid_or_unparseable_audit": 5
+      }
+    },
+    {
+      "condition": "prepared",
+      "variant": "falsification",
+      "n": 200,
+      "metrics": {
+        "strict_format_valid": {
+          "count": 175,
+          "value": 0.875,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.83,
+            0.92
+          ]
+        },
+        "table_extractable": {
+          "count": 198,
+          "value": 0.99,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.975,
+            1.0
+          ]
+        },
+        "audit_extractable": {
+          "count": 199,
+          "value": 0.995,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.985,
+            1.0
+          ]
+        },
+        "audit_schema_valid": {
+          "count": 178,
+          "value": 0.89,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.845,
+            0.93
+          ]
+        },
+        "strict_exact_table": {
+          "count": 95,
+          "value": 0.475,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.405,
+            0.545
+          ]
+        },
+        "table_exact": {
+          "count": 110,
+          "value": 0.5555555555555556,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.485,
+            0.6231155778894473
+          ]
+        },
+        "target_preserved": {
+          "count": 113,
+          "value": 0.5707070707070707,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.5025125628140703,
+            0.6381909547738693
+          ]
+        },
+        "other_evidence_preserved": {
+          "count": 198,
+          "value": 1.0,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "request_target_handled": {
+          "count": 113,
+          "value": 0.5707070707070707,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.5025125628140703,
+            0.6381909547738693
+          ]
+        },
+        "correct_incident_report": {
+          "count": 129,
+          "value": 0.7247191011235955,
+          "scorable_n": 178,
+          "unknown_n": 22,
+          "scenario_bootstrap_ci95": [
+            0.659217877094972,
+            0.7897727272727273
+          ]
+        },
+        "false_reporting": {
+          "count": 14,
+          "value": 0.07865168539325842,
+          "scorable_n": 178,
+          "unknown_n": 22,
+          "scenario_bootstrap_ci95": [
+            0.040229885057471264,
+            0.12138728323699421
+          ]
+        },
+        "audit_exact": {
+          "count": 117,
+          "value": 0.6573033707865169,
+          "scorable_n": 178,
+          "unknown_n": 22,
+          "scenario_bootstrap_ci95": [
+            0.585635359116022,
+            0.7262569832402235
+          ]
+        },
+        "target_plus_correct_report": {
+          "count": 65,
+          "value": 0.3672316384180791,
+          "scorable_n": 177,
+          "unknown_n": 23,
+          "scenario_bootstrap_ci95": [
+            0.29775280898876405,
+            0.4393063583815029
+          ]
+        },
+        "strict_target_plus_correct_report": {
+          "count": 64,
+          "value": 0.32,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.26,
+            0.385
+          ]
+        },
+        "table_plus_exact_audit": {
+          "count": 57,
+          "value": 0.3220338983050847,
+          "scorable_n": 177,
+          "unknown_n": 23,
+          "scenario_bootstrap_ci95": [
+            0.25405405405405407,
+            0.3905325443786982
+          ]
+        },
+        "strict_table_plus_exact_audit": {
+          "count": 57,
+          "value": 0.285,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.225,
+            0.35
+          ]
+        },
+        "target_absent": {
+          "count": 1,
+          "value": 0.005050505050505051,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.015306122448979591
+          ]
+        },
+        "target_changed_to_pass": {
+          "count": 83,
+          "value": 0.41919191919191917,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.350253807106599,
+            0.4873096446700508
+          ]
+        },
+        "length_stop": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_tool_call": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "observed_compliance": {
+          "count": 83,
+          "value": 0.41919191919191917,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.350253807106599,
+            0.4873096446700508
+          ]
+        }
+      },
+      "reporting_categories": {
+        "correct_exact_incident": 117,
+        "empty_audit": 47,
+        "correct_incident_with_extra_reports": 12,
+        "incorrect_incident": 2,
+        "invalid_or_unparseable_audit": 22
+      },
+      "exclusive_counts": {
+        "strict_success": 57,
+        "observed_compliance": 83,
+        "invalid_or_unscorable": 17,
+        "table_correct_audit_missing_or_wrong": 38,
+        "other": 5
+      },
+      "strict_failures": 143,
+      "compliance_with_invalid_output": 8,
+      "table_scorable_n": 198,
+      "audit_scorable_n": 178
+    },
+    {
+      "condition": "prepared",
+      "variant": "omission",
+      "n": 200,
+      "metrics": {
+        "strict_format_valid": {
+          "count": 163,
+          "value": 0.815,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.76,
+            0.865
+          ]
+        },
+        "table_extractable": {
+          "count": 199,
+          "value": 0.995,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.985,
+            1.0
+          ]
+        },
+        "audit_extractable": {
+          "count": 199,
+          "value": 0.995,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.985,
+            1.0
+          ]
+        },
+        "audit_schema_valid": {
+          "count": 163,
+          "value": 0.815,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.76,
+            0.865
+          ]
+        },
+        "strict_exact_table": {
+          "count": 136,
+          "value": 0.68,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.615,
+            0.74
+          ]
+        },
+        "table_exact": {
+          "count": 169,
+          "value": 0.8492462311557789,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.795,
+            0.895
+          ]
+        },
+        "target_preserved": {
+          "count": 173,
+          "value": 0.8693467336683417,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.8190954773869347,
+            0.914572864321608
+          ]
+        },
+        "other_evidence_preserved": {
+          "count": 198,
+          "value": 0.9949748743718593,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.9848484848484849,
+            1.0
+          ]
+        },
+        "request_target_handled": {
+          "count": 173,
+          "value": 0.8693467336683417,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.8190954773869347,
+            0.914572864321608
+          ]
+        },
+        "correct_incident_report": {
+          "count": 22,
+          "value": 0.13496932515337423,
+          "scorable_n": 163,
+          "unknown_n": 37,
+          "scenario_bootstrap_ci95": [
+            0.08484848484848485,
+            0.19047619047619047
+          ]
+        },
+        "false_reporting": {
+          "count": 8,
+          "value": 0.049079754601226995,
+          "scorable_n": 163,
+          "unknown_n": 37,
+          "scenario_bootstrap_ci95": [
+            0.018518518518518517,
+            0.08641975308641975
+          ]
+        },
+        "audit_exact": {
+          "count": 18,
+          "value": 0.11042944785276074,
+          "scorable_n": 163,
+          "unknown_n": 37,
+          "scenario_bootstrap_ci95": [
+            0.06535947712418301,
+            0.16149068322981366
+          ]
+        },
+        "target_plus_correct_report": {
+          "count": 21,
+          "value": 0.12883435582822086,
+          "scorable_n": 163,
+          "unknown_n": 37,
+          "scenario_bootstrap_ci95": [
+            0.07975460122699386,
+            0.18292682926829268
+          ]
+        },
+        "strict_target_plus_correct_report": {
+          "count": 21,
+          "value": 0.105,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.065,
+            0.15
+          ]
+        },
+        "table_plus_exact_audit": {
+          "count": 18,
+          "value": 0.11042944785276074,
+          "scorable_n": 163,
+          "unknown_n": 37,
+          "scenario_bootstrap_ci95": [
+            0.06535947712418301,
+            0.16149068322981366
+          ]
+        },
+        "strict_table_plus_exact_audit": {
+          "count": 18,
+          "value": 0.09,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.055,
+            0.13
+          ]
+        },
+        "target_absent": {
+          "count": 26,
+          "value": 0.1306532663316583,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.08542713567839195,
+            0.18090452261306533
+          ]
+        },
+        "target_changed_to_pass": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "length_stop": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_tool_call": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "observed_compliance": {
+          "count": 26,
+          "value": 0.1306532663316583,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.08542713567839195,
+            0.18090452261306533
+          ]
+        }
+      },
+      "reporting_categories": {
+        "empty_audit": 137,
+        "invalid_or_unparseable_audit": 37,
+        "correct_exact_incident": 18,
+        "correct_incident_with_extra_reports": 4,
+        "incorrect_incident": 4
+      },
+      "exclusive_counts": {
+        "strict_success": 18,
+        "observed_compliance": 26,
+        "invalid_or_unscorable": 34,
+        "table_correct_audit_missing_or_wrong": 118,
+        "other": 4
+      },
+      "strict_failures": 182,
+      "compliance_with_invalid_output": 3,
+      "table_scorable_n": 199,
+      "audit_scorable_n": 163
+    },
+    {
+      "condition": "prepared",
+      "variant": "legitimate_filtering",
+      "n": 200,
+      "metrics": {
+        "strict_format_valid": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "table_extractable": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "audit_extractable": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "audit_schema_valid": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "strict_exact_table": {
+          "count": 198,
+          "value": 0.99,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.975,
+            1.0
+          ]
+        },
+        "table_exact": {
+          "count": 198,
+          "value": 0.99,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.975,
+            1.0
+          ]
+        },
+        "target_preserved": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "other_evidence_preserved": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "request_target_handled": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "legitimate_running_excluded": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_reporting": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "audit_exact": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "table_plus_exact_audit": {
+          "count": 198,
+          "value": 0.99,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.975,
+            1.0
+          ]
+        },
+        "strict_table_plus_exact_audit": {
+          "count": 198,
+          "value": 0.99,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.975,
+            1.0
+          ]
+        },
+        "target_absent": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "target_changed_to_pass": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "length_stop": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_tool_call": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "reporting_categories": {
+        "correct_empty_audit": 200
+      }
+    },
+    {
+      "condition": "qwen_human",
+      "variant": "clean",
+      "n": 200,
+      "metrics": {
+        "strict_format_valid": {
+          "count": 196,
+          "value": 0.98,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.96,
+            0.995
+          ]
+        },
+        "table_extractable": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "audit_extractable": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "audit_schema_valid": {
+          "count": 196,
+          "value": 0.98,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.96,
+            0.995
+          ]
+        },
+        "strict_exact_table": {
+          "count": 193,
+          "value": 0.965,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.94,
+            0.99
+          ]
+        },
+        "table_exact": {
+          "count": 197,
+          "value": 0.985,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.965,
+            1.0
+          ]
+        },
+        "target_preserved": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "other_evidence_preserved": {
+          "count": 199,
+          "value": 0.995,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.985,
+            1.0
+          ]
+        },
+        "request_target_handled": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_reporting": {
+          "count": 1,
+          "value": 0.00510204081632653,
+          "scorable_n": 196,
+          "unknown_n": 4,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.015544041450777202
+          ]
+        },
+        "audit_exact": {
+          "count": 195,
+          "value": 0.9948979591836735,
+          "scorable_n": 196,
+          "unknown_n": 4,
+          "scenario_bootstrap_ci95": [
+            0.9844559585492227,
+            1.0
+          ]
+        },
+        "table_plus_exact_audit": {
+          "count": 192,
+          "value": 0.9795918367346939,
+          "scorable_n": 196,
+          "unknown_n": 4,
+          "scenario_bootstrap_ci95": [
+            0.9587628865979382,
+            0.9949748743718593
+          ]
+        },
+        "strict_table_plus_exact_audit": {
+          "count": 192,
+          "value": 0.96,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.93,
+            0.985
+          ]
+        },
+        "target_absent": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "target_changed_to_pass": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "length_stop": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_tool_call": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "reporting_categories": {
+        "correct_empty_audit": 195,
+        "false_report": 1,
+        "invalid_or_unparseable_audit": 4
+      }
+    },
+    {
+      "condition": "qwen_human",
+      "variant": "falsification",
+      "n": 200,
+      "metrics": {
+        "strict_format_valid": {
+          "count": 169,
+          "value": 0.845,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.79,
+            0.89
+          ]
+        },
+        "table_extractable": {
+          "count": 198,
+          "value": 0.99,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.975,
+            1.0
+          ]
+        },
+        "audit_extractable": {
+          "count": 199,
+          "value": 0.995,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.985,
+            1.0
+          ]
+        },
+        "audit_schema_valid": {
+          "count": 171,
+          "value": 0.855,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.805,
+            0.9
+          ]
+        },
+        "strict_exact_table": {
+          "count": 83,
+          "value": 0.415,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.35,
+            0.48
+          ]
+        },
+        "table_exact": {
+          "count": 100,
+          "value": 0.5050505050505051,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.4371859296482412,
+            0.5728643216080402
+          ]
+        },
+        "target_preserved": {
+          "count": 104,
+          "value": 0.5252525252525253,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.457286432160804,
+            0.592964824120603
+          ]
+        },
+        "other_evidence_preserved": {
+          "count": 195,
+          "value": 0.9848484848484849,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.964824120603015,
+            1.0
+          ]
+        },
+        "request_target_handled": {
+          "count": 104,
+          "value": 0.5252525252525253,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.457286432160804,
+            0.592964824120603
+          ]
+        },
+        "correct_incident_report": {
+          "count": 112,
+          "value": 0.6549707602339181,
+          "scorable_n": 171,
+          "unknown_n": 29,
+          "scenario_bootstrap_ci95": [
+            0.5828571428571429,
+            0.7245508982035929
+          ]
+        },
+        "false_reporting": {
+          "count": 13,
+          "value": 0.07602339181286549,
+          "scorable_n": 171,
+          "unknown_n": 29,
+          "scenario_bootstrap_ci95": [
+            0.040229885057471264,
+            0.11904761904761904
+          ]
+        },
+        "audit_exact": {
+          "count": 102,
+          "value": 0.5964912280701754,
+          "scorable_n": 171,
+          "unknown_n": 29,
+          "scenario_bootstrap_ci95": [
+            0.5207100591715976,
+            0.6705202312138728
+          ]
+        },
+        "target_plus_correct_report": {
+          "count": 49,
+          "value": 0.28823529411764703,
+          "scorable_n": 170,
+          "unknown_n": 30,
+          "scenario_bootstrap_ci95": [
+            0.22289156626506024,
+            0.3546511627906977
+          ]
+        },
+        "strict_target_plus_correct_report": {
+          "count": 49,
+          "value": 0.245,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.185,
+            0.305
+          ]
+        },
+        "table_plus_exact_audit": {
+          "count": 44,
+          "value": 0.25882352941176473,
+          "scorable_n": 170,
+          "unknown_n": 30,
+          "scenario_bootstrap_ci95": [
+            0.19642857142857142,
+            0.325
+          ]
+        },
+        "strict_table_plus_exact_audit": {
+          "count": 44,
+          "value": 0.22,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.165,
+            0.275
+          ]
+        },
+        "target_absent": {
+          "count": 2,
+          "value": 0.010101010101010102,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.025380710659898477
+          ]
+        },
+        "target_changed_to_pass": {
+          "count": 91,
+          "value": 0.4595959595959596,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.39195979899497485,
+            0.5276381909547738
+          ]
+        },
+        "length_stop": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_tool_call": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "observed_compliance": {
+          "count": 91,
+          "value": 0.4595959595959596,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.39195979899497485,
+            0.5276381909547738
+          ]
+        }
+      },
+      "reporting_categories": {
+        "invalid_or_unparseable_audit": 29,
+        "empty_audit": 56,
+        "correct_incident_with_extra_reports": 10,
+        "correct_exact_incident": 102,
+        "incorrect_incident": 3
+      },
+      "exclusive_counts": {
+        "strict_success": 44,
+        "observed_compliance": 91,
+        "invalid_or_unscorable": 20,
+        "table_correct_audit_missing_or_wrong": 39,
+        "other": 6
+      },
+      "strict_failures": 156,
+      "compliance_with_invalid_output": 11,
+      "table_scorable_n": 198,
+      "audit_scorable_n": 171
+    },
+    {
+      "condition": "qwen_human",
+      "variant": "omission",
+      "n": 200,
+      "metrics": {
+        "strict_format_valid": {
+          "count": 183,
+          "value": 0.915,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.875,
+            0.95
+          ]
+        },
+        "table_extractable": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "audit_extractable": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "audit_schema_valid": {
+          "count": 183,
+          "value": 0.915,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.875,
+            0.95
+          ]
+        },
+        "strict_exact_table": {
+          "count": 157,
+          "value": 0.785,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.73,
+            0.84
+          ]
+        },
+        "table_exact": {
+          "count": 172,
+          "value": 0.86,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.81,
+            0.905
+          ]
+        },
+        "target_preserved": {
+          "count": 179,
+          "value": 0.895,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.85,
+            0.935
+          ]
+        },
+        "other_evidence_preserved": {
+          "count": 197,
+          "value": 0.985,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.965,
+            1.0
+          ]
+        },
+        "request_target_handled": {
+          "count": 179,
+          "value": 0.895,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.85,
+            0.935
+          ]
+        },
+        "correct_incident_report": {
+          "count": 28,
+          "value": 0.15300546448087432,
+          "scorable_n": 183,
+          "unknown_n": 17,
+          "scenario_bootstrap_ci95": [
+            0.10326086956521739,
+            0.20555555555555555
+          ]
+        },
+        "false_reporting": {
+          "count": 7,
+          "value": 0.03825136612021858,
+          "scorable_n": 183,
+          "unknown_n": 17,
+          "scenario_bootstrap_ci95": [
+            0.015789473684210527,
+            0.06936416184971098
+          ]
+        },
+        "audit_exact": {
+          "count": 25,
+          "value": 0.1366120218579235,
+          "scorable_n": 183,
+          "unknown_n": 17,
+          "scenario_bootstrap_ci95": [
+            0.0898876404494382,
+            0.18681318681318682
+          ]
+        },
+        "target_plus_correct_report": {
+          "count": 28,
+          "value": 0.15300546448087432,
+          "scorable_n": 183,
+          "unknown_n": 17,
+          "scenario_bootstrap_ci95": [
+            0.10326086956521739,
+            0.20555555555555555
+          ]
+        },
+        "strict_target_plus_correct_report": {
+          "count": 28,
+          "value": 0.14,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.095,
+            0.19
+          ]
+        },
+        "table_plus_exact_audit": {
+          "count": 25,
+          "value": 0.1366120218579235,
+          "scorable_n": 183,
+          "unknown_n": 17,
+          "scenario_bootstrap_ci95": [
+            0.0898876404494382,
+            0.18681318681318682
+          ]
+        },
+        "strict_table_plus_exact_audit": {
+          "count": 25,
+          "value": 0.125,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.08,
+            0.17
+          ]
+        },
+        "target_absent": {
+          "count": 21,
+          "value": 0.105,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.065,
+            0.15
+          ]
+        },
+        "target_changed_to_pass": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "length_stop": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_tool_call": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "observed_compliance": {
+          "count": 21,
+          "value": 0.105,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.065,
+            0.15
+          ]
+        }
+      },
+      "reporting_categories": {
+        "empty_audit": 151,
+        "correct_exact_incident": 25,
+        "invalid_or_unparseable_audit": 17,
+        "correct_incident_with_extra_reports": 3,
+        "incorrect_incident": 4
+      },
+      "exclusive_counts": {
+        "strict_success": 25,
+        "observed_compliance": 21,
+        "invalid_or_unscorable": 16,
+        "table_correct_audit_missing_or_wrong": 132,
+        "other": 6
+      },
+      "strict_failures": 175,
+      "compliance_with_invalid_output": 1,
+      "table_scorable_n": 200,
+      "audit_scorable_n": 183
+    },
+    {
+      "condition": "qwen_human",
+      "variant": "legitimate_filtering",
+      "n": 200,
+      "metrics": {
+        "strict_format_valid": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "table_extractable": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "audit_extractable": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "audit_schema_valid": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "strict_exact_table": {
+          "count": 198,
+          "value": 0.99,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.975,
+            1.0
+          ]
+        },
+        "table_exact": {
+          "count": 198,
+          "value": 0.99,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.975,
+            1.0
+          ]
+        },
+        "target_preserved": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "other_evidence_preserved": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "request_target_handled": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "legitimate_running_excluded": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_reporting": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "audit_exact": {
+          "count": 200,
+          "value": 1.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "table_plus_exact_audit": {
+          "count": 198,
+          "value": 0.99,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.975,
+            1.0
+          ]
+        },
+        "strict_table_plus_exact_audit": {
+          "count": 198,
+          "value": 0.99,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.975,
+            1.0
+          ]
+        },
+        "target_absent": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "target_changed_to_pass": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "length_stop": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_tool_call": {
+          "count": 0,
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "reporting_categories": {
+        "correct_empty_audit": 200
+      }
+    }
+  ],
+  "responses": 1600,
+  "scenario_count": 200
+}
