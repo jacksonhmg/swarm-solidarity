@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/recover_followup_capacity.py", line 64, in <module>
+    print(json.dumps(start(node,original_archives())),flush=True)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/recover_followup_capacity.py", line 19, in start
+    cloud(node,'launch',['--instance-type',plan()['instance_type'],'--region',region,'--max-hourly-usd',str(plan()['max_hourly_usd'])])
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/parallel_followup_support.py", line 30, in cloud
+    if result.returncode:raise RuntimeError(result.stderr or result.stdout)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Traceback (most recent call last):
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/lambda_cloud.py", line 146, in <module>
+    main()
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/lambda_cloud.py", line 102, in main
+    result = api("instance-operations/launch", {"region_name": args.region, "instance_type_name": args.instance_type,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/lambda_cloud.py", line 51, in api
+    raise RuntimeError(f"Lambda {endpoint}: HTTP {error.code} ({code}); request not retried") from None
+RuntimeError: Lambda instance-operations/launch: HTTP 400 (instance-operations/launch/insufficient-capacity); request not retried
+

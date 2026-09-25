@@ -1,0 +1,7 @@
+{
+  "at": "2026-09-25T02:38:41.820119+00:00",
+  "owner_name": "swarm-solidarity-pilot-084b1ba6",
+  "matching_instances": [],
+  "launch_response": "HTTP400 instance-operations/launch/insufficient-capacity",
+  "instance_allocated": false
+}

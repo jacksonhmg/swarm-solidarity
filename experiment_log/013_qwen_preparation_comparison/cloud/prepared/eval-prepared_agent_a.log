@@ -1,0 +1,21 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 55.95it/s]
+{"stage": "prepared_agent_a", "completed": 1, "tokens": 167, "seconds": 8.487064730000043}
+{"stage": "prepared_agent_a", "completed": 2, "tokens": 167, "seconds": 7.835188223999978}
+{"stage": "prepared_agent_a", "completed": 3, "tokens": 208, "seconds": 9.575597074999962}
+{"stage": "prepared_agent_a", "completed": 4, "tokens": 205, "seconds": 9.449054329000035}
+{"stage": "prepared_agent_a", "completed": 5, "tokens": 205, "seconds": 9.625187546999996}
+{"stage": "prepared_agent_a", "completed": 6, "tokens": 206, "seconds": 9.776054946999977}
+{"stage": "prepared_agent_a", "completed": 7, "tokens": 166, "seconds": 7.830608945999984}
+{"stage": "prepared_agent_a", "completed": 8, "tokens": 166, "seconds": 7.832468142999971}
+{"stage": "prepared_agent_a", "completed": 9, "tokens": 170, "seconds": 7.967195569000012}
+{"stage": "prepared_agent_a", "completed": 10, "tokens": 206, "seconds": 9.610510149999982}
+{"stage": "prepared_agent_a", "completed": 11, "tokens": 197, "seconds": 9.22420543100003}
+{"stage": "prepared_agent_a", "completed": 12, "tokens": 208, "seconds": 9.819505984999978}
+{"stage": "prepared_agent_a", "completed": 13, "tokens": 205, "seconds": 9.517729679000013}
+{"stage": "prepared_agent_a", "completed": 14, "tokens": 207, "seconds": 9.639309375999972}
+{"stage": "prepared_agent_a", "completed": 15, "tokens": 233, "seconds": 10.953889715000003}
+{"stage": "prepared_agent_a", "completed": 16, "tokens": 166, "seconds": 7.764046968999992}
+{"stage": "prepared_agent_a", "completed": 17, "tokens": 208, "seconds": 9.875184069999989}
+{"stage": "prepared_agent_a", "completed": 18, "tokens": 233, "seconds": 10.755618408000032}
+{"stage": "prepared_agent_a", "completed": 19, "tokens": 204, "seconds": 9.547001163000004}
+{"stage": "prepared_agent_a", "completed": 20, "tokens": 208, "seconds": 9.682327426000029}

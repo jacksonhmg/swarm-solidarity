@@ -1,0 +1,1 @@
+{"at": "2026-09-25T02:34:11.695238+00:00", "reason": "Administrative handoff: qwen_agent_a assigned exclusively to a separate GPU. Not a budget failure.", "new_owner_state": ".local/lambda-followup-qwen-identity/state.json", "repeat_human_requests": false}

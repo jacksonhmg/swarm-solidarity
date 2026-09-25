@@ -1,15 +1,43 @@
 {
-  "at": "2026-09-25T02:26:02.836314+00:00",
+  "at": "2026-09-25T02:44:27.719557+00:00",
   "nodes": [
     {
       "node": "qwen",
       "instance_id": "e4ff472036804ed2b48bc33d0ef7f2d0",
       "status": "active",
-      "minutes": 6,
-      "usd": 0.199
+      "minutes": 25,
+      "usd": 0.8291666666666667
+    },
+    {
+      "node": "prepared",
+      "instance_id": "6fe3394a171c4317b375d4e17b30533b",
+      "status": "active",
+      "minutes": 11,
+      "usd": 0.3648333333333333
+    },
+    {
+      "node": "revised_s41031",
+      "instance_id": "91d9da2224c7456c9e6e2d270734763c",
+      "status": "booting",
+      "minutes": 2,
+      "usd": 0.06633333333333333
+    },
+    {
+      "node": "revised_s41032",
+      "instance_id": "96c12db2363049c18e1e9af5c15877b9",
+      "status": "booting",
+      "minutes": 10,
+      "usd": 0.33166666666666667
+    },
+    {
+      "node": "qwen_identity",
+      "instance_id": "c608faecc39b4cf2b38359dd83929012",
+      "status": "booting",
+      "minutes": 4,
+      "usd": 0.13266666666666665
     }
   ],
-  "estimated_usd": 0.199,
+  "estimated_usd": 1.7246666666666668,
   "new_gpu_cap_usd": 30,
   "basis": "Launch through first confirmed termination, rounded up to minute; estimate, not invoice. Closed011 costs excluded."
 }

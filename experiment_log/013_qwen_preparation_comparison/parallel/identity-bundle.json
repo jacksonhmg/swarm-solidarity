@@ -1,0 +1,14 @@
+{
+  "source": {
+    "sha256": "a3f19f23697e6a3cbb6a749c39b43e7eaa16b4de66bcef7bdc3cb25e08beb84e",
+    "bytes": 2409984
+  },
+  "amendment": {
+    "sha256": "1fff46cdeeec78cb75fe6b628a80f98a090b7c308863dddd5571062a45e7096c",
+    "bytes": 9774
+  },
+  "qwen": {
+    "sha256": "51fe752207c09de523d8b292a205d2e55c5169f1b1b3d231cd37ad3ef534afb5",
+    "bytes": 125509543
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "pid": 84253,
+  "command": "/Users/jacksonmowattgok/.espressif/python_env/esp-idf-v5.4.1_py3.11_env/bin/python3 scripts/followup_watchdog.py",
+  "at": "2026-09-25T02:34:12.520619+00:00",
+  "reason": "Administrative scheduling handoff only; remote model work continues."
+}

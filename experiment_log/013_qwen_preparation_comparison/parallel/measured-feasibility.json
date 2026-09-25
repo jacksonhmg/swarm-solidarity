@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-25T02:40:31.761473+00:00",
+  "counts": {
+    "qwen_human": 50,
+    "qwen_agent_a": 0,
+    "prepared_agent_a": 0,
+    "revised_s41031_agent_a": 0,
+    "revised_s41032_agent_a": 0
+  },
+  "qwen_seconds_per_response": 8.715763599180002,
+  "qwen_measured": true,
+  "projected_total_usd_with_20pct_generation_contingency": 25.48626548264357,
+  "fits": true,
+  "hard_cap_usd": 30
+}

@@ -1,0 +1,57 @@
+{
+  "at": "2026-09-25T02:44:34.024225+00:00",
+  "nodes": [
+    {
+      "node": "qwen",
+      "instance_id": "e4ff472036804ed2b48bc33d0ef7f2d0",
+      "status": "active",
+      "region": "us-west-2",
+      "usd_per_hour": 1.99
+    },
+    {
+      "node": "prepared",
+      "instance_id": "6fe3394a171c4317b375d4e17b30533b",
+      "status": "active",
+      "region": "us-west-2",
+      "usd_per_hour": 1.99
+    },
+    {
+      "node": "revised_s41031",
+      "instance_id": "91d9da2224c7456c9e6e2d270734763c",
+      "status": "booting",
+      "region": "us-east-1",
+      "usd_per_hour": 1.99
+    },
+    {
+      "node": "revised_s41032",
+      "instance_id": "96c12db2363049c18e1e9af5c15877b9",
+      "status": "booting",
+      "region": "us-east-1",
+      "usd_per_hour": 1.99
+    },
+    {
+      "node": "qwen_identity",
+      "instance_id": "c608faecc39b4cf2b38359dd83929012",
+      "status": "booting",
+      "region": "us-east-1",
+      "usd_per_hour": 1.99
+    }
+  ],
+  "maximum_active_assignments": 5,
+  "no_new_training_runs": true,
+  "forecast": {
+    "at": "2026-09-25T02:40:31.761473+00:00",
+    "counts": {
+      "qwen_human": 50,
+      "qwen_agent_a": 0,
+      "prepared_agent_a": 0,
+      "revised_s41031_agent_a": 0,
+      "revised_s41032_agent_a": 0
+    },
+    "qwen_seconds_per_response": 8.715763599180002,
+    "qwen_measured": true,
+    "projected_total_usd_with_20pct_generation_contingency": 25.48626548264357,
+    "fits": true,
+    "hard_cap_usd": 30
+  }
+}

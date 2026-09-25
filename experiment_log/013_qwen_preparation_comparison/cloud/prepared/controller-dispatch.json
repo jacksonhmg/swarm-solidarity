@@ -1,0 +1,13 @@
+{
+  "status": "started",
+  "at": "2026-09-25T02:38:57.140566+00:00",
+  "command": [
+    "python3",
+    "scripts/run_followup_node.py",
+    "--node",
+    "prepared"
+  ],
+  "working_directory": "/home/ubuntu/swarm-solidarity",
+  "output": "experiment_log/013_qwen_preparation_comparison/cloud/prepared/remote-console.log",
+  "pid": 2715
+}
