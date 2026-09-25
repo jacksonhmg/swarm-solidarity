@@ -1,6 +1,6 @@
 {
   "status": "allocating_and_executing_disjoint_suffix_shards",
-  "at": "2026-09-25T03:15:28.886046+00:00",
+  "at": "2026-09-25T03:33:02.092898+00:00",
   "scientific_freeze_commit": "5267564",
   "scheduling_freeze_commit": "cb1bcc4",
   "capacity_completion_commit": "335c448",
@@ -12,14 +12,34 @@
   "target_workers": 20,
   "allocated_workers_at_snapshot": [
     {
+      "job": "prepared_agent_a-00",
+      "instance_id": "376b02886dc14e378b09a8d8746474c0",
+      "status": "booting"
+    },
+    {
       "job": "qwen_human-03",
       "instance_id": "bbefb0fbb92d45a9a4018d64e82c561c",
-      "status": "booting"
+      "status": "active"
+    },
+    {
+      "job": "prepared_agent_a-01",
+      "instance_id": "7065dad91fa84e718788913c21bfb94d",
+      "status": "active"
     },
     {
       "job": "qwen_human-02",
       "instance_id": "0a3722b944a741b9a410125287185cca",
-      "status": "booting"
+      "status": "active"
+    },
+    {
+      "job": "qwen_agent_a-01",
+      "instance_id": "c7043ed5eab148989cc027da3b0dd1e1",
+      "status": "active"
+    },
+    {
+      "job": "qwen_agent_a-00",
+      "instance_id": "a5051f5cf2cd422ba634132838811478",
+      "status": "active"
     },
     {
       "job": "qwen_human-00",
@@ -27,8 +47,38 @@
       "status": "active"
     },
     {
+      "job": "prepared_agent_a-03",
+      "instance_id": "ac93786e75f6459a9b0b16e4eab31549",
+      "status": "active"
+    },
+    {
       "job": "qwen_human-01",
       "instance_id": "2012250f2d45476e9ff1109d78807c96",
+      "status": "active"
+    },
+    {
+      "job": "prepared_agent_a-02",
+      "instance_id": "0fc79ece3f8d472788e800c02f8af216",
+      "status": "active"
+    },
+    {
+      "job": "qwen_agent_a-02",
+      "instance_id": "d2bf26d8dbb64a9b9741ecf27346d8a8",
+      "status": "active"
+    },
+    {
+      "job": "qwen_agent_a-03",
+      "instance_id": "813305edebcf48909b2d247679845c13",
+      "status": "active"
+    },
+    {
+      "job": "revised_s41031_agent_a-01",
+      "instance_id": "ad6ae584a7a04943b5ca2325b7907b83",
+      "status": "active"
+    },
+    {
+      "job": "revised_s41031_agent_a-00",
+      "instance_id": "830a06afc2ce427ca3325c909fd5b7b2",
       "status": "active"
     }
   ],
@@ -41,5 +91,17 @@
   "no_new_scores_used_for_selection": true,
   "no_sampled_request_repeated": true,
   "actual_plan": "sharding/plan.json",
-  "current_monitor": "monitor.md"
+  "current_monitor": "monitor.md",
+  "infrastructure_recovery": {
+    "failed_job": "prepared_agent_a-00",
+    "model_work_before_failure": false,
+    "initial_instance_terminated_keys_deleted": true,
+    "replacement_allocated": true,
+    "recovery_pid": 8332,
+    "cumulative_watchdog_pid": 8334,
+    "finisher_pid": 8340,
+    "capacity_continuation_pid": 9701
+  },
+  "latest_saved_response_count": 898,
+  "latest_estimated_gpu_usd": 10.414333333333333
 }

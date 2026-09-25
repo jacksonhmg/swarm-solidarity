@@ -1,0 +1,4 @@
+{
+  "at": "2026-09-25T03:24:03.887678+00:00",
+  "error": "Command '['ssh', '-i', '/Users/jacksonmowattgok/Dev/swarm-solidarity/.local/lambda-followup-shards/prepared_agent_a-00/id_ed25519', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15', '-o', 'StrictHostKeyChecking=accept-new', '-o', 'UserKnownHostsFile=.local/lambda-followup-shards/prepared_agent_a-00/known_hosts', '-o', 'ServerAliveInterval=15', '-o', 'ServerAliveCountMax=2', 'ubuntu@129.213.150.127', 'mkdir -p /home/ubuntu/swarm-solidarity']' returned non-zero exit status 255."
+}
