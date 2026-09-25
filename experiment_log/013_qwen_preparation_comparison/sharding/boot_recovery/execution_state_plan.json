@@ -1,0 +1,170 @@
+{
+  "prefix_counts": {
+    "qwen_human": 199,
+    "qwen_agent_a": 87,
+    "prepared_agent_a": 131,
+    "revised_s41031_agent_a": 48,
+    "revised_s41032_agent_a": 0
+  },
+  "jobs": {
+    "qwen_human-00": {
+      "stage": "qwen_human",
+      "kind": "qwen",
+      "start": 199,
+      "stop": 349,
+      "state": ".local/lambda-followup-shards/qwen_human-00/state.json"
+    },
+    "qwen_human-01": {
+      "stage": "qwen_human",
+      "kind": "qwen",
+      "start": 349,
+      "stop": 499,
+      "state": ".local/lambda-followup-shards/qwen_human-01/state.json"
+    },
+    "qwen_human-02": {
+      "stage": "qwen_human",
+      "kind": "qwen",
+      "start": 499,
+      "stop": 649,
+      "state": ".local/lambda-followup-shards/qwen_human-02/state.json"
+    },
+    "qwen_human-03": {
+      "stage": "qwen_human",
+      "kind": "qwen",
+      "start": 649,
+      "stop": 800,
+      "state": ".local/lambda-followup-shards/qwen_human-03/state.json"
+    },
+    "qwen_agent_a-00": {
+      "stage": "qwen_agent_a",
+      "kind": "qwen",
+      "start": 87,
+      "stop": 265,
+      "state": ".local/lambda-followup-shards/qwen_agent_a-00/state.json"
+    },
+    "qwen_agent_a-01": {
+      "stage": "qwen_agent_a",
+      "kind": "qwen",
+      "start": 265,
+      "stop": 443,
+      "state": ".local/lambda-followup-shards/qwen_agent_a-01/state.json"
+    },
+    "qwen_agent_a-02": {
+      "stage": "qwen_agent_a",
+      "kind": "qwen",
+      "start": 443,
+      "stop": 621,
+      "state": ".local/lambda-followup-shards/qwen_agent_a-02/state.json"
+    },
+    "qwen_agent_a-03": {
+      "stage": "qwen_agent_a",
+      "kind": "qwen",
+      "start": 621,
+      "stop": 800,
+      "state": ".local/lambda-followup-shards/qwen_agent_a-03/state.json"
+    },
+    "prepared_agent_a-00": {
+      "stage": "prepared_agent_a",
+      "kind": "prepared",
+      "start": 131,
+      "stop": 298,
+      "state": ".local/lambda-followup-shards/prepared_agent_a-00/state.json"
+    },
+    "prepared_agent_a-01": {
+      "stage": "prepared_agent_a",
+      "kind": "prepared",
+      "start": 298,
+      "stop": 465,
+      "state": ".local/lambda-followup-shards/prepared_agent_a-01/state.json"
+    },
+    "prepared_agent_a-02": {
+      "stage": "prepared_agent_a",
+      "kind": "prepared",
+      "start": 465,
+      "stop": 632,
+      "state": ".local/lambda-followup-shards/prepared_agent_a-02/state.json"
+    },
+    "prepared_agent_a-03": {
+      "stage": "prepared_agent_a",
+      "kind": "prepared",
+      "start": 632,
+      "stop": 800,
+      "state": ".local/lambda-followup-shards/prepared_agent_a-03/state.json"
+    },
+    "revised_s41031_agent_a-00": {
+      "stage": "revised_s41031_agent_a",
+      "kind": "revised_s41031",
+      "start": 48,
+      "stop": 236,
+      "state": ".local/lambda-followup-shards/revised_s41031_agent_a-00/state.json"
+    },
+    "revised_s41031_agent_a-01": {
+      "stage": "revised_s41031_agent_a",
+      "kind": "revised_s41031",
+      "start": 236,
+      "stop": 424,
+      "state": ".local/lambda-followup-shards/revised_s41031_agent_a-01/state.json"
+    },
+    "revised_s41031_agent_a-02": {
+      "stage": "revised_s41031_agent_a",
+      "kind": "revised_s41031",
+      "start": 424,
+      "stop": 612,
+      "state": ".local/lambda-followup-shards/revised_s41031_agent_a-02/state.json"
+    },
+    "revised_s41031_agent_a-03": {
+      "stage": "revised_s41031_agent_a",
+      "kind": "revised_s41031",
+      "start": 612,
+      "stop": 800,
+      "state": ".local/lambda-followup-shards/revised_s41031_agent_a-03/state.json"
+    },
+    "revised_s41032_agent_a-00": {
+      "stage": "revised_s41032_agent_a",
+      "kind": "revised_s41032",
+      "start": 0,
+      "stop": 200,
+      "state": ".local/lambda-followup-shards/revised_s41032_agent_a-00/state.json"
+    },
+    "revised_s41032_agent_a-01": {
+      "stage": "revised_s41032_agent_a",
+      "kind": "revised_s41032",
+      "start": 200,
+      "stop": 400,
+      "state": ".local/lambda-followup-shards/revised_s41032_agent_a-01/state.json"
+    },
+    "revised_s41032_agent_a-02": {
+      "stage": "revised_s41032_agent_a",
+      "kind": "revised_s41032",
+      "start": 400,
+      "stop": 600,
+      "state": ".local/lambda-followup-shards-boot-recovery/revised_s41032_agent_a-02/state.json"
+    },
+    "revised_s41032_agent_a-03": {
+      "stage": "revised_s41032_agent_a",
+      "kind": "revised_s41032",
+      "start": 600,
+      "stop": 800,
+      "state": ".local/lambda-followup-shards/revised_s41032_agent_a-03/state.json"
+    }
+  },
+  "prior_states": {
+    "qwen": ".local/lambda-followup-qwen/state.json",
+    "prepared": ".local/lambda-followup-prepared/state.json",
+    "revised_s41031": ".local/lambda-followup-revised_s41031/state.json",
+    "revised_s41032": ".local/lambda-followup-revised_s41032/state.json",
+    "qwen_identity": ".local/lambda-followup-qwen-identity/state.json",
+    "failed_setup_prepared_agent_a-00": ".local/lambda-followup-shards-archived/prepared_agent_a-00-initial/state.json",
+    "failed_boot_revised_s41032_agent_a-02": ".local/lambda-followup-shards/revised_s41032_agent_a-02/state.json"
+  },
+  "target_workers": 20,
+  "instance_type": "gpu_1x_a100_sxm4",
+  "max_hourly_usd": 1.99,
+  "operating_stop_usd": 62,
+  "cap_usd": 65,
+  "maximum_total_responses": 4000,
+  "new_shard_responses": 3535,
+  "model_retries": false,
+  "sampling_retries": false,
+  "global_order_change": "Original indices retained; disjoint suffix intervals run concurrently. Original source order within each interval unchanged."
+}

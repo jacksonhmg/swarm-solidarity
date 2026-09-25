@@ -1,0 +1,9 @@
+# Recovery of one never-started boot failure
+
+At 03:59:28 UTC, revised_s41032_agent_a-02 timed out during provider boot. Instance 8a0ba47738584e71b8e73cb6299859d2 was confirmed terminated at 04:00:20; its cloud and local SSH keys were deleted. No ready receipt, dispatch intent, remote controller or sampled output exists. The failed owner state is retained in the expanded cumulative cost ledger. The completed allocation coordinator has exited.
+
+Under the user’s standing authority to resolve infrastructure blockers quickly without repeated model work, replace only this original 200-request interval (global indices 400–599) on one matching A100. Every other live or completed assignment remains untouched. The saved prompts, original indices, seeds, model weights, evaluator, statistical analysis and maximum 4,000 responses are unchanged. This is pre-dispatch infrastructure recovery, not a sampled-case retry.
+
+The additive wrapper changes the failed assignment’s owner path and archives its receipts, then starts an expanded cumulative watchdog and finisher before retiring the previous monitors. Original sources and freezes remain unchanged. The new collector uses the existing hash verification and owner-scoped termination/key cleanup. The operating stop remains $62 and failsafe $65, including this failed rental and all earlier follow-up rentals. At recovery preparation, spend was approximately $25.24; even 60 minutes for the replacement plus 40 minutes for the eight other still-billed assignments adds under $13. The fixed study remains within budget.
+
+Only idempotent pre-dispatch file transport may retry using the already frozen setup helper. A launch with an uncertain outcome must be reconciled; dispatch and model work are never retried. This wrapper may be launched once. Healthy sampled work continues unchanged.

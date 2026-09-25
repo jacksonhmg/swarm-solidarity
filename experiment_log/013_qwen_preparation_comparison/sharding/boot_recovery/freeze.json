@@ -1,0 +1,8 @@
+{
+  "files": {
+    "scripts/recover_followup_boot_assignment.py": "a05e24be6b90923339dd29e9908fd4fc2d8feffba24a3bd61f39ed54c80b1fe2",
+    "experiment_log/013_qwen_preparation_comparison/sharding/boot_recovery/execution_state_plan.json": "309d4eaaedefcf7e56e3ee0b07579716d0e8b859a4b81c60f3180a46d6db1cdf",
+    "experiment_log/013_qwen_preparation_comparison/sharding/boot_recovery/amendment.md": "3ecbd30ae96b9331b70f8e4f1d4d259792bc253c9ad26b9cc4873b7a54aaa909"
+  },
+  "model_work_repeated": false
+}
