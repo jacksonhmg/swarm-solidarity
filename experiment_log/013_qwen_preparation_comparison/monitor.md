@@ -1,3 +1,7 @@
+# Latest read-only assessment — 02:54 UTC
+
+Four assignments are now generating, but revised41032's instance failed its GPU boot timeout before ready/dispatch/model work. Its original launcher is performing owner-scoped termination/key cleanup; at02:54 it was still terminating. See cloud/revised_s41032/startup-error.json and parallel/speed_assessment.md. This supersedes the earlier statement that all five assignments were healthy. The finisher cannot pass its all-five-dispatch barrier while this slot is missing. No replacement or sharding was launched during the user's request for an informed acceleration assessment. Preserve the four live processes, collectors and watchdog; never restart their sampled work. Current progress from direct SSH:147 qwen_human,36 qwen_agent_a,84 prepared_agent_a,3 revised41031_agent_a. The speed assessment explains why extra GPUs alone cannot halve the active monolithic loops' remaining time.
+
 # Current allocation/collection handoff
 
 All FIVE A100 assignments are now allocated. Current states: qwen e4ff472036804ed2b48bc33d0ef7f2d0; prepared6fe3394a171c4317b375d4e17b30533b; revised41032 96c12db2363049c18e1e9af5c15877b9; qwen_identity c608faecc39b4cf2b38359dd83929012; revised41031 91d9da2224c7456c9e6e2d270734763c. Use exact paths in parallel/plan.json; no more rentals/replacements or duplicate model work.
