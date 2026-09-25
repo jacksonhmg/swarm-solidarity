@@ -1,0 +1,16 @@
+{
+  "status": "running",
+  "at": "2026-09-25T02:26:15.039267+00:00",
+  "freeze_commit": "5267564",
+  "offline_012_complete": true,
+  "qwen_training_process_started": true,
+  "qwen_node": {
+    "at": "2026-09-25T02:24:12.829108+00:00",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "instance_id": "e4ff472036804ed2b48bc33d0ef7f2d0",
+    "archives_verified": true
+  },
+  "new_gpu_cap_usd": 30,
+  "other_nodes": "Automatically start after timing-only first50 forecast fits",
+  "no_new_scores_used_for_selection": true
+}

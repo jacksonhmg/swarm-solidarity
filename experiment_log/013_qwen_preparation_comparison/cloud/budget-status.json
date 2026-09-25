@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-25T02:26:02.836314+00:00",
+  "nodes": [
+    {
+      "node": "qwen",
+      "instance_id": "e4ff472036804ed2b48bc33d0ef7f2d0",
+      "status": "active",
+      "minutes": 6,
+      "usd": 0.199
+    }
+  ],
+  "estimated_usd": 0.199,
+  "new_gpu_cap_usd": 30,
+  "basis": "Launch through first confirmed termination, rounded up to minute; estimate, not invoice. Closed011 costs excluded."
+}

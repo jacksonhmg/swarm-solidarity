@@ -1,0 +1,20 @@
+{
+  "supervisor_pid": 85904,
+  "command": "cd /home/ubuntu/swarm-solidarity && python3 scripts/dispatch_detached_once.py --receipt experiment_log/013_qwen_preparation_comparison/cloud/qwen/controller-dispatch.json --output experiment_log/013_qwen_preparation_comparison/cloud/qwen/remote-console.log -- python3 scripts/run_followup_node.py --node qwen",
+  "acknowledgement": "received",
+  "repeat_dispatch": false,
+  "remote_receipt": {
+    "status": "started",
+    "at": "2026-09-25T02:24:13.665216+00:00",
+    "command": [
+      "python3",
+      "scripts/run_followup_node.py",
+      "--node",
+      "qwen"
+    ],
+    "working_directory": "/home/ubuntu/swarm-solidarity",
+    "output": "experiment_log/013_qwen_preparation_comparison/cloud/qwen/remote-console.log",
+    "pid": 2627,
+    "existing_dispatch": false
+  }
+}

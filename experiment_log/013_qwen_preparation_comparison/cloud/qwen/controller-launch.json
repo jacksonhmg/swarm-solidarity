@@ -1,0 +1,16 @@
+{
+  "node": "qwen",
+  "pid": 2627,
+  "started_at": "2026-09-25T02:24:13.788192+00:00",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=60s",
+    "360m",
+    "python3",
+    "scripts/run_followup_node.py",
+    "--node",
+    "qwen",
+    "--execute"
+  ]
+}

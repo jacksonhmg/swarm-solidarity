@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-25T02:20:17.442356+00:00",
+  "code_revision": "526756490cc37682b5b411becc32ddf354b9f333",
+  "archives": {
+    "source": {
+      "sha256": "a3f19f23697e6a3cbb6a749c39b43e7eaa16b4de66bcef7bdc3cb25e08beb84e",
+      "bytes": 2409984
+    },
+    "prepared": {
+      "sha256": "13b057f9fd5f83da2d36f49699ddac91ce477ff9edcccdd43f604f468bb96a67",
+      "bytes": 125516196
+    },
+    "revised_s41031": {
+      "sha256": "0e4d2dddd11d39672017a1e16da5f9fc4889cafb5f0da7a36faed8763c0e092e",
+      "bytes": 126116957
+    },
+    "revised_s41032": {
+      "sha256": "780072b84f3d73043007b786947b5fbaee4c5e5cb19c827a84ea4a9a453d7ce2",
+      "bytes": 126188545
+    }
+  }
+}
