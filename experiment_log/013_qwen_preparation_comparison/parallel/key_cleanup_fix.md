@@ -1,0 +1,3 @@
+# Owner-key cleanup transport correction
+
+The explicit capacity-rejection resolver verified zero owned instances but its key DELETE was rejected403 before any key/state mutation. Its custom DELETE omitted the User-Agent used by the repository's established Lambda client. Version2 matches the established client's request headers exactly and handles only revised41031; the original resolver no longer has an active revised41031 recovery thread. The fifth Qwen identity instance has already allocated successfully and is untouched. Preserve both403 and subsequent cleanup receipts. No model work or successful rental is retried; the original model/inference freezes remain unchanged.
