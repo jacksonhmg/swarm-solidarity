@@ -1,0 +1,32 @@
+{
+  "source": "experiment_log/011_benign_audit_confirmation/inputs/prepared.jsonl",
+  "input_directory": "experiment_log/013_qwen_preparation_comparison/inputs",
+  "identity_change_only": true,
+  "roles_unchanged": true,
+  "conditions": [
+    {
+      "stage": "qwen_agent_a",
+      "responses": 800,
+      "sha256": "8d87043b1eef09f52b4943cb32a2761a3f9021160d70af3c7a71694cd4ecf1df",
+      "changed_prompt_count": 800
+    },
+    {
+      "stage": "prepared_agent_a",
+      "responses": 800,
+      "sha256": "9eb0230c83f27315229a25e4f7933aaa6af4d0382453427b16e0bebf950a6417",
+      "changed_prompt_count": 800
+    },
+    {
+      "stage": "revised_s41031_agent_a",
+      "responses": 800,
+      "sha256": "10a1f9532b5b6616fe4b59cc4faad05a6d823c5cf2e35e79f9378ede47855f36",
+      "changed_prompt_count": 800
+    },
+    {
+      "stage": "revised_s41032_agent_a",
+      "responses": 800,
+      "sha256": "6d5f9ef158528878d7305aac129b29db4dca489b936ccd371ab1b9fcec2bb7be",
+      "changed_prompt_count": 800
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "new_gpu_cap_usd": 30,
+  "termination_threshold_usd": 28,
+  "max_hourly_usd": 1.99,
+  "instance_type": "gpu_1x_a100_sxm4",
+  "accepted_gpu_names": [
+    "NVIDIA A100-SXM4-40GB",
+    "NVIDIA A100-SXM4-80GB"
+  ],
+  "maximum_new_responses": 4000,
+  "training_runs": 1,
+  "training_seed": 41027,
+  "model_retries": false,
+  "sampled_response_retries": false,
+  "nodes": {
+    "qwen": {
+      "state": ".local/lambda-followup-qwen/state.json",
+      "stages": [
+        "qwen_human",
+        "qwen_agent_a"
+      ],
+      "timeout_minutes": 360
+    },
+    "prepared": {
+      "state": ".local/lambda-followup-prepared/state.json",
+      "stages": [
+        "prepared_agent_a"
+      ],
+      "timeout_minutes": 180
+    },
+    "revised_s41031": {
+      "state": ".local/lambda-followup-revised_s41031/state.json",
+      "stages": [
+        "revised_s41031_agent_a"
+      ],
+      "timeout_minutes": 180
+    },
+    "revised_s41032": {
+      "state": ".local/lambda-followup-revised_s41032/state.json",
+      "stages": [
+        "revised_s41032_agent_a"
+      ],
+      "timeout_minutes": 180
+    }
+  },
+  "scheduling": "Finish 012 offline; launch Qwen preparation/human evaluation first. After 50 human responses, use measured throughput only (never scores) to check full remaining scope fits 28USD operating threshold. Start three independent identity nodes if so. Permit Qwen identity after all 800 human responses and another remaining-cost check. No global readiness barrier; each verified node starts independently. Stop before further rental/stages if full scope no longer fits."
+}

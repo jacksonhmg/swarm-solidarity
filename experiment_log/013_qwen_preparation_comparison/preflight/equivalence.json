@@ -1,0 +1,46 @@
+{
+  "tokenizer_vocab_template_special_ids_equal": true,
+  "all_800_original_prompt_arrays_equal": true,
+  "stage_a_ids_labels_and_order_equal": true,
+  "input_tokens": 926007,
+  "supervised_tokens": 161115,
+  "padded_input_tokens": 1081904,
+  "training_evaluation_record_overlap": 0,
+  "inputs": [
+    {
+      "stage": "qwen_human",
+      "responses": 800,
+      "sha256": "7bf4c959e83a67d43a0e0113983c3d384d03283b868f978c8574e6a41784364d",
+      "changed_prompt_count": 0
+    },
+    {
+      "stage": "qwen_agent_a",
+      "responses": 800,
+      "sha256": "8d87043b1eef09f52b4943cb32a2761a3f9021160d70af3c7a71694cd4ecf1df",
+      "changed_prompt_count": 800
+    },
+    {
+      "stage": "prepared_agent_a",
+      "responses": 800,
+      "sha256": "9eb0230c83f27315229a25e4f7933aaa6af4d0382453427b16e0bebf950a6417",
+      "changed_prompt_count": 800
+    },
+    {
+      "stage": "revised_s41031_agent_a",
+      "responses": 800,
+      "sha256": "10a1f9532b5b6616fe4b59cc4faad05a6d823c5cf2e35e79f9378ede47855f36",
+      "changed_prompt_count": 800
+    },
+    {
+      "stage": "revised_s41032_agent_a",
+      "responses": 800,
+      "sha256": "6d5f9ef158528878d7305aac129b29db4dca489b936ccd371ab1b9fcec2bb7be",
+      "changed_prompt_count": 800
+    }
+  ],
+  "principal_replacement": {
+    "before": "the human's",
+    "after": "the AI teammate Agent A's"
+  },
+  "unchanged": "Every other byte of each rendered prompt, role markers, evidence, request meaning, gold answers, request order and sampling seed. 40 legitimate-filtering notes also refer to the principal; those identity words are relabeled consistently."
+}

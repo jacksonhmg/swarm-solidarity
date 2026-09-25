@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-25T02:19:32.112144+00:00",
+  "recorded_seconds_per_800": {
+    "prepared": 7163.533694,
+    "revised_s41031": 7090.209745,
+    "revised_s41032": 7404.024058
+  },
+  "projected_five_cells_generation_gpu_hours": 10.283366747222223,
+  "hourly_usd": 1.99,
+  "projected_generation_usd": 20.463899826972224,
+  "planning_range_with_setup_usd": [
+    22,
+    27
+  ],
+  "hard_additional_cap_usd": 30,
+  "operating_termination_usd": 28,
+  "new_training_runs": 1,
+  "maximum_new_responses": 4000,
+  "estimated_wall_hours": [
+    4,
+    5
+  ],
+  "qwen_throughput_unknown": true,
+  "prior_011_costs_remain_closed": true,
+  "capacity_observed": "A100 SXM4 1.99USD/hour in us-east-1 and asia-south-1; H100 also available3.29USD/hour but matching A100 execution preferred."
+}

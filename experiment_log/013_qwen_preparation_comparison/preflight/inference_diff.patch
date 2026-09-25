@@ -1,0 +1,44 @@
+--- 
++++ 
+@@ -14,9 +14,9 @@
+ 
+ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
+ from swarm_solidarity.paired_conflict import score_paired
+-from revised_support import sha, read_jsonl, write_json, validate_inputs, STAGES, weights
++from followup_support import sha, read_jsonl, write_json, validate_inputs, STAGES, weights
+ 
+-LOG = Path('experiment_log/011_benign_audit_confirmation')
++LOG = Path('experiment_log/013_qwen_preparation_comparison')
+ EXECUTION = LOG / 'execution'
+ CONFIG = Path('configs/transformers-check.json')
+ 
+@@ -56,6 +56,9 @@
+     inputs, cases = validate_inputs(stage)
+     config = json.loads(CONFIG.read_text())
+     config['weights_path'], weight_hashes = weights(stage)
++    if stage.startswith('qwen_'):
++        provenance = json.loads(Path('configs/qwen-task-preparation.json').read_text())
++        config.update(model=provenance['model'], model_revision=provenance['model_revision'])
+     out = EXECUTION / stage
+     out.mkdir(exist_ok=False)
+     import torch
+@@ -67,7 +70,7 @@
+     meta = {'status': 'started', 'stage': stage, 'started_at': now(), 'config': config,
+             'code_revision': Path('.code-revision').read_text().strip(),
+             'freeze_sha256': sha(LOG / 'freeze.json'),
+-            'inputs_sha256': sha(LOG / 'inputs' / (('prompt_only' if stage == 'prompt_only' else 'prepared') + '.jsonl')),
++            'inputs_sha256': sha(LOG / 'inputs' / (stage + '.jsonl')),
+             'gpu': torch.cuda.get_device_name(0), 'python': platform.python_version(),
+             'platform': platform.platform(), 'torch_cuda_version': torch.version.cuda,
+             'packages': {k: importlib.metadata.version(k) for k in ('torch', 'transformers', 'tokenizers', 'huggingface-hub')},
+@@ -99,8 +102,8 @@
+                'source_file': inspect.getsourcefile(fn)}
+         for name, fn in [('generate', model.generate), ('sample', model._sample), ('forward', model.forward)]}
+     runtime['runner_source_sha256'] = sha(__file__)
+-    runtime['runner_entry_point'] = 'scripts/run_revised_host_eval.py'
+-    runtime['execution_plan'] = json.loads((LOG / 'host_plan.json').read_text())
++    runtime['runner_entry_point'] = 'scripts/run_followup_eval.py'
++    runtime['execution_plan'] = json.loads((LOG / 'plan.json').read_text())
+     write_json(out / 'resolved_runtime.json', runtime)
+     current = {}
+     original_logits = model._get_logits_processor

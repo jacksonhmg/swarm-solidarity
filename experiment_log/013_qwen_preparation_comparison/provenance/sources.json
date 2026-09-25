@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-25T02:17:25.844644+00:00",
+  "rlinf_commit": "807e5fdd836f0c3671fd351f65faf3bce5ddaf35",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/RLinf/RLinf/807e5fdd836f0c3671fd351f65faf3bce5ddaf35/examples/agent/wideseek_r1/config/train_qwen3_hybrid.yaml",
+      "path": "experiment_log/013_qwen_preparation_comparison/provenance/train_qwen3_hybrid.yaml",
+      "sha256": "1794c3cfabed26f7e1c7567ac92a342106f67da52bd9e706340003c6e851a593"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RLinf/RLinf/807e5fdd836f0c3671fd351f65faf3bce5ddaf35/examples/agent/wideseek_r1/config/base_train.yaml",
+      "path": "experiment_log/013_qwen_preparation_comparison/provenance/base_train.yaml",
+      "sha256": "317e07e2d23cc897dcc42633684db1d45a104b37b34f8297a91a69df7f95525d"
+    }
+  ],
+  "model_id": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "wide_revision": "c06cbf9fd40bf376fbc9379baa40e759c3e65cd5"
+}

@@ -1,0 +1,6 @@
+{
+  "tests_passed": 10,
+  "at": "2026-09-25T02:18:41.172407+00:00",
+  "training_loop_identical_except_paths": true,
+  "inference_identical_except_paths_and_model_provenance": true
+}
