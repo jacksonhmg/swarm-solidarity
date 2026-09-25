@@ -1,0 +1,5 @@
+{
+  "pid": 87414,
+  "command": "/Users/jacksonmowattgok/.espressif/python_env/esp-idf-v5.4.1_py3.11_env/bin/python3 scripts/parallel_followup_watchdog.py",
+  "reason": "All old instances terminated; new cumulative twenty-job watchdog started."
+}

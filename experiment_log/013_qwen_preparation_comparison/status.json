@@ -1,24 +1,45 @@
 {
-  "status": "running",
-  "at": "2026-09-25T02:44:34.025097+00:00",
-  "freeze_commit": "5267564",
+  "status": "allocating_and_executing_disjoint_suffix_shards",
+  "at": "2026-09-25T03:15:28.886046+00:00",
+  "scientific_freeze_commit": "5267564",
+  "scheduling_freeze_commit": "cb1bcc4",
+  "capacity_completion_commit": "335c448",
   "offline_012_complete": true,
-  "qwen_training_process_started": true,
-  "qwen_node": {
-    "at": "2026-09-25T02:24:12.829108+00:00",
-    "gpu": "NVIDIA A100-SXM4-40GB",
-    "instance_id": "e4ff472036804ed2b48bc33d0ef7f2d0",
-    "archives_verified": true
-  },
-  "new_gpu_cap_usd": 30,
-  "other_nodes": "Automatically start after timing-only first50 forecast fits",
-  "no_new_scores_used_for_selection": true,
-  "scheduling_amendment": "parallel/plan.json",
-  "all_five_gpus_allocated": true,
   "qwen_training_complete_updates": 125,
-  "old_coordinator_retired": true,
-  "expected_remaining_wall_hours": [
-    2,
-    3
-  ]
+  "completed_responses_preserved": 465,
+  "remaining_sharded_responses": 3535,
+  "maximum_total_new_responses": 4000,
+  "target_workers": 20,
+  "allocated_workers_at_snapshot": [
+    {
+      "job": "qwen_human-03",
+      "instance_id": "bbefb0fbb92d45a9a4018d64e82c561c",
+      "status": "booting"
+    },
+    {
+      "job": "qwen_human-02",
+      "instance_id": "0a3722b944a741b9a410125287185cca",
+      "status": "booting"
+    },
+    {
+      "job": "qwen_human-00",
+      "instance_id": "46e24d11185742da8b1159c6f704c30f",
+      "status": "active"
+    },
+    {
+      "job": "qwen_human-01",
+      "instance_id": "2012250f2d45476e9ff1109d78807c96",
+      "status": "active"
+    }
+  ],
+  "old_five_instances_terminated_and_keys_deleted": true,
+  "cumulative_gpu_failsafe_usd": 65,
+  "watchdog_stop_usd": 62,
+  "estimated_total_gpu_usd_with_contingency": 41.301248333333334,
+  "estimated_longest_shard_generation_minutes": 31,
+  "capacity_wait_time_unknown": true,
+  "no_new_scores_used_for_selection": true,
+  "no_sampled_request_repeated": true,
+  "actual_plan": "sharding/plan.json",
+  "current_monitor": "monitor.md"
 }
