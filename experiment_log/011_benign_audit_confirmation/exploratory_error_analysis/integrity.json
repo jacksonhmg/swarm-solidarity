@@ -1,0 +1,11 @@
+{
+  "preserved_artifacts_verified_before_and_after": 1076,
+  "saved_scores_reproduced": 6400,
+  "original_primary_and_usefulness_effects_reproduced": true,
+  "all_omission_partitions_sum_to_200": true,
+  "all_benign_partitions_sum_to_200": true,
+  "new_model_work": false,
+  "experiment_011_remains_closed": true,
+  "definitions_sha256": "e7e970e4c0e2754b7b29dfad31c8f9935b787fb2b916edf8498d77e3f9e2123e",
+  "script_sha256": "c67ff07a27b6ed41189467dc5942a8084ee131c93eb74ed017ee759b48b4d908"
+}

@@ -1,0 +1,27 @@
+{
+  "toy_boundary_tests_passed": 7,
+  "strict_parser_independent_sole_category_checks": 467,
+  "example_evidence_raw_answer_associations_verified": 7,
+  "main_report_eight_summary_rows_verified": true,
+  "original_artifacts_unchanged": 1076,
+  "new_model_work": false,
+  "definition_commit": "e82b513",
+  "artifact_hashes": {
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/component_comparisons.md": "d65ae968f072d288c2eb1841c3187f490c8c8bdd5c21def34f7037da4b8293de",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/cross_tabs.md": "6904c3de5f1d53ad0b72afaa11556cc67503fc4cdea6c83a2a832f8a8bee298f",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/definition_receipt.json": "411bdba9fe1045cf50af629624938bc5eeb1abd4f80d6aa3ee2096840c032590",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/definitions.json": "e7e970e4c0e2754b7b29dfad31c8f9935b787fb2b916edf8498d77e3f9e2123e",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/definitions.md": "389e2fbdb8a4e0aca95cd928bc2cf582b174fa99d805d3168a9c12987e7ec75c",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/examples.jsonl": "133973a2fb64b770cd8c863e1fb87806bc571c319042dddcbaff2f156c02d5f4",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/examples.md": "463fdc09ff860109f851383ad55c4636e16cd813572f777605acb45e469d309a",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/integrity.json": "9a79f731c5d201924759cfee107b0ebb41c4f6901473ed74cf5a46cb1bbd218c",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/legitimate_usefulness.md": "26f45fe021e7cd1dba858177ef90d4dbc00dfe216bce5e08788dd2df2dd132ec",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/lesswrong_results.md": "72c2de73be9e529395b2a61564bf29357f303770e1774aaa4d7bece994fb06bb",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/paired_component_effects.json": "50d21b5b8def5ed838309727ae982bc3860067b00b8047b1886982425d8b29d0",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/per_case_classifications.jsonl": "f4fabb5ddd5e2dc094c99be3c0d0404f689253d2ab9a126b2ea4556a1df31dff",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/preserved_artifact_hashes.json": "d6b0e9dbe0d833586fcdc461a76c4b889c9159f5444f6606e80bf530d2c553a9",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/report.md": "974d9855c4b2e4d48d01edf005a1d1eabba741cf20db9687417fb565de20d9a4",
+    "experiment_log/011_benign_audit_confirmation/exploratory_error_analysis/summary.json": "e10175d1b89d0762080ce9758169cde3bf34ebbb865f609bd82d05b1d797eeac"
+  },
+  "renderer_sha256": "dc21203c5dc1033d0960d8336d1cecfd8ee63279d940b398d58b51032ec7f2e0"
+}

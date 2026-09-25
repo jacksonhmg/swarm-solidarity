@@ -1,0 +1,2749 @@
+{
+  "interpretation": "Exploratory, nominal component comparisons; original primary outcome and Holm family unchanged.",
+  "contrasts": [
+    {
+      "left": "revised_s41031",
+      "right": "prepared",
+      "variant": "omission",
+      "metrics": {
+        "table_exact": {
+          "value": 0.1507537688442211,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.105,
+            0.205
+          ],
+          "paired_counts": {
+            "both_true": 169,
+            "left_only": 30,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 30,
+            "right_only": 0,
+            "discordant_pairs": 30,
+            "p_value": 1.862645149230957e-09,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_preserved": {
+          "value": 0.1306532663316583,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.08542713567839195,
+            0.18090452261306533
+          ],
+          "paired_counts": {
+            "both_true": 173,
+            "left_only": 26,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 26,
+            "right_only": 0,
+            "discordant_pairs": 26,
+            "p_value": 2.9802322387695312e-08,
+            "multiplicity_adjusted": false
+          }
+        },
+        "other_evidence_preserved": {
+          "value": 0.005025125628140704,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.015151515151515152
+          ],
+          "paired_counts": {
+            "both_true": 198,
+            "left_only": 1,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 1,
+            "right_only": 0,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_schema_valid": {
+          "value": 0.18,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.125,
+            0.235
+          ],
+          "paired_counts": {
+            "both_true": 162,
+            "left_only": 37,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 37,
+            "right_only": 1,
+            "discordant_pairs": 38,
+            "p_value": 2.837623469531536e-10,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_exact": {
+          "value": 0.38271604938271603,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.2962962962962963,
+            0.46794871794871795
+          ],
+          "paired_counts": {
+            "both_true": 13,
+            "left_only": 67,
+            "right_only": 5,
+            "both_false": 77
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 67,
+            "right_only": 5,
+            "discordant_pairs": 72,
+            "p_value": 6.387730835678276e-15,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_format_valid": {
+          "value": 0.18,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.125,
+            0.235
+          ],
+          "paired_counts": {
+            "both_true": 162,
+            "left_only": 37,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 37,
+            "right_only": 1,
+            "discordant_pairs": 38,
+            "p_value": 2.837623469531536e-10,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": 0.345,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.27,
+            0.42
+          ],
+          "paired_counts": {
+            "both_true": 13,
+            "left_only": 74,
+            "right_only": 5,
+            "both_false": 108
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 74,
+            "right_only": 5,
+            "discordant_pairs": 79,
+            "p_value": 7.981384997696379e-17,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_absent": {
+          "value": -0.1306532663316583,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            -0.18090452261306533,
+            -0.08542713567839195
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 0,
+            "right_only": 26,
+            "both_false": 173
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 0,
+            "right_only": 26,
+            "discordant_pairs": 26,
+            "p_value": 2.9802322387695312e-08,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_incident_report": {
+          "value": 0.36419753086419754,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.2721518987341772,
+            0.45121951219512196
+          ],
+          "paired_counts": {
+            "both_true": 15,
+            "left_only": 66,
+            "right_only": 7,
+            "both_false": 74
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 66,
+            "right_only": 7,
+            "discordant_pairs": 73,
+            "p_value": 3.845005957472025e-13,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_ids_single_report": {
+          "value": 0.8333333333333334,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.7735849056603774,
+            0.8896103896103896
+          ],
+          "paired_counts": {
+            "both_true": 22,
+            "left_only": 135,
+            "right_only": 0,
+            "both_false": 5
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 135,
+            "right_only": 0,
+            "discordant_pairs": 135,
+            "p_value": 4.591774807899561e-41,
+            "multiplicity_adjusted": false
+          }
+        },
+        "wrong_category_single_report": {
+          "value": 0.4506172839506173,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.37349397590361444,
+            0.5294117647058824
+          ],
+          "paired_counts": {
+            "both_true": 3,
+            "left_only": 74,
+            "right_only": 1,
+            "both_false": 84
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 74,
+            "right_only": 1,
+            "discordant_pairs": 75,
+            "p_value": 4.0234064994579266e-21,
+            "multiplicity_adjusted": false
+          }
+        },
+        "explicit_empty_audit": {
+          "value": -0.8148148148148148,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            -0.8728323699421965,
+            -0.7530864197530864
+          ],
+          "paired_counts": {
+            "both_true": 4,
+            "left_only": 0,
+            "right_only": 132,
+            "both_false": 26
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 0,
+            "right_only": 132,
+            "discordant_pairs": 132,
+            "p_value": 3.6734198463196485e-40,
+            "multiplicity_adjusted": false
+          }
+        },
+        "incorrect_ids_or_extra_reports": {
+          "value": -0.018518518518518517,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            -0.04294478527607362,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 1,
+            "left_only": 0,
+            "right_only": 3,
+            "both_false": 158
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 0,
+            "right_only": 3,
+            "discordant_pairs": 3,
+            "p_value": 0.25,
+            "multiplicity_adjusted": false
+          }
+        },
+        "sole_category_failure": {
+          "value": 0.4567901234567901,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.3803680981595092,
+            0.5379746835443038
+          ],
+          "paired_counts": {
+            "both_true": 2,
+            "left_only": 75,
+            "right_only": 1,
+            "both_false": 84
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 75,
+            "right_only": 1,
+            "discordant_pairs": 76,
+            "p_value": 2.0381730293306602e-21,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    },
+    {
+      "left": "revised_s41031",
+      "right": "prompt_only",
+      "variant": "omission",
+      "metrics": {
+        "table_exact": {
+          "value": 0.11616161616161616,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.07142857142857142,
+            0.16326530612244897
+          ],
+          "paired_counts": {
+            "both_true": 175,
+            "left_only": 23,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 23,
+            "right_only": 0,
+            "discordant_pairs": 23,
+            "p_value": 2.384185791015625e-07,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_preserved": {
+          "value": 0.09595959595959595,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.05612244897959184,
+            0.14
+          ],
+          "paired_counts": {
+            "both_true": 179,
+            "left_only": 19,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 19,
+            "right_only": 0,
+            "discordant_pairs": 19,
+            "p_value": 3.814697265625e-06,
+            "multiplicity_adjusted": false
+          }
+        },
+        "other_evidence_preserved": {
+          "value": 0.005050505050505051,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.015306122448979591
+          ],
+          "paired_counts": {
+            "both_true": 197,
+            "left_only": 1,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 1,
+            "right_only": 0,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_schema_valid": {
+          "value": 0.185,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.13,
+            0.24
+          ],
+          "paired_counts": {
+            "both_true": 162,
+            "left_only": 37,
+            "right_only": 0,
+            "both_false": 1
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 37,
+            "right_only": 0,
+            "discordant_pairs": 37,
+            "p_value": 1.4551915228366852e-11,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_exact": {
+          "value": 0.2716049382716049,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.18181818181818182,
+            0.36075949367088606
+          ],
+          "paired_counts": {
+            "both_true": 27,
+            "left_only": 54,
+            "right_only": 10,
+            "both_false": 71
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 54,
+            "right_only": 10,
+            "discordant_pairs": 64,
+            "p_value": 1.9964982237862146e-08,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_format_valid": {
+          "value": 0.185,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.13,
+            0.24
+          ],
+          "paired_counts": {
+            "both_true": 162,
+            "left_only": 37,
+            "right_only": 0,
+            "both_false": 1
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 37,
+            "right_only": 0,
+            "discordant_pairs": 37,
+            "p_value": 1.4551915228366852e-11,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": 0.26,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.185,
+            0.335
+          ],
+          "paired_counts": {
+            "both_true": 25,
+            "left_only": 62,
+            "right_only": 10,
+            "both_false": 103
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 62,
+            "right_only": 10,
+            "discordant_pairs": 72,
+            "p_value": 2.6890686575861277e-10,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_absent": {
+          "value": -0.09595959595959595,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            -0.14,
+            -0.05612244897959184
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 0,
+            "right_only": 19,
+            "both_false": 179
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 0,
+            "right_only": 19,
+            "discordant_pairs": 19,
+            "p_value": 3.814697265625e-06,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_incident_report": {
+          "value": 0.25308641975308643,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.16149068322981366,
+            0.3416149068322981
+          ],
+          "paired_counts": {
+            "both_true": 30,
+            "left_only": 52,
+            "right_only": 11,
+            "both_false": 69
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 52,
+            "right_only": 11,
+            "discordant_pairs": 63,
+            "p_value": 1.6734991187261627e-07,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_ids_single_report": {
+          "value": 0.7098765432098766,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.6380368098159509,
+            0.7770700636942676
+          ],
+          "paired_counts": {
+            "both_true": 42,
+            "left_only": 115,
+            "right_only": 0,
+            "both_false": 5
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 115,
+            "right_only": 0,
+            "discordant_pairs": 115,
+            "p_value": 4.81482486096809e-35,
+            "multiplicity_adjusted": false
+          }
+        },
+        "wrong_category_single_report": {
+          "value": 0.4382716049382716,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.3630573248407643,
+            0.5149700598802395
+          ],
+          "paired_counts": {
+            "both_true": 5,
+            "left_only": 71,
+            "right_only": 0,
+            "both_false": 86
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 71,
+            "right_only": 0,
+            "discordant_pairs": 71,
+            "p_value": 8.470329472543003e-22,
+            "multiplicity_adjusted": false
+          }
+        },
+        "explicit_empty_audit": {
+          "value": -0.691358024691358,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            -0.7592592592592593,
+            -0.6178343949044586
+          ],
+          "paired_counts": {
+            "both_true": 4,
+            "left_only": 0,
+            "right_only": 112,
+            "both_false": 46
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 0,
+            "right_only": 112,
+            "discordant_pairs": 112,
+            "p_value": 3.851859888774472e-34,
+            "multiplicity_adjusted": false
+          }
+        },
+        "incorrect_ids_or_extra_reports": {
+          "value": -0.018518518518518517,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            -0.043209876543209874,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 1,
+            "left_only": 0,
+            "right_only": 3,
+            "both_false": 158
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 0,
+            "right_only": 3,
+            "discordant_pairs": 3,
+            "p_value": 0.25,
+            "multiplicity_adjusted": false
+          }
+        },
+        "sole_category_failure": {
+          "value": 0.4444444444444444,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.36904761904761907,
+            0.5209580838323353
+          ],
+          "paired_counts": {
+            "both_true": 4,
+            "left_only": 72,
+            "right_only": 0,
+            "both_false": 86
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 72,
+            "right_only": 0,
+            "discordant_pairs": 72,
+            "p_value": 4.235164736271502e-22,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    },
+    {
+      "left": "revised_s41031",
+      "right": "ordinary_s41031",
+      "variant": "omission",
+      "metrics": {
+        "table_exact": {
+          "value": 0.1989795918367347,
+          "scorable_n": 196,
+          "unknown_n": 4,
+          "scenario_bootstrap_ci95": [
+            0.14507772020725387,
+            0.2564102564102564
+          ],
+          "paired_counts": {
+            "both_true": 157,
+            "left_only": 39,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 196,
+            "left_only": 39,
+            "right_only": 0,
+            "discordant_pairs": 39,
+            "p_value": 3.637978807091713e-12,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_preserved": {
+          "value": 0.19387755102040816,
+          "scorable_n": 196,
+          "unknown_n": 4,
+          "scenario_bootstrap_ci95": [
+            0.14,
+            0.2512820512820513
+          ],
+          "paired_counts": {
+            "both_true": 158,
+            "left_only": 38,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 196,
+            "left_only": 38,
+            "right_only": 0,
+            "discordant_pairs": 38,
+            "p_value": 7.275957614183426e-12,
+            "multiplicity_adjusted": false
+          }
+        },
+        "other_evidence_preserved": {
+          "value": 0.00510204081632653,
+          "scorable_n": 196,
+          "unknown_n": 4,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.015463917525773196
+          ],
+          "paired_counts": {
+            "both_true": 195,
+            "left_only": 1,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 196,
+            "left_only": 1,
+            "right_only": 0,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_schema_valid": {
+          "value": 0.11,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.07,
+            0.155
+          ],
+          "paired_counts": {
+            "both_true": 177,
+            "left_only": 22,
+            "right_only": 0,
+            "both_false": 1
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 22,
+            "right_only": 0,
+            "discordant_pairs": 22,
+            "p_value": 4.76837158203125e-07,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_exact": {
+          "value": 0.3898305084745763,
+          "scorable_n": 177,
+          "unknown_n": 23,
+          "scenario_bootstrap_ci95": [
+            0.3055555555555556,
+            0.47126436781609193
+          ],
+          "paired_counts": {
+            "both_true": 9,
+            "left_only": 77,
+            "right_only": 8,
+            "both_false": 83
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 177,
+            "left_only": 77,
+            "right_only": 8,
+            "discordant_pairs": 85,
+            "p_value": 2.7675726722352094e-15,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_format_valid": {
+          "value": 0.11,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.07,
+            0.155
+          ],
+          "paired_counts": {
+            "both_true": 177,
+            "left_only": 22,
+            "right_only": 0,
+            "both_false": 1
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 22,
+            "right_only": 0,
+            "discordant_pairs": 22,
+            "p_value": 4.76837158203125e-07,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": 0.355,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.28,
+            0.43
+          ],
+          "paired_counts": {
+            "both_true": 9,
+            "left_only": 78,
+            "right_only": 7,
+            "both_false": 106
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 78,
+            "right_only": 7,
+            "discordant_pairs": 85,
+            "p_value": 2.7959374761947534e-16,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_absent": {
+          "value": -0.19387755102040816,
+          "scorable_n": 196,
+          "unknown_n": 4,
+          "scenario_bootstrap_ci95": [
+            -0.2512820512820513,
+            -0.13989637305699482
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 0,
+            "right_only": 38,
+            "both_false": 158
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 196,
+            "left_only": 0,
+            "right_only": 38,
+            "discordant_pairs": 38,
+            "p_value": 7.275957614183426e-12,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_incident_report": {
+          "value": 0.384180790960452,
+          "scorable_n": 177,
+          "unknown_n": 23,
+          "scenario_bootstrap_ci95": [
+            0.2994350282485876,
+            0.46629213483146065
+          ],
+          "paired_counts": {
+            "both_true": 11,
+            "left_only": 76,
+            "right_only": 8,
+            "both_false": 82
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 177,
+            "left_only": 76,
+            "right_only": 8,
+            "discordant_pairs": 84,
+            "p_value": 5.0213888745341685e-15,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_ids_single_report": {
+          "value": 0.864406779661017,
+          "scorable_n": 177,
+          "unknown_n": 23,
+          "scenario_bootstrap_ci95": [
+            0.8125,
+            0.912568306010929
+          ],
+          "paired_counts": {
+            "both_true": 19,
+            "left_only": 153,
+            "right_only": 0,
+            "both_false": 5
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 177,
+            "left_only": 153,
+            "right_only": 0,
+            "discordant_pairs": 153,
+            "p_value": 1.7516230804060213e-46,
+            "multiplicity_adjusted": false
+          }
+        },
+        "wrong_category_single_report": {
+          "value": 0.4745762711864407,
+          "scorable_n": 177,
+          "unknown_n": 23,
+          "scenario_bootstrap_ci95": [
+            0.40331491712707185,
+            0.5480225988700564
+          ],
+          "paired_counts": {
+            "both_true": 2,
+            "left_only": 84,
+            "right_only": 0,
+            "both_false": 91
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 177,
+            "left_only": 84,
+            "right_only": 0,
+            "discordant_pairs": 84,
+            "p_value": 1.0339757656912846e-25,
+            "multiplicity_adjusted": false
+          }
+        },
+        "explicit_empty_audit": {
+          "value": -0.8587570621468926,
+          "scorable_n": 177,
+          "unknown_n": 23,
+          "scenario_bootstrap_ci95": [
+            -0.9065934065934066,
+            -0.8066298342541437
+          ],
+          "paired_counts": {
+            "both_true": 4,
+            "left_only": 0,
+            "right_only": 152,
+            "both_false": 21
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 177,
+            "left_only": 0,
+            "right_only": 152,
+            "discordant_pairs": 152,
+            "p_value": 3.503246160812043e-46,
+            "multiplicity_adjusted": false
+          }
+        },
+        "incorrect_ids_or_extra_reports": {
+          "value": -0.005649717514124294,
+          "scorable_n": 177,
+          "unknown_n": 23,
+          "scenario_bootstrap_ci95": [
+            -0.027777777777777776,
+            0.011695906432748537
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 1,
+            "right_only": 2,
+            "both_false": 174
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 177,
+            "left_only": 1,
+            "right_only": 2,
+            "discordant_pairs": 3,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "sole_category_failure": {
+          "value": 0.4745762711864407,
+          "scorable_n": 177,
+          "unknown_n": 23,
+          "scenario_bootstrap_ci95": [
+            0.40331491712707185,
+            0.5480225988700564
+          ],
+          "paired_counts": {
+            "both_true": 2,
+            "left_only": 84,
+            "right_only": 0,
+            "both_false": 91
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 177,
+            "left_only": 84,
+            "right_only": 0,
+            "discordant_pairs": 84,
+            "p_value": 1.0339757656912846e-25,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    },
+    {
+      "left": "revised_s41031",
+      "right": "corrective_s41031",
+      "variant": "omission",
+      "metrics": {
+        "table_exact": {
+          "value": 0.015,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.035
+          ],
+          "paired_counts": {
+            "both_true": 197,
+            "left_only": 3,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 3,
+            "right_only": 0,
+            "discordant_pairs": 3,
+            "p_value": 0.25,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_preserved": {
+          "value": 0.005,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.015
+          ],
+          "paired_counts": {
+            "both_true": 199,
+            "left_only": 1,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 1,
+            "right_only": 0,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "other_evidence_preserved": {
+          "value": 0.005,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.015
+          ],
+          "paired_counts": {
+            "both_true": 199,
+            "left_only": 1,
+            "right_only": 0,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 1,
+            "right_only": 0,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_schema_valid": {
+          "value": -0.005,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.015,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 199,
+            "left_only": 0,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 0,
+            "right_only": 1,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_exact": {
+          "value": 0.40703517587939697,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.34,
+            0.475
+          ],
+          "paired_counts": {
+            "both_true": 6,
+            "left_only": 81,
+            "right_only": 0,
+            "both_false": 112
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 81,
+            "right_only": 0,
+            "discordant_pairs": 81,
+            "p_value": 8.271806125530277e-25,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_format_valid": {
+          "value": -0.005,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.015,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 199,
+            "left_only": 0,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 0,
+            "right_only": 1,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": 0.405,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.34,
+            0.475
+          ],
+          "paired_counts": {
+            "both_true": 6,
+            "left_only": 81,
+            "right_only": 0,
+            "both_false": 113
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 81,
+            "right_only": 0,
+            "discordant_pairs": 81,
+            "p_value": 8.271806125530277e-25,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_absent": {
+          "value": -0.005,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.015,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 0,
+            "right_only": 1,
+            "both_false": 199
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 0,
+            "right_only": 1,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_incident_report": {
+          "value": 0.4120603015075377,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.345,
+            0.48
+          ],
+          "paired_counts": {
+            "both_true": 6,
+            "left_only": 82,
+            "right_only": 0,
+            "both_false": 111
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 82,
+            "right_only": 0,
+            "discordant_pairs": 82,
+            "p_value": 4.1359030627651384e-25,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_ids_single_report": {
+          "value": -0.02512562814070352,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            -0.05,
+            -0.005025125628140704
+          ],
+          "paired_counts": {
+            "both_true": 194,
+            "left_only": 0,
+            "right_only": 5,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 0,
+            "right_only": 5,
+            "discordant_pairs": 5,
+            "p_value": 0.0625,
+            "multiplicity_adjusted": false
+          }
+        },
+        "wrong_category_single_report": {
+          "value": -0.4321608040201005,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            -0.5025125628140703,
+            -0.365
+          ],
+          "paired_counts": {
+            "both_true": 107,
+            "left_only": 0,
+            "right_only": 86,
+            "both_false": 6
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 0,
+            "right_only": 86,
+            "discordant_pairs": 86,
+            "p_value": 2.5849394142282115e-26,
+            "multiplicity_adjusted": false
+          }
+        },
+        "explicit_empty_audit": {
+          "value": 0.020100502512562814,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.005,
+            0.04020100502512563
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 4,
+            "right_only": 0,
+            "both_false": 195
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 4,
+            "right_only": 0,
+            "discordant_pairs": 4,
+            "p_value": 0.125,
+            "multiplicity_adjusted": false
+          }
+        },
+        "incorrect_ids_or_extra_reports": {
+          "value": 0.005025125628140704,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.015228426395939087
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 1,
+            "right_only": 0,
+            "both_false": 198
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 1,
+            "right_only": 0,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "sole_category_failure": {
+          "value": -0.41708542713567837,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            -0.49,
+            -0.345
+          ],
+          "paired_counts": {
+            "both_true": 105,
+            "left_only": 2,
+            "right_only": 85,
+            "both_false": 7
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 2,
+            "right_only": 85,
+            "discordant_pairs": 87,
+            "p_value": 4.948866508539911e-23,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    },
+    {
+      "left": "revised_s41032",
+      "right": "prepared",
+      "variant": "omission",
+      "metrics": {
+        "table_exact": {
+          "value": 0.1111111111111111,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.06532663316582915,
+            0.16243654822335024
+          ],
+          "paired_counts": {
+            "both_true": 166,
+            "left_only": 25,
+            "right_only": 3,
+            "both_false": 4
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 25,
+            "right_only": 3,
+            "discordant_pairs": 28,
+            "p_value": 2.744048833847046e-05,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_preserved": {
+          "value": 0.11616161616161616,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.07537688442211055,
+            0.16326530612244897
+          ],
+          "paired_counts": {
+            "both_true": 173,
+            "left_only": 23,
+            "right_only": 0,
+            "both_false": 2
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 23,
+            "right_only": 0,
+            "discordant_pairs": 23,
+            "p_value": 2.384185791015625e-07,
+            "multiplicity_adjusted": false
+          }
+        },
+        "other_evidence_preserved": {
+          "value": 0.0,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 197,
+            "left_only": 0,
+            "right_only": 0,
+            "both_false": 1
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 0,
+            "right_only": 0,
+            "discordant_pairs": 0,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_schema_valid": {
+          "value": 0.18,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.125,
+            0.235
+          ],
+          "paired_counts": {
+            "both_true": 162,
+            "left_only": 37,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 37,
+            "right_only": 1,
+            "discordant_pairs": 38,
+            "p_value": 2.837623469531536e-10,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_exact": {
+          "value": 0.3148148148148148,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.23417721518987342,
+            0.39490445859872614
+          ],
+          "paired_counts": {
+            "both_true": 14,
+            "left_only": 55,
+            "right_only": 4,
+            "both_false": 89
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 55,
+            "right_only": 4,
+            "discordant_pairs": 59,
+            "p_value": 1.6979681549678105e-12,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_format_valid": {
+          "value": 0.18,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.125,
+            0.235
+          ],
+          "paired_counts": {
+            "both_true": 162,
+            "left_only": 37,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 37,
+            "right_only": 1,
+            "discordant_pairs": 38,
+            "p_value": 2.837623469531536e-10,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": 0.265,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.195,
+            0.335
+          ],
+          "paired_counts": {
+            "both_true": 13,
+            "left_only": 58,
+            "right_only": 5,
+            "both_false": 124
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 58,
+            "right_only": 5,
+            "discordant_pairs": 63,
+            "p_value": 1.6623508125590547e-12,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_absent": {
+          "value": -0.11616161616161616,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            -0.16326530612244897,
+            -0.07537688442211055
+          ],
+          "paired_counts": {
+            "both_true": 2,
+            "left_only": 0,
+            "right_only": 23,
+            "both_false": 173
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 0,
+            "right_only": 23,
+            "discordant_pairs": 23,
+            "p_value": 2.384185791015625e-07,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_incident_report": {
+          "value": 0.2962962962962963,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.21568627450980393,
+            0.37579617834394907
+          ],
+          "paired_counts": {
+            "both_true": 17,
+            "left_only": 53,
+            "right_only": 5,
+            "both_false": 87
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 53,
+            "right_only": 5,
+            "discordant_pairs": 58,
+            "p_value": 3.4964767192668944e-11,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_ids_single_report": {
+          "value": 0.6049382716049383,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.5286624203821656,
+            0.6770186335403726
+          ],
+          "paired_counts": {
+            "both_true": 22,
+            "left_only": 98,
+            "right_only": 0,
+            "both_false": 42
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 98,
+            "right_only": 0,
+            "discordant_pairs": 98,
+            "p_value": 6.310887241768095e-30,
+            "multiplicity_adjusted": false
+          }
+        },
+        "wrong_category_single_report": {
+          "value": 0.29012345679012347,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.2229299363057325,
+            0.3619631901840491
+          ],
+          "paired_counts": {
+            "both_true": 4,
+            "left_only": 47,
+            "right_only": 0,
+            "both_false": 111
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 47,
+            "right_only": 0,
+            "discordant_pairs": 47,
+            "p_value": 1.4210854715202004e-14,
+            "multiplicity_adjusted": false
+          }
+        },
+        "explicit_empty_audit": {
+          "value": -0.5864197530864198,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            -0.6585365853658537,
+            -0.50920245398773
+          ],
+          "paired_counts": {
+            "both_true": 41,
+            "left_only": 0,
+            "right_only": 95,
+            "both_false": 26
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 0,
+            "right_only": 95,
+            "discordant_pairs": 95,
+            "p_value": 5.048709793414476e-29,
+            "multiplicity_adjusted": false
+          }
+        },
+        "incorrect_ids_or_extra_reports": {
+          "value": -0.018518518518518517,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            -0.04294478527607362,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 1,
+            "left_only": 0,
+            "right_only": 3,
+            "both_false": 158
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 0,
+            "right_only": 3,
+            "discordant_pairs": 3,
+            "p_value": 0.25,
+            "multiplicity_adjusted": false
+          }
+        },
+        "sole_category_failure": {
+          "value": 0.2839506172839506,
+          "scorable_n": 162,
+          "unknown_n": 38,
+          "scenario_bootstrap_ci95": [
+            0.21686746987951808,
+            0.35542168674698793
+          ],
+          "paired_counts": {
+            "both_true": 3,
+            "left_only": 46,
+            "right_only": 0,
+            "both_false": 113
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 162,
+            "left_only": 46,
+            "right_only": 0,
+            "discordant_pairs": 46,
+            "p_value": 2.842170943040401e-14,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    },
+    {
+      "left": "revised_s41032",
+      "right": "prompt_only",
+      "variant": "omission",
+      "metrics": {
+        "table_exact": {
+          "value": 0.07614213197969544,
+          "scorable_n": 197,
+          "unknown_n": 3,
+          "scenario_bootstrap_ci95": [
+            0.035,
+            0.1218274111675127
+          ],
+          "paired_counts": {
+            "both_true": 172,
+            "left_only": 18,
+            "right_only": 3,
+            "both_false": 4
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 197,
+            "left_only": 18,
+            "right_only": 3,
+            "discordant_pairs": 21,
+            "p_value": 0.0014896392822265625,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_preserved": {
+          "value": 0.08121827411167512,
+          "scorable_n": 197,
+          "unknown_n": 3,
+          "scenario_bootstrap_ci95": [
+            0.04568527918781726,
+            0.1218274111675127
+          ],
+          "paired_counts": {
+            "both_true": 179,
+            "left_only": 16,
+            "right_only": 0,
+            "both_false": 2
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 197,
+            "left_only": 16,
+            "right_only": 0,
+            "discordant_pairs": 16,
+            "p_value": 3.0517578125e-05,
+            "multiplicity_adjusted": false
+          }
+        },
+        "other_evidence_preserved": {
+          "value": 0.0,
+          "scorable_n": 197,
+          "unknown_n": 3,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 196,
+            "left_only": 0,
+            "right_only": 0,
+            "both_false": 1
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 197,
+            "left_only": 0,
+            "right_only": 0,
+            "discordant_pairs": 0,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_schema_valid": {
+          "value": 0.185,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.13,
+            0.24
+          ],
+          "paired_counts": {
+            "both_true": 161,
+            "left_only": 38,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 38,
+            "right_only": 1,
+            "discordant_pairs": 39,
+            "p_value": 1.4551915228366852e-10,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_exact": {
+          "value": 0.2111801242236025,
+          "scorable_n": 161,
+          "unknown_n": 39,
+          "scenario_bootstrap_ci95": [
+            0.13095238095238096,
+            0.2934131736526946
+          ],
+          "paired_counts": {
+            "both_true": 27,
+            "left_only": 43,
+            "right_only": 9,
+            "both_false": 82
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 161,
+            "left_only": 43,
+            "right_only": 9,
+            "discordant_pairs": 52,
+            "p_value": 2.0377698612961126e-06,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_format_valid": {
+          "value": 0.185,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.13,
+            0.24
+          ],
+          "paired_counts": {
+            "both_true": 161,
+            "left_only": 38,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 38,
+            "right_only": 1,
+            "discordant_pairs": 39,
+            "p_value": 1.4551915228366852e-10,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": 0.18,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.11,
+            0.25
+          ],
+          "paired_counts": {
+            "both_true": 24,
+            "left_only": 47,
+            "right_only": 11,
+            "both_false": 118
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 47,
+            "right_only": 11,
+            "discordant_pairs": 58,
+            "p_value": 2.031594536044956e-06,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_absent": {
+          "value": -0.08121827411167512,
+          "scorable_n": 197,
+          "unknown_n": 3,
+          "scenario_bootstrap_ci95": [
+            -0.1218274111675127,
+            -0.04568527918781726
+          ],
+          "paired_counts": {
+            "both_true": 2,
+            "left_only": 0,
+            "right_only": 16,
+            "both_false": 179
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 197,
+            "left_only": 0,
+            "right_only": 16,
+            "discordant_pairs": 16,
+            "p_value": 3.0517578125e-05,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_incident_report": {
+          "value": 0.19254658385093168,
+          "scorable_n": 161,
+          "unknown_n": 39,
+          "scenario_bootstrap_ci95": [
+            0.1125,
+            0.27564102564102566
+          ],
+          "paired_counts": {
+            "both_true": 30,
+            "left_only": 41,
+            "right_only": 10,
+            "both_false": 80
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 161,
+            "left_only": 41,
+            "right_only": 10,
+            "discordant_pairs": 51,
+            "p_value": 1.4737715885004832e-05,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_ids_single_report": {
+          "value": 0.4906832298136646,
+          "scorable_n": 161,
+          "unknown_n": 39,
+          "scenario_bootstrap_ci95": [
+            0.4107142857142857,
+            0.5714285714285714
+          ],
+          "paired_counts": {
+            "both_true": 39,
+            "left_only": 81,
+            "right_only": 2,
+            "both_false": 39
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 161,
+            "left_only": 81,
+            "right_only": 2,
+            "discordant_pairs": 83,
+            "p_value": 7.210946989931019e-22,
+            "multiplicity_adjusted": false
+          }
+        },
+        "wrong_category_single_report": {
+          "value": 0.2795031055900621,
+          "scorable_n": 161,
+          "unknown_n": 39,
+          "scenario_bootstrap_ci95": [
+            0.21084337349397592,
+            0.34838709677419355
+          ],
+          "paired_counts": {
+            "both_true": 5,
+            "left_only": 45,
+            "right_only": 0,
+            "both_false": 111
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 161,
+            "left_only": 45,
+            "right_only": 0,
+            "discordant_pairs": 45,
+            "p_value": 5.684341886080802e-14,
+            "multiplicity_adjusted": false
+          }
+        },
+        "explicit_empty_audit": {
+          "value": -0.4720496894409938,
+          "scorable_n": 161,
+          "unknown_n": 39,
+          "scenario_bootstrap_ci95": [
+            -0.5512820512820513,
+            -0.391304347826087
+          ],
+          "paired_counts": {
+            "both_true": 38,
+            "left_only": 2,
+            "right_only": 78,
+            "both_false": 43
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 161,
+            "left_only": 2,
+            "right_only": 78,
+            "discordant_pairs": 80,
+            "p_value": 5.3617847305687254e-21,
+            "multiplicity_adjusted": false
+          }
+        },
+        "incorrect_ids_or_extra_reports": {
+          "value": -0.018633540372670808,
+          "scorable_n": 161,
+          "unknown_n": 39,
+          "scenario_bootstrap_ci95": [
+            -0.04375,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 1,
+            "left_only": 0,
+            "right_only": 3,
+            "both_false": 157
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 161,
+            "left_only": 0,
+            "right_only": 3,
+            "discordant_pairs": 3,
+            "p_value": 0.25,
+            "multiplicity_adjusted": false
+          }
+        },
+        "sole_category_failure": {
+          "value": 0.2732919254658385,
+          "scorable_n": 161,
+          "unknown_n": 39,
+          "scenario_bootstrap_ci95": [
+            0.20496894409937888,
+            0.3416149068322981
+          ],
+          "paired_counts": {
+            "both_true": 4,
+            "left_only": 44,
+            "right_only": 0,
+            "both_false": 113
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 161,
+            "left_only": 44,
+            "right_only": 0,
+            "discordant_pairs": 44,
+            "p_value": 1.1368683772161603e-13,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    },
+    {
+      "left": "revised_s41032",
+      "right": "ordinary_s41032",
+      "variant": "omission",
+      "metrics": {
+        "table_exact": {
+          "value": 0.2777777777777778,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.2193877551020408,
+            0.3384615384615385
+          ],
+          "paired_counts": {
+            "both_true": 136,
+            "left_only": 55,
+            "right_only": 0,
+            "both_false": 7
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 55,
+            "right_only": 0,
+            "discordant_pairs": 55,
+            "p_value": 5.551115123125783e-17,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_preserved": {
+          "value": 0.26262626262626265,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.205,
+            0.32323232323232326
+          ],
+          "paired_counts": {
+            "both_true": 144,
+            "left_only": 52,
+            "right_only": 0,
+            "both_false": 2
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 52,
+            "right_only": 0,
+            "discordant_pairs": 52,
+            "p_value": 4.440892098500626e-16,
+            "multiplicity_adjusted": false
+          }
+        },
+        "other_evidence_preserved": {
+          "value": 0.010101010101010102,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.025380710659898477
+          ],
+          "paired_counts": {
+            "both_true": 195,
+            "left_only": 2,
+            "right_only": 0,
+            "both_false": 1
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 2,
+            "right_only": 0,
+            "discordant_pairs": 2,
+            "p_value": 0.5,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_schema_valid": {
+          "value": 0.165,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.115,
+            0.22
+          ],
+          "paired_counts": {
+            "both_true": 165,
+            "left_only": 34,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 34,
+            "right_only": 1,
+            "discordant_pairs": 35,
+            "p_value": 2.0954757928848267e-09,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_exact": {
+          "value": 0.34545454545454546,
+          "scorable_n": 165,
+          "unknown_n": 35,
+          "scenario_bootstrap_ci95": [
+            0.27044025157232704,
+            0.41916167664670656
+          ],
+          "paired_counts": {
+            "both_true": 14,
+            "left_only": 58,
+            "right_only": 1,
+            "both_false": 92
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 165,
+            "left_only": 58,
+            "right_only": 1,
+            "discordant_pairs": 59,
+            "p_value": 2.0816681711721685e-16,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_format_valid": {
+          "value": 0.165,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.115,
+            0.22
+          ],
+          "paired_counts": {
+            "both_true": 165,
+            "left_only": 34,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 34,
+            "right_only": 1,
+            "discordant_pairs": 35,
+            "p_value": 2.0954757928848267e-09,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": 0.31,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            0.245,
+            0.375
+          ],
+          "paired_counts": {
+            "both_true": 9,
+            "left_only": 62,
+            "right_only": 0,
+            "both_false": 129
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 62,
+            "right_only": 0,
+            "discordant_pairs": 62,
+            "p_value": 4.336808689942018e-19,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_absent": {
+          "value": -0.26262626262626265,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            -0.32323232323232326,
+            -0.205
+          ],
+          "paired_counts": {
+            "both_true": 2,
+            "left_only": 0,
+            "right_only": 52,
+            "both_false": 144
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 0,
+            "right_only": 52,
+            "discordant_pairs": 52,
+            "p_value": 4.440892098500626e-16,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_incident_report": {
+          "value": 0.34545454545454546,
+          "scorable_n": 165,
+          "unknown_n": 35,
+          "scenario_bootstrap_ci95": [
+            0.2710843373493976,
+            0.4177215189873418
+          ],
+          "paired_counts": {
+            "both_true": 15,
+            "left_only": 58,
+            "right_only": 1,
+            "both_false": 91
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 165,
+            "left_only": 58,
+            "right_only": 1,
+            "discordant_pairs": 59,
+            "p_value": 2.0816681711721685e-16,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_ids_single_report": {
+          "value": 0.6121212121212121,
+          "scorable_n": 165,
+          "unknown_n": 35,
+          "scenario_bootstrap_ci95": [
+            0.536144578313253,
+            0.6845238095238095
+          ],
+          "paired_counts": {
+            "both_true": 23,
+            "left_only": 101,
+            "right_only": 0,
+            "both_false": 41
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 165,
+            "left_only": 101,
+            "right_only": 0,
+            "discordant_pairs": 101,
+            "p_value": 7.888609052210118e-31,
+            "multiplicity_adjusted": false
+          }
+        },
+        "wrong_category_single_report": {
+          "value": 0.26666666666666666,
+          "scorable_n": 165,
+          "unknown_n": 35,
+          "scenario_bootstrap_ci95": [
+            0.19879518072289157,
+            0.3393939393939394
+          ],
+          "paired_counts": {
+            "both_true": 7,
+            "left_only": 45,
+            "right_only": 1,
+            "both_false": 112
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 165,
+            "left_only": 45,
+            "right_only": 1,
+            "discordant_pairs": 46,
+            "p_value": 1.3358203432289883e-12,
+            "multiplicity_adjusted": false
+          }
+        },
+        "explicit_empty_audit": {
+          "value": -0.6121212121212121,
+          "scorable_n": 165,
+          "unknown_n": 35,
+          "scenario_bootstrap_ci95": [
+            -0.6845238095238095,
+            -0.535483870967742
+          ],
+          "paired_counts": {
+            "both_true": 40,
+            "left_only": 0,
+            "right_only": 101,
+            "both_false": 24
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 165,
+            "left_only": 0,
+            "right_only": 101,
+            "discordant_pairs": 101,
+            "p_value": 7.888609052210118e-31,
+            "multiplicity_adjusted": false
+          }
+        },
+        "incorrect_ids_or_extra_reports": {
+          "value": 0.0,
+          "scorable_n": 165,
+          "unknown_n": 35,
+          "scenario_bootstrap_ci95": [
+            -0.018072289156626505,
+            0.01818181818181818
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 1,
+            "right_only": 1,
+            "both_false": 163
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 165,
+            "left_only": 1,
+            "right_only": 1,
+            "discordant_pairs": 2,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "sole_category_failure": {
+          "value": 0.28484848484848485,
+          "scorable_n": 165,
+          "unknown_n": 35,
+          "scenario_bootstrap_ci95": [
+            0.21656050955414013,
+            0.3583815028901734
+          ],
+          "paired_counts": {
+            "both_true": 2,
+            "left_only": 48,
+            "right_only": 1,
+            "both_false": 114
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 165,
+            "left_only": 48,
+            "right_only": 1,
+            "discordant_pairs": 49,
+            "p_value": 1.7763568394002505e-13,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    },
+    {
+      "left": "revised_s41032",
+      "right": "corrective_s41032",
+      "variant": "omission",
+      "metrics": {
+        "table_exact": {
+          "value": -0.03015075376884422,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            -0.05527638190954774,
+            -0.01
+          ],
+          "paired_counts": {
+            "both_true": 192,
+            "left_only": 0,
+            "right_only": 6,
+            "both_false": 1
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 0,
+            "right_only": 6,
+            "discordant_pairs": 6,
+            "p_value": 0.03125,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_preserved": {
+          "value": -0.010050251256281407,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            -0.025252525252525252,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 197,
+            "left_only": 0,
+            "right_only": 2,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 0,
+            "right_only": 2,
+            "discordant_pairs": 2,
+            "p_value": 0.5,
+            "multiplicity_adjusted": false
+          }
+        },
+        "other_evidence_preserved": {
+          "value": -0.005025125628140704,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            -0.015151515151515152,
+            0.0
+          ],
+          "paired_counts": {
+            "both_true": 198,
+            "left_only": 0,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 0,
+            "right_only": 1,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_schema_valid": {
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.015,
+            0.015
+          ],
+          "paired_counts": {
+            "both_true": 198,
+            "left_only": 1,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 1,
+            "right_only": 1,
+            "discordant_pairs": 2,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "audit_exact": {
+          "value": -0.2222222222222222,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            -0.2857142857142857,
+            -0.16161616161616163
+          ],
+          "paired_counts": {
+            "both_true": 74,
+            "left_only": 2,
+            "right_only": 46,
+            "both_false": 76
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 2,
+            "right_only": 46,
+            "discordant_pairs": 48,
+            "p_value": 8.363087999896379e-12,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_format_valid": {
+          "value": 0.0,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.015,
+            0.015
+          ],
+          "paired_counts": {
+            "both_true": 198,
+            "left_only": 1,
+            "right_only": 1,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 1,
+            "right_only": 1,
+            "discordant_pairs": 2,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "strict_table_plus_exact_audit": {
+          "value": -0.245,
+          "scorable_n": 200,
+          "unknown_n": 0,
+          "scenario_bootstrap_ci95": [
+            -0.31,
+            -0.185
+          ],
+          "paired_counts": {
+            "both_true": 69,
+            "left_only": 2,
+            "right_only": 51,
+            "both_false": 78
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 200,
+            "left_only": 2,
+            "right_only": 51,
+            "discordant_pairs": 53,
+            "p_value": 3.1796787425264483e-13,
+            "multiplicity_adjusted": false
+          }
+        },
+        "target_absent": {
+          "value": 0.010050251256281407,
+          "scorable_n": 199,
+          "unknown_n": 1,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.025252525252525252
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 2,
+            "right_only": 0,
+            "both_false": 197
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 199,
+            "left_only": 2,
+            "right_only": 0,
+            "discordant_pairs": 2,
+            "p_value": 0.5,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_incident_report": {
+          "value": -0.21717171717171718,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            -0.28061224489795916,
+            -0.15656565656565657
+          ],
+          "paired_counts": {
+            "both_true": 75,
+            "left_only": 2,
+            "right_only": 45,
+            "both_false": 76
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 2,
+            "right_only": 45,
+            "discordant_pairs": 47,
+            "p_value": 1.6044054973463062e-11,
+            "multiplicity_adjusted": false
+          }
+        },
+        "correct_ids_single_report": {
+          "value": -0.20707070707070707,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            -0.2653061224489796,
+            -0.15306122448979592
+          ],
+          "paired_counts": {
+            "both_true": 157,
+            "left_only": 0,
+            "right_only": 41,
+            "both_false": 0
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 0,
+            "right_only": 41,
+            "discordant_pairs": 41,
+            "p_value": 9.094947017729282e-13,
+            "multiplicity_adjusted": false
+          }
+        },
+        "wrong_category_single_report": {
+          "value": 0.015151515151515152,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            -0.05025125628140704,
+            0.07614213197969544
+          ],
+          "paired_counts": {
+            "both_true": 60,
+            "left_only": 21,
+            "right_only": 18,
+            "both_false": 99
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 21,
+            "right_only": 18,
+            "discordant_pairs": 39,
+            "p_value": 0.7492586247608415,
+            "multiplicity_adjusted": false
+          }
+        },
+        "explicit_empty_audit": {
+          "value": 0.20202020202020202,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.14720812182741116,
+            0.2613065326633166
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 40,
+            "right_only": 0,
+            "both_false": 158
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 40,
+            "right_only": 0,
+            "discordant_pairs": 40,
+            "p_value": 1.8189894035458565e-12,
+            "multiplicity_adjusted": false
+          }
+        },
+        "incorrect_ids_or_extra_reports": {
+          "value": 0.005050505050505051,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            0.0,
+            0.015306122448979591
+          ],
+          "paired_counts": {
+            "both_true": 0,
+            "left_only": 1,
+            "right_only": 0,
+            "both_false": 197
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 1,
+            "right_only": 0,
+            "discordant_pairs": 1,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        },
+        "sole_category_failure": {
+          "value": 0.005050505050505051,
+          "scorable_n": 198,
+          "unknown_n": 2,
+          "scenario_bootstrap_ci95": [
+            -0.06030150753768844,
+            0.07035175879396985
+          ],
+          "paired_counts": {
+            "both_true": 58,
+            "left_only": 21,
+            "right_only": 20,
+            "both_false": 99
+          },
+          "exact_paired_test": {
+            "test": "two-sided exact McNemar (binomial)",
+            "complete_pairs": 198,
+            "left_only": 21,
+            "right_only": 20,
+            "discordant_pairs": 41,
+            "p_value": 1.0,
+            "multiplicity_adjusted": false
+          }
+        }
+      }
+    }
+  ]
+}
