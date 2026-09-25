@@ -1,0 +1,9 @@
+{
+  "original_frozen_files_unchanged": 163,
+  "five_disjoint_stage_assignments": true,
+  "qwen_identity_training_calls": 0,
+  "merged_hash_equality_required": true,
+  "original_inference_entry_point_unchanged": true,
+  "hard_cap_usd": 30,
+  "watchdog_usd": 28
+}

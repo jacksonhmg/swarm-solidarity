@@ -1,0 +1,13 @@
+{
+  "files": {
+    "experiment_log/013_qwen_preparation_comparison/parallel/plan.json": "f96541e879b168c090a03bab96650d5a7060731a066471437fd120e4c4b9f59d",
+    "experiment_log/013_qwen_preparation_comparison/parallel/checks.json": "1b094d70e218c36bc9122612df97e44f8f065337583de505c0d3e71b63fc52b4",
+    "experiment_log/013_qwen_preparation_comparison/parallel/amendment.md": "d89f0a965ff27403081043286d0839e695664d0243636f1e2bb19c2deed35e38",
+    "scripts/parallel_followup_support.py": "cfe3468583fe6430fa4f6c5360fb04ed6af262b702b2eb34ab03cbe822cede3d",
+    "scripts/parallel_followup_supervisor.py": "1925221acc2520bf6c92702eaa13d139655fa7277b41eb7bef69924674dc0309",
+    "scripts/parallel_followup_watchdog.py": "4918d787acdd5f6f1bae68ab7575e2d73a8514cf29b03ffc7d12987fa13d4514",
+    "scripts/run_parallel_followup_identity.py": "9482e78c035d60cd128f18cae9d9e17660debf2434cbc324bbeff217e1e7769b",
+    "scripts/accelerate_followups.py": "93e83f62fe59ec74c54ef9f9b64cd569249a80f68922c11bf947604ec2eb6d42"
+  },
+  "scope": "Scheduling and extra-instance safeguards only. Original frozen experiment preserved."
+}

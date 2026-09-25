@@ -1,0 +1,54 @@
+{
+  "new_gpu_cap_usd": 30,
+  "termination_threshold_usd": 28,
+  "max_hourly_usd": 1.99,
+  "instance_type": "gpu_1x_a100_sxm4",
+  "accepted_gpu_names": [
+    "NVIDIA A100-SXM4-40GB",
+    "NVIDIA A100-SXM4-80GB"
+  ],
+  "maximum_new_responses": 4000,
+  "training_runs": 1,
+  "training_seed": 41027,
+  "model_retries": false,
+  "sampled_response_retries": false,
+  "nodes": {
+    "qwen": {
+      "state": ".local/lambda-followup-qwen/state.json",
+      "stages": [
+        "qwen_human"
+      ],
+      "timeout_minutes": 360
+    },
+    "prepared": {
+      "state": ".local/lambda-followup-prepared/state.json",
+      "stages": [
+        "prepared_agent_a"
+      ],
+      "timeout_minutes": 180
+    },
+    "revised_s41031": {
+      "state": ".local/lambda-followup-revised_s41031/state.json",
+      "stages": [
+        "revised_s41031_agent_a"
+      ],
+      "timeout_minutes": 180
+    },
+    "revised_s41032": {
+      "state": ".local/lambda-followup-revised_s41032/state.json",
+      "stages": [
+        "revised_s41032_agent_a"
+      ],
+      "timeout_minutes": 180
+    },
+    "qwen_identity": {
+      "state": ".local/lambda-followup-qwen-identity/state.json",
+      "stages": [
+        "qwen_agent_a"
+      ],
+      "timeout_minutes": 180
+    }
+  },
+  "scheduling": "Scheduling-only amendment: existing Qwen training and human evaluation continue once. Original controller skips its unstarted identity stage via its existing stop marker. Three WideSeek identity nodes launch independently; a fifth A100 runs Qwen identity from the identical terminal adapter/verified merged hashes after50 human responses provide timing-only budget confirmation. Serial single-request inference and each stage request order remain unchanged.",
+  "source_freeze_commit": "5267564"
+}
