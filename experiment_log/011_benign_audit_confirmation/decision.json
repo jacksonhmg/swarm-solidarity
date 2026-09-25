@@ -1,11 +1,419 @@
 {
-  "status": "authorized_eight_separate_A100_allocation",
-  "user_approval": "OKAY DO THE 8 A100 SEPARATW",
+  "status": "complete_closed",
+  "recorded_at": "2026-09-25T00:22:02.459414+00:00",
+  "overall_research_criterion_met_across_both_seeds": false,
+  "outcome": "Both revised seeds improve conflict preservation and omission joint success over prepared/reminder/matched ordinary controls, but revised41031 meaningfully regresses clean legitimate usefulness. Omission improvement versus same-seed original corrective is positive for41031 and negative for41032.",
+  "primary_metric": "strict_table_plus_exact_audit on omission",
+  "strict_joint_counts_of_200": {
+    "prepared|clean": 188,
+    "prepared|falsification": 57,
+    "prepared|omission": 18,
+    "prepared|legitimate_filtering": 198,
+    "prompt_only|clean": 185,
+    "prompt_only|falsification": 67,
+    "prompt_only|omission": 35,
+    "prompt_only|legitimate_filtering": 196,
+    "ordinary_s41031|clean": 200,
+    "ordinary_s41031|falsification": 51,
+    "ordinary_s41031|omission": 16,
+    "ordinary_s41031|legitimate_filtering": 200,
+    "corrective_s41031|clean": 0,
+    "corrective_s41031|falsification": 199,
+    "corrective_s41031|omission": 6,
+    "corrective_s41031|legitimate_filtering": 0,
+    "revised_s41031|clean": 164,
+    "revised_s41031|falsification": 200,
+    "revised_s41031|omission": 87,
+    "revised_s41031|legitimate_filtering": 196,
+    "ordinary_s41032|clean": 190,
+    "ordinary_s41032|falsification": 49,
+    "ordinary_s41032|omission": 9,
+    "ordinary_s41032|legitimate_filtering": 199,
+    "corrective_s41032|clean": 0,
+    "corrective_s41032|falsification": 199,
+    "corrective_s41032|omission": 120,
+    "corrective_s41032|legitimate_filtering": 0,
+    "revised_s41032|clean": 191,
+    "revised_s41032|falsification": 198,
+    "revised_s41032|omission": 71,
+    "revised_s41032|legitimate_filtering": 200
+  },
+  "primary_transfer_contrasts": [
+    {
+      "left": "revised_s41031",
+      "right": "prepared",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.345,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.27,
+        0.42
+      ],
+      "paired_counts": {
+        "both_true": 13,
+        "left_only": 74,
+        "right_only": 5,
+        "both_false": 108
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 74,
+        "right_only": 5,
+        "discordant_pairs": 79,
+        "p_value": 7.981384997696379e-17,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 4.788830998617827e-16
+    },
+    {
+      "left": "revised_s41031",
+      "right": "prompt_only",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.26,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.185,
+        0.335
+      ],
+      "paired_counts": {
+        "both_true": 25,
+        "left_only": 62,
+        "right_only": 10,
+        "both_false": 103
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 62,
+        "right_only": 10,
+        "discordant_pairs": 72,
+        "p_value": 2.6890686575861277e-10,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 5.378137315172255e-10
+    },
+    {
+      "left": "revised_s41031",
+      "right": "ordinary_s41031",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.355,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.28,
+        0.43
+      ],
+      "paired_counts": {
+        "both_true": 9,
+        "left_only": 78,
+        "right_only": 7,
+        "both_false": 106
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 78,
+        "right_only": 7,
+        "discordant_pairs": 85,
+        "p_value": 2.7959374761947534e-16,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 1.3979687380973767e-15
+    },
+    {
+      "left": "revised_s41031",
+      "right": "corrective_s41031",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.405,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.34,
+        0.475
+      ],
+      "paired_counts": {
+        "both_true": 6,
+        "left_only": 81,
+        "right_only": 0,
+        "both_false": 113
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 81,
+        "right_only": 0,
+        "discordant_pairs": 81,
+        "p_value": 8.271806125530277e-25,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 6.617444900424222e-24
+    },
+    {
+      "left": "revised_s41032",
+      "right": "prepared",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.265,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.195,
+        0.335
+      ],
+      "paired_counts": {
+        "both_true": 13,
+        "left_only": 58,
+        "right_only": 5,
+        "both_false": 124
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 58,
+        "right_only": 5,
+        "discordant_pairs": 63,
+        "p_value": 1.6623508125590547e-12,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 4.987052437677164e-12
+    },
+    {
+      "left": "revised_s41032",
+      "right": "prompt_only",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.18,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.11,
+        0.25
+      ],
+      "paired_counts": {
+        "both_true": 24,
+        "left_only": 47,
+        "right_only": 11,
+        "both_false": 118
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 47,
+        "right_only": 11,
+        "discordant_pairs": 58,
+        "p_value": 2.031594536044956e-06,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 2.031594536044956e-06
+    },
+    {
+      "left": "revised_s41032",
+      "right": "ordinary_s41032",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.31,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.245,
+        0.375
+      ],
+      "paired_counts": {
+        "both_true": 9,
+        "left_only": 62,
+        "right_only": 0,
+        "both_false": 129
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 62,
+        "right_only": 0,
+        "discordant_pairs": 62,
+        "p_value": 4.336808689942018e-19,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 3.0357660829594124e-18
+    },
+    {
+      "left": "revised_s41032",
+      "right": "corrective_s41032",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": -0.245,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        -0.31,
+        -0.185
+      ],
+      "paired_counts": {
+        "both_true": 69,
+        "left_only": 2,
+        "right_only": 51,
+        "both_false": 78
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 2,
+        "right_only": 51,
+        "discordant_pairs": 53,
+        "p_value": 3.1796787425264483e-13,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 1.2718714970105793e-12
+    }
+  ],
+  "revised_usefulness": [
+    {
+      "condition": "revised_s41031",
+      "variant": "clean",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 164,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": -0.12,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.17,
+          -0.07
+        ],
+        "paired_counts": {
+          "both_true": 161,
+          "left_only": 3,
+          "right_only": 27,
+          "both_false": 9
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 3,
+          "right_only": 27,
+          "discordant_pairs": 30,
+          "p_value": 8.430331945419312e-06,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "meaningful_regression"
+    },
+    {
+      "condition": "revised_s41031",
+      "variant": "legitimate_filtering",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 196,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": -0.01,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.03,
+          0.01
+        ],
+        "paired_counts": {
+          "both_true": 195,
+          "left_only": 1,
+          "right_only": 3,
+          "both_false": 1
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 1,
+          "right_only": 3,
+          "discordant_pairs": 4,
+          "p_value": 0.625,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    },
+    {
+      "condition": "revised_s41032",
+      "variant": "clean",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 191,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": 0.015,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.015,
+          0.045
+        ],
+        "paired_counts": {
+          "both_true": 185,
+          "left_only": 6,
+          "right_only": 3,
+          "both_false": 6
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 6,
+          "right_only": 3,
+          "discordant_pairs": 9,
+          "p_value": 0.5078125,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    },
+    {
+      "condition": "revised_s41032",
+      "variant": "legitimate_filtering",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 200,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": 0.01,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          0.0,
+          0.025
+        ],
+        "paired_counts": {
+          "both_true": 198,
+          "left_only": 2,
+          "right_only": 0,
+          "both_false": 0
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 2,
+          "right_only": 0,
+          "discordant_pairs": 2,
+          "p_value": 0.5,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    }
+  ],
+  "both_revised_seeds_preserve_both_legitimate_variants": false,
+  "no_checkpoint_selected": true,
+  "further_training_or_tuning_authorized": false,
+  "automatic_expansion": false,
+  "results_and_all_adapters_preserved": true,
+  "estimated_gpu_cost_usd": 47.24833333333333,
   "cumulative_cap_usd": 65,
-  "prior_gpu_cost_usd": 4.0985,
-  "maximum_instances": 8,
-  "maximum_observed_responses": 6400,
-  "new_training_runs": 2,
-  "prior_lost_start_model_work": "unknown; authorized infrastructure retry exception",
-  "scientific_changes": "none since original 011 freeze"
+  "prior_lost_start_exception": "Model work in earlier lost A100 host remains unknown; user explicitly authorized one unchanged infrastructure retry. No retries occurred in the verified observed run.",
+  "hardware_caveat": "Revised41032 trained/evaluated on A100 SXM4 80GB; seven other conditions on40GB. No hardware cause isolated.",
+  "scope": "Task-prepared WideSeek on synthetic six-record teammate interactions; fresh confirmation motivated by010, reusing010 evaluation note templates."
 }

@@ -1,3 +1,11 @@
+# Complete and closed — 25 September 2026 UTC
+
+All 6,400 responses and both 125-update adapters are verified. Frozen analysis completed successfully. All eight current GPUs and every prior owned allocation are terminated; all temporary keys are deleted. Cumulative GPU estimate is $47.248333 under the $65 ceiling. Read ../report.md, ../decision.json and ../verification.json. No launcher, model work, rental, training or analysis needs restarting. Pause the availability/progress monitor after the completion report. No further training, tuning or experiment expansion.
+
+The full result did not hold across both seeds: omission gains versus prepared/reminder/ordinary controls occurred for both, but revised41031 failed clean usefulness; the same-seed omission effect versus the original corrective checkpoint reversed between seeds. Preserve the prior lost-start uncertainty and the 40/80GB hardware caveat. Experiment010 remains closed unsuccessful overall.
+
+The notes below are historical handoffs, not authorization to restart work.
+
 # Confirmed healthy evaluation state, 22:37 UTC
 
 All eight evaluation conditions are running. Both revised seeds completed125 updates; both terminal adapters are downloaded and hash-verified. The earlier prepared startup errors refer to obsolete local coordination and did not repeat model work; its replacement GPU is evaluating normally. All eight retired separate nodes are now confirmed terminated with keys deleted, including the earlier prepared node; hardware_recovery/retired_nodes.json has8 receipts and prior_closed_cost_usd9.6705. No old cleanup or rental remains to initiate. Continue only current evaluation supervision, budget checks, final artifact verification/analysis/report. See progress-latest.json for counts; do not tune anything from results.

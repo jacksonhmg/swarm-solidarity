@@ -1,0 +1,47 @@
+{
+  "at": "2026-09-24T22:04:52.388241+00:00",
+  "assignments": [
+    {
+      "node": "prepared",
+      "status": "startup_error",
+      "at": "2026-09-24T22:04:52.384390+00:00",
+      "error": "RuntimeError: Provider has not confirmed prepared-node termination",
+      "decision": "Preserve owner state and reconcile read-only. Never repeat sampled work."
+    },
+    {
+      "node": "prompt_only",
+      "status": "dispatched",
+      "at": "2026-09-24T21:58:16.273449+00:00"
+    },
+    {
+      "node": "ordinary_s41031",
+      "status": "dispatched",
+      "at": "2026-09-24T22:00:06.414471+00:00"
+    },
+    {
+      "node": "corrective_s41031",
+      "status": "dispatched",
+      "at": "2026-09-24T22:00:12.173116+00:00"
+    },
+    {
+      "node": "revised_s41031",
+      "status": "dispatched",
+      "at": "2026-09-24T21:58:08.431339+00:00"
+    },
+    {
+      "node": "ordinary_s41032",
+      "status": "dispatched",
+      "at": "2026-09-24T22:00:03.461002+00:00"
+    },
+    {
+      "node": "corrective_s41032",
+      "status": "dispatched",
+      "at": "2026-09-24T22:00:18.565061+00:00"
+    },
+    {
+      "node": "revised_s41032",
+      "status": "dispatched",
+      "at": "2026-09-24T22:00:08.358325+00:00"
+    }
+  ]
+}

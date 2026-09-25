@@ -1,0 +1,14 @@
+{
+  "node": "prompt_only",
+  "conditions": [
+    "prompt_only"
+  ],
+  "responses": 800,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "code_revision": "d8dfe759770164030c797833928a3d0af426bc30",
+  "freeze_sha256": "feda62e64973c22d8670e1637d6c5533b6aa6bab6d7d17000e1b1e58d14ac1fe",
+  "entry_point": "scripts/run_revised_host_eval.py",
+  "entry_point_sha256": "18400a7caa3ea47aa185f1b3f2c3f6670a07cbe46652c317767b265d8bd32859",
+  "one_request_at_a_time": true,
+  "hardware_uuid": "GPU-91bea73e-fded-d1f3-c682-4ab462c3c2ad"
+}

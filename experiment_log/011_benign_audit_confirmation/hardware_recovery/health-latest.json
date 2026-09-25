@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-25T00:23:17.661842+00:00",
+  "status": "complete_closed",
+  "successful_supervisors": 8,
+  "active_owned_instances": 0,
+  "active_launchers": 0,
+  "active_model_controllers": 0,
+  "analysis_returncode": 0,
+  "verification_passed": true,
+  "monitor_status": "PAUSED"
+}

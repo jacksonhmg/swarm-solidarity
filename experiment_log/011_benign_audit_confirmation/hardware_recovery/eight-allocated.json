@@ -1,0 +1,54 @@
+{
+  "at": "2026-09-24T21:50:01.012360+00:00",
+  "nodes": [
+    {
+      "condition": "prepared",
+      "id": "870d29398b6d4957bb79e942f2c1b532",
+      "status": "booting",
+      "region": "us-west-2"
+    },
+    {
+      "condition": "prompt_only",
+      "id": "7dd6e0f3f9b344a1805c059a3ecc35bc",
+      "status": "booting",
+      "region": "us-west-2"
+    },
+    {
+      "condition": "ordinary_s41031",
+      "id": "6a7f7a6ae3024a328e2b34b0dcfcae75",
+      "status": "booting",
+      "region": "us-west-2"
+    },
+    {
+      "condition": "corrective_s41031",
+      "id": "ca47584feb4c4346aefd23cf642699e9",
+      "status": "booting",
+      "region": "us-west-2"
+    },
+    {
+      "condition": "revised_s41031",
+      "id": "6a782487be2743739aed08af0446fd95",
+      "status": "booting",
+      "region": "us-west-2"
+    },
+    {
+      "condition": "ordinary_s41032",
+      "id": "92f8ee3cab814ddd9a9c49122818f57c",
+      "status": "booting",
+      "region": "us-west-2"
+    },
+    {
+      "condition": "corrective_s41032",
+      "id": "869d2c56f92c4a6eab64a567fa72e7e5",
+      "status": "booting",
+      "region": "us-west-2"
+    },
+    {
+      "condition": "revised_s41032",
+      "id": "64a33cf429334b0dbfc85ee29e9cdd25",
+      "status": "active",
+      "region": "us-east-1"
+    }
+  ],
+  "one_retained_seven_new": true
+}

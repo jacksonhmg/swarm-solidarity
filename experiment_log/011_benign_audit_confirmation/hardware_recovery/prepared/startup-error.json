@@ -1,0 +1,7 @@
+{
+  "node": "prepared",
+  "status": "startup_error",
+  "at": "2026-09-24T22:04:52.384390+00:00",
+  "error": "RuntimeError: Provider has not confirmed prepared-node termination",
+  "decision": "Preserve owner state and reconcile read-only. Never repeat sampled work."
+}

@@ -1,0 +1,18 @@
+{
+  "node": "revised_s41031",
+  "pid": 2984,
+  "started_at": "2026-09-24T21:58:08.517044+00:00",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=60s",
+    "180m",
+    "python3",
+    "scripts/run_revised_recovery_node.py",
+    "--node",
+    "revised_s41031",
+    "--execute"
+  ],
+  "finished_at": "2026-09-25T00:06:19.878930+00:00",
+  "returncode": 0
+}

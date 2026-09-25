@@ -1,0 +1,25 @@
+{
+  "node": "revised_s41032",
+  "finished_at": "2026-09-25T00:16:00.737286+00:00",
+  "controller_result": {
+    "node": "revised_s41032",
+    "pid": 3409,
+    "started_at": "2026-09-24T22:00:08.351575+00:00",
+    "command": [
+      "timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "180m",
+      "python3",
+      "scripts/run_revised_recovery_node.py",
+      "--node",
+      "revised_s41032",
+      "--execute"
+    ],
+    "finished_at": "2026-09-25T00:13:21.805905+00:00",
+    "returncode": 0
+  },
+  "download_hashes_verified": true,
+  "verified_files": 25,
+  "failure": null
+}

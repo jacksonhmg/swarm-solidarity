@@ -1,0 +1,13 @@
+{
+  "status": "started",
+  "at": "2026-09-24T22:00:06.410760+00:00",
+  "command": [
+    "python3",
+    "scripts/run_revised_recovery_node.py",
+    "--node",
+    "ordinary_s41031"
+  ],
+  "working_directory": "/home/ubuntu/swarm-solidarity",
+  "output": "experiment_log/011_benign_audit_confirmation/hardware_recovery/ordinary_s41031/remote-console.log",
+  "pid": 3059
+}

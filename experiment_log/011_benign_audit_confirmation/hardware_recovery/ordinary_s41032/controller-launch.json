@@ -1,0 +1,16 @@
+{
+  "node": "ordinary_s41032",
+  "pid": 3721,
+  "started_at": "2026-09-24T22:00:03.547568+00:00",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=60s",
+    "180m",
+    "python3",
+    "scripts/run_revised_recovery_node.py",
+    "--node",
+    "ordinary_s41032",
+    "--execute"
+  ]
+}

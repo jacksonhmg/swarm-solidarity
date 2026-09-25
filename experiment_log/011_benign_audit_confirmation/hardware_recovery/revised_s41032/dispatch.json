@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-24T22:00:08.358127+00:00",
+  "node": "revised_s41032",
+  "supervisor_pid": 46007,
+  "command": "cd /home/ubuntu/swarm-solidarity && python3 scripts/dispatch_detached_once.py --receipt experiment_log/011_benign_audit_confirmation/hardware_recovery/revised_s41032/controller-dispatch.json --output experiment_log/011_benign_audit_confirmation/hardware_recovery/revised_s41032/remote-console.log -- python3 scripts/run_revised_recovery_node.py --node revised_s41032",
+  "acknowledgement": "received",
+  "repeat_dispatch": false,
+  "remote_receipt": {
+    "status": "started",
+    "at": "2026-09-24T22:00:08.257397+00:00",
+    "command": [
+      "python3",
+      "scripts/run_revised_recovery_node.py",
+      "--node",
+      "revised_s41032"
+    ],
+    "working_directory": "/home/ubuntu/swarm-solidarity",
+    "output": "experiment_log/011_benign_audit_confirmation/hardware_recovery/revised_s41032/remote-console.log",
+    "pid": 3409,
+    "existing_dispatch": false
+  }
+}

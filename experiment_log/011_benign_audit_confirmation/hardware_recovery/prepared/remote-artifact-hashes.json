@@ -1,0 +1,22 @@
+{
+  "execution/prepared/attempts.jsonl": "e09c5985c76d2d7d4c5f937254d72ee72e3513c8bce8cd91489c0f80acc71e29",
+  "execution/prepared/gate.json": "0622bffa9f2c3c5afcc5bc430e818368759c417096310d5be993ceab8d763d2a",
+  "execution/prepared/metadata.json": "3e4fbdb116f1661a687fbad0110d9662a6c7252cca6dcb571615916a9087ecf8",
+  "execution/prepared/prompts.jsonl": "c913ecadf82db97e28c3b8b4f7a4fe4ad2a095044161f07cdae8825054c65ae7",
+  "execution/prepared/resolved_runtime.json": "ca18d25e3614452fb5d5fb33403a929ff061ccd08399343b667d1113a35fdfbb",
+  "execution/prepared/responses.jsonl": "f4114d1ea46754add7c4a4cf5a5a9a9da948c8c044fb5557b808d16f7e5cfa25",
+  "execution/prepared/runtime_requests.jsonl": "b88ccb102c3cf8940ab2375fb106e82c6e9e430959cf2e6b610bee77f7d8b493",
+  "execution/prepared/scores.jsonl": "2e4d5912030d1801bf1f3d7686f407553256461917dc111f69adfa23b5847375",
+  "hardware_recovery/prepared/assignment.json": "6d89f4c1d30eda45cd0faf7d69a2f41ed7da86975a2296d5d50a6538f5347e8a",
+  "hardware_recovery/prepared/controller-dispatch.json": "c41907a938479e21b0663906e56a6795d7ac2b53309173f2b74152481bdf5697",
+  "hardware_recovery/prepared/controller-launch.json": "75b6eeb07989ce188a9d9b4ebafd8ab52432d94e4e68e42de3100aaf5d0f2b7d",
+  "hardware_recovery/prepared/controller-result.json": "e2ecd573371306040b5e8d17b9f249fbe10344de2b6afca16ea9caba5835be34",
+  "hardware_recovery/prepared/eval-prepared.log": "a252bf4a16cc792e65d87a6ae2030319d02d1b29bb5e3a8b7b65e6e181cff1e4",
+  "hardware_recovery/prepared/gpu-environment.txt": "ceff2f2b6f841d7836ef4e90eadd03d47566a08fb64b83b15d0fad0419268957",
+  "hardware_recovery/prepared/merge-base.log": "19d57f771ea3cfbcc01f926583436d7c3e26bcf576ee32908fc49333ce2097cb",
+  "hardware_recovery/prepared/nvidia-smi.txt": "5e62dc0d8dc0e7d08045c1a0eebba564b058645c8f348e5c7bc2d79f42805573",
+  "hardware_recovery/prepared/packages.log": "cec260563961ec9561775358d1c2b1a45a347172e64d9d16dc11a5c7098e616d",
+  "hardware_recovery/prepared/prepared-merge.json": "85388323b8182dfb3f78ebc9f71a74334feae826fa3d3c50d9223ea3b3818523",
+  "hardware_recovery/prepared/uv-install.log": "504d86bb4be8cb36f04791530ad283cdb6b137636b6f2b56a08f0d2e0dfedee2",
+  "hardware_recovery/prepared/venv.log": "d405a7e593b060f47e66bfd851d4fe0583f7f3b87011900e928aad6069880c1a"
+}

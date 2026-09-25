@@ -1,0 +1,27 @@
+{
+  "at": "2026-09-25T00:23:17.661842+00:00",
+  "verified_responses": 6400,
+  "verified_remote_files": 178,
+  "historical_artifacts_unchanged": 495,
+  "scientific_freeze_files_unchanged": 117,
+  "all_additional_execution_freezes_verified": true,
+  "all_current_instances_terminated_and_keys_deleted": true,
+  "all_prior_cleanup_receipts_preserved": true,
+  "credential_and_private_key_scan_passed": true,
+  "main_report_32_counts_match_frozen_summary": true,
+  "monitor_id": "finish-bounded-corrective-comparison",
+  "monitor_status": "PAUSED",
+  "estimated_cumulative_gpu_cost_usd": 47.24833333333333,
+  "no_further_model_work": true,
+  "artifacts_sha256": {
+    "experiment_log/011_benign_audit_confirmation/report.md": "403361345de7cccaac6cb53a27f884961aac513ed9b9b212fc4a5585d5ea86b7",
+    "experiment_log/011_benign_audit_confirmation/diagnostics.md": "034e5206ad2f4d05830d4ddb67846f39cd072b7125b0e6f94246538a9f64dccc",
+    "experiment_log/011_benign_audit_confirmation/execution_notes.md": "1d13f2b31cdbf8eaf57fa72ee936449cbb41fc4113028f1b19c0f15e587c3393",
+    "experiment_log/011_benign_audit_confirmation/decision.json": "5839b9ddaf84ebba6d3e4aabb655d40792d882ea665d5f21631117e4011df3a6",
+    "experiment_log/011_benign_audit_confirmation/verification.json": "3c53960da8f735d3e477323f5711e6dda4ce5f44610baad650a7647ec992ba1d",
+    "experiment_log/011_benign_audit_confirmation/cloud_lifecycle.json": "914370a7aaa4310e95e4b92b62efb7db66f9316749874e518a98ac0928cce848",
+    "experiment_log/011_benign_audit_confirmation/analysis/summary.json": "374aaec145e52c3b1c40e0f6da0c1539f3ce16700f1af033eaab56c704e8cb64",
+    "experiment_log/011_benign_audit_confirmation/analysis/paired_effects.json": "5520e115c369f4d3a4e0e73615de94577bc9abe814dd25fbcfa47655152ed692"
+  },
+  "whitespace_check": "Edited documentation/decision/status passes git diff --check. Eight byte-preserved, hash-verified nvidia-smi raw captures contain provider-generated trailing whitespace; retained intentionally."
+}

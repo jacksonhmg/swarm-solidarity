@@ -1,0 +1,73 @@
+{
+  "at": "2026-09-24T21:39:44.707556+00:00",
+  "nodes": [
+    {
+      "node": "prepared",
+      "instance_id": "4fee1ababbc04c23989c5ca962af74b1",
+      "status": "terminating",
+      "rounded_elapsed_minutes": 11,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 0.3648333333333333
+    },
+    {
+      "node": "prompt_only",
+      "instance_id": "42bdac6d0540405d94151efa83e60e02",
+      "status": "active",
+      "rounded_elapsed_minutes": 11,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 0.3648333333333333
+    },
+    {
+      "node": "ordinary_s41031",
+      "instance_id": "81cddc8270774322ab898c97d71d8448",
+      "status": "active",
+      "rounded_elapsed_minutes": 10,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 0.33166666666666667
+    },
+    {
+      "node": "corrective_s41031",
+      "instance_id": "6e3dcbd2a2d64b3fa75582fcc567d6d0",
+      "status": "active",
+      "rounded_elapsed_minutes": 10,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 0.33166666666666667
+    },
+    {
+      "node": "revised_s41031",
+      "instance_id": "7b0a36de6c374250bbad743bd34805e4",
+      "status": "active",
+      "rounded_elapsed_minutes": 10,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 0.33166666666666667
+    },
+    {
+      "node": "ordinary_s41032",
+      "instance_id": "aebf9e8a9db4472a9a85ca0ad1a10a5b",
+      "status": "active",
+      "rounded_elapsed_minutes": 9,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 0.2985
+    },
+    {
+      "node": "corrective_s41032",
+      "instance_id": "06d6593868b74acfbba0ff2ff3daccfb",
+      "status": "active",
+      "rounded_elapsed_minutes": 9,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 0.2985
+    },
+    {
+      "node": "revised_s41032",
+      "instance_id": "64a33cf429334b0dbfc85ee29e9cdd25",
+      "status": "active",
+      "rounded_elapsed_minutes": 9,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 0.2985
+    }
+  ],
+  "current_nodes_gpu_cost_usd": 2.620166666666666,
+  "prior_attempts_gpu_cost_usd": 4.0985,
+  "estimated_total_usd": 6.718666666666666,
+  "hard_ceiling_usd": 65
+}

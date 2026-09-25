@@ -1,0 +1,123 @@
+{
+  "at": "2026-09-25T00:16:14.209570+00:00",
+  "nodes": [
+    {
+      "node": "prepared",
+      "instance_id": "44e8e0a8286244c193d2e28266b480da",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 129,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 4.2785
+    },
+    {
+      "node": "prompt_only",
+      "instance_id": "7dd6e0f3f9b344a1805c059a3ecc35bc",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 138,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 4.577
+    },
+    {
+      "node": "ordinary_s41031",
+      "instance_id": "6a7f7a6ae3024a328e2b34b0dcfcae75",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 136,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 4.510666666666666
+    },
+    {
+      "node": "corrective_s41031",
+      "instance_id": "ca47584feb4c4346aefd23cf642699e9",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 144,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 4.776
+    },
+    {
+      "node": "revised_s41031",
+      "instance_id": "6a782487be2743739aed08af0446fd95",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 139,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 4.610166666666667
+    },
+    {
+      "node": "ordinary_s41032",
+      "instance_id": "92f8ee3cab814ddd9a9c49122818f57c",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 135,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 4.4775
+    },
+    {
+      "node": "corrective_s41032",
+      "instance_id": "869d2c56f92c4a6eab64a567fa72e7e5",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 147,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 4.875500000000001
+    },
+    {
+      "node": "revised_s41032",
+      "instance_id": "64a33cf429334b0dbfc85ee29e9cdd25",
+      "status": "terminated",
+      "rounded_elapsed_minutes": 165,
+      "usd_per_hour": 1.99,
+      "estimated_usd": 5.4725
+    }
+  ],
+  "current_nodes_gpu_cost_usd": 37.57783333333333,
+  "prior_attempts_gpu_cost_usd": 9.670499999999999,
+  "retired_nodes": [
+    {
+      "instance_id": "4fee1ababbc04c23989c5ca962af74b1",
+      "state": ".local/lambda-revised-separate-prepared/state.json",
+      "status": "terminated",
+      "estimated_usd": 0.5638333333333333
+    },
+    {
+      "instance_id": "42bdac6d0540405d94151efa83e60e02",
+      "state": ".local/lambda-revised-separate-prompt_only/state.json",
+      "status": "terminated",
+      "estimated_usd": 0.597
+    },
+    {
+      "instance_id": "81cddc8270774322ab898c97d71d8448",
+      "state": ".local/lambda-revised-separate-ordinary_s41031/state.json",
+      "status": "terminated",
+      "estimated_usd": 0.5638333333333333
+    },
+    {
+      "instance_id": "6e3dcbd2a2d64b3fa75582fcc567d6d0",
+      "state": ".local/lambda-revised-separate-corrective_s41031/state.json",
+      "status": "terminated",
+      "estimated_usd": 0.5638333333333333
+    },
+    {
+      "instance_id": "7b0a36de6c374250bbad743bd34805e4",
+      "state": ".local/lambda-revised-separate-revised_s41031/state.json",
+      "status": "terminated",
+      "estimated_usd": 0.5638333333333333
+    },
+    {
+      "instance_id": "aebf9e8a9db4472a9a85ca0ad1a10a5b",
+      "state": ".local/lambda-revised-separate-ordinary_s41032/state.json",
+      "status": "terminated",
+      "estimated_usd": 0.5306666666666666
+    },
+    {
+      "instance_id": "06d6593868b74acfbba0ff2ff3daccfb",
+      "state": ".local/lambda-revised-separate-corrective_s41032/state.json",
+      "status": "terminated",
+      "estimated_usd": 0.5306666666666666
+    },
+    {
+      "instance_id": "870d29398b6d4957bb79e942f2c1b532",
+      "state": ".local/lambda-revised-recovery-prepared/state.json",
+      "status": "terminated",
+      "estimated_usd": 1.6583333333333334
+    }
+  ],
+  "estimated_total_usd": 47.24833333333333,
+  "hard_ceiling_usd": 65
+}

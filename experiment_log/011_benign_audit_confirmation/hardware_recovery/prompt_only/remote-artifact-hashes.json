@@ -1,0 +1,22 @@
+{
+  "execution/prompt_only/attempts.jsonl": "73c8e9b7793538999215385ecd99b105ec8c52e89071227c712c073585ef15d6",
+  "execution/prompt_only/gate.json": "0622bffa9f2c3c5afcc5bc430e818368759c417096310d5be993ceab8d763d2a",
+  "execution/prompt_only/metadata.json": "1408ffc6ef6b596bb2ece6bde9eeb97640a2c09dd9ed68825991ccab334dbadb",
+  "execution/prompt_only/prompts.jsonl": "c47142e70ddcf0ebdda2ba3c390d2decc67d7d505421ec3f3d071375ede2407f",
+  "execution/prompt_only/resolved_runtime.json": "708727de756f867a5f6de61f0f5993aa0f5cdb6ca1fa0a4bd56e7115fa023f0f",
+  "execution/prompt_only/responses.jsonl": "9007fe3327e1b05cfbded1f5127814162cb3504cf6cea9f2961eff1526b808b7",
+  "execution/prompt_only/runtime_requests.jsonl": "871e482f3e7b7e9fce41ed2da0ddc0416fff39600ca0fa8110c968f8254cb3cb",
+  "execution/prompt_only/scores.jsonl": "1bda118c404836b7094b34b68a87e05a58a6a42026d54e29218a571a6ec267b5",
+  "hardware_recovery/prompt_only/assignment.json": "39f91f2d9992855d682b6fe1e286f8633ce9fb843ec4a43bb90d08c379a8d38f",
+  "hardware_recovery/prompt_only/controller-dispatch.json": "ae6c2e5eb84542dce3b13c8f19c0e69a52d12197043a085f1302efcedde24112",
+  "hardware_recovery/prompt_only/controller-launch.json": "ce066e8d47ec5ffc834468064dde8fddce6b22599728115ff7408db0bc0f30e7",
+  "hardware_recovery/prompt_only/controller-result.json": "6ec03baf9387b336e237b3f580d642e436e54ba17d456d7d4ac51a849e222115",
+  "hardware_recovery/prompt_only/eval-prompt_only.log": "6dab167e472fc02cc39abf00ddc002693ae2aa29968d800ac4f6386a82707a57",
+  "hardware_recovery/prompt_only/gpu-environment.txt": "ceff2f2b6f841d7836ef4e90eadd03d47566a08fb64b83b15d0fad0419268957",
+  "hardware_recovery/prompt_only/merge-base.log": "2bc7b4ac591bf470af4f04e8e45d077bccb87e0dbe310905a460cc1eebe33b0f",
+  "hardware_recovery/prompt_only/nvidia-smi.txt": "03f3f26dbb3cf752533b55eeda58d5c63a2599451c0ee8142ebda402e4560ad1",
+  "hardware_recovery/prompt_only/packages.log": "8d177eb20100ba5a20f1351f35570860e9437d8a00f97225088468c64d0d1c08",
+  "hardware_recovery/prompt_only/prepared-merge.json": "c022fc2323bd0eaa127c4412507bb3e1877b09597b7e3acdd0afec8d9fd948de",
+  "hardware_recovery/prompt_only/uv-install.log": "0817ab44e7fb2feeb59a633e3801c7609f382d9358d68940e624eea550d00132",
+  "hardware_recovery/prompt_only/venv.log": "d405a7e593b060f47e66bfd851d4fe0583f7f3b87011900e928aad6069880c1a"
+}

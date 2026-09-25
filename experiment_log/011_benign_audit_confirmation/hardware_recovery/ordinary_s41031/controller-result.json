@@ -1,0 +1,18 @@
+{
+  "node": "ordinary_s41031",
+  "pid": 3059,
+  "started_at": "2026-09-24T22:00:06.498565+00:00",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=60s",
+    "180m",
+    "python3",
+    "scripts/run_revised_recovery_node.py",
+    "--node",
+    "ordinary_s41031",
+    "--execute"
+  ],
+  "finished_at": "2026-09-25T00:02:21.166844+00:00",
+  "returncode": 0
+}

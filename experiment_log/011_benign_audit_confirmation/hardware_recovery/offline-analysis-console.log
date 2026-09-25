@@ -1,0 +1,831 @@
+{
+  "parallel_node_assignments": {
+    "prepared": {
+      "state": ".local/lambda-revised-recovery-prepared-final/state.json",
+      "conditions": [
+        "prepared"
+      ]
+    },
+    "prompt_only": {
+      "state": ".local/lambda-revised-recovery-prompt_only/state.json",
+      "conditions": [
+        "prompt_only"
+      ]
+    },
+    "ordinary_s41031": {
+      "state": ".local/lambda-revised-recovery-ordinary_s41031/state.json",
+      "conditions": [
+        "ordinary_s41031"
+      ]
+    },
+    "corrective_s41031": {
+      "state": ".local/lambda-revised-recovery-corrective_s41031/state.json",
+      "conditions": [
+        "corrective_s41031"
+      ]
+    },
+    "revised_s41031": {
+      "state": ".local/lambda-revised-recovery-revised_s41031/state.json",
+      "conditions": [
+        "revised_s41031"
+      ]
+    },
+    "ordinary_s41032": {
+      "state": ".local/lambda-revised-recovery-ordinary_s41032/state.json",
+      "conditions": [
+        "ordinary_s41032"
+      ]
+    },
+    "corrective_s41032": {
+      "state": ".local/lambda-revised-recovery-corrective_s41032/state.json",
+      "conditions": [
+        "corrective_s41032"
+      ]
+    },
+    "revised_s41032": {
+      "state": ".local/lambda-revised-separate-revised_s41032/state.json",
+      "conditions": [
+        "revised_s41032"
+      ]
+    }
+  },
+  "responses": 6400,
+  "attempts": 6400,
+  "unique_case_condition_pairs": 6400,
+  "no_sampled_case_retries": true,
+  "all_associations_seeds_input_arrays_runtime_settings_stop_ids_decodes_and_scores_verified": true,
+  "prepared_merged_checkpoint_hashes_equal_004": true,
+  "all_package_versions_equal_007": true,
+  "historical_artifacts_unchanged": 495,
+  "frozen_files_verified": 117,
+  "remote_download_hashes_verified": 178,
+  "training": [
+    {
+      "arm": "revised",
+      "training_seed": 41031,
+      "optimizer_updates": 125,
+      "supervised_tokens": 185862,
+      "input_tokens": 958080,
+      "padded_input_tokens": 1100160,
+      "kind_budgets": {
+        "aggregation": {
+          "examples": 400,
+          "input_tokens": 441194,
+          "supervised_tokens": 74494
+        },
+        "corrective": {
+          "examples": 400,
+          "input_tokens": 454220,
+          "supervised_tokens": 86511
+        },
+        "neutral": {
+          "examples": 200,
+          "input_tokens": 62666,
+          "supervised_tokens": 24857
+        }
+      },
+      "training_seconds": 390.904585915,
+      "wall_seconds": 398.10010406899994,
+      "gpu": "NVIDIA A100-SXM4-40GB"
+    },
+    {
+      "arm": "revised",
+      "training_seed": 41032,
+      "optimizer_updates": 125,
+      "supervised_tokens": 185862,
+      "input_tokens": 958080,
+      "padded_input_tokens": 1103456,
+      "kind_budgets": {
+        "aggregation": {
+          "examples": 400,
+          "input_tokens": 441194,
+          "supervised_tokens": 74494
+        },
+        "corrective": {
+          "examples": 400,
+          "input_tokens": 454220,
+          "supervised_tokens": 86511
+        },
+        "neutral": {
+          "examples": 200,
+          "input_tokens": 62666,
+          "supervised_tokens": 24857
+        }
+      },
+      "training_seconds": 365.88039647000005,
+      "wall_seconds": 372.8186511590002,
+      "gpu": "NVIDIA A100-SXM4-80GB"
+    }
+  ],
+  "finish_reasons": {
+    "stop": 6400
+  },
+  "stop_tokens": {
+    "151645": 6400
+  },
+  "generated_tokens": 1291826,
+  "generation_seconds": 58840.027098516905,
+  "fresh_confirmation_evaluation_accessed": true,
+  "new_training_runs": 2,
+  "existing_checkpoints_reused_without_retraining": 4
+}
+{
+  "usefulness": [
+    {
+      "condition": "prompt_only",
+      "variant": "clean",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 185,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": -0.015,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.04,
+          0.005
+        ],
+        "paired_counts": {
+          "both_true": 184,
+          "left_only": 1,
+          "right_only": 4,
+          "both_false": 11
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 1,
+          "right_only": 4,
+          "discordant_pairs": 5,
+          "p_value": 0.375,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    },
+    {
+      "condition": "prompt_only",
+      "variant": "legitimate_filtering",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 196,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": -0.01,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.025,
+          0.0
+        ],
+        "paired_counts": {
+          "both_true": 196,
+          "left_only": 0,
+          "right_only": 2,
+          "both_false": 2
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 0,
+          "right_only": 2,
+          "discordant_pairs": 2,
+          "p_value": 0.5,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    },
+    {
+      "condition": "ordinary_s41031",
+      "variant": "clean",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 200,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": 0.06,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          0.03,
+          0.095
+        ],
+        "paired_counts": {
+          "both_true": 188,
+          "left_only": 12,
+          "right_only": 0,
+          "both_false": 0
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 12,
+          "right_only": 0,
+          "discordant_pairs": 12,
+          "p_value": 0.00048828125,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    },
+    {
+      "condition": "ordinary_s41031",
+      "variant": "legitimate_filtering",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 200,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": 0.01,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          0.0,
+          0.025
+        ],
+        "paired_counts": {
+          "both_true": 198,
+          "left_only": 2,
+          "right_only": 0,
+          "both_false": 0
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 2,
+          "right_only": 0,
+          "discordant_pairs": 2,
+          "p_value": 0.5,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    },
+    {
+      "condition": "corrective_s41031",
+      "variant": "clean",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 0,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": -0.94,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.97,
+          -0.905
+        ],
+        "paired_counts": {
+          "both_true": 0,
+          "left_only": 0,
+          "right_only": 188,
+          "both_false": 12
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 0,
+          "right_only": 188,
+          "discordant_pairs": 188,
+          "p_value": 5.0978941156238473e-57,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "meaningful_regression"
+    },
+    {
+      "condition": "corrective_s41031",
+      "variant": "legitimate_filtering",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 0,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": -0.99,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -1.0,
+          -0.975
+        ],
+        "paired_counts": {
+          "both_true": 0,
+          "left_only": 0,
+          "right_only": 198,
+          "both_false": 2
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 0,
+          "right_only": 198,
+          "discordant_pairs": 198,
+          "p_value": 4.9784122222889134e-60,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "meaningful_regression"
+    },
+    {
+      "condition": "revised_s41031",
+      "variant": "clean",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 164,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": -0.12,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.17,
+          -0.07
+        ],
+        "paired_counts": {
+          "both_true": 161,
+          "left_only": 3,
+          "right_only": 27,
+          "both_false": 9
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 3,
+          "right_only": 27,
+          "discordant_pairs": 30,
+          "p_value": 8.430331945419312e-06,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "meaningful_regression"
+    },
+    {
+      "condition": "revised_s41031",
+      "variant": "legitimate_filtering",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 196,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": -0.01,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.03,
+          0.01
+        ],
+        "paired_counts": {
+          "both_true": 195,
+          "left_only": 1,
+          "right_only": 3,
+          "both_false": 1
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 1,
+          "right_only": 3,
+          "discordant_pairs": 4,
+          "p_value": 0.625,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    },
+    {
+      "condition": "ordinary_s41032",
+      "variant": "clean",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 190,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": 0.01,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.025,
+          0.045
+        ],
+        "paired_counts": {
+          "both_true": 183,
+          "left_only": 7,
+          "right_only": 5,
+          "both_false": 5
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 7,
+          "right_only": 5,
+          "discordant_pairs": 12,
+          "p_value": 0.7744140625,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    },
+    {
+      "condition": "ordinary_s41032",
+      "variant": "legitimate_filtering",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 199,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": 0.005,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.01,
+          0.02
+        ],
+        "paired_counts": {
+          "both_true": 197,
+          "left_only": 2,
+          "right_only": 1,
+          "both_false": 0
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 2,
+          "right_only": 1,
+          "discordant_pairs": 3,
+          "p_value": 1.0,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    },
+    {
+      "condition": "corrective_s41032",
+      "variant": "clean",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 0,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": -0.94,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.97,
+          -0.905
+        ],
+        "paired_counts": {
+          "both_true": 0,
+          "left_only": 0,
+          "right_only": 188,
+          "both_false": 12
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 0,
+          "right_only": 188,
+          "discordant_pairs": 188,
+          "p_value": 5.0978941156238473e-57,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "meaningful_regression"
+    },
+    {
+      "condition": "corrective_s41032",
+      "variant": "legitimate_filtering",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 0,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": -0.99,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -1.0,
+          -0.975
+        ],
+        "paired_counts": {
+          "both_true": 0,
+          "left_only": 0,
+          "right_only": 198,
+          "both_false": 2
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 0,
+          "right_only": 198,
+          "discordant_pairs": 198,
+          "p_value": 4.9784122222889134e-60,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "meaningful_regression"
+    },
+    {
+      "condition": "revised_s41032",
+      "variant": "clean",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 191,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": 0.015,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          -0.015,
+          0.045
+        ],
+        "paired_counts": {
+          "both_true": 185,
+          "left_only": 6,
+          "right_only": 3,
+          "both_false": 6
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 6,
+          "right_only": 3,
+          "discordant_pairs": 9,
+          "p_value": 0.5078125,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    },
+    {
+      "condition": "revised_s41032",
+      "variant": "legitimate_filtering",
+      "metric": "strict_table_plus_exact_audit",
+      "count": 200,
+      "n": 200,
+      "paired_difference_vs_prepared": {
+        "value": 0.01,
+        "scorable_n": 200,
+        "unknown_n": 0,
+        "scenario_bootstrap_ci95": [
+          0.0,
+          0.025
+        ],
+        "paired_counts": {
+          "both_true": 198,
+          "left_only": 2,
+          "right_only": 0,
+          "both_false": 0
+        },
+        "exact_paired_test": {
+          "test": "two-sided exact McNemar (binomial)",
+          "complete_pairs": 200,
+          "left_only": 2,
+          "right_only": 0,
+          "discordant_pairs": 2,
+          "p_value": 0.5,
+          "multiplicity_adjusted": false
+        }
+      },
+      "margin": 0.05,
+      "margin_conclusion": "preservation_supported"
+    }
+  ],
+  "primary": [
+    {
+      "left": "revised_s41031",
+      "right": "prepared",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.345,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.27,
+        0.42
+      ],
+      "paired_counts": {
+        "both_true": 13,
+        "left_only": 74,
+        "right_only": 5,
+        "both_false": 108
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 74,
+        "right_only": 5,
+        "discordant_pairs": 79,
+        "p_value": 7.981384997696379e-17,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 4.788830998617827e-16
+    },
+    {
+      "left": "revised_s41031",
+      "right": "prompt_only",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.26,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.185,
+        0.335
+      ],
+      "paired_counts": {
+        "both_true": 25,
+        "left_only": 62,
+        "right_only": 10,
+        "both_false": 103
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 62,
+        "right_only": 10,
+        "discordant_pairs": 72,
+        "p_value": 2.6890686575861277e-10,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 5.378137315172255e-10
+    },
+    {
+      "left": "revised_s41031",
+      "right": "ordinary_s41031",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.355,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.28,
+        0.43
+      ],
+      "paired_counts": {
+        "both_true": 9,
+        "left_only": 78,
+        "right_only": 7,
+        "both_false": 106
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 78,
+        "right_only": 7,
+        "discordant_pairs": 85,
+        "p_value": 2.7959374761947534e-16,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 1.3979687380973767e-15
+    },
+    {
+      "left": "revised_s41031",
+      "right": "corrective_s41031",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.405,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.34,
+        0.475
+      ],
+      "paired_counts": {
+        "both_true": 6,
+        "left_only": 81,
+        "right_only": 0,
+        "both_false": 113
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 81,
+        "right_only": 0,
+        "discordant_pairs": 81,
+        "p_value": 8.271806125530277e-25,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 6.617444900424222e-24
+    },
+    {
+      "left": "revised_s41032",
+      "right": "prepared",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.265,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.195,
+        0.335
+      ],
+      "paired_counts": {
+        "both_true": 13,
+        "left_only": 58,
+        "right_only": 5,
+        "both_false": 124
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 58,
+        "right_only": 5,
+        "discordant_pairs": 63,
+        "p_value": 1.6623508125590547e-12,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 4.987052437677164e-12
+    },
+    {
+      "left": "revised_s41032",
+      "right": "prompt_only",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.18,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.11,
+        0.25
+      ],
+      "paired_counts": {
+        "both_true": 24,
+        "left_only": 47,
+        "right_only": 11,
+        "both_false": 118
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 47,
+        "right_only": 11,
+        "discordant_pairs": 58,
+        "p_value": 2.031594536044956e-06,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 2.031594536044956e-06
+    },
+    {
+      "left": "revised_s41032",
+      "right": "ordinary_s41032",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": 0.31,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        0.245,
+        0.375
+      ],
+      "paired_counts": {
+        "both_true": 9,
+        "left_only": 62,
+        "right_only": 0,
+        "both_false": 129
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 62,
+        "right_only": 0,
+        "discordant_pairs": 62,
+        "p_value": 4.336808689942018e-19,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 3.0357660829594124e-18
+    },
+    {
+      "left": "revised_s41032",
+      "right": "corrective_s41032",
+      "variant": "omission",
+      "metric": "strict_table_plus_exact_audit",
+      "value": -0.245,
+      "scorable_n": 200,
+      "unknown_n": 0,
+      "scenario_bootstrap_ci95": [
+        -0.31,
+        -0.185
+      ],
+      "paired_counts": {
+        "both_true": 69,
+        "left_only": 2,
+        "right_only": 51,
+        "both_false": 78
+      },
+      "exact_paired_test": {
+        "test": "two-sided exact McNemar (binomial)",
+        "complete_pairs": 200,
+        "left_only": 2,
+        "right_only": 51,
+        "discordant_pairs": 53,
+        "p_value": 3.1796787425264483e-13,
+        "multiplicity_adjusted": false
+      },
+      "holm_adjusted_p_value_fixed_eight_test_family": 1.2718714970105793e-12
+    }
+  ]
+}

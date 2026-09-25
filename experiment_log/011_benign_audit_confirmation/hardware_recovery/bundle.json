@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-09-24T21:47:27.151162+00:00",
+  "code_revision": "e2178e53083a117dac4fb47b8c6edbd2da839fc9",
+  "files": 797,
+  "archives": {
+    "source": {
+      "bytes": 135053925,
+      "sha256": "7500e3ff4a955ae180d4f6c39fe30ded81ab2d336a9cc68eea606984a395cdeb"
+    },
+    "ordinary_s41031": {
+      "bytes": 126231801,
+      "sha256": "685e1836c8eeeb5c9c32c61589997f7853ef5268ee7da0960042735ec30ae9fa"
+    },
+    "corrective_s41031": {
+      "bytes": 126192027,
+      "sha256": "92fe4c8eb5401c2186a4ffae0908d9fede666c3c7b23fe1b9ebe0a6eea46f995"
+    },
+    "ordinary_s41032": {
+      "bytes": 126278068,
+      "sha256": "c112beecbee34610f10442bc989b84a02156ff3c69ca45ff0136c068ce99ea32"
+    },
+    "corrective_s41032": {
+      "bytes": 126235945,
+      "sha256": "5600307b564102d9af34a92a755aae264d5622e1202a0361f65214654aaed56a"
+    }
+  }
+}

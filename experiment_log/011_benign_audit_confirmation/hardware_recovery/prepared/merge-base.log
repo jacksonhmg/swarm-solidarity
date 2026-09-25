@@ -1,0 +1,3 @@
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files:  33%|███▎      | 1/3 [00:07<00:14,  7.08s/it]Fetching 3 files:  67%|██████▋   | 2/3 [00:26<00:13, 13.09s/it]Fetching 3 files: 100%|██████████| 3/3 [00:30<00:00, 10.24s/it]Fetching 3 files: 100%|██████████| 3/3 [00:30<00:00, 10.24s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.60it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.63it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  2.41it/s]
+Preserved terminal adapter merged; all file hashes equal experiment 004.

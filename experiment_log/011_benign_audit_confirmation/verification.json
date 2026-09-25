@@ -1,0 +1,131 @@
+{
+  "parallel_node_assignments": {
+    "prepared": {
+      "state": ".local/lambda-revised-recovery-prepared-final/state.json",
+      "conditions": [
+        "prepared"
+      ]
+    },
+    "prompt_only": {
+      "state": ".local/lambda-revised-recovery-prompt_only/state.json",
+      "conditions": [
+        "prompt_only"
+      ]
+    },
+    "ordinary_s41031": {
+      "state": ".local/lambda-revised-recovery-ordinary_s41031/state.json",
+      "conditions": [
+        "ordinary_s41031"
+      ]
+    },
+    "corrective_s41031": {
+      "state": ".local/lambda-revised-recovery-corrective_s41031/state.json",
+      "conditions": [
+        "corrective_s41031"
+      ]
+    },
+    "revised_s41031": {
+      "state": ".local/lambda-revised-recovery-revised_s41031/state.json",
+      "conditions": [
+        "revised_s41031"
+      ]
+    },
+    "ordinary_s41032": {
+      "state": ".local/lambda-revised-recovery-ordinary_s41032/state.json",
+      "conditions": [
+        "ordinary_s41032"
+      ]
+    },
+    "corrective_s41032": {
+      "state": ".local/lambda-revised-recovery-corrective_s41032/state.json",
+      "conditions": [
+        "corrective_s41032"
+      ]
+    },
+    "revised_s41032": {
+      "state": ".local/lambda-revised-separate-revised_s41032/state.json",
+      "conditions": [
+        "revised_s41032"
+      ]
+    }
+  },
+  "responses": 6400,
+  "attempts": 6400,
+  "unique_case_condition_pairs": 6400,
+  "no_sampled_case_retries": true,
+  "all_associations_seeds_input_arrays_runtime_settings_stop_ids_decodes_and_scores_verified": true,
+  "prepared_merged_checkpoint_hashes_equal_004": true,
+  "all_package_versions_equal_007": true,
+  "historical_artifacts_unchanged": 495,
+  "frozen_files_verified": 117,
+  "remote_download_hashes_verified": 178,
+  "training": [
+    {
+      "arm": "revised",
+      "training_seed": 41031,
+      "optimizer_updates": 125,
+      "supervised_tokens": 185862,
+      "input_tokens": 958080,
+      "padded_input_tokens": 1100160,
+      "kind_budgets": {
+        "aggregation": {
+          "examples": 400,
+          "input_tokens": 441194,
+          "supervised_tokens": 74494
+        },
+        "corrective": {
+          "examples": 400,
+          "input_tokens": 454220,
+          "supervised_tokens": 86511
+        },
+        "neutral": {
+          "examples": 200,
+          "input_tokens": 62666,
+          "supervised_tokens": 24857
+        }
+      },
+      "training_seconds": 390.904585915,
+      "wall_seconds": 398.10010406899994,
+      "gpu": "NVIDIA A100-SXM4-40GB"
+    },
+    {
+      "arm": "revised",
+      "training_seed": 41032,
+      "optimizer_updates": 125,
+      "supervised_tokens": 185862,
+      "input_tokens": 958080,
+      "padded_input_tokens": 1103456,
+      "kind_budgets": {
+        "aggregation": {
+          "examples": 400,
+          "input_tokens": 441194,
+          "supervised_tokens": 74494
+        },
+        "corrective": {
+          "examples": 400,
+          "input_tokens": 454220,
+          "supervised_tokens": 86511
+        },
+        "neutral": {
+          "examples": 200,
+          "input_tokens": 62666,
+          "supervised_tokens": 24857
+        }
+      },
+      "training_seconds": 365.88039647000005,
+      "wall_seconds": 372.8186511590002,
+      "gpu": "NVIDIA A100-SXM4-80GB"
+    }
+  ],
+  "finish_reasons": {
+    "stop": 6400
+  },
+  "stop_tokens": {
+    "151645": 6400
+  },
+  "generated_tokens": 1291826,
+  "generation_seconds": 58840.027098516905,
+  "fresh_confirmation_evaluation_accessed": true,
+  "new_training_runs": 2,
+  "existing_checkpoints_reused_without_retraining": 4
+}

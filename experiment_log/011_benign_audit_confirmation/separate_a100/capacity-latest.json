@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-24T21:32:01.675510+00:00",
+  "instance_type": "gpu_1x_a100_sxm4",
+  "usd_per_hour": 1.99,
+  "regions": [
+    "asia-south-1",
+    "us-east-1"
+  ]
+}
