@@ -1,0 +1,21 @@
+{
+  "files": {
+    "scripts/run_followup_shard.py": "6fe05c806a64d185db122af244cc77c9ca65f53beba91754d644928886ef378e",
+    "scripts/run_followup_shard_node.py": "69c22b0dae7e72e87c4eb3cd132ed40538ce8656019620e9e0aa17ff48c7a44a",
+    "scripts/followup_shard_cloud.py": "39082f60c92739c8040f0b0694781c692b452c25e407f5f8fe1f941a947c84bd",
+    "scripts/followup_shard_supervisor.py": "a23e00843e448bd63e5ac3ddfa1b4efcb18a588c395ba1d2088467f13461aea0",
+    "scripts/followup_shard_watchdog.py": "fb17c10abeda7ba6ae8075763c539e116c21e0ef0c2d1f6b948820feeef3ae68",
+    "scripts/launch_followup_shards.py": "bef852e57d3a8c65182d87fe4134e488f3f6e6cbf00a3cda576a1a4ebaec62b7",
+    "scripts/analyze_followup_shards.py": "27bc51c5ba8017ed9c82ba779369a5b3ca6763dd5357299229808016c2364dda",
+    "experiment_log/013_qwen_preparation_comparison/sharding/authorization.json": "70210e2fb297035cfb9076eb8245c6046687224a09bd5fb3b6fc98153f05967f",
+    "experiment_log/013_qwen_preparation_comparison/sharding/handoff.md": "fd4208c728cf5bd66c428b99adda1da1c7a31bf30d164f823633bbc9eb08316c",
+    "experiment_log/013_qwen_preparation_comparison/sharding/runner_replacements.json": "95244b5138b404c02cd51fef94edea1410d52e789814e077af03ccb046180b07",
+    "experiment_log/013_qwen_preparation_comparison/sharding/plan.json": "bb4b8c518e3741c1f2fcb2175de012fd172d06d432d2ce96f04936d38023d432",
+    "experiment_log/013_qwen_preparation_comparison/sharding/expected_weights.json": "19c05d0a37f844593b1af7d158adecf0da3e9c68e0b0b8bfc26991c07aa15b7e",
+    "experiment_log/013_qwen_preparation_comparison/sharding/prefix_hashes.json": "d88954e3b8458d257e1e839e4ec549624a9d53be8b54bf8c08f955c843b7d411",
+    "experiment_log/013_qwen_preparation_comparison/sharding/feasibility.json": "f21d9628b44f068e55b9b1781cbea07cfd966713468cf069f7645305efd4fda4",
+    "experiment_log/013_qwen_preparation_comparison/sharding/preflight.json": "f34a727fd0513dc41083275d322a7747a50e64c1c2d2b634862be721b791e93d"
+  },
+  "scientific_parent": "5267564",
+  "scheduling_only": true
+}

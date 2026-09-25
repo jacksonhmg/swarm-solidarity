@@ -1,0 +1,30 @@
+[
+  [
+    "\"\"\"One frozen, serial Transformers replay stage; never resumes partial generation.\"\"\"",
+    "\"\"\"Scheduling-only disjoint suffix shard of the frozen Transformers evaluator.\"\"\""
+  ],
+  [
+    "    stage = parser.parse_args().stage",
+    "    parser.add_argument('--job', required=True)\n    args = parser.parse_args()\n    stage = args.stage\n    job = json.loads((LOG / 'sharding/plan.json').read_text())['jobs'][args.job]\n    assert job['stage'] == stage\n    begin, end = job['start'], job['stop']\n    assert 0 <= begin < end <= 800"
+  ],
+  [
+    "    out = EXECUTION / stage",
+    "    out = LOG / 'sharding/execution' / args.job"
+  ],
+  [
+    "'requested_responses': len(inputs), 'resumed_responses': 0, 'weight_files': weight_hashes}",
+    "'requested_responses': end - begin, 'resumed_responses': 0, 'weight_files': weight_hashes,\n            'shard_job': args.job, 'global_start': begin, 'global_stop': end}"
+  ],
+  [
+    "runtime['runner_entry_point'] = 'scripts/run_followup_eval.py'",
+    "runtime['runner_entry_point'] = 'scripts/run_followup_shard.py'\n    runtime['scheduling_amendment'] = job"
+  ],
+  [
+    "        for i, item in enumerate(inputs):",
+    "        for i, item in enumerate(inputs[begin:end], start=begin):"
+  ],
+  [
+    "    assert len(scores) == STAGES[stage]",
+    "    assert len(scores) == end - begin"
+  ]
+]

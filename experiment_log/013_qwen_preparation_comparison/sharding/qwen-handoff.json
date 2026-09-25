@@ -1,0 +1,8 @@
+{
+  "stage": "qwen_human",
+  "at": "2026-09-25T03:01:24.020644+00:00",
+  "attempt_log_frozen": true,
+  "existing_generation_untouched": true,
+  "attempts_at_receipt": 199,
+  "responses_at_receipt": 198
+}

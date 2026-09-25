@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-25T03:07:27.057439+00:00",
+  "runner_exactly_matches_frozen_source_after_only_declared_replacements": true,
+  "all4000_indices_assigned_once": true,
+  "completed_prefix_attempt_response_prompt_score_runtime_counts_equal": true,
+  "archived_prefixes": 465,
+  "original_scientific_files_verified": 163,
+  "historical_artifacts_unchanged": 510,
+  "all_new_python_sources_parse": true,
+  "no_training_or_gpu_generation_in_preflight": true
+}

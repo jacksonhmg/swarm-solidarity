@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-25T03:07:27.057439+00:00",
+  "completed_prefixes": 465,
+  "new_responses": 3535,
+  "max_responses_per_gpu": 200,
+  "generation_minutes_per_slowest_gpu": 31.000000000000004,
+  "assumed_seconds_per_response": 9.3,
+  "old_gpu_cost_estimate": 4.543833333333333,
+  "remaining_generation_usd": 18.172845833333334,
+  "twenty_new_nodes_15min_setup_usd": 9.95,
+  "estimate_with_20pct_generation_contingency_and_5usd_cleanup_overhead": 41.301248333333334,
+  "cap_usd": 65,
+  "capacity_not_guaranteed": true
+}

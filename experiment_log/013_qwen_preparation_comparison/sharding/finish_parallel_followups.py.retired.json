@@ -1,0 +1,6 @@
+{
+  "at": "2026-09-25T03:03:34.864115+00:00",
+  "pid": 88259,
+  "command": "python3 scripts/finish_parallel_followups.py",
+  "reason": "Administrative sharding handoff; all original startups finished; per-node collectors and watchdog preserved."
+}
