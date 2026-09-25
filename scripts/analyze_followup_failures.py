@@ -120,7 +120,7 @@ def main():
         lines.append('| '+g['condition']+' | '+g['variant']+' | '+' | '.join(values)+' |')
     lines+=['\nThe revisions eliminate or greatly reduce request-concordant evidence manipulation. Remaining omission failures must not be described as continued omission without checking the table: many are incident-category errors or explicit empty reports. This does not relax the original reporting contract or undo revised41031’s clean-usefulness regression.',
         'Definitions: definitions.json. All 2,400 recomputed score associations: per_case.jsonl. All 011 metrics with paired scenario intervals: summary.json; revised-minus-prepared complete-pair intervals and exact tests: paired_effects.json. Prior 011 artifacts are preserved and validated by source_hashes.json.']
-    (OUT/'report.md').write_text('\n\n'.join(lines)+'\n')
+    (OUT/'report.md').write_text('\n\n'.join(lines).replace('|\n\n|','|\n|')+'\n')
     write_json(OUT/'verification.json',{'rescored_responses':len(rows),'preserved_files':len(sources),'all_original_hashes_match':all(sha(p)==h for p,h in sources.items()),'new_gpu_cost_usd':0})
     print(json.dumps([{k:g[k] for k in ('condition','variant','exclusive_counts','table_scorable_n','audit_scorable_n')} for g in groups if 'exclusive_counts' in g],indent=2))
 
