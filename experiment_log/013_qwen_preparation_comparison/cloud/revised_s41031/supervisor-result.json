@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-25T03:03:41.290512+00:00",
+  "controller_result": {
+    "node": "revised_s41031",
+    "pid": 3020,
+    "started_at": "2026-09-25T02:50:36.472007+00:00",
+    "command": [
+      "timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "180m",
+      "python3",
+      "scripts/run_followup_node.py",
+      "--node",
+      "revised_s41031",
+      "--execute"
+    ],
+    "finished_at": "2026-09-25T03:01:32.477196+00:00",
+    "returncode": 1
+  },
+  "verified_remote_files": 18,
+  "error": "Controller returned 1"
+}

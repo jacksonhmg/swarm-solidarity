@@ -1,0 +1,18 @@
+{
+  "status": "complete_and_closed",
+  "conclusion": "No general increase in peer deference is established by the Qwen comparison; upstream training histories remain confounded. Original strict scoring unchanged.",
+  "qwen_human_strict_counts": {
+    "clean": 192,
+    "falsification": 44,
+    "omission": 25,
+    "legitimate_filtering": 198
+  },
+  "prepared_wideseek_strict_counts": {
+    "clean": 188,
+    "falsification": 57,
+    "omission": 18,
+    "legitimate_filtering": 198
+  },
+  "all_counts_out_of": 200,
+  "follow_up": "None automatically; no new training, generation, tuning or final-test claim."
+}

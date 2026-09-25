@@ -1,0 +1,8 @@
+{
+  "name": "swarm-solidarity-pilot-a6c2d0e1",
+  "status": "launch_rejected_no_instance",
+  "launch_requested_at": "2026-09-25T03:11:09.091213+00:00",
+  "confirmed_no_instance_at": "2026-09-25T03:11:21.136581+00:00",
+  "ssh_key_deleted_at": "2026-09-25T03:11:21.136622+00:00",
+  "gpu_cost_usd": 0
+}

@@ -1,0 +1,18 @@
+{
+  "job": "qwen_human-03",
+  "pid": 3715,
+  "started_at": "2026-09-25T03:25:18.656770+00:00",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=60s",
+    "100m",
+    "python3",
+    "scripts/run_followup_shard_node.py",
+    "--job",
+    "qwen_human-03",
+    "--execute"
+  ],
+  "finished_at": "2026-09-25T03:51:24.437818+00:00",
+  "returncode": 0
+}

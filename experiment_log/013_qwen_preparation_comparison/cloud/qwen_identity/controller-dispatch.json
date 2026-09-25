@@ -1,0 +1,11 @@
+{
+  "status": "started",
+  "at": "2026-09-25T02:46:42.504893+00:00",
+  "command": [
+    "python3",
+    "scripts/run_parallel_followup_identity.py"
+  ],
+  "working_directory": "/home/ubuntu/swarm-solidarity",
+  "output": "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/remote-console.log",
+  "pid": 2771
+}

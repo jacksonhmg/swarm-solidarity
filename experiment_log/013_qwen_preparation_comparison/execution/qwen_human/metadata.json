@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "stage": "qwen_human",
+  "assembled_from_disjoint_sources": true,
+  "requested_responses": 800,
+  "sources": [
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/prefixes/qwen_human",
+      "start": 0,
+      "stop": 199,
+      "runner": "scripts/run_followup_eval.py",
+      "runtime_sha256": "b4f50bb98fa8ac587937e1af9a9e20ad97a659bbe2368dc57514813320b48d8f",
+      "files": {
+        "attempts": "80920c633190e5e7757693c78a5b78f199867a73806878770198c60738740809",
+        "responses": "cc9e0bc5e34afea6e6ebc6f076e37552ee8f6971914d0cb56446c6d86a132dcd",
+        "prompts": "090e093ed907c3cc2d517ba6481d3ae3eb96bfa1cd56457afa1113afa1c13c6c",
+        "scores": "6c767f808dafd77bf7be258c1764edefb3f1e10ca353da367280c2b49a7e9107",
+        "runtime_requests": "b3f8b06412c60b7389df6caa468eba6a6418a14d90bfc149966ae3b4f04727b8"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/qwen_human-00",
+      "start": 199,
+      "stop": 349,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "dbef0cca3c7a6346a6196021cc057369d80b2e70bbac4151ce4a9e69800aa4d3",
+      "files": {
+        "attempts": "73235dac55b88402b905fe61a81b345043518cdf9911bcfbed7e252cd02c7a51",
+        "responses": "56d29cddc408c9f32b4ec4a67e15d67cffe74714da727f20363c21d848a21c91",
+        "prompts": "74502c082de0dd4a8ca4f2f8c1211b628738d2109d4006f1b7200c3f9ea05cb8",
+        "scores": "d21c65d304498c9e811c8c9beb06aaa3b31a6f82c859587db9bd990f0309cbc5",
+        "runtime_requests": "4fced983ac6e3ee6f41195f6ccae10d5c06c20a1338aeae4e1723e7c6847db96"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/qwen_human-01",
+      "start": 349,
+      "stop": 499,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "9bf6b7d472d7da25400a865c29f490a5ae37dd77eb31fccc3038ccfad5f7e36f",
+      "files": {
+        "attempts": "e4905f4dc0ab524240b00d5a1846a59b2a567fa045948133cfcc1987a3a3c4c1",
+        "responses": "9e9a1c85a6dec95f9ee00537e87b0626494545963c8d822a26357b1d00316945",
+        "prompts": "b2e15caaac4a29809bf1240fe705679dd56e1e7303f704157d4c2164da4c54ca",
+        "scores": "29892a88682f666d608e1d76203b997f0424869d8afeecae5c54bf219b58a3c6",
+        "runtime_requests": "749e43a1e94cd10d117ef9a41b740f25a332dadfe71470f04417180f2096f902"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/qwen_human-02",
+      "start": 499,
+      "stop": 649,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "f7db8446c0a50c4544728925443cc05f2cca0a5d233e62f53f9c9b02a05f949a",
+      "files": {
+        "attempts": "8597d6c60b6c3b76bc9ff5328fe79771f20af3a5ebaa64cccc6c9764cc84f114",
+        "responses": "7053bcffc4413a3abcdc3e9cf912a633e60a9214daa433402378ef4d5c664fe6",
+        "prompts": "4cade87b0bd322cab318b184ed6e428911e3962134cf79f7e29e84f3a663b08a",
+        "scores": "6c610e669bb0fb4d839f2e43f7d7b404941dd3a61ffb747c5dc0d55a326d4df6",
+        "runtime_requests": "4e32bdd70e365b2a129fd8def13eac1729c22dde61f3c7bc4f6c896f89a0828e"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/qwen_human-03",
+      "start": 649,
+      "stop": 800,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "77194c350120105d5f0ec22295bb5140e2f9bd318d7a01cec9a82392b5eca512",
+      "files": {
+        "attempts": "fba2b2c8c5df1eccf2845e9cce83eec9a7018b7a63045782d6c0baf541aea049",
+        "responses": "b5fcec8d85e7d9406009787be0dbcc7fb00343de1cc61bdb985c84af0f9fd5d8",
+        "prompts": "54b54010f1fa9104b401d7fa206daf962ff44e32d90ac34b1d7579fd5d523943",
+        "scores": "4a68db4d041f7cd7c96bdfec8630d2a6fcf976c38e86f0d8229880e71d70c532",
+        "runtime_requests": "a1e3061f0edbcada343235405d0fb72cf2e79132e31d3b8419e2cd24537a545e"
+      }
+    }
+  ],
+  "attempts_sha256": "9ecaa91313d428f0226b9a21441b7b5726d5ff6f0c7f8fba3fb9995a4c9cd58c",
+  "responses_sha256": "310c21e6c61904b39f4830f964d90e836513e039933a8e00d42555b26815f94f",
+  "prompts_sha256": "27c8026a5a3a1098c7f5688c66e6e80fe993d346717518d2bd80db335aaae1ba",
+  "scores_sha256": "12247c4627f127a9065fed8f7d2a20485ba468c757d5ac20f59a6bd70790c068",
+  "runtime_requests_sha256": "b88ccb102c3cf8940ab2375fb106e82c6e9e430959cf2e6b610bee77f7d8b493"
+}

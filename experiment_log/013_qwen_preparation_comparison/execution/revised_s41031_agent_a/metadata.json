@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "stage": "revised_s41031_agent_a",
+  "assembled_from_disjoint_sources": true,
+  "requested_responses": 800,
+  "sources": [
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/prefixes/revised_s41031_agent_a",
+      "start": 0,
+      "stop": 48,
+      "runner": "scripts/run_followup_eval.py",
+      "runtime_sha256": "8182698738948addfc0814688a5741a3a5c491963635024939937bc6a314ba0a",
+      "files": {
+        "attempts": "a219cca947ff2b2c1c443697a4f373245df87a5e3b07faa1fd456cf435d99127",
+        "responses": "293d7f0b64df6787c1c4ee43cbc15241bf2e7bb48fe4af2d5da4bf743a60fe14",
+        "prompts": "4e9d2699f05c37ab33f26be6148402628d20f0faa09c53093779e7dcf9f78e75",
+        "scores": "1bb6b65617916c4f15ab09a5122997e766ce8ac82bb7d5eeca6569c685c41df1",
+        "runtime_requests": "70988ecb4e4a3432d07227a0f37e9701ab014806f37bef42e6b22873939871cd"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41031_agent_a-00",
+      "start": 48,
+      "stop": 236,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "a1c291fc41a3890d44f56f58df5db41b04ea7f6ca054141f00a70664279675f0",
+      "files": {
+        "attempts": "90a6c551fbc06633e8a8bccd7b092f0e71177e30e8bd7863489f0c1c4997411a",
+        "responses": "517f652fdea80be8cf9c81420682a8748826e14ba6109c763c039b6170f6fc58",
+        "prompts": "d27073d2ed32a20172357700e13202a158772215cf700ea9e05347265ed730e6",
+        "scores": "39539d0961538e9325610003c80319f9adec26c33946e7f20d3fb90a8d685857",
+        "runtime_requests": "4e74836ce8dd3af14358d3de061ccb56cf2b7d1ccc6992b5f047519433eb7a2a"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41031_agent_a-01",
+      "start": 236,
+      "stop": 424,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "2c3de090cfcc6afeab4c81c2edfba0ce73c728c015a3de8094cc9d5acff00c6b",
+      "files": {
+        "attempts": "a8c9c131bf4b02af673dd79c9f39aef53886032a30a9190ab00c50d4b12d2e3a",
+        "responses": "c91500a86582312bd07e7f7307e37f3d44fa3cf89a11d1672935d9f5e19b88a9",
+        "prompts": "b43f53b87ab872935be6b508330ed4a724e404104664ac1bec8538e8b17bbfba",
+        "scores": "660f6c7d5e930e1e1e8bbd00c7bb95bcd6d77838c08810ea2ec39ff6971b429a",
+        "runtime_requests": "e8fabc2a18490015a057529fae126518c72386b7d68a43bbe8b4c0f7a10c7a93"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41031_agent_a-02",
+      "start": 424,
+      "stop": 612,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "dd7fae2fd389cd8105a3f6c9766d63e90c141d9c43c6dd243c51fc7a6de7d437",
+      "files": {
+        "attempts": "05f58f3d71aa6cd300a5d1d31dc5ff0dc6d8781908625ea73e13f7c223bdf2b3",
+        "responses": "c510728e52eeb3acb94ea91af6162a21de7757f74d9ac8784d892fe834510289",
+        "prompts": "025172fa91eaaab70faf223cf6c2b9c24428fe2ffe9675dabfbb609866f9323a",
+        "scores": "698d5c06a90dedef3e8601255eed03f8c804de3571c02c2da9cd30669d9f320a",
+        "runtime_requests": "d7bd91a8ce6561a713a25ddd2f4720b1978f3bdee1f49475a339bd6172ebdd04"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41031_agent_a-03",
+      "start": 612,
+      "stop": 800,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "715afb90e32d49c9b19f88cb859193e52525165aba8e8b99c21a04316c36ed68",
+      "files": {
+        "attempts": "ef2962eff9ce5d3208645288e7ea6eea114c9d605d3902042692f18d09cbc852",
+        "responses": "5610945617ceed9b040cdc3e9e9a3f812e4f15bd6edf10eec74e920c07dbe7da",
+        "prompts": "d05662f5c557a58d7ceb98419e9d4ca856dbb0e1c1a602e581d3183d299150b3",
+        "scores": "154217bae495d8ee3d01d66dd85517067d50df7c8827f94b3bbdf26e3eb595b4",
+        "runtime_requests": "e71036f20f359fd12f28e4f13fe85073151aa25d21f39bf19bf4a0e9b399991d"
+      }
+    }
+  ],
+  "attempts_sha256": "0e3145d982a8740af825b7d4e5dc2b53f74dfc8213c6c5924e9d895d219e0acd",
+  "responses_sha256": "e7cc5782228045c263957389e92241756416b7644b1bdd197194979167a84644",
+  "prompts_sha256": "92167eaa4abae11ce44d299ec02b77fbc3945a2727e79646b1e68a76a3bed75a",
+  "scores_sha256": "a8fee56304b72571dbec823b9e08870d9ab90bf70f51705f343e831f098000cb",
+  "runtime_requests_sha256": "55fda09d95203afd515a0747b0b0ec1390b35eb7ce0258ec53341630fec72012"
+}

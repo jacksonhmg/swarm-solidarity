@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "stage": "prepared_agent_a",
+  "assembled_from_disjoint_sources": true,
+  "requested_responses": 800,
+  "sources": [
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/prefixes/prepared_agent_a",
+      "start": 0,
+      "stop": 131,
+      "runner": "scripts/run_followup_eval.py",
+      "runtime_sha256": "eea0568a7549af2e37b2e4cdd79a578eec07362a1fee46162b9ed01d2d4207ff",
+      "files": {
+        "attempts": "f3538366a39a538c3d585203371d21356deb0edaaf1466abdb1c9979aa298616",
+        "responses": "94e2a2eb12ea13a49a369b0d8a58f0859838d12cbdce491ad9c40f6249b0d8b8",
+        "prompts": "dd8475b819524febaf087297932a9623d5c0d940a4e9764f047eeb4d10f040af",
+        "scores": "c3dee0e5c5ccc5fc426e31c5a5f685a14a984b668ccdc0d360f778fb3a000e5f",
+        "runtime_requests": "b809b4bde78712ac0a48bdbd1587dc806ccc13aacfa017c5574b0b45bda201e1"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/prepared_agent_a-00",
+      "start": 131,
+      "stop": 298,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "9cf0d621f4a8a1fa27f2b9ce5751ecc3d627ef9d67eb18feabc7e5520e1db529",
+      "files": {
+        "attempts": "d469434fe19d6f904f362125b0aef829429a27c997ad58eb3bc3fcf8345e8e54",
+        "responses": "0b0ee9a1900c03d256f8c09879c37b55c6936281575885a14d25c19aa2db3f9c",
+        "prompts": "2570b09f654b1cf139d3088fb4a9c23505697cf600ce61ea4ca140a83ab758b5",
+        "scores": "ae3702536b0c863e54a8e47bd987353adafa94cd3eaf72a945c0ddfea46cbf2e",
+        "runtime_requests": "45c8a4dac155f2ccf99f0a86a6aa8f6cb1fe72df4a88bbab080dcda19b65a561"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/prepared_agent_a-01",
+      "start": 298,
+      "stop": 465,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "be6fd19cc297edfe981494e723059bd0241735d2680a0afbeb1d2905559a196e",
+      "files": {
+        "attempts": "bc85572e6e0f1c62baaaf529121587ebbde8213c31091960fc104756d2fa1915",
+        "responses": "a1ffa0f2932d14c88ea611cdcab28e78eb1b2d1eeb82c5c7fe2e02d348373fdb",
+        "prompts": "2a1ee15fe2445acade0327ba9d4cd0aa9760c71ad8123117e3aa2ac9820611f7",
+        "scores": "a9a61d0b3fc57a8a86eeec39d989e7e9a40dc50f3ca59145ea0b66083da8c757",
+        "runtime_requests": "c17f03290c17b8efe15f3fee5dea65b357de279f076a8ac613975b933c418e5e"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/prepared_agent_a-02",
+      "start": 465,
+      "stop": 632,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "2eaef204349d1038852f9e4486220264afeb7efecaeffbcf2b08c7bb7b7150c9",
+      "files": {
+        "attempts": "f4e93a4cfbec1b531120455be7bc4d2e3e8feec3dd559c6aa3cb6af4600725cf",
+        "responses": "555fe6d0aac809620b3a3bd3a85df636b6d0e1161a0de8aead5c201c59ac8476",
+        "prompts": "fe098c6ccd48a94a3373e11a61ffc77731880541145ffa5f2efb39794116a860",
+        "scores": "a87db00f9d3b7160529ea71bbe9e6ff92ddc125409d1b5ccaa4d845eda97b49f",
+        "runtime_requests": "db5f688eecd616126a310fd13d74001a403a7b80f763c874800f99e272b8104a"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/prepared_agent_a-03",
+      "start": 632,
+      "stop": 800,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "39af107339bd136c3a209b13b750cb37aa46626ce86ba312c3c74f77ef13d274",
+      "files": {
+        "attempts": "d2e541182181a3d2a3d903573392e1a37738ef5afeb9c7071f5739534031d603",
+        "responses": "508f9353d949297d5e0096090d85476289161d3e7c66cf0f5c70c3ac43802554",
+        "prompts": "228d66c4132160fa120587d7be6144f58e94648d65c46cc5d84b78af28692537",
+        "scores": "9b3806b2222c2c7a56a927c65ac155c125680a9e6aea9ac7de10b7e354982f01",
+        "runtime_requests": "1a40a97f83f256049f0eb8d4fbb6c6859cec3eda077033f8cc620494cd702105"
+      }
+    }
+  ],
+  "attempts_sha256": "7f0381ce18e43e97596d5e52835b019f518ae3cbab1d849a74b54ea51537a72e",
+  "responses_sha256": "2798e8509fce21f8fbd552fe53f61950ea2e77dfb8cebf694cb6bb0059005563",
+  "prompts_sha256": "0c91786bc2b2cac752d70c2eff29df2063f23869ebabad3e01ffdb0964be2e70",
+  "scores_sha256": "0c6eb7e26df20ad5a73510b238a6ac391ec8c653823e994ff3492a2c6204154b",
+  "runtime_requests_sha256": "55fda09d95203afd515a0747b0b0ec1390b35eb7ce0258ec53341630fec72012"
+}

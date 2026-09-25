@@ -1,0 +1,7 @@
+{
+  "instance_id": "4c7fd7a9c03f4faabc5f5174d2658625",
+  "status": "terminated",
+  "termination_confirmed_at": "2026-09-25T04:11:03.587229+00:00",
+  "cloud_key_deleted_at": "2026-09-25T04:11:06.039718+00:00",
+  "local_keys_deleted": true
+}

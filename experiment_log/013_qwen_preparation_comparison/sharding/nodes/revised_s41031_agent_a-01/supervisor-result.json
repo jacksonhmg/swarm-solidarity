@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-25T04:08:27.739797+00:00",
+  "controller_result": {
+    "job": "revised_s41031_agent_a-01",
+    "pid": 2811,
+    "started_at": "2026-09-25T03:35:34.049146+00:00",
+    "command": [
+      "timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "100m",
+      "python3",
+      "scripts/run_followup_shard_node.py",
+      "--job",
+      "revised_s41031_agent_a-01",
+      "--execute"
+    ],
+    "finished_at": "2026-09-25T04:06:58.231409+00:00",
+    "returncode": 0
+  },
+  "verified_remote_files": 19,
+  "error": null
+}

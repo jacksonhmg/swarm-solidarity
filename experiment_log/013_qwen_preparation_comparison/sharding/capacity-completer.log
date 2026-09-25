@@ -1,0 +1,9 @@
+Connection closed by 129.213.150.127 port 22
+Traceback (most recent call last):
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/complete_followup_shard_allocation.py", line 81, in <module>
+    try:main()
+        ^^^^^^
+  File "/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/complete_followup_shard_allocation.py", line 38, in main
+    if time.monotonic()-started>1200:raise RuntimeError('20-minute capacity acquisition window exceeded; no model retries')
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: 20-minute capacity acquisition window exceeded; no model retries

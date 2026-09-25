@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-25T03:29:24.951509+00:00",
+  "original": [
+    "qwen_human-00"
+  ],
+  "newly_allocated": [
+    "qwen_human-01",
+    "qwen_human-02",
+    "qwen_human-03",
+    "qwen_agent_a-00",
+    "qwen_agent_a-01",
+    "qwen_agent_a-02",
+    "qwen_agent_a-03",
+    "prepared_agent_a-00",
+    "prepared_agent_a-01",
+    "prepared_agent_a-02",
+    "prepared_agent_a-03",
+    "revised_s41031_agent_a-00",
+    "revised_s41031_agent_a-01"
+  ],
+  "pending": [
+    "revised_s41031_agent_a-02",
+    "revised_s41031_agent_a-03",
+    "revised_s41032_agent_a-00",
+    "revised_s41032_agent_a-01",
+    "revised_s41032_agent_a-02",
+    "revised_s41032_agent_a-03"
+  ]
+}

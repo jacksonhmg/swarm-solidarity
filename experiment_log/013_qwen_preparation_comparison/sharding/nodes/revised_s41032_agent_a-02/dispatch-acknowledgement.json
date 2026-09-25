@@ -1,0 +1,20 @@
+{
+  "supervisor_pid": 26606,
+  "command": "cd /home/ubuntu/swarm-solidarity && python3 scripts/dispatch_detached_once.py --receipt experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-02/controller-dispatch.json --output experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-02/remote-console.log -- python3 scripts/run_followup_shard_node.py --job revised_s41032_agent_a-02",
+  "acknowledgement": "received",
+  "repeat_dispatch": false,
+  "remote_receipt": {
+    "status": "started",
+    "at": "2026-09-25T04:07:46.421995+00:00",
+    "command": [
+      "python3",
+      "scripts/run_followup_shard_node.py",
+      "--job",
+      "revised_s41032_agent_a-02"
+    ],
+    "working_directory": "/home/ubuntu/swarm-solidarity",
+    "output": "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-02/remote-console.log",
+    "pid": 2819,
+    "existing_dispatch": false
+  }
+}

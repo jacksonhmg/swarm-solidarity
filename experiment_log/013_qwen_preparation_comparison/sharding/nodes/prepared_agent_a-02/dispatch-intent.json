@@ -1,0 +1,7 @@
+{
+  "supervisor_pid": 9039,
+  "command": "cd /home/ubuntu/swarm-solidarity && python3 scripts/dispatch_detached_once.py --receipt experiment_log/013_qwen_preparation_comparison/sharding/nodes/prepared_agent_a-02/controller-dispatch.json --output experiment_log/013_qwen_preparation_comparison/sharding/nodes/prepared_agent_a-02/remote-console.log -- python3 scripts/run_followup_shard_node.py --job prepared_agent_a-02",
+  "acknowledgement": "unknown",
+  "repeat_dispatch": false,
+  "phase": "sending"
+}

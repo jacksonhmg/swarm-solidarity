@@ -1,0 +1,15 @@
+{
+  "instance_id": "c608faecc39b4cf2b38359dd83929012",
+  "name": "swarm-solidarity-pilot-0e2a6d83",
+  "status": "terminated",
+  "termination_confirmed_at": "2026-09-25T03:02:59.090835+00:00",
+  "cloud_key_deleted_at": "2026-09-25T03:03:02.061373+00:00",
+  "local_keys_deleted": true,
+  "cost": {
+    "node": "qwen_identity",
+    "instance_id": "c608faecc39b4cf2b38359dd83929012",
+    "status": "terminated",
+    "minutes": 23,
+    "usd": 0.7628333333333334
+  }
+}

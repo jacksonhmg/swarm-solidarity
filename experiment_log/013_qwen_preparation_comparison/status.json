@@ -1,151 +1,26 @@
 {
-  "status": "Qwen human comparison complete and verified; Agent A evaluation continues",
-  "at": "2026-09-25T04:05:16.153613+00:00",
-  "scientific_freeze_commit": "5267564",
-  "scheduling_freeze_commit": "cb1bcc4",
-  "capacity_completion_commit": "335c448",
-  "offline_012_complete": true,
-  "qwen_training_complete_updates": 125,
-  "completed_responses_preserved": 465,
-  "remaining_sharded_responses": 3535,
-  "maximum_total_new_responses": 4000,
-  "target_workers": 20,
-  "allocated_workers_at_snapshot": [
-    {
-      "job": "prepared_agent_a-00",
-      "instance_id": "376b02886dc14e378b09a8d8746474c0",
-      "status": "active"
-    },
-    {
-      "job": "revised_s41032_agent_a-01",
-      "instance_id": "aca9af8022d847b180a2223df3c31822",
-      "status": "active"
-    },
-    {
-      "job": "qwen_human-03",
-      "instance_id": "bbefb0fbb92d45a9a4018d64e82c561c",
-      "status": "active"
-    },
-    {
-      "job": "prepared_agent_a-01",
-      "instance_id": "7065dad91fa84e718788913c21bfb94d",
-      "status": "active"
-    },
-    {
-      "job": "qwen_human-02",
-      "instance_id": "0a3722b944a741b9a410125287185cca",
-      "status": "terminated"
-    },
-    {
-      "job": "revised_s41032_agent_a-00",
-      "instance_id": "d68e81e4a6704890b954157c981f22ac",
-      "status": "active"
-    },
-    {
-      "job": "qwen_agent_a-01",
-      "instance_id": "c7043ed5eab148989cc027da3b0dd1e1",
-      "status": "active"
-    },
-    {
-      "job": "qwen_agent_a-00",
-      "instance_id": "a5051f5cf2cd422ba634132838811478",
-      "status": "active"
-    },
-    {
-      "job": "revised_s41031_agent_a-02",
-      "instance_id": "4c7fd7a9c03f4faabc5f5174d2658625",
-      "status": "active"
-    },
-    {
-      "job": "revised_s41031_agent_a-03",
-      "instance_id": "9a9ea18110214ef790574abb58f07c9e",
-      "status": "active"
-    },
-    {
-      "job": "revised_s41032_agent_a-02",
-      "instance_id": "8a0ba47738584e71b8e73cb6299859d2",
-      "status": "booting"
-    },
-    {
-      "job": "qwen_human-00",
-      "instance_id": "46e24d11185742da8b1159c6f704c30f",
-      "status": "terminated"
-    },
-    {
-      "job": "prepared_agent_a-03",
-      "instance_id": "ac93786e75f6459a9b0b16e4eab31549",
-      "status": "active"
-    },
-    {
-      "job": "qwen_human-01",
-      "instance_id": "2012250f2d45476e9ff1109d78807c96",
-      "status": "terminated"
-    },
-    {
-      "job": "revised_s41032_agent_a-03",
-      "instance_id": "3ea417496b3b4ba4b2cdbc9c41189f8c",
-      "status": "active"
-    },
-    {
-      "job": "prepared_agent_a-02",
-      "instance_id": "0fc79ece3f8d472788e800c02f8af216",
-      "status": "active"
-    },
-    {
-      "job": "qwen_agent_a-02",
-      "instance_id": "d2bf26d8dbb64a9b9741ecf27346d8a8",
-      "status": "active"
-    },
-    {
-      "job": "qwen_agent_a-03",
-      "instance_id": "813305edebcf48909b2d247679845c13",
-      "status": "active"
-    },
-    {
-      "job": "revised_s41031_agent_a-01",
-      "instance_id": "ad6ae584a7a04943b5ca2325b7907b83",
-      "status": "active"
-    },
-    {
-      "job": "revised_s41031_agent_a-00",
-      "instance_id": "830a06afc2ce427ca3325c909fd5b7b2",
-      "status": "active"
-    }
-  ],
-  "old_five_instances_terminated_and_keys_deleted": true,
-  "cumulative_gpu_failsafe_usd": 65,
-  "watchdog_stop_usd": 62,
-  "estimated_total_gpu_usd_with_contingency": 41.301248333333334,
-  "estimated_longest_shard_generation_minutes": 31,
-  "capacity_wait_time_unknown": true,
-  "no_new_scores_used_for_selection": true,
-  "no_sampled_request_repeated": true,
-  "actual_plan": "sharding/plan.json",
-  "current_monitor": "monitor.md",
-  "infrastructure_recovery": {
-    "failed_job": "prepared_agent_a-00",
-    "model_work_before_failure": false,
-    "initial_instance_terminated_keys_deleted": true,
-    "replacement_allocated": true,
-    "recovery_pid": 8332,
-    "cumulative_watchdog_pid": 8334,
-    "finisher_pid": 8340,
-    "capacity_continuation_pid": 9701
-  },
-  "latest_saved_response_count": 3361,
-  "latest_estimated_gpu_usd": 26.665999999999993,
-  "all_twenty_assignments_allocated": true,
-  "qwen_human_verified_responses": 800,
+  "at": "2026-09-25T04:45:22.767648+00:00",
+  "status": "complete_and_closed",
+  "qwen_training_runs": 1,
+  "qwen_optimizer_updates": 125,
+  "verified_new_responses": 4000,
+  "verified_qwen_human_responses": 800,
+  "verified_agent_a_responses": 3200,
+  "prior_experiment_011_unchanged_and_closed": true,
+  "no_sampled_retries": true,
+  "all_owned_instances_terminated": 27,
+  "cloud_and_local_keys_deleted": true,
+  "cumulative_estimated_gpu_usd": 30.5465,
+  "cost_basis": "Rounded-minute estimate, not invoice",
+  "gpu_failsafe_usd": 65,
+  "scientific_freeze_preserved": true,
+  "historical_artifacts_preserved": 510,
   "actual_owner_state_plan": "sharding/boot_recovery/execution_state_plan.json",
-  "current_watchdog_pid": 24637,
-  "current_finisher_pid": 24641,
-  "boot_recovery": {
-    "job": "revised_s41032_agent_a-02",
-    "old_instance": "8a0ba47738584e71b8e73cb6299859d2",
-    "old_terminated_and_keys_deleted": true,
-    "prior_model_work": false,
-    "replacement_instance": "e9839b2b0a284c1d927c9f53294f92df",
-    "launcher_pid": 24633,
-    "freeze_commit": "f4575ad"
-  }
+  "reports": [
+    "interpretation.md",
+    "report.md",
+    "../014_principal_identity/interpretation.md",
+    "../014_principal_identity/report.md"
+  ],
+  "further_training_or_generation_authorized_by_result": false
 }

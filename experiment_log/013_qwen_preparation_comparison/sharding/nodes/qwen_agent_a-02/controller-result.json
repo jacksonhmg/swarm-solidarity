@@ -1,0 +1,18 @@
+{
+  "job": "qwen_agent_a-02",
+  "pid": 2759,
+  "started_at": "2026-09-25T03:26:52.930540+00:00",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=60s",
+    "100m",
+    "python3",
+    "scripts/run_followup_shard_node.py",
+    "--job",
+    "qwen_agent_a-02",
+    "--execute"
+  ],
+  "finished_at": "2026-09-25T03:55:44.165606+00:00",
+  "returncode": 0
+}

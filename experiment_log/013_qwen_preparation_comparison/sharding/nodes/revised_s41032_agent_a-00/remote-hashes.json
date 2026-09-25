@@ -1,0 +1,21 @@
+{
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/venv.log": "d405a7e593b060f47e66bfd851d4fe0583f7f3b87011900e928aad6069880c1a",
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/controller-launch.json": "c03cd852d4c8dae3d32e9e1395f6d1fd395b63c74e4e9089352ea78fffaae8c8",
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/verified-merge.json": "fb048ca1146ed12dca40455e4496e11b85152f2f6ea79c2278aecea04ea3223e",
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/merge.log": "252b13f9f38b00577859b7966d07109b64dcdea95c56c6dbc3860e28b2ec38fd",
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/nvidia-smi.txt": "ad35fc68e3d4a1bfd7fb6dbaa774887f4c1f8a75888ae8cc69d39433bb9d690d",
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/controller-dispatch.json": "3d39a3cc7672f419429607d714dfed978b7c37bcca31fc75bb2cd0c98437fee1",
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/packages.log": "bb692198ec75fbf2a716501c72984a0ba7b63d0f686d2b38454fb9c371171b15",
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/gpu-environment.txt": "ceff2f2b6f841d7836ef4e90eadd03d47566a08fb64b83b15d0fad0419268957",
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/uv-install.log": "f4a37b4c592e159f454d6241b5639f19a281f850242f9a292d78560f62792d57",
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/controller-result.json": "9dc3baa436e6169a6175f5561801d3828f44d14763812e1efa841273afa4e15b",
+  "experiment_log/013_qwen_preparation_comparison/sharding/nodes/revised_s41032_agent_a-00/generation.log": "bc19c9b3e9dca21842800e001b77ec08f1b0cbe3389618e84db81b8429aea307",
+  "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-00/prompts.jsonl": "43ff587b0b4d4c3bf22c905180e44a68563bc4e1246ceb99fed9175361703117",
+  "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-00/runtime_requests.jsonl": "d34dc4751bc20775ad039674714dab01e58269f6164873d0067d5e11834a5daf",
+  "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-00/metadata.json": "f34c6b6d57696a80386d4e68c5cfe49d8a4b6e2487ca40d4d828f5d5be153046",
+  "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-00/gate.json": "94f200ffd6413f1c96b59715f25de2b89459bc9fa3ea58820010f476b81ccc86",
+  "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-00/responses.jsonl": "60b70aa670ed8947b8efa05d29de77423751803c2585dfae6bfe0f5ff4f116eb",
+  "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-00/scores.jsonl": "5fa2ecb8dc9bbbd8374bb36bf009b0cb6dfaf502de9b8aa07f0eae1d9f9ee4c8",
+  "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-00/resolved_runtime.json": "cc76e73ced83e4126622de071a217748deda8181050d7938aa3dc48828c2c53b",
+  "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-00/attempts.jsonl": "209a9e482e4589d8ee1a3e309c8091ec1feb6c76c2232cdb85f8c91afbf9134e"
+}

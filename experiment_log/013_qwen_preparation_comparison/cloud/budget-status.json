@@ -1,43 +1,43 @@
 {
-  "at": "2026-09-25T02:44:27.719557+00:00",
+  "at": "2026-09-25T03:08:13.310036+00:00",
   "nodes": [
     {
       "node": "qwen",
       "instance_id": "e4ff472036804ed2b48bc33d0ef7f2d0",
-      "status": "active",
-      "minutes": 25,
-      "usd": 0.8291666666666667
+      "status": "terminated",
+      "minutes": 43,
+      "usd": 1.4261666666666666
     },
     {
       "node": "prepared",
       "instance_id": "6fe3394a171c4317b375d4e17b30533b",
-      "status": "active",
-      "minutes": 11,
-      "usd": 0.3648333333333333
+      "status": "terminated",
+      "minutes": 29,
+      "usd": 0.9618333333333333
     },
     {
       "node": "revised_s41031",
       "instance_id": "91d9da2224c7456c9e6e2d270734763c",
-      "status": "booting",
-      "minutes": 2,
-      "usd": 0.06633333333333333
+      "status": "terminated",
+      "minutes": 21,
+      "usd": 0.6965
     },
     {
       "node": "revised_s41032",
       "instance_id": "96c12db2363049c18e1e9af5c15877b9",
-      "status": "booting",
-      "minutes": 10,
-      "usd": 0.33166666666666667
+      "status": "terminated",
+      "minutes": 21,
+      "usd": 0.6965
     },
     {
       "node": "qwen_identity",
       "instance_id": "c608faecc39b4cf2b38359dd83929012",
-      "status": "booting",
-      "minutes": 4,
-      "usd": 0.13266666666666665
+      "status": "terminated",
+      "minutes": 23,
+      "usd": 0.7628333333333334
     }
   ],
-  "estimated_usd": 1.7246666666666668,
+  "estimated_usd": 4.543833333333333,
   "new_gpu_cap_usd": 30,
   "basis": "Launch through first confirmed termination, rounded up to minute; estimate, not invoice. Closed011 costs excluded."
 }

@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-25T04:45:22.767648+00:00",
+  "completed": true,
+  "saved_responses": 4000,
+  "cleaned_up_shards": 20,
+  "all_actual_allocations_cleaned": 27,
+  "estimated_gpu_usd": 30.5465,
+  "verification_passed": true
+}

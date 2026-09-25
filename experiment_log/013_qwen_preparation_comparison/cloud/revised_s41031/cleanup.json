@@ -1,0 +1,15 @@
+{
+  "instance_id": "91d9da2224c7456c9e6e2d270734763c",
+  "name": "swarm-solidarity-pilot-45a9a5bd",
+  "status": "terminated",
+  "termination_confirmed_at": "2026-09-25T03:03:37.759088+00:00",
+  "cloud_key_deleted_at": "2026-09-25T03:03:40.167749+00:00",
+  "local_keys_deleted": true,
+  "cost": {
+    "node": "revised_s41031",
+    "instance_id": "91d9da2224c7456c9e6e2d270734763c",
+    "status": "terminated",
+    "minutes": 21,
+    "usd": 0.6965
+  }
+}

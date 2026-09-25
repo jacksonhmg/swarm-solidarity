@@ -1,0 +1,216 @@
+{
+  "completed": true,
+  "new_responses": 4000,
+  "training_runs": 1,
+  "qwen_updates": 125,
+  "unique_training_examples": 1000,
+  "actual_supervised_tokens": 161115,
+  "scientific_frozen_files": 163,
+  "historical_files_unchanged": 510,
+  "all_shard_amendment_freezes_unchanged": true,
+  "remote_files_reverified": 380,
+  "shard_hardware": {
+    "NVIDIA A100-SXM4-40GB": 20
+  },
+  "adapters_verified": [
+    "qwen",
+    "prepared",
+    "revised_s41031",
+    "revised_s41032"
+  ],
+  "owners_terminated_and_keys_deleted": [
+    {
+      "label": "qwen",
+      "instance_id": "e4ff472036804ed2b48bc33d0ef7f2d0",
+      "terminated_at": "2026-09-25T03:02:49.478500+00:00",
+      "key_deleted_at": "2026-09-25T03:02:53.511430+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "prepared",
+      "instance_id": "6fe3394a171c4317b375d4e17b30533b",
+      "terminated_at": "2026-09-25T03:02:54.903397+00:00",
+      "key_deleted_at": "2026-09-25T03:02:57.702494+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "revised_s41031",
+      "instance_id": "91d9da2224c7456c9e6e2d270734763c",
+      "terminated_at": "2026-09-25T03:03:37.759088+00:00",
+      "key_deleted_at": "2026-09-25T03:03:40.167749+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "revised_s41032",
+      "instance_id": "96c12db2363049c18e1e9af5c15877b9",
+      "terminated_at": "2026-09-25T02:55:17.401186+00:00",
+      "key_deleted_at": "2026-09-25T02:55:20.246100+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "qwen_identity",
+      "instance_id": "c608faecc39b4cf2b38359dd83929012",
+      "terminated_at": "2026-09-25T03:02:59.090835+00:00",
+      "key_deleted_at": "2026-09-25T03:03:02.061373+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "failed_setup_prepared_agent_a-00",
+      "instance_id": "528b3e69107e48b5b688fa51a4da0d6a",
+      "terminated_at": "2026-09-25T03:25:31.225057+00:00",
+      "key_deleted_at": "2026-09-25T03:25:42.977906+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "failed_boot_revised_s41032_agent_a-02",
+      "instance_id": "8a0ba47738584e71b8e73cb6299859d2",
+      "terminated_at": "2026-09-25T04:00:20.621374+00:00",
+      "key_deleted_at": "2026-09-25T04:00:23.424229+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "qwen_human-00",
+      "instance_id": "46e24d11185742da8b1159c6f704c30f",
+      "terminated_at": "2026-09-25T03:39:37.784186+00:00",
+      "key_deleted_at": "2026-09-25T03:39:44.414283+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "qwen_human-01",
+      "instance_id": "2012250f2d45476e9ff1109d78807c96",
+      "terminated_at": "2026-09-25T03:41:14.609771+00:00",
+      "key_deleted_at": "2026-09-25T03:41:20.882079+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "qwen_human-02",
+      "instance_id": "0a3722b944a741b9a410125287185cca",
+      "terminated_at": "2026-09-25T03:45:07.622167+00:00",
+      "key_deleted_at": "2026-09-25T03:45:12.741841+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "qwen_human-03",
+      "instance_id": "bbefb0fbb92d45a9a4018d64e82c561c",
+      "terminated_at": "2026-09-25T03:53:32.174375+00:00",
+      "key_deleted_at": "2026-09-25T03:53:35.514118+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "qwen_agent_a-00",
+      "instance_id": "a5051f5cf2cd422ba634132838811478",
+      "terminated_at": "2026-09-25T03:50:52.359496+00:00",
+      "key_deleted_at": "2026-09-25T03:50:55.203825+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "qwen_agent_a-01",
+      "instance_id": "c7043ed5eab148989cc027da3b0dd1e1",
+      "terminated_at": "2026-09-25T03:58:00.479125+00:00",
+      "key_deleted_at": "2026-09-25T03:58:03.808682+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "qwen_agent_a-02",
+      "instance_id": "d2bf26d8dbb64a9b9741ecf27346d8a8",
+      "terminated_at": "2026-09-25T03:56:54.930930+00:00",
+      "key_deleted_at": "2026-09-25T03:57:00.492002+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "qwen_agent_a-03",
+      "instance_id": "813305edebcf48909b2d247679845c13",
+      "terminated_at": "2026-09-25T03:57:09.305354+00:00",
+      "key_deleted_at": "2026-09-25T03:57:13.445242+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "prepared_agent_a-00",
+      "instance_id": "376b02886dc14e378b09a8d8746474c0",
+      "terminated_at": "2026-09-25T04:03:44.225820+00:00",
+      "key_deleted_at": "2026-09-25T04:03:48.404293+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "prepared_agent_a-01",
+      "instance_id": "7065dad91fa84e718788913c21bfb94d",
+      "terminated_at": "2026-09-25T03:56:34.882823+00:00",
+      "key_deleted_at": "2026-09-25T03:56:39.368897+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "prepared_agent_a-02",
+      "instance_id": "0fc79ece3f8d472788e800c02f8af216",
+      "terminated_at": "2026-09-25T03:57:44.196019+00:00",
+      "key_deleted_at": "2026-09-25T03:57:47.562223+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "prepared_agent_a-03",
+      "instance_id": "ac93786e75f6459a9b0b16e4eab31549",
+      "terminated_at": "2026-09-25T04:01:23.765962+00:00",
+      "key_deleted_at": "2026-09-25T04:01:26.317801+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "revised_s41031_agent_a-00",
+      "instance_id": "830a06afc2ce427ca3325c909fd5b7b2",
+      "terminated_at": "2026-09-25T04:05:47.059203+00:00",
+      "key_deleted_at": "2026-09-25T04:05:49.863670+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "revised_s41031_agent_a-01",
+      "instance_id": "ad6ae584a7a04943b5ca2325b7907b83",
+      "terminated_at": "2026-09-25T04:08:24.022283+00:00",
+      "key_deleted_at": "2026-09-25T04:08:26.623906+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "revised_s41031_agent_a-02",
+      "instance_id": "4c7fd7a9c03f4faabc5f5174d2658625",
+      "terminated_at": "2026-09-25T04:11:03.587229+00:00",
+      "key_deleted_at": "2026-09-25T04:11:06.039718+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "revised_s41031_agent_a-03",
+      "instance_id": "9a9ea18110214ef790574abb58f07c9e",
+      "terminated_at": "2026-09-25T04:20:58.007389+00:00",
+      "key_deleted_at": "2026-09-25T04:21:00.749783+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "revised_s41032_agent_a-00",
+      "instance_id": "d68e81e4a6704890b954157c981f22ac",
+      "terminated_at": "2026-09-25T04:24:46.797878+00:00",
+      "key_deleted_at": "2026-09-25T04:24:49.436661+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "revised_s41032_agent_a-01",
+      "instance_id": "aca9af8022d847b180a2223df3c31822",
+      "terminated_at": "2026-09-25T04:20:53.094658+00:00",
+      "key_deleted_at": "2026-09-25T04:20:56.586033+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "revised_s41032_agent_a-02",
+      "instance_id": "e9839b2b0a284c1d927c9f53294f92df",
+      "terminated_at": "2026-09-25T04:41:34.746299+00:00",
+      "key_deleted_at": "2026-09-25T04:41:37.202739+00:00",
+      "local_keys_absent": true
+    },
+    {
+      "label": "revised_s41032_agent_a-03",
+      "instance_id": "3ea417496b3b4ba4b2cdbc9c41189f8c",
+      "terminated_at": "2026-09-25T04:22:00.259517+00:00",
+      "key_deleted_at": "2026-09-25T04:22:03.183443+00:00",
+      "local_keys_absent": true
+    }
+  ],
+  "estimated_gpu_usd": 30.5465,
+  "cost_is_estimate_not_provider_invoice": true,
+  "raw_token_request_and_scoring_verification": "experiment_log/013_qwen_preparation_comparison/sharding/verification.json",
+  "no_new_model_work_invoked_by_audit": true
+}

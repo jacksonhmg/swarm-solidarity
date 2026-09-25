@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-25T03:56:40.487515+00:00",
+  "controller_result": {
+    "job": "prepared_agent_a-01",
+    "pid": 2782,
+    "started_at": "2026-09-25T03:27:21.476347+00:00",
+    "command": [
+      "timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "100m",
+      "python3",
+      "scripts/run_followup_shard_node.py",
+      "--job",
+      "prepared_agent_a-01",
+      "--execute"
+    ],
+    "finished_at": "2026-09-25T03:55:06.969283+00:00",
+    "returncode": 0
+  },
+  "verified_remote_files": 19,
+  "error": null
+}

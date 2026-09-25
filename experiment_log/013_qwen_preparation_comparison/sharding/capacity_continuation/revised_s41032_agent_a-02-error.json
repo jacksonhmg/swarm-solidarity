@@ -1,0 +1,6 @@
+{
+  "at": "2026-09-25T04:00:24.538203+00:00",
+  "job": "revised_s41032_agent_a-02",
+  "error": "GPU boot timeout before dispatch",
+  "repeat_model_work": false
+}

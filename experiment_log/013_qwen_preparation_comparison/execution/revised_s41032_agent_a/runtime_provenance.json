@@ -1,0 +1,61 @@
+{
+  "sources": [
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-00",
+      "start": 0,
+      "stop": 200,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "cc76e73ced83e4126622de071a217748deda8181050d7938aa3dc48828c2c53b",
+      "files": {
+        "attempts": "209a9e482e4589d8ee1a3e309c8091ec1feb6c76c2232cdb85f8c91afbf9134e",
+        "responses": "60b70aa670ed8947b8efa05d29de77423751803c2585dfae6bfe0f5ff4f116eb",
+        "prompts": "43ff587b0b4d4c3bf22c905180e44a68563bc4e1246ceb99fed9175361703117",
+        "scores": "5fa2ecb8dc9bbbd8374bb36bf009b0cb6dfaf502de9b8aa07f0eae1d9f9ee4c8",
+        "runtime_requests": "d34dc4751bc20775ad039674714dab01e58269f6164873d0067d5e11834a5daf"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-01",
+      "start": 200,
+      "stop": 400,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "3095d8236730c2c2b1a5c4778e51479d4209e432692acfab39356548827e453f",
+      "files": {
+        "attempts": "94650b7d5940682ef7b37d912f17128f4d6b645c73c2fb494543f49462239e57",
+        "responses": "331b5ed7121c507290c9266c7597ce6ff6b2e75ce4b59e6df8416ad440abad18",
+        "prompts": "a580c4f09eeb5d4f1b23b9e992f9cc291395d91234960ab1f717adc09a0aaa27",
+        "scores": "5c4f53d0e6b0963276c2a133cf840b0e80fea068342e9ae48113236acca5b35b",
+        "runtime_requests": "6a0be62650000143cc3beec2c6011e9166328fbe70da2628196a3c54f4fe20c4"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-02",
+      "start": 400,
+      "stop": 600,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "41c84b1826bc571d2b87145f52a08e6370ec251b36f76a45649fc64ac8684d65",
+      "files": {
+        "attempts": "bb30e2e41eec497a39679c10ec120407c750afd6e0f79184c6d725d7ff87060c",
+        "responses": "4a227bf908263a99942a19ec5f53a1a985d98800c15738d30063b8a0e1dee23e",
+        "prompts": "0f2540f9e9fcbe1409b4a7a56f20741150d692be4d928c4be72173ba3bd91928",
+        "scores": "32f771223bf3e8d4500f2c7d9145e6534dc40f0745a37b96ddf540f0ecee5c41",
+        "runtime_requests": "f56c86c67bc3f3fde46a68cae5f08c5adfec6f3340e3d62a94ff29560799123d"
+      }
+    },
+    {
+      "path": "experiment_log/013_qwen_preparation_comparison/sharding/execution/revised_s41032_agent_a-03",
+      "start": 600,
+      "stop": 800,
+      "runner": "scripts/run_followup_shard.py",
+      "runtime_sha256": "a107e66442345dbf7e3171b130116a19cda287b489287e9575bbccf424963a50",
+      "files": {
+        "attempts": "386d7028497b637d0d124e878bf42a1d47732caad450591eb0c0d7f323b537ea",
+        "responses": "651b5bb5ff7aecbc268069c293afbafca2b33f76145f7d3906e2f4601bc2a30d",
+        "prompts": "4f67ea8ecd0f33fb0516366be821b4f2a93b01cfa6b0797fbadda57585557853",
+        "scores": "d0280cd93f7670faf7ff04ccd7d4164bc46db15733fe0ef0ff1701fdb8fb5a98",
+        "runtime_requests": "df61f18597b482de2c7b47d0ad2f93355327aa4fb9410496cf83ba6d96e8d65c"
+      }
+    }
+  ],
+  "note": "Multiple original/shard runtimes retained individually; no single-runtime provenance fabricated."
+}

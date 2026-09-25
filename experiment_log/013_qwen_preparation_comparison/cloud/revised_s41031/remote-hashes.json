@@ -1,0 +1,20 @@
+{
+  "experiment_log/013_qwen_preparation_comparison/execution/revised_s41031_agent_a/prompts.jsonl": "4e9d2699f05c37ab33f26be6148402628d20f0faa09c53093779e7dcf9f78e75",
+  "experiment_log/013_qwen_preparation_comparison/execution/revised_s41031_agent_a/runtime_requests.jsonl": "70988ecb4e4a3432d07227a0f37e9701ab014806f37bef42e6b22873939871cd",
+  "experiment_log/013_qwen_preparation_comparison/execution/revised_s41031_agent_a/metadata.json": "86c6399546074ab752c0a674820c8a36385bb1a35b26cb06d0edfd26a1360870",
+  "experiment_log/013_qwen_preparation_comparison/execution/revised_s41031_agent_a/responses.jsonl": "293d7f0b64df6787c1c4ee43cbc15241bf2e7bb48fe4af2d5da4bf743a60fe14",
+  "experiment_log/013_qwen_preparation_comparison/execution/revised_s41031_agent_a/scores.jsonl": "1bb6b65617916c4f15ab09a5122997e766ce8ac82bb7d5eeca6569c685c41df1",
+  "experiment_log/013_qwen_preparation_comparison/execution/revised_s41031_agent_a/resolved_runtime.json": "8182698738948addfc0814688a5741a3a5c491963635024939937bc6a314ba0a",
+  "experiment_log/013_qwen_preparation_comparison/execution/revised_s41031_agent_a/attempts.jsonl": "a219cca947ff2b2c1c443697a4f373245df87a5e3b07faa1fd456cf435d99127",
+  "experiment_log/013_qwen_preparation_comparison/merges/revised_s41031.json": "e5a108330fdaadd0a82d10b86825f0eed1f2f07c1a59fe00d8e0a82b66e7e463",
+  "experiment_log/013_qwen_preparation_comparison/cloud/revised_s41031/venv.log": "d405a7e593b060f47e66bfd851d4fe0583f7f3b87011900e928aad6069880c1a",
+  "experiment_log/013_qwen_preparation_comparison/cloud/revised_s41031/controller-launch.json": "bc6c517b0cd6074ede6b1e7004234b55ae846e7477fa18128e1d6ce1a3b617f1",
+  "experiment_log/013_qwen_preparation_comparison/cloud/revised_s41031/merge.log": "15663a53fe370870aed5be95ee4ed151bd1576bb32ae96eeef82b0c11dd3a43a",
+  "experiment_log/013_qwen_preparation_comparison/cloud/revised_s41031/nvidia-smi.txt": "ad90ccf35b68223b10fca18aa8552d051a9ac6f860f61ff9dd37b5c27e4f38eb",
+  "experiment_log/013_qwen_preparation_comparison/cloud/revised_s41031/controller-dispatch.json": "8dc42e0675fd82761a2bd38ecf6acc41dbec238d99f8788b572fb2435fdf80ba",
+  "experiment_log/013_qwen_preparation_comparison/cloud/revised_s41031/packages.log": "0c97c23e72018b52c87d6a0db7c9365c4bba3311b1b9c0b25033d2dc73279434",
+  "experiment_log/013_qwen_preparation_comparison/cloud/revised_s41031/gpu-environment.txt": "ceff2f2b6f841d7836ef4e90eadd03d47566a08fb64b83b15d0fad0419268957",
+  "experiment_log/013_qwen_preparation_comparison/cloud/revised_s41031/uv-install.log": "16c1783fd91490ac29c03d2a1297146339b8ca1240b90f30970ada5780c9d504",
+  "experiment_log/013_qwen_preparation_comparison/cloud/revised_s41031/controller-result.json": "58af80c3d40d501e4752fb0af82169df886733e4d9a947877413d562725cd534",
+  "experiment_log/013_qwen_preparation_comparison/cloud/revised_s41031/eval-revised_s41031_agent_a.log": "9efe3f6d31103e35cae63cd5331e342133e62d26fe033e4c51be574713d465f7"
+}

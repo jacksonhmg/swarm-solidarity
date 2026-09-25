@@ -1,0 +1,22 @@
+{
+  "experiment_log/013_qwen_preparation_comparison/execution/qwen_agent_a/prompts.jsonl": "ba89637b09289c1da521c91977a799e2ac9e222d0d6514048202e2a444c6e79b",
+  "experiment_log/013_qwen_preparation_comparison/execution/qwen_agent_a/runtime_requests.jsonl": "dffff07a65b1d91ee2680de0809fa909a5d17b3887843b7d0aa44e5c04101761",
+  "experiment_log/013_qwen_preparation_comparison/execution/qwen_agent_a/metadata.json": "33e5fca0298dc1e1e392136e563381b2b49d01a0b837e8c19f5934577216f511",
+  "experiment_log/013_qwen_preparation_comparison/execution/qwen_agent_a/responses.jsonl": "00436464f7358a639e8bf46eda9046a6ecd6335c23524e2b80ff9714733d5290",
+  "experiment_log/013_qwen_preparation_comparison/execution/qwen_agent_a/scores.jsonl": "44264bac65506d5836d2cc1cb4e93c389b640f0819e062e432561ce2abb71b10",
+  "experiment_log/013_qwen_preparation_comparison/execution/qwen_agent_a/resolved_runtime.json": "3d536cc8afbfe3909f6106a0de2a70363eb984b193b02d8da4cab404a658bea6",
+  "experiment_log/013_qwen_preparation_comparison/execution/qwen_agent_a/attempts.jsonl": "52128b3afb9abb7b2f6a1345f57d07bb7034fe4ff0aba78574ba6b0dd0b183d7",
+  "experiment_log/013_qwen_preparation_comparison/merges/qwen.json": "48fcbca147f5256ac71509ba7768d43b32b625f844cff2df025dd61d48dd8305",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/venv.log": "d405a7e593b060f47e66bfd851d4fe0583f7f3b87011900e928aad6069880c1a",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/controller-launch.json": "4f4ef4e95b539111df3bdb6e644a4bfebdaa2170e08ab5fcb2a76fb44dd4b4a9",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/eval-qwen_agent_a.log": "4067447b56acae8eab9a673aa0bf2522e63ef5bc84cdaf85c2171c7ba98c89e8",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/nvidia-smi.txt": "76357ec787de6016a148c2767b6c5aca2ae1bcc7625c2fea942dfca14c4991f6",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/controller-dispatch.json": "832f0abd49cefcb382f8f41dd293d4fbb71f09ea9500900a598a8024cd448c5a",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/packages.log": "fc8e9e3574250a67038ee48cb0afee2144b12fd0a2dee659dc425ed017c25565",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/gpu-environment.txt": "ceff2f2b6f841d7836ef4e90eadd03d47566a08fb64b83b15d0fad0419268957",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/uv-install.log": "fb19acdeb1cfa494548caef1afce8d31357c1259118b9d2d35501f4ceec12e2a",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/controller-result.json": "edc68fcb33c8feb93755a6b5a7dd8e29f55d717b8e31f688e3a23009f42adf56",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/reconstructed-merge.json": "b200f1b2b6cb71018a642d0b09f1de5735a1529400c2045bc9f9aed282c7a1bb",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/assignment.json": "06ff5866cfaa2b24b1f8c114e3c58fc2ed342a44fdd009a7a17d2e1aadf25950",
+  "experiment_log/013_qwen_preparation_comparison/cloud/qwen_identity/merge-qwen.log": "8649baa827225fab04f50be5d7311dcbd34dbcbb570d7837d1dc5d19e3ffcfbf"
+}

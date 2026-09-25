@@ -1,0 +1,207 @@
+{
+  "at": "2026-09-25T03:40:05.418195+00:00",
+  "cost": {
+    "at": "2026-09-25T03:40:05.419632+00:00",
+    "nodes": [
+      {
+        "job": "qwen",
+        "instance_id": "e4ff472036804ed2b48bc33d0ef7f2d0",
+        "status": "terminated",
+        "minutes": 43,
+        "usd": 1.4261666666666666
+      },
+      {
+        "job": "prepared",
+        "instance_id": "6fe3394a171c4317b375d4e17b30533b",
+        "status": "terminated",
+        "minutes": 29,
+        "usd": 0.9618333333333333
+      },
+      {
+        "job": "revised_s41031",
+        "instance_id": "91d9da2224c7456c9e6e2d270734763c",
+        "status": "terminated",
+        "minutes": 21,
+        "usd": 0.6965
+      },
+      {
+        "job": "revised_s41032",
+        "instance_id": "96c12db2363049c18e1e9af5c15877b9",
+        "status": "terminated",
+        "minutes": 21,
+        "usd": 0.6965
+      },
+      {
+        "job": "qwen_identity",
+        "instance_id": "c608faecc39b4cf2b38359dd83929012",
+        "status": "terminated",
+        "minutes": 23,
+        "usd": 0.7628333333333334
+      },
+      {
+        "job": "qwen_human-00",
+        "instance_id": "46e24d11185742da8b1159c6f704c30f",
+        "status": "terminated",
+        "minutes": 33,
+        "usd": 1.0945
+      },
+      {
+        "job": "qwen_human-01",
+        "instance_id": "2012250f2d45476e9ff1109d78807c96",
+        "status": "terminating",
+        "minutes": 30,
+        "usd": 0.995
+      },
+      {
+        "job": "qwen_human-02",
+        "instance_id": "0a3722b944a741b9a410125287185cca",
+        "status": "active",
+        "minutes": 28,
+        "usd": 0.9286666666666666
+      },
+      {
+        "job": "qwen_human-03",
+        "instance_id": "bbefb0fbb92d45a9a4018d64e82c561c",
+        "status": "active",
+        "minutes": 26,
+        "usd": 0.8623333333333334
+      },
+      {
+        "job": "qwen_agent_a-00",
+        "instance_id": "a5051f5cf2cd422ba634132838811478",
+        "status": "active",
+        "minutes": 23,
+        "usd": 0.7628333333333334
+      },
+      {
+        "job": "qwen_agent_a-01",
+        "instance_id": "c7043ed5eab148989cc027da3b0dd1e1",
+        "status": "active",
+        "minutes": 22,
+        "usd": 0.7296666666666666
+      },
+      {
+        "job": "qwen_agent_a-02",
+        "instance_id": "d2bf26d8dbb64a9b9741ecf27346d8a8",
+        "status": "active",
+        "minutes": 20,
+        "usd": 0.6633333333333333
+      },
+      {
+        "job": "qwen_agent_a-03",
+        "instance_id": "813305edebcf48909b2d247679845c13",
+        "status": "active",
+        "minutes": 20,
+        "usd": 0.6633333333333333
+      },
+      {
+        "job": "prepared_agent_a-00",
+        "instance_id": "376b02886dc14e378b09a8d8746474c0",
+        "status": "active",
+        "minutes": 10,
+        "usd": 0.33166666666666667
+      },
+      {
+        "job": "prepared_agent_a-01",
+        "instance_id": "7065dad91fa84e718788913c21bfb94d",
+        "status": "active",
+        "minutes": 18,
+        "usd": 0.597
+      },
+      {
+        "job": "prepared_agent_a-02",
+        "instance_id": "0fc79ece3f8d472788e800c02f8af216",
+        "status": "active",
+        "minutes": 17,
+        "usd": 0.5638333333333333
+      },
+      {
+        "job": "prepared_agent_a-03",
+        "instance_id": "ac93786e75f6459a9b0b16e4eab31549",
+        "status": "active",
+        "minutes": 15,
+        "usd": 0.4975
+      },
+      {
+        "job": "revised_s41031_agent_a-00",
+        "instance_id": "830a06afc2ce427ca3325c909fd5b7b2",
+        "status": "active",
+        "minutes": 13,
+        "usd": 0.4311666666666667
+      },
+      {
+        "job": "revised_s41031_agent_a-01",
+        "instance_id": "ad6ae584a7a04943b5ca2325b7907b83",
+        "status": "active",
+        "minutes": 11,
+        "usd": 0.3648333333333333
+      },
+      {
+        "job": "revised_s41031_agent_a-02",
+        "instance_id": "4c7fd7a9c03f4faabc5f5174d2658625",
+        "status": "active",
+        "minutes": 5,
+        "usd": 0.16583333333333333
+      },
+      {
+        "job": "revised_s41031_agent_a-03",
+        "instance_id": "9a9ea18110214ef790574abb58f07c9e",
+        "status": "booting",
+        "minutes": 5,
+        "usd": 0.16583333333333333
+      },
+      {
+        "job": "revised_s41032_agent_a-00",
+        "instance_id": "d68e81e4a6704890b954157c981f22ac",
+        "status": "booting",
+        "minutes": 1,
+        "usd": 0.033166666666666664
+      },
+      {
+        "job": "revised_s41032_agent_a-01",
+        "instance_id": "aca9af8022d847b180a2223df3c31822",
+        "status": "booting",
+        "minutes": 1,
+        "usd": 0.033166666666666664
+      },
+      {
+        "job": "revised_s41032_agent_a-02",
+        "instance_id": "8a0ba47738584e71b8e73cb6299859d2",
+        "status": "booting",
+        "minutes": 3,
+        "usd": 0.0995
+      },
+      {
+        "job": "revised_s41032_agent_a-03",
+        "instance_id": "3ea417496b3b4ba4b2cdbc9c41189f8c",
+        "status": "booting",
+        "minutes": 1,
+        "usd": 0.033166666666666664
+      }
+    ],
+    "estimated_usd": 14.560166666666667,
+    "cap_usd": 65,
+    "basis": "All013/014 allocations, launch through confirmed termination rounded up to minute; estimate not invoice."
+  },
+  "allocation_errors": [
+    "qwen_human-01",
+    "qwen_human-02",
+    "qwen_human-03",
+    "qwen_agent_a-00",
+    "qwen_agent_a-01",
+    "qwen_agent_a-02",
+    "qwen_agent_a-03",
+    "prepared_agent_a-00",
+    "prepared_agent_a-01",
+    "prepared_agent_a-02",
+    "prepared_agent_a-03",
+    "revised_s41031_agent_a-00",
+    "revised_s41031_agent_a-01",
+    "revised_s41031_agent_a-02",
+    "revised_s41031_agent_a-03",
+    "revised_s41032_agent_a-00",
+    "revised_s41032_agent_a-01",
+    "revised_s41032_agent_a-02",
+    "revised_s41032_agent_a-03"
+  ]
+}

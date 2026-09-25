@@ -1,0 +1,57 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 56.22it/s]
+{"stage": "revised_s41031_agent_a", "completed": 1, "tokens": 167, "seconds": 8.71349162499996}
+{"stage": "revised_s41031_agent_a", "completed": 2, "tokens": 167, "seconds": 8.058218625999984}
+{"stage": "revised_s41031_agent_a", "completed": 3, "tokens": 208, "seconds": 9.979613478999909}
+{"stage": "revised_s41031_agent_a", "completed": 4, "tokens": 233, "seconds": 11.213132084999984}
+{"stage": "revised_s41031_agent_a", "completed": 5, "tokens": 205, "seconds": 9.832086696000033}
+{"stage": "revised_s41031_agent_a", "completed": 6, "tokens": 233, "seconds": 11.194155566999939}
+{"stage": "revised_s41031_agent_a", "completed": 7, "tokens": 166, "seconds": 7.982996929000024}
+{"stage": "revised_s41031_agent_a", "completed": 8, "tokens": 166, "seconds": 7.960549598000057}
+{"stage": "revised_s41031_agent_a", "completed": 9, "tokens": 170, "seconds": 8.196489412000005}
+{"stage": "revised_s41031_agent_a", "completed": 10, "tokens": 206, "seconds": 9.963976507000098}
+{"stage": "revised_s41031_agent_a", "completed": 11, "tokens": 197, "seconds": 9.547975202999964}
+{"stage": "revised_s41031_agent_a", "completed": 12, "tokens": 208, "seconds": 10.022662044000072}
+{"stage": "revised_s41031_agent_a", "completed": 13, "tokens": 235, "seconds": 11.262472363000029}
+{"stage": "revised_s41031_agent_a", "completed": 14, "tokens": 207, "seconds": 9.933516957999927}
+{"stage": "revised_s41031_agent_a", "completed": 15, "tokens": 233, "seconds": 11.141128983000044}
+{"stage": "revised_s41031_agent_a", "completed": 16, "tokens": 166, "seconds": 8.102652720000037}
+{"stage": "revised_s41031_agent_a", "completed": 17, "tokens": 208, "seconds": 9.961662810000007}
+{"stage": "revised_s41031_agent_a", "completed": 18, "tokens": 233, "seconds": 11.159964490999982}
+{"stage": "revised_s41031_agent_a", "completed": 19, "tokens": 237, "seconds": 11.357149162000042}
+{"stage": "revised_s41031_agent_a", "completed": 20, "tokens": 208, "seconds": 9.951436461999947}
+{"stage": "revised_s41031_agent_a", "completed": 21, "tokens": 167, "seconds": 8.008097827000029}
+{"stage": "revised_s41031_agent_a", "completed": 22, "tokens": 237, "seconds": 11.37479985799996}
+{"stage": "revised_s41031_agent_a", "completed": 23, "tokens": 198, "seconds": 9.50959135100004}
+{"stage": "revised_s41031_agent_a", "completed": 24, "tokens": 166, "seconds": 7.9597864429999845}
+{"stage": "revised_s41031_agent_a", "completed": 25, "tokens": 239, "seconds": 11.493783323000002}
+{"stage": "revised_s41031_agent_a", "completed": 26, "tokens": 206, "seconds": 9.875367419999975}
+{"stage": "revised_s41031_agent_a", "completed": 27, "tokens": 172, "seconds": 8.222277692000034}
+{"stage": "revised_s41031_agent_a", "completed": 28, "tokens": 232, "seconds": 11.11292483200009}
+{"stage": "revised_s41031_agent_a", "completed": 29, "tokens": 237, "seconds": 11.345754155000009}
+{"stage": "revised_s41031_agent_a", "completed": 30, "tokens": 233, "seconds": 11.139986866000072}
+{"stage": "revised_s41031_agent_a", "completed": 31, "tokens": 166, "seconds": 8.103372464000017}
+{"stage": "revised_s41031_agent_a", "completed": 32, "tokens": 235, "seconds": 11.256112225000038}
+{"stage": "revised_s41031_agent_a", "completed": 33, "tokens": 212, "seconds": 10.143751855000005}
+{"stage": "revised_s41031_agent_a", "completed": 34, "tokens": 167, "seconds": 8.008610564000037}
+{"stage": "revised_s41031_agent_a", "completed": 35, "tokens": 197, "seconds": 9.481125413999962}
+{"stage": "revised_s41031_agent_a", "completed": 36, "tokens": 198, "seconds": 9.491212279000024}
+{"stage": "revised_s41031_agent_a", "completed": 37, "tokens": 197, "seconds": 9.471834917000024}
+{"stage": "revised_s41031_agent_a", "completed": 38, "tokens": 236, "seconds": 11.282494059999976}
+{"stage": "revised_s41031_agent_a", "completed": 39, "tokens": 236, "seconds": 11.323591267999973}
+{"stage": "revised_s41031_agent_a", "completed": 40, "tokens": 238, "seconds": 11.366574259999993}
+{"stage": "revised_s41031_agent_a", "completed": 41, "tokens": 206, "seconds": 9.856906224999989}
+{"stage": "revised_s41031_agent_a", "completed": 42, "tokens": 234, "seconds": 11.20631881199995}
+{"stage": "revised_s41031_agent_a", "completed": 43, "tokens": 198, "seconds": 9.461330873999941}
+{"stage": "revised_s41031_agent_a", "completed": 44, "tokens": 193, "seconds": 9.231363667999972}
+{"stage": "revised_s41031_agent_a", "completed": 45, "tokens": 195, "seconds": 9.357154408000042}
+{"stage": "revised_s41031_agent_a", "completed": 46, "tokens": 205, "seconds": 9.859047198999974}
+{"stage": "revised_s41031_agent_a", "completed": 47, "tokens": 199, "seconds": 9.629613042000074}
+{"stage": "revised_s41031_agent_a", "completed": 48, "tokens": 209, "seconds": 9.950573084000098}
+Traceback (most recent call last):
+  File "/home/ubuntu/swarm-solidarity/scripts/run_followup_eval.py", line 197, in <module>
+    main()
+  File "/home/ubuntu/swarm-solidarity/scripts/run_followup_eval.py", line 154, in main
+    append('attempts', {**current, 'started_at': now()})
+  File "/home/ubuntu/swarm-solidarity/scripts/run_followup_eval.py", line 140, in append
+    files[name].flush()
+PermissionError: [Errno 1] Operation not permitted

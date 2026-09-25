@@ -1,0 +1,96 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 55.71it/s]
+{"stage": "qwen_agent_a", "completed": 1, "tokens": 167, "seconds": 8.21272262299999}
+{"stage": "qwen_agent_a", "completed": 2, "tokens": 167, "seconds": 7.594557691999967}
+{"stage": "qwen_agent_a", "completed": 3, "tokens": 208, "seconds": 9.473910680000017}
+{"stage": "qwen_agent_a", "completed": 4, "tokens": 205, "seconds": 9.316140677999954}
+{"stage": "qwen_agent_a", "completed": 5, "tokens": 205, "seconds": 9.298936112999968}
+{"stage": "qwen_agent_a", "completed": 6, "tokens": 206, "seconds": 9.335815636999996}
+{"stage": "qwen_agent_a", "completed": 7, "tokens": 166, "seconds": 7.5554047370000035}
+{"stage": "qwen_agent_a", "completed": 8, "tokens": 166, "seconds": 7.521850333999964}
+{"stage": "qwen_agent_a", "completed": 9, "tokens": 170, "seconds": 7.747042160000035}
+{"stage": "qwen_agent_a", "completed": 10, "tokens": 206, "seconds": 9.398055044999978}
+{"stage": "qwen_agent_a", "completed": 11, "tokens": 197, "seconds": 8.960192273000018}
+{"stage": "qwen_agent_a", "completed": 12, "tokens": 208, "seconds": 9.420849800999974}
+{"stage": "qwen_agent_a", "completed": 13, "tokens": 167, "seconds": 7.60743906600004}
+{"stage": "qwen_agent_a", "completed": 14, "tokens": 207, "seconds": 9.389934412999992}
+{"stage": "qwen_agent_a", "completed": 15, "tokens": 233, "seconds": 10.606497643000012}
+{"stage": "qwen_agent_a", "completed": 16, "tokens": 166, "seconds": 7.558931838000035}
+{"stage": "qwen_agent_a", "completed": 17, "tokens": 208, "seconds": 9.585217193999938}
+{"stage": "qwen_agent_a", "completed": 18, "tokens": 233, "seconds": 10.564955655000063}
+{"stage": "qwen_agent_a", "completed": 19, "tokens": 204, "seconds": 9.22402543699991}
+{"stage": "qwen_agent_a", "completed": 20, "tokens": 208, "seconds": 9.43705201299997}
+{"stage": "qwen_agent_a", "completed": 21, "tokens": 167, "seconds": 7.586213332000057}
+{"stage": "qwen_agent_a", "completed": 22, "tokens": 237, "seconds": 10.741100921999987}
+{"stage": "qwen_agent_a", "completed": 23, "tokens": 198, "seconds": 8.968026248000001}
+{"stage": "qwen_agent_a", "completed": 24, "tokens": 166, "seconds": 7.524560690000044}
+{"stage": "qwen_agent_a", "completed": 25, "tokens": 210, "seconds": 9.51031927200006}
+{"stage": "qwen_agent_a", "completed": 26, "tokens": 206, "seconds": 9.297572652999975}
+{"stage": "qwen_agent_a", "completed": 27, "tokens": 172, "seconds": 7.7171197620000385}
+{"stage": "qwen_agent_a", "completed": 28, "tokens": 232, "seconds": 10.465251250000051}
+{"stage": "qwen_agent_a", "completed": 29, "tokens": 237, "seconds": 10.654504233000011}
+{"stage": "qwen_agent_a", "completed": 30, "tokens": 205, "seconds": 9.236252728999943}
+{"stage": "qwen_agent_a", "completed": 31, "tokens": 166, "seconds": 7.480859435999946}
+{"stage": "qwen_agent_a", "completed": 32, "tokens": 236, "seconds": 10.731754148999926}
+{"stage": "qwen_agent_a", "completed": 33, "tokens": 212, "seconds": 9.508176935999927}
+{"stage": "qwen_agent_a", "completed": 34, "tokens": 167, "seconds": 7.496583224000005}
+{"stage": "qwen_agent_a", "completed": 35, "tokens": 167, "seconds": 7.517472927000085}
+{"stage": "qwen_agent_a", "completed": 36, "tokens": 170, "seconds": 7.646503955000071}
+{"stage": "qwen_agent_a", "completed": 37, "tokens": 197, "seconds": 8.868920051000032}
+{"stage": "qwen_agent_a", "completed": 38, "tokens": 207, "seconds": 9.332039941999938}
+{"stage": "qwen_agent_a", "completed": 39, "tokens": 206, "seconds": 9.234281270999986}
+{"stage": "qwen_agent_a", "completed": 40, "tokens": 238, "seconds": 10.671782012999984}
+{"stage": "qwen_agent_a", "completed": 41, "tokens": 206, "seconds": 9.290215111000066}
+{"stage": "qwen_agent_a", "completed": 42, "tokens": 234, "seconds": 10.48219174399992}
+{"stage": "qwen_agent_a", "completed": 43, "tokens": 171, "seconds": 7.723873172000026}
+{"stage": "qwen_agent_a", "completed": 44, "tokens": 195, "seconds": 8.797277951999945}
+{"stage": "qwen_agent_a", "completed": 45, "tokens": 197, "seconds": 8.918947962000061}
+{"stage": "qwen_agent_a", "completed": 46, "tokens": 205, "seconds": 9.221148227000072}
+{"stage": "qwen_agent_a", "completed": 47, "tokens": 172, "seconds": 7.740269482999906}
+{"stage": "qwen_agent_a", "completed": 48, "tokens": 209, "seconds": 9.518352757000002}
+{"stage": "qwen_agent_a", "completed": 49, "tokens": 204, "seconds": 9.142668426}
+{"stage": "qwen_agent_a", "completed": 50, "tokens": 169, "seconds": 7.636533570999973}
+{"stage": "qwen_agent_a", "completed": 51, "tokens": 168, "seconds": 7.559659076000003}
+{"stage": "qwen_agent_a", "completed": 52, "tokens": 204, "seconds": 9.134014496000077}
+{"stage": "qwen_agent_a", "completed": 53, "tokens": 195, "seconds": 8.751827821000006}
+{"stage": "qwen_agent_a", "completed": 54, "tokens": 170, "seconds": 7.62464765499999}
+{"stage": "qwen_agent_a", "completed": 55, "tokens": 168, "seconds": 7.5146420830000125}
+{"stage": "qwen_agent_a", "completed": 56, "tokens": 197, "seconds": 8.861070619999964}
+{"stage": "qwen_agent_a", "completed": 57, "tokens": 166, "seconds": 7.475512540999944}
+{"stage": "qwen_agent_a", "completed": 58, "tokens": 208, "seconds": 9.342767264000031}
+{"stage": "qwen_agent_a", "completed": 59, "tokens": 170, "seconds": 7.656740121999974}
+{"stage": "qwen_agent_a", "completed": 60, "tokens": 168, "seconds": 7.569341854999948}
+{"stage": "qwen_agent_a", "completed": 61, "tokens": 169, "seconds": 7.600194753999972}
+{"stage": "qwen_agent_a", "completed": 62, "tokens": 166, "seconds": 7.486251895999999}
+{"stage": "qwen_agent_a", "completed": 63, "tokens": 169, "seconds": 7.593100542000002}
+{"stage": "qwen_agent_a", "completed": 64, "tokens": 167, "seconds": 7.499023031999968}
+{"stage": "qwen_agent_a", "completed": 65, "tokens": 203, "seconds": 9.159775830999934}
+{"stage": "qwen_agent_a", "completed": 66, "tokens": 208, "seconds": 9.446517106999977}
+{"stage": "qwen_agent_a", "completed": 67, "tokens": 168, "seconds": 7.547047865000081}
+{"stage": "qwen_agent_a", "completed": 68, "tokens": 168, "seconds": 7.54634737899994}
+{"stage": "qwen_agent_a", "completed": 69, "tokens": 240, "seconds": 10.761833523000064}
+{"stage": "qwen_agent_a", "completed": 70, "tokens": 234, "seconds": 10.532865935000018}
+{"stage": "qwen_agent_a", "completed": 71, "tokens": 169, "seconds": 7.603110546000039}
+{"stage": "qwen_agent_a", "completed": 72, "tokens": 205, "seconds": 9.259210162000045}
+{"stage": "qwen_agent_a", "completed": 73, "tokens": 206, "seconds": 9.261568806000014}
+{"stage": "qwen_agent_a", "completed": 74, "tokens": 167, "seconds": 7.50436222999997}
+{"stage": "qwen_agent_a", "completed": 75, "tokens": 168, "seconds": 7.550606889999926}
+{"stage": "qwen_agent_a", "completed": 76, "tokens": 205, "seconds": 9.19045393500005}
+{"stage": "qwen_agent_a", "completed": 77, "tokens": 200, "seconds": 8.994129750999946}
+{"stage": "qwen_agent_a", "completed": 78, "tokens": 197, "seconds": 8.864404921999949}
+{"stage": "qwen_agent_a", "completed": 79, "tokens": 199, "seconds": 8.935498693999989}
+{"stage": "qwen_agent_a", "completed": 80, "tokens": 232, "seconds": 10.35050273999991}
+{"stage": "qwen_agent_a", "completed": 81, "tokens": 167, "seconds": 7.4760869720000755}
+{"stage": "qwen_agent_a", "completed": 82, "tokens": 167, "seconds": 7.600115814999981}
+{"stage": "qwen_agent_a", "completed": 83, "tokens": 238, "seconds": 10.645396381999944}
+{"stage": "qwen_agent_a", "completed": 84, "tokens": 168, "seconds": 7.511562534999939}
+{"stage": "qwen_agent_a", "completed": 85, "tokens": 166, "seconds": 7.440620249999938}
+{"stage": "qwen_agent_a", "completed": 86, "tokens": 238, "seconds": 10.636488615999951}
+{"stage": "qwen_agent_a", "completed": 87, "tokens": 205, "seconds": 9.16345896200005}
+Traceback (most recent call last):
+  File "/home/ubuntu/swarm-solidarity/scripts/run_followup_eval.py", line 197, in <module>
+    main()
+  File "/home/ubuntu/swarm-solidarity/scripts/run_followup_eval.py", line 154, in main
+    append('attempts', {**current, 'started_at': now()})
+  File "/home/ubuntu/swarm-solidarity/scripts/run_followup_eval.py", line 140, in append
+    files[name].flush()
+PermissionError: [Errno 1] Operation not permitted

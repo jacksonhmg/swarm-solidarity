@@ -1,0 +1,18 @@
+{
+  "job": "prepared_agent_a-02",
+  "pid": 2771,
+  "started_at": "2026-09-25T03:29:48.505400+00:00",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=60s",
+    "100m",
+    "python3",
+    "scripts/run_followup_shard_node.py",
+    "--job",
+    "prepared_agent_a-02",
+    "--execute"
+  ],
+  "finished_at": "2026-09-25T03:56:20.950580+00:00",
+  "returncode": 0
+}

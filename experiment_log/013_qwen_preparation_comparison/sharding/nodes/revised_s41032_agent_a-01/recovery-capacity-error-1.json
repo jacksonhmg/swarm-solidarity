@@ -1,0 +1,4 @@
+{
+  "at": "2026-09-25T03:38:14.498339+00:00",
+  "error": "Traceback (most recent call last):\n  File \"/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/lambda_cloud.py\", line 146, in <module>\n    main()\n  File \"/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/lambda_cloud.py\", line 102, in main\n    result = api(\"instance-operations/launch\", {\"region_name\": args.region, \"instance_type_name\": args.instance_type,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jacksonmowattgok/Dev/swarm-solidarity/scripts/lambda_cloud.py\", line 51, in api\n    raise RuntimeError(f\"Lambda {endpoint}: HTTP {error.code} ({code}); request not retried\") from None\nRuntimeError: Lambda instance-operations/launch: HTTP 400 (instance-operations/launch/insufficient-capacity); request not retried\n"
+}

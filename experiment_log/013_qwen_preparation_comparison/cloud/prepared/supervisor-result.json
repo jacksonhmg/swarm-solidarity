@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-25T03:02:58.828867+00:00",
+  "controller_result": {
+    "node": "prepared",
+    "pid": 2715,
+    "started_at": "2026-09-25T02:38:57.280688+00:00",
+    "command": [
+      "timeout",
+      "--signal=TERM",
+      "--kill-after=60s",
+      "180m",
+      "python3",
+      "scripts/run_followup_node.py",
+      "--node",
+      "prepared",
+      "--execute"
+    ],
+    "finished_at": "2026-09-25T03:01:30.567985+00:00",
+    "returncode": 1
+  },
+  "verified_remote_files": 18,
+  "error": "Controller returned 1"
+}

@@ -1,3 +1,15 @@
+# COMPLETE AND CLOSED — 2026-09-25T04:45:22.767648+00:00
+
+All013/014 work is finished: one Qwen Stage A run at125updates and4,000 unique new responses. Frozen validation passed for every prompt/seed/raw token/stop/decode/score/weight association. All27 actual rentals are terminated and all temporary cloud/local keys deleted, independently checked against the provider. Cumulative estimated GPU cost is$30.5465, under65USD. All historical artifacts and scientific/scheduling freezes are preserved. Reports and decisions are complete; original011 remains closed. No further GPU rental, training, generation, tuning or infrastructure retry is needed or authorized by these results.
+
+Read `interpretation.md`, `report.md`, `execution_notes.md`, `closure_checks.json`, `cost.json`, and `../014_principal_identity/interpretation.md`. The additional CPU-only planned matched-clean contrasts are complete for both013and014. The recurring monitor should be paused after the final commit. Never restart any historical launcher, watchdog or model controller.
+
+The earlier operational snapshots below are historical only.
+
+# Healthy progress — 04:16 UTC
+
+All twenty assignments have now dispatched once. The final replacement began at 04:07:46 UTC and is generating; recovery launcher24633 exited normally. Never restart it. Current totals: 3,735/4,000 responses collected, 15 shards completed/hash-verified/terminated with keys deleted, estimated cumulative $28.95/$65. Five collectors remain active; no collector/model errors. Watchdog24637 and finalizer24641 remain healthy. The finalizer passed its all-startup barrier and is waiting for remaining successful collectors before the single claimed CPU verification/analysis. No new action or rental is needed. Latest machine-readable health is `sharding/latest_health.json`. Current owner/cost overlay remains `sharding/boot_recovery/execution_state_plan.json`.
+
 # Current handoff — 2026-09-25T04:05:16.153613+00:00
 
 Qwen human comparison (013) is complete: all 800 responses independently validated against saved arrays, seeds, stops, decodes, weights and original scorer. `report.md`, `interpretation.md`, `paired_effects.json`, `strict_discordant_components.json` and planned `matched_clean_effects.*` are written. Canonical execution directories have NOT been created, so the original shard assembler remains safe. Agent A is still running; 3361/4000 total responses are locally collected, estimated cumulative $26.67/65. No results used to change generation.
