@@ -1,0 +1,5 @@
+{
+  "at": "2026-09-25T03:35:33.994810+00:00",
+  "error": "20-minute capacity acquisition window exceeded; no model retries",
+  "model_retries": false
+}

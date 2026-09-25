@@ -1,6 +1,6 @@
 {
   "status": "allocating_and_executing_disjoint_suffix_shards",
-  "at": "2026-09-25T03:33:02.092898+00:00",
+  "at": "2026-09-25T03:45:31.041101+00:00",
   "scientific_freeze_commit": "5267564",
   "scheduling_freeze_commit": "cb1bcc4",
   "capacity_completion_commit": "335c448",
@@ -14,7 +14,12 @@
     {
       "job": "prepared_agent_a-00",
       "instance_id": "376b02886dc14e378b09a8d8746474c0",
-      "status": "booting"
+      "status": "active"
+    },
+    {
+      "job": "revised_s41032_agent_a-01",
+      "instance_id": "aca9af8022d847b180a2223df3c31822",
+      "status": "active"
     },
     {
       "job": "qwen_human-03",
@@ -29,6 +34,11 @@
     {
       "job": "qwen_human-02",
       "instance_id": "0a3722b944a741b9a410125287185cca",
+      "status": "terminated"
+    },
+    {
+      "job": "revised_s41032_agent_a-00",
+      "instance_id": "d68e81e4a6704890b954157c981f22ac",
       "status": "active"
     },
     {
@@ -42,9 +52,24 @@
       "status": "active"
     },
     {
+      "job": "revised_s41031_agent_a-02",
+      "instance_id": "4c7fd7a9c03f4faabc5f5174d2658625",
+      "status": "active"
+    },
+    {
+      "job": "revised_s41031_agent_a-03",
+      "instance_id": "9a9ea18110214ef790574abb58f07c9e",
+      "status": "active"
+    },
+    {
+      "job": "revised_s41032_agent_a-02",
+      "instance_id": "8a0ba47738584e71b8e73cb6299859d2",
+      "status": "booting"
+    },
+    {
       "job": "qwen_human-00",
       "instance_id": "46e24d11185742da8b1159c6f704c30f",
-      "status": "active"
+      "status": "terminated"
     },
     {
       "job": "prepared_agent_a-03",
@@ -54,6 +79,11 @@
     {
       "job": "qwen_human-01",
       "instance_id": "2012250f2d45476e9ff1109d78807c96",
+      "status": "terminated"
+    },
+    {
+      "job": "revised_s41032_agent_a-03",
+      "instance_id": "3ea417496b3b4ba4b2cdbc9c41189f8c",
       "status": "active"
     },
     {
@@ -102,6 +132,7 @@
     "finisher_pid": 8340,
     "capacity_continuation_pid": 9701
   },
-  "latest_saved_response_count": 898,
-  "latest_estimated_gpu_usd": 10.414333333333333
+  "latest_saved_response_count": 1882,
+  "latest_estimated_gpu_usd": 17.478833333333338,
+  "all_twenty_assignments_allocated": true
 }
