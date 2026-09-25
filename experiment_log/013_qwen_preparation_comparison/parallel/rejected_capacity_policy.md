@@ -1,0 +1,7 @@
+# Definitively rejected capacity requests
+
+The first actual revised41031 launch received HTTP400 `instance-operations/launch/insufficient-capacity`. Read-only reconciliation found zero instances with its unique owner name. No GPU or model work existed. A capacity advertisement is not a reservation.
+
+To fulfill the user's standing instruction to obtain suitable GPUs without further confirmation, scripts/resolve_followup_capacity.py can make up to six new owner-scoped allocation attempts for an unallocated assignment after an explicit capacity rejection. Every attempt has a fresh owner identity and exclusive receipt. Before another attempt, confirm zero instances for the rejected owner, delete that exact cloud key and local key, archive its state as launch_rejected_no_instance with zero GPU cost, and preserve the rejection response. Never repeat an uncertain launch or a successful launch. This limited infrastructure recovery does not retry training or a sampled request.
+
+The same procedure may handle the fifth-node launch if it receives the same explicit capacity rejection. Requests stop on uncertainty, an allocated instance, a model-dispatch claim, exhausted attempts, or the budget boundary. All other jobs continue. The unchanged five-node watchdog counts every actually allocated owner; rejected zero-instance requests are retained separately. No extra simultaneous assignments or new inference settings are introduced. Before dispatch failures receive owner-scoped cleanup. Lost dispatch acknowledgement is still not failure and must not cause restart.

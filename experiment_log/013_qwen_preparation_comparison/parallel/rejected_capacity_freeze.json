@@ -1,0 +1,7 @@
+{
+  "files": {
+    "scripts/resolve_followup_capacity.py": "fd87e8386edc22652597ab9dcbd891db80741eca363af503802c8783276b1504",
+    "experiment_log/013_qwen_preparation_comparison/parallel/rejected_capacity_policy.md": "91e64e2edf7f0b2b3e551b6224cb70757331d4b2336509cc06e14d38678653c1"
+  },
+  "scope": "Definitive zero-instance capacity rejection recovery only; no model repeats"
+}
